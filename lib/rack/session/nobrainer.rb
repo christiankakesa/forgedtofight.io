@@ -1,0 +1,91 @@
+# frozen_string_literal: true
+
+require 'rack/session/abstract/id'
+# require 'awesome_print'
+
+module Rack
+  module Session
+    # A NoBrainer document model for storing session data
+    class RackSession
+      include NoBrainer::Document
+      include NoBrainer::Document::Timestamps
+
+      field :sid, type: Text, unique: true
+      field :data, type: Hash, default: {}
+
+      index :sid
+    end
+
+    class NoBrainer < Abstract::ID
+      attr_reader :mutex
+
+      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge drop: false
+      def initialize(app, options = {})
+        super
+        @mutex = Mutex.new
+        ::NoBrainer.sync_schema
+      end
+
+      def generate_sid
+        loop do
+          sid = super
+          break sid unless _exists?(sid)
+        end
+      end
+
+      def get_session(env, sid)
+        with_lock(env) do
+          sid = generate_sid unless sid
+          session = _get(sid)
+          unless session
+            session = {}
+            _set sid, session
+          end
+          [sid, session]
+        end
+      end
+
+      def set_session(env, sid, session, _options)
+        with_lock(env) do
+          ok = _set(sid, session)
+          ok ? sid : false
+        end
+      end
+
+      def destroy_session(env, sid, options)
+        with_lock(env) do
+          _delete(sid)
+          generate_sid unless options[:drop]
+        end
+      end
+
+      def with_lock(env)
+        @mutex.lock if env['rack.multithread']
+        yield
+      ensure
+        @mutex.unlock if @mutex.locked?
+      end
+
+      private
+
+      def _set(sid, session)
+        model = _exists?(sid) || RackSession.new(sid: sid)
+        model.data = session
+        model.save
+      end
+
+      def _get(sid)
+        model = _exists?(sid)
+        model&.data
+      end
+
+      def _delete(sid)
+        RackSession.where(sid: sid).delete
+      end
+
+      def _exists?(sid)
+        RackSession.where(sid: sid).first
+      end
+    end
+  end
+end

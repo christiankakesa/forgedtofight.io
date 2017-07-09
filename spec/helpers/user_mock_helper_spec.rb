@@ -22,26 +22,26 @@ describe 'UserMock helper' do
   it 'test if the environement is mackable' do
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('true')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('test')
-    expect(Ftf::Helpers::UserMock.mockable).to be_truthy
+    expect(Ftf::Helpers::UserMock.mockable?).to be_truthy
 
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('true')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('development')
-    expect(Ftf::Helpers::UserMock.mockable).to be_truthy
+    expect(Ftf::Helpers::UserMock.mockable?).to be_truthy
 
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('true')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('production')
-    expect(Ftf::Helpers::UserMock.mockable).to be_falsey
+    expect(Ftf::Helpers::UserMock.mockable?).to be_falsey
 
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('true')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('staging')
-    expect(Ftf::Helpers::UserMock.mockable).to be_falsey
+    expect(Ftf::Helpers::UserMock.mockable?).to be_falsey
 
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('false')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('test')
-    expect(Ftf::Helpers::UserMock.mockable).to be_falsey
+    expect(Ftf::Helpers::UserMock.mockable?).to be_falsey
 
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('false')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('production')
-    expect(Ftf::Helpers::UserMock.mockable).to be_falsey
+    expect(Ftf::Helpers::UserMock.mockable?).to be_falsey
   end
 end

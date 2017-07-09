@@ -6,6 +6,7 @@ require 'securerandom'
 
 # Application bootstrap
 require_relative 'boot'
+require_relative 'lib/rack/session/nobrainer'
 
 WebApp = Syro.new(BasicDeck) do
   unless @available_locales
@@ -36,16 +37,17 @@ MainApp = Rack::Builder.new do
   use Rack::ContentLength
   use Rack::ContentType, 'text/html'
   use Rack::Deflater
-  use Rack::Reloader unless %w[production staging].include?(ENV['RACK_ENV'])
-  use(Rack::Session::Cookie,
-      secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64))
-  use Rack::ShowExceptions
+  use(Rack::Session::NoBrainer, # Rack::Session::Cookie
+      secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
+      expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
+  unless %w[production staging].include?(ENV['RACK_ENV'])
+    use Rack::ShowExceptions
+  end
   use(Rack::Timeout,
       service_timeout: 20,
       wait_timeout: 30,
       wait_overtime: 60,
       service_past_wait: false)
-
   use Shield::Middleware, '/login'
 
   run(WebApp)

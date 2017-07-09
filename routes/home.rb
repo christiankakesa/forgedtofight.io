@@ -31,7 +31,7 @@ Home = Syro.new(BasicDeck) do
     end
 
     post do
-      on user_mock.mockable do
+      on user_mock.mockable? do
         if login(User, user_mock.get.username, user_mock.password)
           flash_success _('You successfully logged in')
         end
@@ -55,8 +55,9 @@ Home = Syro.new(BasicDeck) do
     on req.get? || req.delete? do
       root do
         res.status = 200
-        user_mock.mockable && user_mock.delete
+        user_mock.mockable? && user_mock.delete
         logout(User)
+        flash_success _('You successfully logged out')
         res.redirect '/'
       end
     end

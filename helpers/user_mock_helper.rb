@@ -25,7 +25,7 @@ module Ftf
         @user = nil
       end
 
-      def self.mockable
+      def self.mockable?
         'true'.eql?(ENV['APP_MOCK_USER']) &&
           !%w[production staging].include?(ENV['RACK_ENV'])
       end

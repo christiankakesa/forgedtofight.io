@@ -29,7 +29,6 @@ group :development, :test do
   gem 'capybara'
   gem 'foreman'
   gem 'gettext', '>=3.0.2', require: false
-  gem 'poltergeist'
   gem 'rspec'
   gem 'rubocop'
   gem 'shotgun'
