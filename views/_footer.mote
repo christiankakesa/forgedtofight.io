@@ -1,0 +1,5 @@
+<footer class="app-footer">
+  {{ _('<a href="http://forgedtofight.io">ForgedToFight.IO</a> © %{year}') % { year: Time.now.utc.year } }}
+  <span class="float-right">Powered by <a href="https://twitter.com/fenicks79">@fenicks79</a></span>
+</footer>
+% # This website start at in may 2017 (may 11 2017).

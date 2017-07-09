@@ -1,0 +1,9 @@
+.env export-ignore
+Gemfile.lock export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+Procfile export-ignore
+.rspec export-ignore
+.rubocop.yml export-ignore
+spec export-ignore
+.ruby-version export-ignore

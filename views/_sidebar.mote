@@ -1,0 +1,15 @@
+<ul class="nav">
+  <li class="divider"></li>
+  <li class="nav-title"><i class="icon-options" aria-hidden="true"></i> {{ s_('Sidebar|Features') }}</li>
+  <li class="nav-item px-2"><a href="/botodex"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}</a></li>
+  <li class="nav-item px-2"><a href="/arena"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Arena') }}</a></li>
+  <li class="divider"></li>
+  <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Help') }}</li>
+  <li class="nav-item px-2"><a href="/about"><i class="icon-info" aria-hidden="true"></i> {{ s_('Sidebar|About') }}</a></li>
+  % if false
+  <li class="nav-item px-2"><a href="/support"><i class="icon-support" aria-hidden="true"></i> {{ s_('Sidebar|Support') }}</a></li>
+  <li class="nav-item px-2"><a href="/cookies"><i class="icon-globe" aria-hidden="true"></i> {{ s_('Sidebar|Use of cookies') }}</a></li>
+  <li class="nav-item px-2"><a href="/privacy"><i class="icon-shield" aria-hidden="true"></i> {{ s_('Sidebar|Privacy') }}</a></li>
+  <li class="nav-item px-2"><a href="/tos"><i class="icon-screen-desktop" aria-hidden="true"></i> {{ s_('Sidebar|Terms of service') }}</a></li>
+  % end
+</ul>

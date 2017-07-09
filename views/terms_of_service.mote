@@ -1,0 +1,1 @@
+<h1>{{ _('Terms of service') }}</h1>

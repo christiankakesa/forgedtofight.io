@@ -1,0 +1,40 @@
+<header class="app-header navbar">
+  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
+  <a class="navbar-brand" href="/"></a>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item px-2">
+      <a class="nav-link" href="/"><i class="icon-home"></i> {{ s_('Menu|Home') }}</a>
+    </li>
+    %# if false
+    % if authenticated(User)
+    <li class="nav-item dropdown px-2">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="hidden-md-down">{{ authenticated(User)&.username || authenticated(User)&.email || s_('Menu|Account Management') }}</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-header text-center">
+          <strong>{{ _('Account') }}</strong>
+        </div>
+        <a class="dropdown-item" href="/accounts/settings"><i class="fa fa-wrench"></i> {{ s_('Menu|Account Settings') }}</a>
+        <a class="dropdown-item" href="/logout" data-method="delete"><i class="icon-logout"></i> {{ s_('Menu|Logout') }}</a>
+      </div>
+    </li>
+    % else
+    <li class="nav-item px-2">
+      <a class="nav-link" href="/signup"><i class="icon-note"></i> {{ s_('Menu|Sign Up') }}</a>
+    </li>
+    <li class="nav-item px-2">
+      <a class="nav-link" href="/login"><i class="icon-login"></i> {{ s_('Menu|Log In') }}</a>
+    </li>
+    % end
+    %# end
+    <li class="nav-item px-2">
+      <a class="nav-link" href="/about"><i class="icon-info"></i> {{ s_('Menu|About') }}</a>
+    </li>
+  </ul>
+</header>

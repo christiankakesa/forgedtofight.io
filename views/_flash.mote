@@ -1,0 +1,12 @@
+% flash do |flash|
+  % flash.each do |type, messages|
+<div class="alert alert-{{ type }} text-md-center alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="{{ _('Close') }}">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    % messages.each do |message|
+  <p>{{ message }}</p>
+    % end
+</div>
+  % end
+% end

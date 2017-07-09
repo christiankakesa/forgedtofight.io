@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the forgedtofight package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: forgedtofight 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-08 18:28+0200\n"
+"PO-Revision-Date: 2017-05-08 18:28+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "Close"
+msgstr ""
+
+msgid "Contact page"
+msgstr ""
+
+msgid "Documentation page"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Firstname"
+msgstr ""
+
+msgid "Footer|Contact"
+msgstr ""
+
+msgid "Footer|Documentation"
+msgstr ""
+
+msgid "Footer|Privacy"
+msgstr ""
+
+msgid "Footer|Support"
+msgstr ""
+
+msgid "Footer|Terms of service"
+msgstr ""
+
+msgid "Footer|Use of cookies"
+msgstr ""
+
+msgid "Forgot your password?"
+msgstr ""
+
+msgid "Keep me signed in"
+msgstr ""
+
+msgid "Lastname"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Menu|Account Management"
+msgstr ""
+
+msgid "Menu|Account Settings"
+msgstr ""
+
+msgid "Menu|Billing Management"
+msgstr ""
+
+msgid "Menu|Log In"
+msgstr ""
+
+msgid "Menu|Logout"
+msgstr ""
+
+msgid "Menu|Pricing"
+msgstr ""
+
+msgid "Menu|Sign Up"
+msgstr ""
+
+msgid "Menu|Support"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password confirmation"
+msgstr ""
+
+msgid "Privacy on cookies"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Reset password"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
+
+msgid "Support management"
+msgstr ""
+
+msgid "TRANSFORMERS FTF"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight resources - Unofficial"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight resources - Unofficial &mdash; Account Billing"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight resources - Unofficial &mdash; Account Settings"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight resources - Unofficial &mdash; Cookies"
+msgstr ""
+
+msgid "TRANSFORMERS: Forged to Fight resources - Unofficial."
+msgstr ""
+
+msgid "Toggle navigation"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Username or email"
+msgstr ""

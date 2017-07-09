@@ -1,0 +1,7 @@
+<h1>{{ _('Welcome "Transformers: Forged to Fight" gamers!') }}</h1>
+
+<h6>&mdash; {{ _('ForgedToFight.IO is an unofficial resources website for the "Transformers: Foged to Fight" mobile game.') }}</h6>
+
+<div class="text-center">
+  <img src="/assets/logo_forgedtofight.io_bg-transparent_1280x720.png" class="rounded img-fluid" alt="Responsive image">
+</div>

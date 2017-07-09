@@ -1,0 +1,12 @@
+Metrics/BlockLength:
+  Exclude:
+    - '**/*.rake'
+    - 'Rakefile'
+    - 'rakefile'
+    - 'routes/**/*.rb'
+    - 'spec/**/*.rb'
+Security/Eval:
+  Exclude:
+    - 'decks/**/*.rb'
+Style/Documentation:
+  Enabled: false
