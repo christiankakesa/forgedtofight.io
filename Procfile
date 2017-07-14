@@ -1,1 +1,1 @@
-web: bundle exec puma -C config/puma.rb
+web: bundle exec shotgun --server=puma --port=5000

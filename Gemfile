@@ -32,5 +32,6 @@ group :development, :test do
   gem 'poltergeist'
   gem 'rspec'
   gem 'rubocop'
+  gem 'shotgun'
   gem 'simplecov'
 end
