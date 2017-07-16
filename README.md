@@ -35,6 +35,14 @@ This website is built by @fenick79 a #ForgedToFight gamer.
 
 #### Create application user in RethinkDB data explorer
 
-    r.db('rethinkdb').table('users').insert({id: 'forgedtofightio', password: 'xxxxxxxxxxxxxxxxxx'});
+##### Development database
+
+    r.db('rethinkdb').table('users').insert({id: 'forgedtofightio_dev', password: 'forgedtofightio_dev'});
+    r.dbCreate('forgedtofightio_development');
+    r.db('forgedtofightio_development').grant('forgedtofightio_dev', {read: true, write: true, config: true});
+
+##### Production database
+
+    r.db('rethinkdb').table('users').insert({id: 'forgedtofightio', password: 'xxxxxxxxxxxxxxxxxxxxxxx'});
     r.dbCreate('forgedtofightio_production');
     r.db('forgedtofightio_production').grant('forgedtofightio', {read: true, write: true, config: true});
