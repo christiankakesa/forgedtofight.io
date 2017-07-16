@@ -37,7 +37,7 @@ MainApp = Rack::Builder.new do
   use Rack::ContentLength
   use Rack::ContentType, 'text/html'
   use Rack::Deflater
-  use(Rack::Session::NoBrainer, # Rack::Session::Cookie
+  use(Rack::Session::Cookie, # Rack::Session::NoBrainer
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
   unless %w[production staging].include?(ENV['RACK_ENV'])
