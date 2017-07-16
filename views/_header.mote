@@ -6,7 +6,7 @@
       <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
     </li>
   </ul>
-  <ul class="nav navbar-nav ml-auto">
+  <ul class="nav navbar-nav ml-auto d-md-down-none">
     <li class="nav-item px-2">
       <a class="nav-link" href="/"><i class="icon-home"></i> {{ s_('Menu|Home') }}</a>
     </li>
