@@ -10,7 +10,7 @@
     <li class="nav-item px-2">
       <a class="nav-link" href="/"><i class="icon-home"></i> {{ s_('Menu|Home') }}</a>
     </li>
-    %# if false
+    % if false
     % if authenticated(User)
     <li class="nav-item dropdown px-2">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -32,7 +32,7 @@
       <a class="nav-link" href="/login"><i class="icon-login"></i> {{ s_('Menu|Log In') }}</a>
     </li>
     % end
-    %# end
+    % end
     <li class="nav-item px-2">
       <a class="nav-link" href="/about"><i class="icon-info"></i> {{ s_('Menu|About') }}</a>
     </li>
