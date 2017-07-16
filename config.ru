@@ -7,10 +7,11 @@ map '/assets' do
   env.append_path 'assets/images'
   env.append_path 'assets/javascripts'
   env.append_path 'assets/stylesheets'
-  if 'production'.eql?(ENV['RACK_ENV'])
-    env.js_compressor  = :uglify
-    env.css_compressor = :scss
-  end
+  # TODO(fenicks): Fix slow compression and minification of assets
+  # if 'production'.eql?(ENV['RACK_ENV'])
+  #   env.js_compressor  = :uglify
+  #   env.css_compressor = :scss
+  # end
   run env
 end
 
