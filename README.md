@@ -45,7 +45,7 @@ This website is built by @fenick79 a #ForgedToFight gamer.
         RACK_ENV=development
         RACK_MULTITHREAD=true
 
-If you need a RethinkDB access for development purpose just ask fenicks to declare your IP in firewalld. The database in network restricted. It will change when the TLS access will be configured.
+**If you need a RethinkDB access for development purpose just ask fenicks to declare your IP in firewalld configuration. The database is network restricted. It will change when the TLS access will be configured.**
 
 ### RethinkDB account
 
