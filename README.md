@@ -35,7 +35,7 @@ This website is built by @fenick79 a #ForgedToFight gamer.
 
  * Install bundler : `gem install bundler --no-document`
  * Install required gems : `bundle install`
- * Create this **.env** file in root directory and run the application with **foreman** Ruby gem : `foreman start`
+ * Create this **.env** file in root directory and run the application with **foreman** Ruby gem : `foreman run rake nobrainer:sync_schema` and `foreman start`
 
         APP_COOKIE_SECRET=599fcf7e92142e1925fe3a17f43eb477c25cf6b9f677c3ff8916c2d92ff1e00977fe97cf4643632b4b70e899a752dc5ec7bb0282ea8ea319a4b019a25c54dbd4
         APP_MAX_THREADS=8
