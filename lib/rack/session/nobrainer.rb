@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 require 'rack/session/abstract/id'
-# require 'awesome_print'
 
 module Rack
   module Session
     # A NoBrainer document model for storing session data
-    class RackSession
+    class NoBrainerSessionStore
       include NoBrainer::Document
       include NoBrainer::Document::Timestamps
 
@@ -20,10 +19,10 @@ module Rack
       attr_reader :mutex
 
       DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge drop: false
+
       def initialize(app, options = {})
         super
         @mutex = Mutex.new
-        ::NoBrainer.sync_schema
       end
 
       def generate_sid
@@ -69,7 +68,7 @@ module Rack
       private
 
       def _set(sid, session)
-        model = _exists?(sid) || RackSession.new(sid: sid)
+        model = _exists?(sid) || NoBrainerSessionStore.new(sid: sid)
         model.data = session
         model.save
       end
@@ -80,11 +79,11 @@ module Rack
       end
 
       def _delete(sid)
-        RackSession.where(sid: sid).delete
+        NoBrainerSessionStore.where(sid: sid).delete
       end
 
       def _exists?(sid)
-        RackSession.where(sid: sid).first
+        NoBrainerSessionStore.where(sid: sid).first
       end
     end
   end
