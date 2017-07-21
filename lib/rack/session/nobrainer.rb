@@ -23,6 +23,8 @@ module Rack
       def initialize(app, options = {})
         super
         @mutex = Mutex.new
+        # TODO(fenicks): Fix the rake task which doesn't work.
+        ::NoBrainer.sync_indexes
       end
 
       def generate_sid
