@@ -2,11 +2,18 @@
 
 # Application tasks
 namespace :app do
-  # Generate :secret
   desc 'Generate radom value of 64 characters (hexadecimal).'
   task :secret do
     require 'securerandom'
     puts SecureRandom.hex(64)
+  end
+
+  namespace :session do
+    desc 'Clear expired session from Rack::Session::NoBrainer.'
+    task :clear do
+      require_relative 'lib/rack/session/nobrainer.rb'
+      Rack::Session::NoBrainerSessionStore.expired.each(&:delete)
+    end
   end
 end
 

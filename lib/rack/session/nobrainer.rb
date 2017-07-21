@@ -29,7 +29,7 @@ module Rack
         @expire_after = options.delete(:expire_after) { 24 * 60 * 60 }
         # TODO(fenicks): Fix the rake task which doesn't work.
         # Github issue: https://github.com/nviennot/nobrainer/issues/240
-        # ::NoBrainer.sync_indexes
+        ::NoBrainer.sync_indexes
       end
 
       def generate_sid
