@@ -14,6 +14,8 @@ module Rack
       field :expires_at, type: Time
 
       index :sid
+
+      scope(:expired) { where(:expires_at.lt(RethinkDB::RQL.new.now)) }
     end
 
     class NoBrainer < Abstract::ID
@@ -27,7 +29,7 @@ module Rack
         @expire_after = options.delete(:expire_after) { 24 * 60 * 60 }
         # TODO(fenicks): Fix the rake task which doesn't work.
         # Github issue: https://github.com/nviennot/nobrainer/issues/240
-        ::NoBrainer.sync_indexes
+        # ::NoBrainer.sync_indexes
       end
 
       def generate_sid
@@ -87,7 +89,7 @@ module Rack
       end
 
       def _delete(sid)
-        NoBrainerSessionStore.where(sid: sid).delete
+        NoBrainerSessionStore.where(sid: sid).each(&:delete)
       end
 
       def _exists?(sid)
