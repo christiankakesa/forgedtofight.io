@@ -11,6 +11,7 @@ module Rack
 
       field :sid, type: Text, unique: true
       field :data, type: Hash, default: {}
+      field :expires_at, type: Time
 
       index :sid
     end
@@ -23,7 +24,9 @@ module Rack
       def initialize(app, options = {})
         super
         @mutex = Mutex.new
+        @expire_after = options.delete(:expire_after) { 24 * 60 * 60 }
         # TODO(fenicks): Fix the rake task which doesn't work.
+        # Github issue: https://github.com/nviennot/nobrainer/issues/240
         ::NoBrainer.sync_indexes
       end
 
@@ -70,7 +73,10 @@ module Rack
       private
 
       def _set(sid, session)
-        model = _exists?(sid) || NoBrainerSessionStore.new(sid: sid)
+        model = _exists?(sid) || NoBrainerSessionStore.new(
+          sid: sid,
+          expires_at: RethinkDB::RQL.new.now + @expire_after
+        )
         model.data = session
         model.save
       end
