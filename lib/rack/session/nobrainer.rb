@@ -89,7 +89,7 @@ module Rack
       end
 
       def _delete(sid)
-        NoBrainerSessionStore.where(sid: sid).each(&:delete)
+        NoBrainerSessionStore.where(sid: sid).delete_all
       end
 
       def _exists?(sid)

@@ -12,7 +12,7 @@ namespace :app do
     desc 'Clear expired session from Rack::Session::NoBrainer.'
     task :clear do
       require_relative 'lib/rack/session/nobrainer.rb'
-      Rack::Session::NoBrainerSessionStore.expired.each(&:delete)
+      Rack::Session::NoBrainerSessionStore.expired.delete_all
     end
   end
 end
