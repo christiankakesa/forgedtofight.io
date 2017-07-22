@@ -7,6 +7,7 @@ gem 'rack-timeout'
 gem 'syro'
 
 gem 'fast_gettext', '>= 0.5'
+gem 'gettext', '>=3.0.2', require: false
 gem 'mail'
 gem 'mote'
 gem 'rake'
@@ -28,7 +29,6 @@ end
 group :development, :test do
   gem 'capybara'
   gem 'foreman'
-  gem 'gettext', '>=3.0.2', require: false
   gem 'rspec'
   gem 'rubocop'
   gem 'shotgun'
