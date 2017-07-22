@@ -12,7 +12,6 @@ WebApp = Syro.new(BasicDeck) do
   unless @available_locales
     FastGettext.available_locales = (@available_locales ||= %w[en fr])
   end
-
   unless @text_domain
     @text_domain = 'forgedtofight'
     FastGettext.text_domain = @text_domain
@@ -23,11 +22,11 @@ WebApp = Syro.new(BasicDeck) do
     current_language = req.env['HTTP_ACCEPT_LANGUAGE'][0, 2]
     @available_locales.include?(current_language) ? current_language : 'en'
   end
+
   lang = req['lang']
   lang = nil if lang.to_s.empty?
   FastGettext.set_locale(lang || session['lang'] || @accepted_language.call)
   session['lang'] = FastGettext.locale
-
   run Rack::Cascade.new([Home, Accounts])
 end
 
@@ -37,7 +36,7 @@ MainApp = Rack::Builder.new do
   use Rack::ContentLength
   use Rack::ContentType, 'text/html'
   use Rack::Deflater
-  use(Rack::Session::NoBrainer, # Rack::Session::Cookie
+  use(Rack::Session::NoBrainer,
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
   unless %w[production staging].include?(ENV['RACK_ENV'])
@@ -49,6 +48,5 @@ MainApp = Rack::Builder.new do
       wait_overtime: 60,
       service_past_wait: false)
   use Shield::Middleware, '/login'
-
   run(WebApp)
 end

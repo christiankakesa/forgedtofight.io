@@ -29,8 +29,7 @@ class BasicDeck < Syro::Deck
                      '"' => '&quot;',
                      "'" => '&#39;' }.freeze
     if RUBY_VERSION >= '1.9'
-      # Escape the following characters with their HTML/XML
-      # equivalents.
+      # Escape the following characters with their HTML/XML equivalents.
       def h(value)
         value.to_s.gsub(/[&<>"']/, ESCAPE_TABLE)
       end
@@ -56,10 +55,11 @@ class BasicDeck < Syro::Deck
   end
 
   def render(path, params = {})
-    page[:title] = params.delete(:title) { _('ForgedToFight.IO - Unofficial Transformers Forged to Fight resources') }
+    page[:title] = params.delete(:title) do
+      _('ForgedToFight.IO - Unofficial Transformers Forged to Fight resources')
+    end
     page[:content][:src] = path
     page[:content].update(params)
-
     res.html(page)
   end
 

@@ -15,8 +15,8 @@ NoBrainer.configure do |config|
           rescue
             'localhost'
           end
+    db_env = ENV['RACK_ENV'] || 'development'
   end
   config.rethinkdb_url = ENV['APP_RETHINKDB_URL'] ||
-                         "rethinkdb://#{url}:28015/forgedtofightio_#{ENV['RACK_ENV'] ||
-                         'development'}"
+                         "rethinkdb://#{url}:28015/forgedtofightio_#{db_env}"
 end

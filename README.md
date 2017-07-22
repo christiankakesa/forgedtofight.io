@@ -24,7 +24,7 @@ This website is built by @fenick79 a #ForgedToFight gamer.
 
 ### Our stack
 
- * Ruby 2.4.x : programming language
+ * Ruby 2.4.1 : programming language
  * Syro : powerful router for web applications
  * Twitter Bootstrap : CSS framework
  * RethinkDB : JSON document based database

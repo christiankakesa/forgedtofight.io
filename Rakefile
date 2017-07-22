@@ -114,7 +114,6 @@ namespace :gettext do
   desc 'add a new language'
   task :add_language, [:language] do |t, args|
     language = args.language || ENV['LANGUAGE']
-
     # Let's do some pre-verification of the environment.
     if language.nil?
       print 'You need to specify the language to add.'
@@ -122,7 +121,6 @@ namespace :gettext do
       puts " or 'rake gettext:add_language[en]'"
       next
     end
-
     language_path = File.join(File.dirname(__FILE__),
                               'config',
                               'locales',
