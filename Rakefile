@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# Environment and application load
+task :environment do
+  require_relative 'app'
+end
+
 # Application tasks
 namespace :app do
   desc 'Generate radom value of 64 characters (hexadecimal).'
@@ -18,8 +23,10 @@ namespace :app do
 end
 
 # No Brainer rake tasks
-require_relative 'config/initializers/nobrainer'
 namespace :nobrainer do
+  require_relative 'config/initializers/nobrainer'
+  Rake::Task['environment'].invoke
+
   desc 'Drop the database'
   task :drop do
     NoBrainer.drop!
