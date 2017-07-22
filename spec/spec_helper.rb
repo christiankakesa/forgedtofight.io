@@ -14,6 +14,9 @@ require 'rack/test'
 
 require_relative '../app'
 
+# Synchronize RethinkDB schema and indexes programmatically
+NoBrainer.sync_schema
+
 # module Rack
 #   module Test
 #     class Session
