@@ -24,7 +24,6 @@ end
 
 # No Brainer rake tasks
 namespace :nobrainer do
-  require_relative 'config/initializers/nobrainer'
   Rake::Task['environment'].invoke
 
   desc 'Drop the database'
