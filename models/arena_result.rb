@@ -14,5 +14,5 @@ class ArenaResult
         default: :top_26_100
   field :other_rewards_value, type: String
 
-  belongs_to :arena, required: true
+  belongs_to :arena, required: true, index: true
 end
