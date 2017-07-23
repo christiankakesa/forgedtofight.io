@@ -36,17 +36,19 @@ MainApp = Rack::Builder.new do
   use Rack::ContentLength
   use Rack::ContentType, 'text/html'
   use Rack::Deflater
+  use Shield::Middleware, '/login'
   use(Rack::Session::NoBrainer,
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
   unless %w[production staging].include?(ENV['RACK_ENV'])
     use Rack::ShowExceptions
   end
+  use Rack::Static, urls: ['/robots.txt'], root: 'public'
   use(Rack::Timeout,
       service_timeout: 20,
       wait_timeout: 30,
       wait_overtime: 60,
       service_past_wait: false)
-  use Shield::Middleware, '/login'
+
   run(WebApp)
 end
