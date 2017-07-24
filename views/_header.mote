@@ -34,7 +34,7 @@
     % end
     % end
     <li class="nav-item px-2">
-      <a class="nav-link" href="/botodex"><i class="icon-layers"></i> {{ s_('Menu|Botodex') }} ({{ Bot.count }})</a></a>
+      <a class="nav-link" href="/botodex"><i class="icon-layers"></i> {{ s_('Menu|Botodex') }} ({{ Bot.count }})</a>
     </li>
     <li class="nav-item px-2">
       <a class="nav-link" href="/about"><i class="icon-info"></i> {{ s_('Menu|About') }}</a>
