@@ -10,28 +10,28 @@
   },
   {
     name: 'Barricade',
-    description: '...',
+    description: 'This Decepticons puts his own spin on good cop, bad cop...',
     icon_link: 'icon-barricade.jpg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id
   },
   {
     name: 'Bludgeon',
-    description: '...',
+    description: 'A master of the Cybertronian martial art Metallikato...',
     icon_link: 'icon-bludgeon.jpg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id
   },
   {
     name: 'Bonecrusher',
-    description: '...',
+    description: 'A noted speed skater and general purveyor of hate, Bonecrusher oozes with disdain for everything and everyone, including himself...',
     icon_link: 'icon-bonecrusher.jpg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id
   },
   {
     name: 'Bumblebee',
-    description: '...',
+    description: 'Long known as Optimus Prime\'s faithful scout...',
     icon_link: 'icon-bumblebee.jpg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id
