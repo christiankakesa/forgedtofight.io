@@ -5,4 +5,6 @@ class BotFaction
   include NoBrainer::Document::Timestamps
 
   field :name, type: String, unique: true, index: true
+
+  has_many :bot, dependent: :destroy
 end

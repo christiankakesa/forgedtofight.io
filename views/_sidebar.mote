@@ -1,9 +1,9 @@
 <ul class="nav">
   <li class="nav-item px-3 py-1"><a href="/"><i class="icon-home"></i> {{ s_('Sidebar|Home') }}</a></li>
-  % if false
   <li class="divider"></li>
   <li class="nav-title"><i class="icon-options" aria-hidden="true"></i> {{ s_('Sidebar|Features') }}</li>
-  <li class="nav-item px-3"><a href="/botodex"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}</a></li>
+  <li class="nav-item px-3"><a href="/botodex"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}</a> <span class="badge badge-pill badge-default">{{ Bot.count }}</span></a></li>
+  % if false
   <li class="nav-item px-3"><a href="/arena"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Arena') }}</a></li>
   % end
   <li class="divider"></li>

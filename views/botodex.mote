@@ -1,1 +1,17 @@
-<h1>{{ _('Botodex') }}</h1>
+<h1>{{ _('Botodex') }} ({{ Bot.count }})</h1>
+
+% if bots.count > 0
+<div class="card-columns">
+% bots.each do |bot|
+  <div class="card card-{{ bot.bot_class.name.downcase }}">
+    <div class="card-header card-header-{{ bot.bot_class.name.downcase }}">
+      <img src="assets/bots/{{ bot.icon_link }}" alt="{{ bot.name }}" class="img-thumbnail">
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">{{ bot.name }} <small>({{ bot.bot_class.name.downcase }} - {{ bot.bot_faction.name.downcase }})</small></h4>
+      <p class="card-text">{{ bot.description }}</p>
+    </div>
+  </div>
+% end
+</div>
+%end

@@ -15,7 +15,8 @@ Home = Syro.new(BasicDeck) do
 
   on 'botodex' do
     get do
-      render 'views/botodex.mote'
+      @bots = Bot
+      render 'views/botodex.mote', bots: @bots
     end
   end
 

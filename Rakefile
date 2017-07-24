@@ -56,7 +56,7 @@ namespace :nobrainer do
   desc 'Load seed data from db/seeds.rb'
   task :seed do
     # Rails.application.load_seed
-    raise 'Not yet implemented'
+    require_relative 'db/seeds.rb' if File.file?('db/seeds.rb')
   end
 
   task setup: %i[sync_schema_quiet seed]
