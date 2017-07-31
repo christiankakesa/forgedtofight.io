@@ -157,7 +157,7 @@
   },
   {
     name: 'Starscream',
-    description: '...',
+    description: 'Starscream is the treacherous Decepticon Air Commander and the deadliest of the Seekers...',
     icon_link: 'icon-starscream.jpg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id
@@ -178,7 +178,7 @@
   },
   {
     name: 'Winblade',
-    description: '*hailing from the planet Caminus, this agile Scout is as adept with her swords as she is at "Cityspeaking" with gigantic Titans...',
+    description: 'Hailing from the planet Caminus, this agile Scout is as adept with her swords as she is at "Cityspeaking" with gigantic Titans...',
     icon_link: 'icon-winblade.jpg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id
