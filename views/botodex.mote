@@ -1,9 +1,19 @@
 <h1>{{ _('Botodex') }} ({{ Bot.count }})</h1>
 
 % if bots.count > 0
+<nav class="justify-content-center nav nav-pills nav-justified mb-3">
+  <a class="nav-link botodex-menu nav-bot-active active" href="#">{{ _('All') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="brawler" href="#">{{ _('Brawlers') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="demolitions" href="#">{{ _('Demolitions') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="scout" href="#">{{ _('Scouts') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="tactician" href="#">{{ _('Tacticians') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="tech" href="#">{{ _('Techs') }}</a>
+  <a class="nav-link botodex-menu" data-bot_class="warrior" href="#">{{ _('Warriors') }}</a>
+</nav>
+
 <div class="card-columns">
-% bots.each do |bot|
-  <div class="card">
+  % bots.each do |bot|
+  <div class="card card-{{ bot.bot_class.name.downcase }}">
     <div class="card-block">
       <div class="d-flex justify-content-end">
         <span class="align-self-end badge badge-{{ bot.bot_class.name.downcase }}">{{ bot.bot_class.name.downcase }}</span>
@@ -14,6 +24,6 @@
       <p class="card-text">{{ bot.description }}</p>
     </div>
   </div>
-% end
+  % end
 </div>
 %end

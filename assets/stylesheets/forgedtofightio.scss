@@ -1,9 +1,25 @@
 // Material design palette tool
 // https://material.io/color/#!/?view.left=0&view.right=0&primary.color=00B8D4
 
-.badge-brawler { background-color: #7200ca; }
-.badge-demolitions { background-color: #c7a500; }
-.badge-scout { background-color: #009624; }
-.badge-tactician { background-color: #0026ca; }
-.badge-tech { background-color: #0088a3; }
-.badge-warrior { background-color: #9b0000; }
+$bot-color-brawler: #7200ca;
+$bot-color-demolitions: #c7a500;
+$bot-color-scout: #009624;
+$bot-color-tactician: #0026ca;
+$bot-color-tech: #0088a3;
+$bot-color-warrior: #9b0000;
+
+.badge-brawler { background-color: $bot-color-brawler; }
+.badge-demolitions { background-color: $bot-color-demolitions; }
+.badge-scout { background-color: $bot-color-scout; }
+.badge-tactician { background-color: $bot-color-tactician; }
+.badge-tech { background-color: $bot-color-tech; }
+.badge-warrior { background-color: $bot-color-warrior; }
+
+.text-brawler { color: $bot-color-brawler; }
+.text-demolitions { color: $bot-color-demolitions; }
+.text-scout { color: $bot-color-scout; }
+.text-tactician { color: $bot-color-tactician; }
+.text-tech { color: $bot-color-tech; }
+.text-warrior { color: $bot-color-warrior; }
+
+.nav-bot-active { border-bottom: 0.2em solid #fff; }
