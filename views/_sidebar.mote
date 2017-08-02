@@ -4,7 +4,7 @@
   <li class="nav-title"><i class="icon-options" aria-hidden="true"></i> {{ s_('Sidebar|Features') }}</li>
   <li class="nav-item px-3"><a href="/botodex"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}</a> <span class="badge badge-pill badge-default">{{ Bot.count }}</span></li>
   <li class="divider"></li>
-  <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Help') }}</li>
+  <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Info') }}</li>
   <li class="nav-item px-3"><a href="/about"><i class="icon-info" aria-hidden="true"></i> {{ s_('Sidebar|About') }}</a></li>
   % if false
   <li class="nav-item px-3"><a href="/support"><i class="icon-support" aria-hidden="true"></i> {{ s_('Sidebar|Support') }}</a></li>
