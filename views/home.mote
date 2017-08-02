@@ -9,11 +9,11 @@
         <div class="h1 text-muted text-center mb-2">
           <i class="icon-clock"></i>
         </div>
-        <div class="h4 mb-0 text-center">{{ _('Upcoming bot') }}</div>
-        <p class="text-uppercase font-weight-bold">{{ _('July 27th, 2017 AT 10AM PDT') }}</p>
+        <div class="h3 mb-2 text-center">{{ _('Upcoming bot') }}</div>
+        <p class="h4 text-info text-uppercase font-weight-bold">{{ _('July 27th, 2017 AT 10AM PDT') }}</p>
         <div class="h2 mb-0 text-primary text-center">{{ _('Grimlock') }}</div>
         <div class="mt-1 mb-0 text-center">
-          <img src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/upcoming-bot/upcoming-bot_2017-07-27.png" class="rounded img-fluid" alt="{{ _('Bot: Grimlock') }}">
+          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/upcoming-bot/upcoming-bot_2017-07-27.png" alt="{{ _('Bot: Grimlock') }}">
         </div>
       </div>
     </div>
@@ -24,11 +24,11 @@
         <div class="h1 text-muted text-center mb-2">
           <i class="icon-calendar"></i>
         </div>
-        <div class="h4 mb-0 text-center">{{ _('Calendar\'s bot') }}</div>
-        <p class="text-uppercase font-weight-bold">{{ _('August 1th, 2017') }}</p>
+        <div class="h3 mb-2 text-center">{{ _('Calendar\'s bot') }}</div>
+        <p class="h4 text-info text-uppercase font-weight-bold">{{ _('August 1th, 2017') }}</p>
         <div class="h2 mb-0 text-primary text-center">{{ _('Hot Rod') }}</div>
         <div class="mt-1 mb-0 text-center">
-          <img src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/calendars-bot/calendars-bot_2017-08.png" class="rounded img-fluid" alt="{{ _('Bot: Hot Rod') }}">
+          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/calendars-bot/calendars-bot_2017-08.png" alt="{{ _('Bot: Hot Rod') }}">
         </div>
       </div>
     </div>
