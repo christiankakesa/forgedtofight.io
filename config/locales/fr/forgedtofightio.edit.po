@@ -30,7 +30,7 @@ msgid "All"
 msgstr "Tous"
 
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
-msgstr "Tous services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
+msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
 
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
@@ -213,7 +213,7 @@ msgid "The website"
 msgstr "Le site internet"
 
 msgid "This website is provided by <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> for the <a href=\"https://transformersforgedtofight.com/\">Transformers: Forged to Fight</a> gamer community"
-msgstr "Ce site internet est proposé par <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> pour la communaté des joueurs de <a href=\"https://transformersforgedtofight.com/\">Transformers : Forgés d'Acier</a>"
+msgstr "Ce site internet est proposé par <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> pour la communauté des joueurs de <a href=\"https://transformersforgedtofight.com/\">Transformers : Forgés d'Acier</a>"
 
 msgid "Upcoming bot"
 msgstr "Bot en vedette"
@@ -231,4 +231,4 @@ msgid "Warriors"
 msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
-msgstr "Bienvenue joueur de Transformers : Forgés d'Acier"
+msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"

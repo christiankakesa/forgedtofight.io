@@ -30,7 +30,7 @@ msgid "All"
 msgstr "Tous"
 
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
-msgstr "Tous services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
+msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
 
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
@@ -231,4 +231,4 @@ msgid "Warriors"
 msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
-msgstr "Bienvenue joueur de Transformers : Forgés d'Acier"
+msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
