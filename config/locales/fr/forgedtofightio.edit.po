@@ -32,9 +32,6 @@ msgstr "Tous"
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
 msgstr "Tous services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
 
-msgid "Arena"
-msgstr "Arène"
-
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
 
@@ -56,6 +53,9 @@ msgstr "Bot du mois"
 msgid "Close"
 msgstr "Fermer"
 
+msgid "Coming soon"
+msgstr "Prochainement"
+
 msgid "Demolitions"
 msgstr "Démolisseurs"
 
@@ -64,6 +64,9 @@ msgstr "Langage de programmation dynamique et efficace"
 
 msgid "Email"
 msgstr "E-mail"
+
+msgid "Events"
+msgstr "Évènements"
 
 msgid "Firstname"
 msgstr "Prénom"
@@ -95,6 +98,9 @@ msgstr "Nom"
 msgid "Log in"
 msgstr "Se connecter"
 
+msgid "MenuBadge|Soon"
+msgstr "Bientôt"
+
 msgid "Menu|About"
 msgstr "À propos"
 
@@ -106,6 +112,9 @@ msgstr "Paramètre du compte"
 
 msgid "Menu|Botodex"
 msgstr "Botodex"
+
+msgid "Menu|Events"
+msgstr "Évènements"
 
 msgid "Menu|Home"
 msgstr "Accueil"
@@ -151,6 +160,9 @@ msgstr "À propos"
 
 msgid "Sidebar|Botodex"
 msgstr "Botodex"
+
+msgid "Sidebar|Events"
+msgstr "Évènements"
 
 msgid "Sidebar|Features"
 msgstr "Fonctionnalités"

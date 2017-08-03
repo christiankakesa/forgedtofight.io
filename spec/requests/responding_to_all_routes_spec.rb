@@ -36,9 +36,9 @@ describe '/about', type: :request do
   end
 end
 
-describe '/arena', type: :request do
-  it 'GET /arena' do
-    get '/arena'
+describe '/event', type: :request do
+  it 'GET /event' do
+    get '/event'
     expect(last_response).to be_ok
   end
 end

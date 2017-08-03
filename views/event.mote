@@ -1,0 +1,9 @@
+<h1>{{ _('Events') }}</h1>
+
+<div class="card card-inverse card-info mb-3 text-center">
+  <div class="card-block">
+    <blockquote class="card-blockquote">
+      <h3>{{ _('Coming soon') }}</h3>
+    </blockquote>
+  </div>
+</div>

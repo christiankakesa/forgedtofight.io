@@ -10,9 +10,18 @@ Authenticated user could list and configure his bot list with bot's capabilities
 
 ## Features
 
-### Arena Score
+### Event
 
-Results of arena 3 and 4 stars.
+Scheduling of all known events in the game:
+
+ * Arena scheduling
+ * Arena results
+ * 7 days events
+ * 3 days events
+ * Alliance mission
+ * Raid Blitz
+ * DAilly mision with classe sparks rewards
+ * ...
 
 ### Botodex
 

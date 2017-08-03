@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-03 04:13+0200\n"
-"PO-Revision-Date: 2017-08-03 04:13+0200\n"
+"POT-Creation-Date: 2017-08-03 14:48+0200\n"
+"PO-Revision-Date: 2017-08-03 14:48+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -33,9 +33,6 @@ msgstr ""
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
 msgstr ""
 
-msgid "Arena"
-msgstr ""
-
 msgid "August 1th, 2017"
 msgstr ""
 
@@ -57,6 +54,9 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+msgid "Coming soon"
+msgstr ""
+
 msgid "Demolitions"
 msgstr ""
 
@@ -64,6 +64,9 @@ msgid "Dynamic and efficient programming language"
 msgstr ""
 
 msgid "Email"
+msgstr ""
+
+msgid "Events"
 msgstr ""
 
 msgid "Firstname"
@@ -96,6 +99,9 @@ msgstr ""
 msgid "Log in"
 msgstr ""
 
+msgid "MenuBadge|Soon"
+msgstr ""
+
 msgid "Menu|About"
 msgstr ""
 
@@ -106,6 +112,9 @@ msgid "Menu|Account Settings"
 msgstr ""
 
 msgid "Menu|Botodex"
+msgstr ""
+
+msgid "Menu|Events"
 msgstr ""
 
 msgid "Menu|Home"
@@ -151,6 +160,9 @@ msgid "Sidebar|About"
 msgstr ""
 
 msgid "Sidebar|Botodex"
+msgstr ""
+
+msgid "Sidebar|Events"
 msgstr ""
 
 msgid "Sidebar|Features"
