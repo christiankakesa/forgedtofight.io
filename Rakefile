@@ -70,11 +70,8 @@ end
 
 # I18n
 namespace :gettext do
-  require 'gettext/tools/xgettext'
   require 'gettext/tools/task'
   require_relative './config/initializers/mote_gettext'
-
-  GetText::Tools::XGetText.add_parser(GetText::MoteParser)
 
   task :setup do
     GetText::Tools::Task.define do |task|

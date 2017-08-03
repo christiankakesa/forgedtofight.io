@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'mote'
+
 class Mote
   def self.src(template, vars = [])
     terms = template.split(PATTERN)
@@ -88,3 +90,6 @@ module GetText
     end
   end
 end
+
+require 'gettext/tools/xgettext'
+GetText::Tools::XGetText.add_parser(GetText::MoteParser)
