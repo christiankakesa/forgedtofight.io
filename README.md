@@ -20,7 +20,7 @@ Database and search engine of bots and mods.
 
 ## About
 
-This website is built by @fenick79 a #ForgedToFight gamer.
+This website is built by @fenick79 a #Transformers #ForgedToFight gamer.
 
 ### Our stack
 
