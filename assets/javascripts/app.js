@@ -3,5 +3,5 @@
 //= require bootstrap
 //= require pace
 //= require core-ui
-//= require forgedtofight
+//= require forgedtofightio
 //= require home
