@@ -71,7 +71,7 @@ end
 # I18n
 namespace :gettext do
   require 'gettext/tools/task'
-  require_relative './config/initializers/mote_gettext'
+  require_relative './config/initializers/fast_gettext'
 
   task :setup do
     GetText::Tools::Task.define do |task|
