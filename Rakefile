@@ -70,8 +70,11 @@ end
 
 # I18n
 namespace :gettext do
+  require 'gettext/tools/xgettext'
   require 'gettext/tools/task'
-  require_relative './config/initializers/fast_gettext'
+  require_relative './config/initializers/mote_gettext'
+
+  GetText::Tools::XGetText.add_parser(GetText::MoteParser)
 
   task :setup do
     GetText::Tools::Task.define do |task|
@@ -79,21 +82,21 @@ namespace :gettext do
                              FastGettext.text_domain
                            rescue
                              nil
-                           end) || ENV['TEXTDOMAIN'] || 'forgedtofight'
+                           end) || ENV['TEXTDOMAIN'] || 'forgedtofightio'
       task.package_version = '1.0.0'
       task.domain = (begin
                          FastGettext.text_domain
                        rescue
                          nil
-                       end) || ENV['TEXTDOMAIN'] || 'forgedtofight'
+                       end) || ENV['TEXTDOMAIN'] || 'forgedtofightio'
       task.po_base_directory = File.join(File.dirname(__FILE__),
                                          'config',
                                          'locales')
       task.mo_base_directory = File.join(File.dirname(__FILE__),
                                          'config',
                                          'locales')
-      task.files = Dir.glob('*.{rb,erb}')
-      task.files += Dir.glob('{config,lib,views}/**/*.{rb,erb}')
+      task.files = Dir.glob('*.{rb,erb,mote}')
+      task.files += Dir.glob('{config,lib,views}/**/*.{rb,erb,mote}')
       task.enable_description = false
       task.msgmerge_options = %w[--sort-by-msgid --no-location --no-wrap]
       task.msgcat_options = %w[--sort-by-msgid --no-location --no-wrap]

@@ -1,0 +1,223 @@
+# French translations for forgedtofightio package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the forgedtofightio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: forgedtofightio 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2017-08-03 03:30+0200\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"POT-Creation-Date: 2017-08-03 03:31+0200\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 1.8.11\n"
+
+msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
+msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
+
+msgid "About"
+msgstr "À propos"
+
+msgid "Account"
+msgstr "Mon compte"
+
+msgid "All"
+msgstr "Tous"
+
+msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
+msgstr "Tous services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
+
+msgid "Arena"
+msgstr "Arène"
+
+msgid "August 1th, 2017"
+msgstr "1er août 2017"
+
+msgid "Bot: Grimlock"
+msgstr "Bot : Grimlock"
+
+msgid "Bot: Hot Rod"
+msgstr "Bot : Hot Rod"
+
+msgid "Botodex"
+msgstr "Botodex"
+
+msgid "Brawlers"
+msgstr "Bagarreurs"
+
+msgid "Calendar's bot"
+msgstr "Bot du mois"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Demolitions"
+msgstr "Démolisseurs"
+
+msgid "Dynamic and efficient programming language"
+msgstr "Langage de programmation dynamique et efficace"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Firstname"
+msgstr "Prénom"
+
+msgid "ForgedToFight.IO &mdash; Account Settings"
+msgstr "ForgedToFight.IO &mdash; Gestion du compte"
+
+msgid "ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game"
+msgstr "ForgedToFight.IO est le site internet non officiel de la communauté des joueurs de Transformers : Forgés d'Acier (jeu sur mobile)"
+
+msgid "Forgot your password?"
+msgstr "Mot de passe oublié ?"
+
+msgid "HTML, CSS and JS web framework"
+msgstr "Bibliothèque HTML, CSS et JS"
+
+msgid "JSON document based database"
+msgstr "Base de données JSON orienté document"
+
+msgid "July 27th, 2017 AT 10AM PDT"
+msgstr "27 juillet 2017 à 10h00 pour San Francisco - 19h00 à Paris"
+
+msgid "Keep me signed in"
+msgstr "Rester connecté"
+
+msgid "Lastname"
+msgstr "Nom"
+
+msgid "Log in"
+msgstr "Se connecter"
+
+msgid "Menu|About"
+msgstr "À propos"
+
+msgid "Menu|Account Management"
+msgstr "Gestion du compte"
+
+msgid "Menu|Account Settings"
+msgstr "Paramètre du compte"
+
+msgid "Menu|Botodex"
+msgstr "Botodex"
+
+msgid "Menu|Home"
+msgstr "Accueil"
+
+msgid "Menu|Log In"
+msgstr "Se connecter"
+
+msgid "Menu|Logout"
+msgstr "Se déconnecter"
+
+msgid "Menu|Sign Up"
+msgstr "S'inscrire"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Password confirmation"
+msgstr "Mot de passe confirmé"
+
+msgid "Password|Reset"
+msgstr "Réinitialiser"
+
+msgid "Powered by"
+msgstr "Créer par"
+
+msgid "Powerful and simple router for web applications"
+msgstr "Moteur d'espace de nom pour les applications internets"
+
+msgid "Privacy"
+msgstr "Confidentialités"
+
+msgid "Reset password"
+msgstr "Mot de passe réinitialisé"
+
+msgid "Scouts"
+msgstr "Éclaireurs"
+
+msgid "Sidebar|About"
+msgstr "À propos"
+
+msgid "Sidebar|Botodex"
+msgstr "Botodex"
+
+msgid "Sidebar|Features"
+msgstr "Fonctionnalités"
+
+msgid "Sidebar|Home"
+msgstr "Accueil"
+
+msgid "Sidebar|Info"
+msgstr "Info"
+
+msgid "Sidebar|Privacy"
+msgstr "Confidentialités"
+
+msgid "Sidebar|Support"
+msgstr "Support"
+
+msgid "Sidebar|Terms of service"
+msgstr "Conditions d'utilisation"
+
+msgid "Sidebar|Use of cookies"
+msgstr "Utilisation des cookies"
+
+msgid "Sign in"
+msgstr "Se connecter"
+
+msgid "Sign up"
+msgstr "S'inscrire"
+
+msgid "Support"
+msgstr "Support"
+
+msgid "Tacticians"
+msgstr "Stratèges"
+
+msgid "Techs"
+msgstr "Techniciens"
+
+msgid "Terms of service"
+msgstr "Conditions d'utilisation"
+
+msgid "The developer"
+msgstr "Le développeur"
+
+msgid "The stack"
+msgstr "Les briques techniques"
+
+msgid "The website"
+msgstr "Le site internet"
+
+msgid "This website is provided by <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> for the <a href=\"https://transformersforgedtofight.com/\">Transformers: Forged to Fight</a> gamer community"
+msgstr "Ce site internet est proposé par <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> pour la communaté des joueurs de <a href=\"https://transformersforgedtofight.com/\">Transformers : Forgés d'Acier</a>"
+
+msgid "Upcoming bot"
+msgstr "Bot en vedette"
+
+msgid "Use of cookies"
+msgstr "Utilisation des cookies"
+
+msgid "Username"
+msgstr "Utilisateur"
+
+msgid "Username or email"
+msgstr "Utilisateur ou e-mail"
+
+msgid "Warriors"
+msgstr "Guerriers"
+
+msgid "Welcome Transformers: Forged to Fight gamers!"
+msgstr "Bienvenue joueur de Transformers : Forgés d'Acier"

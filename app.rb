@@ -10,10 +10,11 @@ require_relative 'lib/rack/session/nobrainer'
 
 WebApp = Syro.new(BasicDeck) do
   unless @available_locales
-    FastGettext.available_locales = (@available_locales ||= %w[en fr])
+    @available_locales = %w[en fr]
+    FastGettext.available_locales = @available_locales
   end
   unless @text_domain
-    @text_domain = 'forgedtofight'
+    @text_domain = 'forgedtofightio'
     FastGettext.text_domain = @text_domain
   end
 

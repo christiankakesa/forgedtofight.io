@@ -1,0 +1,222 @@
+# English translations for forgedtofightio package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the forgedtofightio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: forgedtofightio 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2017-08-03 03:09+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+
+msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
+msgstr ""
+
+msgid "Arena"
+msgstr ""
+
+msgid "August 1th, 2017"
+msgstr ""
+
+msgid "Bot: Grimlock"
+msgstr ""
+
+msgid "Bot: Hot Rod"
+msgstr ""
+
+msgid "Botodex"
+msgstr ""
+
+msgid "Brawlers"
+msgstr ""
+
+msgid "Calendar's bot"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Demolitions"
+msgstr ""
+
+msgid "Dynamic and efficient programming language"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Firstname"
+msgstr ""
+
+msgid "ForgedToFight.IO &mdash; Account Settings"
+msgstr ""
+
+msgid "ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game"
+msgstr ""
+
+msgid "Forgot your password?"
+msgstr ""
+
+msgid "HTML, CSS and JS web framework"
+msgstr ""
+
+msgid "JSON document based database"
+msgstr ""
+
+msgid "July 27th, 2017 AT 10AM PDT"
+msgstr ""
+
+msgid "Keep me signed in"
+msgstr ""
+
+msgid "Lastname"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Menu|About"
+msgstr ""
+
+msgid "Menu|Account Management"
+msgstr ""
+
+msgid "Menu|Account Settings"
+msgstr ""
+
+msgid "Menu|Botodex"
+msgstr ""
+
+msgid "Menu|Home"
+msgstr ""
+
+msgid "Menu|Log In"
+msgstr ""
+
+msgid "Menu|Logout"
+msgstr ""
+
+msgid "Menu|Sign Up"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password confirmation"
+msgstr ""
+
+msgid "Password|Reset"
+msgstr ""
+
+msgid "Powered by"
+msgstr ""
+
+msgid "Powerful and simple router for web applications"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "Reset password"
+msgstr ""
+
+msgid "Scouts"
+msgstr ""
+
+msgid "Sidebar|About"
+msgstr ""
+
+msgid "Sidebar|Botodex"
+msgstr ""
+
+msgid "Sidebar|Features"
+msgstr ""
+
+msgid "Sidebar|Home"
+msgstr ""
+
+msgid "Sidebar|Info"
+msgstr ""
+
+msgid "Sidebar|Privacy"
+msgstr ""
+
+msgid "Sidebar|Support"
+msgstr ""
+
+msgid "Sidebar|Terms of service"
+msgstr ""
+
+msgid "Sidebar|Use of cookies"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Tacticians"
+msgstr ""
+
+msgid "Techs"
+msgstr ""
+
+msgid "Terms of service"
+msgstr ""
+
+msgid "The developer"
+msgstr ""
+
+msgid "The stack"
+msgstr ""
+
+msgid "The website"
+msgstr ""
+
+msgid "This website is provided by <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> for the <a href=\"https://transformersforgedtofight.com/\">Transformers: Forged to Fight</a> gamer community"
+msgstr ""
+
+msgid "Upcoming bot"
+msgstr ""
+
+msgid "Use of cookies"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Username or email"
+msgstr ""
+
+msgid "Warriors"
+msgstr ""
+
+msgid "Welcome Transformers: Forged to Fight gamers!"
+msgstr ""

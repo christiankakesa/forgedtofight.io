@@ -3,7 +3,7 @@
 <h2>{{ _('The website') }}</h2>
 <div class="container row">
   <p>
-    {{ _('This website is provided by <a href="https://twitter.com/fenicks79">@fenicks79</a> for the <a href="https://transformersforgedtofight.com/">Transformers: Forged to Fight</a> gamer community.') }}.
+    {{ _('This website is provided by <a href="https://twitter.com/fenicks79">@fenicks79</a> for the <a href="https://transformersforgedtofight.com/">Transformers: Forged to Fight</a> gamer community') }}.
   </p>
 </div>
 
