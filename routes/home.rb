@@ -7,9 +7,9 @@ Home = Syro.new(BasicDeck) do
     end
   end
 
-  on 'event' do
+  on 'events' do
     get do
-      render 'views/event.mote'
+      render 'views/events.mote'
     end
   end
 

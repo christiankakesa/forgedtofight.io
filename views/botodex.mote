@@ -16,7 +16,7 @@
   <div class="card card-{{ bot.bot_class.name.downcase }}">
     <div class="card-block">
       <div class="d-flex justify-content-end">
-        <span class="align-self-end badge badge-{{ bot.bot_class.name.downcase }}">{{ bot.bot_class.name.downcase }}</span>
+        <span class="align-self-end badge badge-{{ bot.bot_class.name.downcase }}">{{ _(bot.bot_class.name.downcase) }}</span>
         <img src="assets/bots/{{ bot.icon_link }}" alt="{{ bot.name }}" class="img-thumbnail">
       </div>
       <hr class="m-t-0">

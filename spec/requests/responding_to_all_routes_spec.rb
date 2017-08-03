@@ -36,13 +36,6 @@ describe '/about', type: :request do
   end
 end
 
-describe '/event', type: :request do
-  it 'GET /event' do
-    get '/event'
-    expect(last_response).to be_ok
-  end
-end
-
 describe '/botodex', type: :request do
   it 'GET /botodex' do
     get '/botodex'
@@ -58,6 +51,13 @@ describe '/cookies or /use-of-cookies', type: :request do
 
   it 'GET /use-of-cookies' do
     get '/use-of-cookies'
+    expect(last_response).to be_ok
+  end
+end
+
+describe '/events', type: :request do
+  it 'GET /events' do
+    get '/events'
     expect(last_response).to be_ok
   end
 end
