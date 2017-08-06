@@ -22,94 +22,46 @@
       <hr class="m-t-0">
       <div class="h4 text-default">{{ bot.name }} <small>({{ bot.bot_faction.name.downcase }})</small></div>
       <p class="card-text">{{ bot.description }}</p>
-      <div class="container">
-        <div class="row">
-            <div class="col">
-              &nbsp;
-            </div>
-            <div class="col text-right ">
-              <small class="text-primary text-uppercase font-weight-bold">★</small>
-            </div>
-            <div class="col text-right">
-              <small class="text-primary text-uppercase font-weight-bold">★★</small>
-            </div>
-            <div class="col text-right">
-              <small class="text-primary text-uppercase font-weight-bold">★★★</small>
-            </div>
-            <div class="col text-right">
-              <small class="text-primary text-uppercase font-weight-bold">★★★★</small>
-            </div>
-        </div>
-        <hr class="mt-2">
-        <div class="row">
-          <div class="col h6 text-muted text-left mb-2">
-            {{ _('PI') }}
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.power_index[:stars_1] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.power_index[:stars_2] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.power_index[:stars_3] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="h6 mb-0 text-right">{{ bot.power_index[:stars_3] || '-' }}</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col h6 text-muted text-left mb-2">
-            {{ _('Health') }}
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.health[:stars_1] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.health[:stars_2] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.health[:stars_3] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="h6 mb-0 text-right">{{ bot.health[:stars_3] || '-' }}</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col h6 text-muted text-left mb-2">
-            {{ _('Attack') }}
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.attack[:stars_1] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.attack[:stars_2] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.attack[:stars_3] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="h6 mb-0 text-right">{{ bot.attack[:stars_3] || '-' }}</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col h6 text-muted text-left mb-2">
-            {{ _('Forge') }}
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.forge[:stars_1] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.forge[:stars_2] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="mb-0 text-right">{{ bot.forge[:stars_3] || '-' }}</div>
-          </div>
-          <div class="col">
-            <div class="h6 mb-0 text-right">{{ bot.forge[:stars_3] || '-' }}</div>
-          </div>
-        </div>
-      </div>
+      <table class="table table-sm table-responsive table-hover">
+        <thead>
+          <tr>
+            <th colspan="2" class="text-primary text-uppercase font-weight-bold text-right"><small>★</small></th>
+            <th class="text-primary text-uppercase text-right"><small>★★</small></th>
+            <th class="text-primary text-uppercase text-right"><small>★★★</small></th>
+            <th class="text-primary text-uppercase text-right">★★★★</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><abbr title="{{ _('Power Index') }}">{{ _('PI') }}</abbr></th>
+            <td class="text-right">{{ bot.power_index[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ bot.power_index[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ bot.power_index[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.power_index[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Health') }}</span></th>
+            <td class="text-right">{{ bot.health[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ bot.health[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ bot.health[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.health[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Attack') }}</span></th>
+            <td class="text-right">{{ bot.attack[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ bot.attack[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ bot.attack[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.attack[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Forge') }}</span></th>
+            <td class="text-right">{{ bot.forge[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ bot.forge[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ bot.forge[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.forge[:stars_4] || '-' }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   % end
