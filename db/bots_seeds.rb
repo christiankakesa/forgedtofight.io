@@ -40,10 +40,10 @@
     icon_link: 'icon-bonecrusher.jpg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
-    power_index: { stars_1: 92, stars_2: 115, stars_3: nil, stars_4: nil },
-    health: { stars_1: 354, stars_2: 460, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 34, stars_2: 41, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: nil, stars_3: nil, stars_4: nil }
+    power_index: { stars_1: 92, stars_2: 115, stars_3: 1204, stars_4: nil },
+    health: { stars_1: 354, stars_2: 460, stars_3: 4496, stars_4: nil },
+    attack: { stars_1: 34, stars_2: 41, stars_3: 343, stars_4: nil },
+    forge: { stars_1: 0, stars_2: 0, stars_3: 30, stars_4: nil }
   },
   {
     name: 'Bumblebee',
@@ -106,10 +106,10 @@
     icon_link: 'icon-ironhide.jpg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
-    power_index: { stars_1: 96, stars_2: 557, stars_3: nil, stars_4: nil },
-    health: { stars_1: 368, stars_2: 1837, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 33, stars_2: 147, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: nil, stars_4: nil }
+    power_index: { stars_1: 96, stars_2: 557, stars_3: 1152, stars_4: nil },
+    health: { stars_1: 368, stars_2: 1837, stars_3: 4581, stars_4: nil },
+    attack: { stars_1: 33, stars_2: 147, stars_3: 314, stars_4: nil },
+    forge: { stars_1: 0, stars_2: 100, stars_3: 14, stars_4: nil }
   },
   {
     name: 'Megatron',
@@ -194,10 +194,10 @@
     icon_link: 'icon-rachet.jpg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
-    power_index: { stars_1: nil, stars_2: 551, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1592, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 137, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    power_index: { stars_1: nil, stars_2: 551, stars_3: 1140, stars_4: nil },
+    health: { stars_1: nil, stars_2: 1592, stars_3: 3971, stars_4: nil },
+    attack: { stars_1: nil, stars_2: 137, stars_3: 269, stars_4: nil },
+    forge: { stars_1: nil, stars_2: 100, stars_3: 14, stars_4: nil }
   },
   {
     name: 'Rhinox',
