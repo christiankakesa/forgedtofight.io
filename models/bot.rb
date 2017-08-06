@@ -14,6 +14,7 @@ class Bot
   field :power_index, type: Hash, default: DEFAULT_PI_HEALTH_ATTACK
   field :health, type: Hash, default: DEFAULT_PI_HEALTH_ATTACK
   field :attack, type: Hash, default: DEFAULT_PI_HEALTH_ATTACK
+  field :forge, type: Hash, default: DEFAULT_PI_HEALTH_ATTACK
   belongs_to :bot_class, required: true, index: true
   belongs_to :bot_faction, required: true, index: true
 end
