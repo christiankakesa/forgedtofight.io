@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-08-03 03:30+0200\n"
+"PO-Revision-Date: 2017-08-07 01:04+0200\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 "Last-Translator: \n"
 "X-Generator: Poedit 1.8.11\n"
+"POT-Creation-Date: \n"
 
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
@@ -31,6 +32,9 @@ msgstr "Tous"
 
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
 msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
+
+msgid "Attack"
+msgstr "Attaque"
 
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
@@ -71,6 +75,9 @@ msgstr "Évènements"
 msgid "Firstname"
 msgstr "Prénom"
 
+msgid "Forge"
+msgstr "Forge"
+
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
 
@@ -79,6 +86,9 @@ msgstr "ForgedToFight.IO est le site internet non officiel de la communauté des
 
 msgid "Forgot your password?"
 msgstr "Mot de passe oublié ?"
+
+msgid "Gaming|Health"
+msgstr "Point de vie"
 
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
@@ -131,6 +141,9 @@ msgstr "S'inscrire"
 msgid "Name"
 msgstr "Nom"
 
+msgid "PI"
+msgstr "IP"
+
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -139,6 +152,9 @@ msgstr "Mot de passe confirmé"
 
 msgid "Password|Reset"
 msgstr "Réinitialiser"
+
+msgid "Power Index"
+msgstr "Indice de puissance"
 
 msgid "Powered by"
 msgstr "Créer par"

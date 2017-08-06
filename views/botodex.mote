@@ -40,7 +40,7 @@
             <td class="text-right font-weight-bold">{{ bot.power_index[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Health') }}</span></th>
+            <th scope="row">{{ s_('Gaming|Health') }}</span></th>
             <td class="text-right">{{ bot.health[:stars_1] || '-' }}</td>
             <td class="text-right">{{ bot.health[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.health[:stars_3] || '-' }}</td>

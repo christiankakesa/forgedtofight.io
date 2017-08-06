@@ -32,6 +32,9 @@ msgstr ""
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
 msgstr ""
 
+msgid "Attack"
+msgstr ""
+
 msgid "August 1th, 2017"
 msgstr ""
 
@@ -71,6 +74,9 @@ msgstr ""
 msgid "Firstname"
 msgstr ""
 
+msgid "Forge"
+msgstr ""
+
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
@@ -78,6 +84,9 @@ msgid "ForgedToFight.IO is an unofficial resources website for the Transformers:
 msgstr ""
 
 msgid "Forgot your password?"
+msgstr ""
+
+msgid "Gaming|Health"
 msgstr ""
 
 msgid "HTML, CSS and JS web framework"
@@ -131,6 +140,9 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+msgid "PI"
+msgstr ""
+
 msgid "Password"
 msgstr ""
 
@@ -138,6 +150,9 @@ msgid "Password confirmation"
 msgstr ""
 
 msgid "Password|Reset"
+msgstr ""
+
+msgid "Power Index"
 msgstr ""
 
 msgid "Powered by"
