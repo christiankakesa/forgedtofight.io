@@ -16,7 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 "Last-Translator: \n"
 "X-Generator: Poedit 1.8.11\n"
-"POT-Creation-Date: \n"
 
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"

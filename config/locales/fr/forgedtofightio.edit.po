@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-08-07 01:01+0200\n"
+"PO-Revision-Date: 2017-08-07 01:04+0200\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,6 @@ msgstr "ForgedToFight.IO est le site internet non officiel de la communauté des
 msgid "Forgot your password?"
 msgstr "Mot de passe oublié ?"
 
-#, fuzzy
 msgid "Gaming|Health"
 msgstr "Point de vie"
 
@@ -249,6 +248,3 @@ msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
-
-#~ msgid "Health"
-#~ msgstr "Point de vie"
