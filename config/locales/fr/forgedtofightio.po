@@ -74,9 +74,6 @@ msgstr "Évènements"
 msgid "Firstname"
 msgstr "Prénom"
 
-msgid "Forge"
-msgstr "Forge"
-
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
 
@@ -205,6 +202,12 @@ msgstr "Se connecter"
 
 msgid "Sign up"
 msgstr "S'inscrire"
+
+msgid "Signature ability"
+msgstr "Compétence personnelle"
+
+msgid "SignatureAbility|Signature"
+msgstr "Compétence"
 
 msgid "Support"
 msgstr "Support"

@@ -40,25 +40,25 @@
             <td class="text-right font-weight-bold">{{ bot.power_index[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ s_('Gaming|Health') }}</span></th>
+            <th scope="row">{{ s_('Gaming|Health') }}</th>
             <td class="text-right">{{ bot.health[:stars_1] || '-' }}</td>
             <td class="text-right">{{ bot.health[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.health[:stars_3] || '-' }}</td>
             <td class="text-right font-weight-bold">{{ bot.health[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Attack') }}</span></th>
+            <th scope="row">{{ _('Attack') }}</th>
             <td class="text-right">{{ bot.attack[:stars_1] || '-' }}</td>
             <td class="text-right">{{ bot.attack[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.attack[:stars_3] || '-' }}</td>
             <td class="text-right font-weight-bold">{{ bot.attack[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Forge') }}</span></th>
-            <td class="text-right">{{ bot.forge[:stars_1] || '-' }}</td>
-            <td class="text-right">{{ bot.forge[:stars_2] || '-' }}</td>
-            <td class="text-right">{{ bot.forge[:stars_3] || '-' }}</td>
-            <td class="text-right font-weight-bold">{{ bot.forge[:stars_4] || '-' }}</td>
+            <th scope="row"><abbr title="{{ _('Signature ability') }}">{{ s_('SignatureAbility|Signature') }}</abbr></th>
+            <td class="text-right">{{ bot.signature_ability[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ bot.signature_ability[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ bot.signature_ability[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.signature_ability[:stars_4] || '-' }}</td>
           </tr>
         </tbody>
       </table>

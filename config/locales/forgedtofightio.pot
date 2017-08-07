@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 01:03+0200\n"
-"PO-Revision-Date: 2017-08-07 01:03+0200\n"
+"POT-Creation-Date: 2017-08-07 12:31+0200\n"
+"PO-Revision-Date: 2017-08-07 12:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -73,9 +73,6 @@ msgid "Events"
 msgstr ""
 
 msgid "Firstname"
-msgstr ""
-
-msgid "Forge"
 msgstr ""
 
 msgid "ForgedToFight.IO &mdash; Account Settings"
@@ -205,6 +202,12 @@ msgid "Sign in"
 msgstr ""
 
 msgid "Sign up"
+msgstr ""
+
+msgid "Signature ability"
+msgstr ""
+
+msgid "SignatureAbility|Signature"
 msgstr ""
 
 msgid "Support"

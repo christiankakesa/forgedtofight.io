@@ -10,7 +10,7 @@
     power_index: { stars_1: nil, stars_2: 546, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1557, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 173, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Barricade',
@@ -21,7 +21,7 @@
     power_index: { stars_1: nil, stars_2: 552, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1505, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 176, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Bludgeon',
@@ -32,7 +32,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Bonecrusher',
@@ -43,7 +43,7 @@
     power_index: { stars_1: 92, stars_2: 115, stars_3: 1204, stars_4: nil },
     health: { stars_1: 354, stars_2: 460, stars_3: 4496, stars_4: nil },
     attack: { stars_1: 34, stars_2: 41, stars_3: 343, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 0, stars_3: 30, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 20, stars_4: nil }
   },
   {
     name: 'Bumblebee',
@@ -54,7 +54,7 @@
     power_index: { stars_1: nil, stars_2: 538, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1819, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 150, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Drift',
@@ -65,7 +65,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Grimlock',
@@ -76,7 +76,7 @@
     power_index: { stars_1: nil, stars_2: 441, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 2204, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 162, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Grindor',
@@ -87,7 +87,7 @@
     power_index: { stars_1: nil, stars_2: 530, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1959, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 171, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Hot Rod',
@@ -98,7 +98,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Ironhide',
@@ -109,7 +109,7 @@
     power_index: { stars_1: 96, stars_2: 557, stars_3: 1152, stars_4: nil },
     health: { stars_1: 368, stars_2: 1837, stars_3: 4581, stars_4: nil },
     attack: { stars_1: 33, stars_2: 147, stars_3: 314, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: 14, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 5, stars_4: nil }
   },
   {
     name: 'Megatron',
@@ -120,7 +120,7 @@
     power_index: { stars_1: nil, stars_2: 513, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1924, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 146, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 35, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 35, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Mirage',
@@ -131,7 +131,7 @@
     power_index: { stars_1: nil, stars_2: 535, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1592, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 141, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Mixmaster',
@@ -142,7 +142,7 @@
     power_index: { stars_1: nil, stars_2: 522, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1837, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 117, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Motormaster',
@@ -153,7 +153,7 @@
     power_index: { stars_1: 91, stars_2: 532, stars_3: nil, stars_4: nil },
     health: { stars_1: 392, stars_2: 1959, stars_3: nil, stars_4: nil },
     attack: { stars_1: 38, stars_2: 171, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Optiminus Prime',
@@ -164,7 +164,7 @@
     power_index: { stars_1: 97, stars_2: 537, stars_3: nil, stars_4: nil },
     health: { stars_1: 389, stars_2: 1819, stars_3: nil, stars_4: nil },
     attack: { stars_1: 36, stars_2: 150, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Optiminus Prime MV1',
@@ -175,7 +175,7 @@
     power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1959, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 171, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Prowl',
@@ -186,7 +186,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Rachet',
@@ -197,7 +197,7 @@
     power_index: { stars_1: nil, stars_2: 551, stars_3: 1140, stars_4: nil },
     health: { stars_1: nil, stars_2: 1592, stars_3: 3971, stars_4: nil },
     attack: { stars_1: nil, stars_2: 137, stars_3: 269, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: 14, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 5, stars_4: nil }
   },
   {
     name: 'Rhinox',
@@ -208,7 +208,7 @@
     power_index: { stars_1: 93, stars_2: 549, stars_3: nil, stars_4: nil },
     health: { stars_1: 347, stars_2: 1732, stars_3: nil, stars_4: nil },
     attack: { stars_1: 30, stars_2: 135, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Shockwave',
@@ -219,7 +219,7 @@
     power_index: { stars_1: nil, stars_2: 460, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1767, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 129, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Sideswipe',
@@ -230,7 +230,7 @@
     power_index: { stars_1: 98, stars_2: 568, stars_3: nil, stars_4: nil },
     health: { stars_1: 301, stars_2: 1505, stars_3: nil, stars_4: nil },
     attack: { stars_1: 39, stars_2: 176, stars_3: nil, stars_4: nil },
-    forge: { stars_1: 0, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Soundwave',
@@ -241,7 +241,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Starscream',
@@ -252,7 +252,7 @@
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Ultra Magnus',
@@ -263,7 +263,7 @@
     power_index: { stars_1: nil, stars_2: 442, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1819, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 150, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Waspinator',
@@ -274,7 +274,7 @@
     power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1662, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 144, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 50, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 50, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Winblade',
@@ -285,7 +285,7 @@
     power_index: { stars_1: nil, stars_2: 556, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1505, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 169, stars_3: nil, stars_4: nil },
-    forge: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   }
 ].each do |bot|
   Bot.upsert! bot

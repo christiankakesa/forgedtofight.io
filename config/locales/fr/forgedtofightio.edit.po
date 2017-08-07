@@ -16,7 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 "Last-Translator: \n"
 "X-Generator: Poedit 1.8.11\n"
-"POT-Creation-Date: 2017-08-07 01:03+0200\n"
 
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
@@ -74,9 +73,6 @@ msgstr "Évènements"
 
 msgid "Firstname"
 msgstr "Prénom"
-
-msgid "Forge"
-msgstr "Forge"
 
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
@@ -206,6 +202,12 @@ msgstr "Se connecter"
 
 msgid "Sign up"
 msgstr "S'inscrire"
+
+msgid "Signature ability"
+msgstr ""
+
+msgid "SignatureAbility|Signature"
+msgstr "Compétence"
 
 msgid "Support"
 msgstr "Support"

@@ -74,9 +74,6 @@ msgstr ""
 msgid "Firstname"
 msgstr ""
 
-msgid "Forge"
-msgstr ""
-
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
@@ -204,6 +201,12 @@ msgid "Sign in"
 msgstr ""
 
 msgid "Sign up"
+msgstr ""
+
+msgid "Signature ability"
+msgstr ""
+
+msgid "SignatureAbility|Signature"
 msgstr ""
 
 msgid "Support"
