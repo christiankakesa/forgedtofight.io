@@ -28,7 +28,7 @@
         <p class="h6 text-info text-uppercase font-weight-bold">{{ _('August 1th, 2017') }}</p>
         <div class="h2 mb-0 text-primary text-center">Hot Rod</div>
         <div class="mt-1 mb-0 text-center">
-          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/calendars-bot/calendars-bot_2017-08_hotrod.png" alt="{{ _('Bot: Hot Rod') }}">
+          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/calendars-bot/calendars-bot_2017-08_hot-rod.png" alt="{{ _('Bot: Hot Rod') }}">
         </div>
       </div>
     </div>
