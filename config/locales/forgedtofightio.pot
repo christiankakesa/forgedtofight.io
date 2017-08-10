@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 12:31+0200\n"
-"PO-Revision-Date: 2017-08-07 12:31+0200\n"
+"POT-Creation-Date: 2017-08-10 03:15+0200\n"
+"PO-Revision-Date: 2017-08-10 03:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -34,6 +34,9 @@ msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">A
 msgstr ""
 
 msgid "Attack"
+msgstr ""
+
+msgid "August 10th at 10AM PDT"
 msgstr ""
 
 msgid "August 1th, 2017"
@@ -75,6 +78,9 @@ msgstr ""
 msgid "Firstname"
 msgstr ""
 
+msgid "Forge"
+msgstr ""
+
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
@@ -91,9 +97,6 @@ msgid "HTML, CSS and JS web framework"
 msgstr ""
 
 msgid "JSON document based database"
-msgstr ""
-
-msgid "July 27th, 2017 AT 10AM PDT"
 msgstr ""
 
 msgid "Keep me signed in"

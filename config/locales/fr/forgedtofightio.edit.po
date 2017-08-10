@@ -35,6 +35,9 @@ msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos
 msgid "Attack"
 msgstr "Attaque"
 
+msgid "August 10th at 10AM PDT"
+msgstr ""
+
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
 
@@ -74,6 +77,9 @@ msgstr "Évènements"
 msgid "Firstname"
 msgstr "Prénom"
 
+msgid "Forge"
+msgstr ""
+
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
 
@@ -91,9 +97,6 @@ msgstr "Bibliothèque HTML, CSS et JS"
 
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
-
-msgid "July 27th, 2017 AT 10AM PDT"
-msgstr "27 juillet 2017 à 10h00 pour San Francisco - 19h00 à Paris"
 
 msgid "Keep me signed in"
 msgstr "Rester connecté"
@@ -204,7 +207,7 @@ msgid "Sign up"
 msgstr "S'inscrire"
 
 msgid "Signature ability"
-msgstr ""
+msgstr "Compétence personnelle"
 
 msgid "SignatureAbility|Signature"
 msgstr "Compétence"
@@ -250,3 +253,6 @@ msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
+
+#~ msgid "July 27th, 2017 AT 10AM PDT"
+#~ msgstr "27 juillet 2017 à 10h00 pour San Francisco - 19h00 à Paris"

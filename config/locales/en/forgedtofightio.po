@@ -35,6 +35,9 @@ msgstr ""
 msgid "Attack"
 msgstr ""
 
+msgid "August 10th at 10AM PDT"
+msgstr ""
+
 msgid "August 1th, 2017"
 msgstr ""
 
@@ -74,6 +77,9 @@ msgstr ""
 msgid "Firstname"
 msgstr ""
 
+msgid "Forge"
+msgstr ""
+
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
@@ -90,9 +96,6 @@ msgid "HTML, CSS and JS web framework"
 msgstr ""
 
 msgid "JSON document based database"
-msgstr ""
-
-msgid "July 27th, 2017 AT 10AM PDT"
 msgstr ""
 
 msgid "Keep me signed in"
