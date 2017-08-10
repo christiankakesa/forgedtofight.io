@@ -40,9 +40,9 @@
     icon_link: 'icon-bonecrusher.jpg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
-    power_index: { stars_1: 92, stars_2: 115, stars_3: 1204, stars_4: nil },
-    health: { stars_1: 354, stars_2: 460, stars_3: 4496, stars_4: nil },
-    attack: { stars_1: 34, stars_2: 41, stars_3: 343, stars_4: nil },
+    power_index: { stars_1: 247, stars_2: 441, stars_3: 1204, stars_4: nil },
+    health: { stars_1: 970, stars_2: 1767, stars_3: 4496, stars_4: nil },
+    attack: { stars_1: 93, stars_2: 155, stars_3: 343, stars_4: nil },
     signature_ability: { stars_1: nil, stars_2: 0, stars_3: 20, stars_4: nil }
   },
   {
@@ -63,9 +63,9 @@
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1732, stars_3: 4253, stars_4: 11_053 },
+    attack: { stars_1: nil, stars_2: 152, stars_3: 325, stars_4: 843 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Grimlock',
@@ -74,9 +74,9 @@
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 441, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 2204, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 162, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 2204, stars_3: 5412, stars_4: 14_067 },
+    attack: { stars_1: nil, stars_2: 162, stars_3: 344, stars_4: 893 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Grindor',
@@ -96,9 +96,9 @@
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1697, stars_3: 4167, stars_4: 10_829 },
+    attack: { stars_1: nil, stars_2: 158, stars_3: 337, stars_4: 876 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Ironhide',
@@ -106,9 +106,9 @@
     icon_link: 'icon-ironhide.jpg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
-    power_index: { stars_1: 96, stars_2: 557, stars_3: 1152, stars_4: nil },
-    health: { stars_1: 368, stars_2: 1837, stars_3: 4581, stars_4: nil },
-    attack: { stars_1: 33, stars_2: 147, stars_3: 314, stars_4: nil },
+    power_index: { stars_1: 260, stars_2: 557, stars_3: 1152, stars_4: nil },
+    health: { stars_1: 1009, stars_2: 1837, stars_3: 4581, stars_4: nil },
+    attack: { stars_1: 89, stars_2: 147, stars_3: 314, stars_4: nil },
     signature_ability: { stars_1: nil, stars_2: 100, stars_3: 5, stars_4: nil }
   },
   {
@@ -118,9 +118,9 @@
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 513, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1924, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 146, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 35, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1924, stars_3: 4725, stars_4: 12_281 },
+    attack: { stars_1: nil, stars_2: 146, stars_3: 306, stars_4: 794 },
+    signature_ability: { stars_1: nil, stars_2: 35, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Mirage',
@@ -139,10 +139,10 @@
     icon_link: 'icon-mixmaster.jpg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
-    power_index: { stars_1: nil, stars_2: 522, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1837, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 117, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    power_index: { stars_1: nil, stars_2: nil, stars_3: 1076, stars_4: nil },
+    health: { stars_1: nil, stars_2: 1837, stars_3: 4510, stars_4: 8966 },
+    attack: { stars_1: nil, stars_2: 114, stars_3: 245, stars_4: 487 },
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Motormaster',
@@ -150,10 +150,10 @@
     icon_link: 'icon-motormaster.jpg',
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
-    power_index: { stars_1: 91, stars_2: 532, stars_3: nil, stars_4: nil },
-    health: { stars_1: 392, stars_2: 1959, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 38, stars_2: 171, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    power_index: { stars_1: 249, stars_2: 532, stars_3: 1133, stars_4: nil },
+    health: { stars_1: 1076, stars_2: 1959, stars_3: 4811, stars_4: nil },
+    attack: { stars_1: 103, stars_2: 171, stars_3: 363, stars_4: nil },
+    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 0, stars_4: nil }
   },
   {
     name: 'Optiminus Prime',
@@ -161,9 +161,9 @@
     icon_link: 'icon-optimus_prime.jpg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
-    power_index: { stars_1: 97, stars_2: 537, stars_3: nil, stars_4: nil },
-    health: { stars_1: 389, stars_2: 1819, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 36, stars_2: 150, stars_3: nil, stars_4: nil },
+    power_index: { stars_1: 267, stars_2: 537, stars_3: nil, stars_4: nil },
+    health: { stars_1: 1066, stars_2: 1819, stars_3: nil, stars_4: nil },
+    attack: { stars_1: 97, stars_2: 150, stars_3: nil, stars_4: nil },
     signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
@@ -184,9 +184,9 @@
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1714, stars_3: 4210, stars_4: 10_941 },
+    attack: { stars_1: nil, stars_2: 152, stars_3: 322, stars_4: 835 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Rachet',
@@ -205,9 +205,9 @@
     icon_link: 'icon-rhinox.jpg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Maximals').first.id,
-    power_index: { stars_1: 93, stars_2: 549, stars_3: nil, stars_4: nil },
-    health: { stars_1: 347, stars_2: 1732, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 30, stars_2: 135, stars_3: nil, stars_4: nil },
+    power_index: { stars_1: 256, stars_2: 549, stars_3: nil, stars_4: nil },
+    health: { stars_1: 951, stars_2: 1732, stars_3: nil, stars_4: nil },
+    attack: { stars_1: 81, stars_2: 135, stars_3: nil, stars_4: nil },
     signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
@@ -217,9 +217,9 @@
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 460, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1767, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 129, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1767, stars_3: 4339, stars_4: 11_276 },
+    attack: { stars_1: nil, stars_2: 129, stars_3: 271, stars_4: 703 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Sideswipe',
@@ -227,9 +227,9 @@
     icon_link: 'icon-sideswipe.jpg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
-    power_index: { stars_1: 98, stars_2: 568, stars_3: nil, stars_4: nil },
-    health: { stars_1: 301, stars_2: 1505, stars_3: nil, stars_4: nil },
-    attack: { stars_1: 39, stars_2: 176, stars_3: nil, stars_4: nil },
+    power_index: { stars_1: 271, stars_2: 568, stars_3: nil, stars_4: nil },
+    health: { stars_1: 826, stars_2: 1505, stars_3: nil, stars_4: nil },
+    attack: { stars_1: 106, stars_2: 176, stars_3: nil, stars_4: nil },
     signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
   },
   {
@@ -239,9 +239,9 @@
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1802, stars_3: 4425, stars_4: 11_499 },
+    attack: { stars_1: nil, stars_2: 141, stars_3: 296, stars_4: 769 },
+    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Starscream',
@@ -272,9 +272,9 @@
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Predacons').first.id,
     power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1662, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 144, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 50, stars_3: nil, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1662, stars_3: 4081, stars_4: 10_606 },
+    attack: { stars_1: nil, stars_2: 144, stars_3: 302, stars_4: 785 },
+    signature_ability: { stars_1: nil, stars_2: 50, stars_3: 0, stars_4: 0 }
   },
   {
     name: 'Winblade',
