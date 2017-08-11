@@ -36,7 +36,7 @@ msgid "Attack"
 msgstr "Attaque"
 
 msgid "August 10th at 10AM PDT"
-msgstr ""
+msgstr "10 août 2017 à 10h00 pour San Francisco - 19h00 à Paris"
 
 msgid "August 1th, 2017"
 msgstr "1er août 2017"
@@ -54,7 +54,7 @@ msgid "Brawlers"
 msgstr "Bagarreurs"
 
 msgid "Calendar's bot"
-msgstr "Bot du mois"
+msgstr "Bot du calendrier"
 
 msgid "Close"
 msgstr "Fermer"
@@ -78,7 +78,7 @@ msgid "Firstname"
 msgstr "Prénom"
 
 msgid "Forge"
-msgstr ""
+msgstr "Forge"
 
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
@@ -253,6 +253,3 @@ msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
-
-#~ msgid "July 27th, 2017 AT 10AM PDT"
-#~ msgstr "27 juillet 2017 à 10h00 pour San Francisco - 19h00 à Paris"

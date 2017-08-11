@@ -54,7 +54,7 @@ msgid "Brawlers"
 msgstr "Bagarreurs"
 
 msgid "Calendar's bot"
-msgstr "Bot du mois"
+msgstr "Bot du calendrier"
 
 msgid "Close"
 msgstr "Fermer"
