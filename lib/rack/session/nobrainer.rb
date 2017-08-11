@@ -26,7 +26,7 @@ module Rack
       def initialize(app, options = {})
         super
         @mutex = Mutex.new
-        @expire_after = options.delete(:expire_after) { 24 * 60 * 60 }
+        @expire_after = options.fetch(:expire_after, 24 * 60 * 60)
       end
 
       def generate_sid
