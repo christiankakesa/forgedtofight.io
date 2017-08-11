@@ -21,7 +21,7 @@
       </div>
       <hr class="m-t-0">
       <div class="h4 text-default">{{ bot.name }} <small>({{ bot.bot_faction.name.downcase }})</small></div>
-      <p class="card-text">{{ bot.description }}</p>
+      <!-- <p class="card-text">{{ bot.description }}</p> -->
       <table class="table table-sm table-responsive table-hover">
         <thead>
           <tr>
@@ -54,12 +54,33 @@
             <td class="text-right font-weight-bold">{{ bot.attack[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row"><abbr title="{{ _('Signature ability') }}">{{ s_('SignatureAbility|Signature') }}</abbr></th>
+            <th scope="row">
+              <abbr title="{{ _('Signature ability') }}">{{ s_('SignatureAbility|Signature') }}</abbr>
+            </th>
             <td class="text-right">{{ bot.signature_ability[:stars_1] || '-' }}</td>
             <td class="text-right">{{ bot.signature_ability[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.signature_ability[:stars_3] || '-' }}</td>
-            <td class="text-right font-weight-bold">{{ bot.signature_ability[:stars_4] || '-' }}</td>
+            <td class="text-right font-weight-bold">
+              {{ bot.signature_ability[:stars_4] || '-' }}
+            </td>
           </tr>
+          % unless 'production'.eql?(ENV['RACK_ENV'])
+          <tr>
+            <th scope="row">
+              <span>{{ _('Forge') }}</span>
+              <div class="btn-group btn-group-sm float-right">
+                <button type="button" class="btn btn-default font-weight-bold" data-forge-ctrl data-forge-ctrl-less data-forge-target="{{ bot.id }}"><span class="fa fa-minus-square"></span></button>
+                <button type="button" class="btn btn-primary font-weight-bold" data-forge-ctrl data-forge-ctrl-more data-forge-target="{{ bot.id }}"><span class="fa fa-plus-square"></span></button>
+              </div>
+            </th>
+            <td class="text-right">-</td>
+            <td class="text-right font-weight-bold align-middle" colspan="3">
+              <div class="progress progress-lg">
+                <div class="progress-bar bg-info" role="progressbar" data-forge-id="{{ bot.id }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+              </div>
+            </td>
+          </tr>
+          % end
         </tbody>
       </table>
     </div>
