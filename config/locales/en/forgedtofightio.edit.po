@@ -35,16 +35,7 @@ msgstr ""
 msgid "Attack"
 msgstr ""
 
-msgid "August 10th at 10AM PDT"
-msgstr ""
-
-msgid "August 1th, 2017"
-msgstr ""
-
-msgid "Bot: Grimlock"
-msgstr ""
-
-msgid "Bot: Hot Rod"
+msgid "Bot: %{bot}"
 msgstr ""
 
 msgid "Botodex"
@@ -60,6 +51,12 @@ msgid "Close"
 msgstr ""
 
 msgid "Coming soon"
+msgstr ""
+
+msgid "DateFormat|%B %Y"
+msgstr ""
+
+msgid "DateFormat|%B %dth, %Y at %H:%M %p"
 msgstr ""
 
 msgid "Demolitions"

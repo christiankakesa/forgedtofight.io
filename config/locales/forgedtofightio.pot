@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-11 02:26+0200\n"
-"PO-Revision-Date: 2017-08-11 02:26+0200\n"
+"POT-Creation-Date: 2017-08-11 18:48+0200\n"
+"PO-Revision-Date: 2017-08-11 18:48+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -36,16 +36,7 @@ msgstr ""
 msgid "Attack"
 msgstr ""
 
-msgid "August 10th at 10AM PDT"
-msgstr ""
-
-msgid "August 1th, 2017"
-msgstr ""
-
-msgid "Bot: Grimlock"
-msgstr ""
-
-msgid "Bot: Hot Rod"
+msgid "Bot: %{bot}"
 msgstr ""
 
 msgid "Botodex"
@@ -61,6 +52,12 @@ msgid "Close"
 msgstr ""
 
 msgid "Coming soon"
+msgstr ""
+
+msgid "DateFormat|%B %Y"
+msgstr ""
+
+msgid "DateFormat|%B %dth, %Y at %H:%M %p"
 msgstr ""
 
 msgid "Demolitions"

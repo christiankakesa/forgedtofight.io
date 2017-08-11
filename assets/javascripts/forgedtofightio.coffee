@@ -11,3 +11,11 @@ $('.botodex-menu').on 'click', ->
   bots.not(klass).each  ->
     $(@).hide()
     return
+
+# Localized Time for user
+( ->
+  $('[data-localized-time]').each ->
+    localized_timestamp = Date.parse($(@).data('localized-time'))
+    localized_date = new Date(localized_timestamp)
+    $(@).text(localized_date.toLocaleString())
+)()

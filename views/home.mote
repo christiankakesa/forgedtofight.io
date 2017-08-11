@@ -3,6 +3,7 @@
 <h6>&mdash; {{ _('ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game') }}</h6>
 
 <div class="row">
+  % if data[:upcoming_bot]
   <div class="col-sm-6">
     <div class="card">
       <div class="card-block">
@@ -10,14 +11,16 @@
           <i class="icon-clock"></i>
         </div>
         <div class="h3 mb-2 text-center">{{ _('Upcoming bot') }}</div>
-        <p class="h6 text-info text-uppercase font-weight-bold">{{ _('August 10th at 10AM PDT') }}</p>
-        <div class="h2 mb-0 text-primary text-center">Shockwave</div>
+        <p class="h6 text-info text-uppercase font-weight-bold" data-localized-time="{{ data[:upcoming_bot].start_date.utc.iso8601 }}">{{ (data[:upcoming_bot].start_date.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}</p>
+        <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_bot].bot.name }}</div>
         <div class="mt-1 mb-0 text-center">
-          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/upcoming-bot/upcoming-bot_2017-08-10_shockwave.png" alt="{{ _('Bot: Grimlock') }}">
+          <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:upcoming_bot].bot.name } }}">
         </div>
       </div>
     </div>
   </div><!--/.col-->
+  % end
+  % if data[:calendar_bot]
   <div class="col-sm-6">
     <div class="card">
       <div class="card-block">
@@ -25,12 +28,13 @@
           <i class="icon-calendar"></i>
         </div>
         <div class="h3 mb-2 text-center">{{ _("Calendar's bot") }}</div>
-        <p class="h6 text-info text-uppercase font-weight-bold">{{ _('August 1th, 2017') }}</p>
-        <div class="h2 mb-0 text-primary text-center">Hot Rod</div>
+        <p class="h6 text-info text-uppercase font-weight-bold" data-localized-time="{{ data[:calendar_bot].start_date.utc.iso8601 }}">{{ (data[:calendar_bot].start_date.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %Y')) }}</p>
+        <div class="h2 mb-0 text-primary text-center">{{ data[:calendar_bot].bot.name }}</div>
         <div class="mt-1 mb-0 text-center">
-          <img class="img-fluid img-thumbnail" src="https://s3.eu-central-1.amazonaws.com/forgedtofightio/website/calendars-bot/calendars-bot_2017-08_hot-rod.png" alt="{{ _('Bot: Hot Rod') }}">
+          <img class="img-fluid img-thumbnail" src="{{ data[:calendar_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:calendar_bot].bot.name } }}">
         </div>
       </div>
     </div>
   </div><!--/.col-->
+  % end
 </div><!--/.row-->

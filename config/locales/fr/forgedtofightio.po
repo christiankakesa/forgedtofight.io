@@ -35,17 +35,8 @@ msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos
 msgid "Attack"
 msgstr "Attaque"
 
-msgid "August 10th at 10AM PDT"
-msgstr "10 août 2017 à 10h00 pour San Francisco - 19h00 à Paris"
-
-msgid "August 1th, 2017"
-msgstr "1er août 2017"
-
-msgid "Bot: Grimlock"
-msgstr "Bot : Grimlock"
-
-msgid "Bot: Hot Rod"
-msgstr "Bot : Hot Rod"
+msgid "Bot: %{bot}"
+msgstr "Bot : %{bot}"
 
 msgid "Botodex"
 msgstr "Botodex"
@@ -61,6 +52,12 @@ msgstr "Fermer"
 
 msgid "Coming soon"
 msgstr "Prochainement"
+
+msgid "DateFormat|%B %Y"
+msgstr "%B %Y"
+
+msgid "DateFormat|%B %dth, %Y at %H:%M %p"
+msgstr "%d %B %Y à %Hh%M %p"
 
 msgid "Demolitions"
 msgstr "Démolisseurs"
