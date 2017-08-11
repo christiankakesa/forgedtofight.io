@@ -189,9 +189,9 @@
     signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
   },
   {
-    name: 'Rachet',
+    name: 'Ratchet',
     description: 'The Autobots veteran Chief Medical Officer has patched up his fair share of Bots over the years...',
-    icon_link: 'icon-rachet.jpg',
+    icon_link: 'icon-ratchet.jpg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 551, stars_3: 1140, stars_4: nil },
@@ -277,9 +277,9 @@
     signature_ability: { stars_1: nil, stars_2: 50, stars_3: 0, stars_4: 0 }
   },
   {
-    name: 'Winblade',
+    name: 'Windblade',
     description: 'Hailing from the planet Caminus, this agile Scout is as adept with her swords as she is at "Cityspeaking" with gigantic Titans...',
-    icon_link: 'icon-winblade.jpg',
+    icon_link: 'icon-windblade.jpg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 556, stars_3: nil, stars_4: nil },
