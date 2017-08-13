@@ -152,8 +152,11 @@ Home = Syro.new(BasicDeck) do
 
   get do
     @data = {
-      upcoming_bot: UpcomingBot.order_by(start_date: :desc).first,
-      calendar_bot: CalendarBot.where(:start_date.gt => DateTime.new(Time.now.utc.year, Time.now.utc.month, 1, 0, 0, 0, 'UTC').to_time).where(:start_date.lt => DateTime.new(Time.now.utc.year, Time.now.utc.month, -1, 23, 59, 59, 'UTC').to_time).first
+      upcoming_bot: UpcomingBot.order_by(start_at: :desc).first,
+      calendar_bot: CalendarBot
+            .where(:start_at.gt => DateTime.new(Time.now.utc.year, Time.now.utc.month, 1, 0, 0, 0, 'UTC').to_time)
+            .where(:start_at.lt => DateTime.new(Time.now.utc.year, Time.now.utc.month, -1, 23, 59, 59, 'UTC').to_time).first,
+      arena: Arena.where(:end_at.gte => RethinkDB::RQL.new.now).where(:start_at.lte => RethinkDB::RQL.new.now).first
     }
     render 'views/home.mote', data: @data
   end

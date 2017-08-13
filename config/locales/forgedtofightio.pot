@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-11 18:48+0200\n"
-"PO-Revision-Date: 2017-08-11 18:48+0200\n"
+"POT-Creation-Date: 2017-08-13 07:13+0200\n"
+"PO-Revision-Date: 2017-08-13 07:13+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -138,6 +138,9 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+msgid "Now in arena"
+msgstr ""
+
 msgid "PI"
 msgstr ""
 
@@ -163,6 +166,9 @@ msgid "Privacy"
 msgstr ""
 
 msgid "Reset password"
+msgstr ""
+
+msgid "Round"
 msgstr ""
 
 msgid "Scouts"

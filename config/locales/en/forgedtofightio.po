@@ -137,6 +137,9 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+msgid "Now in arena"
+msgstr ""
+
 msgid "PI"
 msgstr ""
 
@@ -162,6 +165,9 @@ msgid "Privacy"
 msgstr ""
 
 msgid "Reset password"
+msgstr ""
+
+msgid "Round"
 msgstr ""
 
 msgid "Scouts"

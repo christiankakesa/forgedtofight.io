@@ -137,6 +137,9 @@ msgstr "S'inscrire"
 msgid "Name"
 msgstr "Nom"
 
+msgid "Now in arena"
+msgstr "Arène en cours"
+
 msgid "PI"
 msgstr "IP"
 
@@ -163,6 +166,9 @@ msgstr "Confidentialités"
 
 msgid "Reset password"
 msgstr "Mot de passe réinitialisé"
+
+msgid "Round"
+msgstr "Round"
 
 msgid "Scouts"
 msgstr "Éclaireurs"

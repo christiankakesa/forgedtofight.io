@@ -19,6 +19,7 @@ class Bot
   belongs_to :bot_class, required: true, index: true
   belongs_to :bot_faction, required: true, index: true
 
+  has_many :arena
   has_many :calendar_bot
   has_many :upcoming_bot
 end
