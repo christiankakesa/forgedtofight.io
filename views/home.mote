@@ -2,9 +2,9 @@
 
 <h6>&mdash; {{ _('ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game') }}</h6>
 
-<div class="row deck">
+<div class="card-deck">
 % if data[:arena]
-  <div class="col order-md-last card">
+  <div class="card order-md-last">
     <div class="card-block">
       <div class="h1 text-muted text-center mb-2">
         <i class="icon-shield"></i>
@@ -27,7 +27,7 @@
   </div>
   % end
   % if data[:upcoming_bot]
-  <div class="col card">
+  <div class="card">
     <div class="card-block">
       <div class="h1 text-muted text-center mb-2">
         <i class="icon-clock"></i>
@@ -42,7 +42,7 @@
   </div>
   % end
   % if data[:calendar_bot]
-  <div class="col card">
+  <div class="card">
     <div class="card-block">
       <div class="h1 text-muted text-center mb-2">
         <i class="icon-calendar"></i>
@@ -56,4 +56,4 @@
     </div>
   </div>
   % end
-</div><!--/.row-->
+</div>
