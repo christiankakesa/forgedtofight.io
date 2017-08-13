@@ -10,7 +10,7 @@
         <i class="icon-shield"></i>
       </div>
       <div class="h3 mb-2 text-center">{{ _("Now in arena") }} (<span class="text-lowercase">{{ _('Round') }} {{ data[:arena].round }}</span>)</div>
-      <p class="h6 font-weight-bold">
+      <p class="h6 text-center font-weight-bold">
         <span class="text-muted" data-localized-time="{{ data[:arena].start_at.utc.iso8601 }}">
           {{ (data[:arena].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
         </span>
@@ -33,7 +33,7 @@
         <i class="icon-clock"></i>
       </div>
       <div class="h3 mb-2 text-center">{{ _('Upcoming bot') }}</div>
-      <p class="h6 text-info font-weight-bold" data-localized-time="{{ data[:upcoming_bot].start_at.utc.iso8601 }}">{{ (data[:upcoming_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}</p>
+      <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:upcoming_bot].start_at.utc.iso8601 }}">{{ (data[:upcoming_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
         <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:upcoming_bot].bot.name } }}">
@@ -48,7 +48,7 @@
         <i class="icon-calendar"></i>
       </div>
       <div class="h3 mb-2 text-center">{{ _("Calendar's bot") }}</div>
-      <p class="h6 text-info font-weight-bold" data-localized-time="{{ data[:calendar_bot].start_at.utc.iso8601 }}">{{ (data[:calendar_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %Y')) }}</p>
+      <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:calendar_bot].start_at.utc.iso8601 }}">{{ (data[:calendar_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %Y')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:calendar_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
         <img class="img-fluid img-thumbnail" src="{{ data[:calendar_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:calendar_bot].bot.name } }}">
