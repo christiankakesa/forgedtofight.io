@@ -11,7 +11,7 @@
   <a class="nav-link botodex-menu" data-bot_class="warrior" href="#">{{ _('Warriors') }}</a>
 </nav>
 
-<div class="card-columns">
+<div class="card-deck">
   % bots.each do |bot|
   <div class="card card-{{ bot.bot_class.name.downcase }}">
     <div class="card-block">
