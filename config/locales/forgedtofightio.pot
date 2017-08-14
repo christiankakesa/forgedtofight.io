@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-13 07:13+0200\n"
-"PO-Revision-Date: 2017-08-13 07:13+0200\n"
+"POT-Creation-Date: 2017-08-14 03:50+0200\n"
+"PO-Revision-Date: 2017-08-14 03:50+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -93,6 +93,9 @@ msgstr ""
 msgid "HTML, CSS and JS web framework"
 msgstr ""
 
+msgid "Help us by sharing your bot stats"
+msgstr ""
+
 msgid "JSON document based database"
 msgstr ""
 
@@ -172,6 +175,9 @@ msgid "Round"
 msgstr ""
 
 msgid "Scouts"
+msgstr ""
+
+msgid "Send your stats"
 msgstr ""
 
 msgid "Sidebar|About"

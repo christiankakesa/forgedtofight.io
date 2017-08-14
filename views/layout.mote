@@ -1,6 +1,6 @@
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10"><![endif]-->
-<html lang="{{ FastGettext.locale||'en' }}">
+<html lang="{{ FastGettext.locale || 'en' }}">
 <head>
   <title>{{ title }}</title>
   <meta charset="utf-8">
