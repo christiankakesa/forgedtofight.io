@@ -3,7 +3,7 @@ $('.botodex-menu').on 'click', ->
   me = $(this)
   me.parent('nav').children('a').removeClass 'nav-bot-active active'
   me.addClass 'nav-bot-active active'
-  bots = me.parent('nav').next().children()
+  bots = me.parent('nav').nextAll('.card-deck').children()
   bots.show()
   # We have done if user push "all" button
   return unless me.data('bot_class')
