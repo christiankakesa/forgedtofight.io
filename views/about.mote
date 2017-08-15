@@ -7,15 +7,26 @@
   </p>
 </div>
 
-<h2>{{ _('The developer') }}</h2>
+<h2>{{ _('Community resources') }}</h2>
 <div class="container row">
-  <div class="col">
+  <div class="col-sm-2">
     <div class="callout callout-danger">
       <span class="icon-social-facebook"></span>
       <small class="font-weight-bold font-italic">Facebook</small><br>
       <strong class="h5"><a href="https://www.facebook.com/FTFio-1343697979050153/">FTF.io</a></strong>
     </div>
   </div><!--/.col-->
+  <div class="col-sm-2">
+    <div class="callout callout-danger">
+      <span class="icon-social-google"></span>
+      <small class="font-weight-bold font-italic">Google+</small><br>
+      <strong class="h5"><a href="https://plus.google.com/communities/104781395768657330248">ForgedToFight.IO</a></strong>
+    </div>
+  </div><!--/.col-->
+</div>
+
+<h2>{{ _('The developer') }}</h2>
+<div class="container row">
   <div class="col">
     <div class="callout callout-danger">
       <span class="icon-social-twitter"></span>
@@ -52,7 +63,7 @@
   <div class="col-sm-6 col-lg-3">
     <div class="card">
       <div class="card-block">
-        <div class="h4 m-0"><a href="https://www.ruby-lang.org/">Ruby</a></div>
+        <div class="h4 m-0"><a href="https://www.ruby-lang.org/" target="_blank">Ruby</a></div>
         <div>{{ _('Dynamic and efficient programming language') }}</div>
         <div class="progress progress-xs my-1">
           <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -63,7 +74,7 @@
   <div class="col-sm-6 col-lg-3">
     <div class="card">
       <div class="card-block">
-        <div class="h4 m-0"><a href="http://soveran.github.io/syro/">Syro</a></div>
+        <div class="h4 m-0"><a href="http://soveran.github.io/syro/" target="_blank">Syro</a></div>
         <div>{{ _('Powerful and simple router for web applications') }}</div>
         <div class="progress progress-xs my-1">
           <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -74,7 +85,7 @@
   <div class="col-sm-6 col-lg-3">
     <div class="card">
       <div class="card-block">
-        <div class="h4 m-0"><a href="http://getbootstrap.com/">Bootstrap</a></div>
+        <div class="h4 m-0"><a href="http://coreui.io" target="_blank">CoreUI (Bootstrap)</a></div>
         <div>{{ _('HTML, CSS and JS web framework') }}</div>
         <div class="progress progress-xs my-1">
           <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -85,7 +96,7 @@
   <div class="col-sm-6 col-lg-3">
     <div class="card">
       <div class="card-block">
-        <div class="h4 m-0"><a href="https://www.rethinkdb.com/">RethinkDB</a></div>
+        <div class="h4 m-0"><a href="https://www.rethinkdb.com/" target="_blank">RethinkDB</a></div>
         <div>{{ _('JSON document based database') }}</div>
         <div class="progress progress-xs my-1">
           <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -95,4 +106,4 @@
   </div><!--/.col-->
 </div><!--/.row-->
 
-<p>{{ _('All services are running on top of <a href="http://mesos.apache.org/">Apache MESOS</a> ecosystem') }}.</p>
+<p>{{ _('All services are running on top of <a href="http://mesos.apache.org/" target="_blank">Apache MESOS</a> ecosystem') }}.</p>
