@@ -4,7 +4,7 @@
   {
     name: 'Arcee',
     description: 'She may be slight of frame, but she\'s stout on loyalty and devotion to protecting her fellow Autobots and their human allies...',
-    icon_link: 'icon-arcee.jpg',
+    icon_link: 'arcee.jpeg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 546, stars_3: nil, stars_4: nil },
@@ -15,7 +15,7 @@
   {
     name: 'Barricade',
     description: 'This Decepticons puts his own spin on good cop, bad cop...',
-    icon_link: 'icon-barricade.jpg',
+    icon_link: 'barricade.jpeg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 552, stars_3: nil, stars_4: nil },
@@ -26,7 +26,7 @@
   {
     name: 'Bludgeon',
     description: 'A master of the Cybertronian martial art Metallikato...',
-    icon_link: 'icon-bludgeon.jpg',
+    icon_link: 'bludgeon.jpeg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -37,7 +37,7 @@
   {
     name: 'Bonecrusher',
     description: 'A noted speed skater and general purveyor of hate, Bonecrusher oozes with disdain for everything and everyone, including himself...',
-    icon_link: 'icon-bonecrusher.jpg',
+    icon_link: 'bonecrusher.jpeg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: 247, stars_2: 441, stars_3: 1204, stars_4: nil },
@@ -48,7 +48,7 @@
   {
     name: 'Bumblebee',
     description: 'Long known as Optimus Prime\'s faithful scout...',
-    icon_link: 'icon-bumblebee.jpg',
+    icon_link: 'bumblebee.jpeg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 538, stars_3: nil, stars_4: nil },
@@ -59,7 +59,7 @@
   {
     name: 'Drift',
     description: 'Though some may question Drift\'s loyalty to the Autobots, there\'s no denying his dedication to his "sensei" Optimus Prime...',
-    icon_link: 'icon-drift.jpg',
+    icon_link: 'drift.jpeg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -70,7 +70,7 @@
   {
     name: 'Grimlock',
     description: 'Widely regarded as one of the most skilled military tacticians, perhaps with an ego the size of Cybertron, Grimlock is the self-proclaimed "King" of the Dinobots.',
-    icon_link: 'icon-grimlock.jpg',
+    icon_link: 'grimlock.jpeg',
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 441, stars_3: nil, stars_4: nil },
@@ -81,7 +81,7 @@
   {
     name: 'Grindor',
     description: 'Although he\'s a brawling, close-combat specialist, Grindor lets his missiles do the talking in his helicopter alt mode...',
-    icon_link: 'icon-grindor.jpg',
+    icon_link: 'grindor.jpeg',
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 530, stars_3: nil, stars_4: nil },
@@ -92,7 +92,7 @@
   {
     name: 'Hot Rod',
     description: 'Long undercover on Earth with his brother in arms, Bumblebee, Hot Rod is a powerful and agile warrior with a unique Time Bubble Cannon that definitely packs a punch....',
-    icon_link: 'icon-hot_rod.jpg',
+    icon_link: 'hot-rod.jpeg',
     bot_class_id: BotClass.where(name: 'Warrior').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -103,7 +103,7 @@
   {
     name: 'Ironhide',
     description: 'He may not like Earth rodents leaking lubricant on him, but he does have a fondness for blasters, more blasters, and heavy weaponry...',
-    icon_link: 'icon-ironhide.jpg',
+    icon_link: 'ironhide.jpeg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: 260, stars_2: 557, stars_3: 1152, stars_4: nil },
@@ -114,7 +114,7 @@
   {
     name: 'Megatron',
     description: 'All Hail Megatron! That pretty much sums up the Decepticon leader\'s ambition, and his minions\'fear-induced feelings...',
-    icon_link: 'icon-megatron.jpg',
+    icon_link: 'megatron.jpeg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 513, stars_3: nil, stars_4: nil },
@@ -125,7 +125,7 @@
   {
     name: 'Mirage',
     description: 'Now you see him, now you don\'t. Mirage is one high-class Autobot with some slick espionage skills...',
-    icon_link: 'icon-mirage.jpg',
+    icon_link: 'mirage.jpeg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 535, stars_3: nil, stars_4: nil },
@@ -136,7 +136,7 @@
   {
     name: 'Mixmaster',
     description: 'Aptly named for both his cement mixer alt form and his advanced skills in concocting chemical weapons for the Decepticons, Mixmaster has been linked to being a part of the mighty Devastator...',
-    icon_link: 'icon-mixmaster.jpg',
+    icon_link: 'mixmaster.jpeg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: 1076, stars_4: nil },
@@ -147,7 +147,7 @@
   {
     name: 'Motormaster',
     description: 'The self-proclaimed "True King of the Road" and leader of the Stunticons is huge, savage, and merciless...',
-    icon_link: 'icon-motormaster.jpg',
+    icon_link: 'motormaster.jpeg',
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: 249, stars_2: 532, stars_3: 1133, stars_4: nil },
@@ -158,7 +158,7 @@
   {
     name: 'Optiminus Prime',
     description: 'From his humble beginnings as Orion Pax to his indusputable role as the greatest Autobot leader ever, Optimus Prime is the embodiment of heroic valor and rightousness...',
-    icon_link: 'icon-optimus_prime.jpg',
+    icon_link: 'optimus-prime.jpeg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: 267, stars_2: 537, stars_3: nil, stars_4: nil },
@@ -169,7 +169,7 @@
   {
     name: 'Optiminus Prime MV1',
     description: 'He is the Cybertronian definition of altuism, sacrifice and leadership...',
-    icon_link: 'icon-optimus_prime_mv1.jpg',
+    icon_link: 'optimus-prime-mv1.jpeg',
     bot_class_id: BotClass.where(name: 'Brawler').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
@@ -180,7 +180,7 @@
   {
     name: 'Prowl',
     description: 'He may look like your friendly neighborhood cop on patrol, but check under the hood and he’s 100% military-trained police on a mission to serve and protect...',
-    icon_link: 'icon-prowl.jpg',
+    icon_link: 'prowl.jpeg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -191,7 +191,7 @@
   {
     name: 'Ratchet',
     description: 'The Autobots veteran Chief Medical Officer has patched up his fair share of Bots over the years...',
-    icon_link: 'icon-ratchet.jpg',
+    icon_link: 'ratchet.jpeg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 551, stars_3: 1140, stars_4: nil },
@@ -202,7 +202,7 @@
   {
     name: 'Rhinox',
     description: 'Hard-nosed and big brained, Rhinox is a Bot with a resounding passion for life...',
-    icon_link: 'icon-rhinox.jpg',
+    icon_link: 'rhinox.jpeg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Maximals').first.id,
     power_index: { stars_1: 256, stars_2: 549, stars_3: nil, stars_4: nil },
@@ -213,7 +213,7 @@
   {
     name: 'Shockwave',
     description: 'Truly one of the most feared and powerful of all Decepticons, Shockwave\'s existence is driven solely by one thing: logic...',
-    icon_link: 'icon-shockwave.jpg',
+    icon_link: 'shockwave.jpeg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: 460, stars_3: nil, stars_4: nil },
@@ -224,7 +224,7 @@
   {
     name: 'Sideswipe',
     description: 'Forged with the spark of a fighter and a cerebral circuits of a jock, Sideswipe is always down for a fight...',
-    icon_link: 'icon-sideswipe.jpg',
+    icon_link: 'sideswipe.jpeg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: 271, stars_2: 568, stars_3: nil, stars_4: nil },
@@ -235,7 +235,7 @@
   {
     name: 'Soundwave',
     description: 'Who is superior? Soundwave and his trusty minions Laserbeak and Ravage, that\'s who!...',
-    icon_link: 'icon-soundwave.jpg',
+    icon_link: 'soundwave.jpeg',
     bot_class_id: BotClass.where(name: 'Tech').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -246,7 +246,7 @@
   {
     name: 'Starscream',
     description: 'Starscream is the treacherous Decepticon Air Commander and the deadliest of the Seekers...',
-    icon_link: 'icon-starscream.jpg',
+    icon_link: 'starscream.jpeg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Decepticons').first.id,
     power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
@@ -257,7 +257,7 @@
   {
     name: 'Ultra Magnus',
     description: 'Galvatron\'s avowed enemy, Ultra Magnus epitomizes what it means to be a loyal soldier...',
-    icon_link: 'icon-ultra_magnus.jpg',
+    icon_link: 'ultra-magnus.jpeg',
     bot_class_id: BotClass.where(name: 'Tactician').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 442, stars_3: nil, stars_4: nil },
@@ -268,7 +268,7 @@
   {
     name: 'Waspinator',
     description: 'Despite his loyalty to the Predacon cause, the stalwart Waspinator never gets the respect he deserves from both his team mates or the universe...',
-    icon_link: 'icon-waspinator.jpg',
+    icon_link: 'waspinator.jpeg',
     bot_class_id: BotClass.where(name: 'Demolitions').first.id,
     bot_faction_id: BotFaction.where(name: 'Predacons').first.id,
     power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
@@ -279,7 +279,7 @@
   {
     name: 'Windblade',
     description: 'Hailing from the planet Caminus, this agile Scout is as adept with her swords as she is at "Cityspeaking" with gigantic Titans...',
-    icon_link: 'icon-windblade.jpg',
+    icon_link: 'windblade.jpeg',
     bot_class_id: BotClass.where(name: 'Scout').first.id,
     bot_faction_id: BotFaction.where(name: 'Autobots').first.id,
     power_index: { stars_1: nil, stars_2: 556, stars_3: nil, stars_4: nil },
