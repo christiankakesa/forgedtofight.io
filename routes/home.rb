@@ -64,9 +64,23 @@ Home = Syro.new(BasicDeck) do
     end
   end
 
+  on 'mods' do
+    get do
+      @mods = Mod
+      render 'views/mods.mote', mods: @mods
+    end
+  end
+
   on 'privacy' do
     get do
       render 'views/privacy.mote'
+    end
+  end
+
+  on 'relics' do
+    get do
+      @relics = Relic
+      render 'views/relics.mote', relics: @relics
     end
   end
 

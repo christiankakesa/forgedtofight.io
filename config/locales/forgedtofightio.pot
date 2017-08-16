@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-14 04:10+0200\n"
-"PO-Revision-Date: 2017-08-14 04:10+0200\n"
+"POT-Creation-Date: 2017-08-16 04:08+0200\n"
+"PO-Revision-Date: 2017-08-16 04:08+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
+msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
 msgstr ""
 
 msgid "Attack"
@@ -52,6 +52,9 @@ msgid "Close"
 msgstr ""
 
 msgid "Coming soon"
+msgstr ""
+
+msgid "Community resources"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -135,7 +138,16 @@ msgstr ""
 msgid "Menu|Logout"
 msgstr ""
 
+msgid "Menu|Mods"
+msgstr ""
+
+msgid "Menu|Relics"
+msgstr ""
+
 msgid "Menu|Sign Up"
+msgstr ""
+
+msgid "Mods"
 msgstr ""
 
 msgid "Name"
@@ -168,6 +180,9 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+msgid "Relics"
+msgstr ""
+
 msgid "Reset password"
 msgstr ""
 
@@ -198,7 +213,13 @@ msgstr ""
 msgid "Sidebar|Info"
 msgstr ""
 
+msgid "Sidebar|Mods"
+msgstr ""
+
 msgid "Sidebar|Privacy"
+msgstr ""
+
+msgid "Sidebar|Relics"
 msgstr ""
 
 msgid "Sidebar|Support"

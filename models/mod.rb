@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Bot
+class Mod
   include NoBrainer::Document
   include NoBrainer::Document::Timestamps
 
@@ -15,11 +15,4 @@ class Bot
   field :health, type: Hash, default: DEFAULT_INDEX
   field :attack, type: Hash, default: DEFAULT_INDEX
   field :signature_ability, type: Hash, default: DEFAULT_INDEX
-
-  belongs_to :bot_class, required: true, index: true
-  belongs_to :bot_faction, required: true, index: true
-
-  has_many :arena
-  has_many :calendar_bot
-  has_many :upcoming_bot
 end

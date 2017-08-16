@@ -29,8 +29,8 @@ msgstr "Mon compte"
 msgid "All"
 msgstr "Tous"
 
-msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
-msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\">Apache MESOS</a>"
+msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
+msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a>"
 
 msgid "Attack"
 msgstr "Attaque"
@@ -52,6 +52,9 @@ msgstr "Fermer"
 
 msgid "Coming soon"
 msgstr "Prochainement"
+
+msgid "Community resources"
+msgstr "Portails de la communauté"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -134,8 +137,17 @@ msgstr "Se connecter"
 msgid "Menu|Logout"
 msgstr "Se déconnecter"
 
+msgid "Menu|Mods"
+msgstr "Mods"
+
+msgid "Menu|Relics"
+msgstr "Artéfacts"
+
 msgid "Menu|Sign Up"
 msgstr "S'inscrire"
+
+msgid "Mods"
+msgstr "Mods"
 
 msgid "Name"
 msgstr "Nom"
@@ -167,6 +179,9 @@ msgstr "Moteur d'espace de nom pour les applications internets"
 msgid "Privacy"
 msgstr "Confidentialités"
 
+msgid "Relics"
+msgstr "Artéfacts"
+
 msgid "Reset password"
 msgstr "Mot de passe réinitialisé"
 
@@ -197,8 +212,14 @@ msgstr "Accueil"
 msgid "Sidebar|Info"
 msgstr "Info"
 
+msgid "Sidebar|Mods"
+msgstr "Mods"
+
 msgid "Sidebar|Privacy"
 msgstr "Confidentialités"
+
+msgid "Sidebar|Relics"
+msgstr "Artéfacts"
 
 msgid "Sidebar|Support"
 msgstr "Support"

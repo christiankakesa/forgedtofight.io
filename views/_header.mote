@@ -37,6 +37,12 @@
       <a class="nav-link" href="/botodex"><i class="icon-layers"></i> {{ s_('Menu|Botodex') }} ({{ Bot.count }})</a>
     </li>
     <li class="nav-item px-2">
+      <a class="nav-link" href="/mods"><i class="icon-layers"></i> {{ s_('Menu|Mods') }} ({{ Mod.count }})</a>
+    </li>
+    <li class="nav-item px-2">
+      <a class="nav-link" href="/relics"><i class="icon-layers"></i> {{ s_('Menu|Relics') }} ({{ Relic.count }})</a>
+    </li>
+    <li class="nav-item px-2">
       <a class="nav-link" href="/events"><i class="icon-clock"></i> {{ s_('Menu|Events') }}</a>
     </li>
     <li class="nav-item px-2">

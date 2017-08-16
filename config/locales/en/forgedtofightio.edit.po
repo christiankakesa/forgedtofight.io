@@ -29,7 +29,7 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-msgid "All services are running on top of <a href=\"http://mesos.apache.org/\">Apache MESOS</a> ecosystem"
+msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
 msgstr ""
 
 msgid "Attack"
@@ -51,6 +51,9 @@ msgid "Close"
 msgstr ""
 
 msgid "Coming soon"
+msgstr ""
+
+msgid "Community resources"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -134,7 +137,16 @@ msgstr ""
 msgid "Menu|Logout"
 msgstr ""
 
+msgid "Menu|Mods"
+msgstr ""
+
+msgid "Menu|Relics"
+msgstr ""
+
 msgid "Menu|Sign Up"
+msgstr ""
+
+msgid "Mods"
 msgstr ""
 
 msgid "Name"
@@ -167,6 +179,9 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+msgid "Relics"
+msgstr ""
+
 msgid "Reset password"
 msgstr ""
 
@@ -197,7 +212,13 @@ msgstr ""
 msgid "Sidebar|Info"
 msgstr ""
 
+msgid "Sidebar|Mods"
+msgstr ""
+
 msgid "Sidebar|Privacy"
+msgstr ""
+
+msgid "Sidebar|Relics"
 msgstr ""
 
 msgid "Sidebar|Support"

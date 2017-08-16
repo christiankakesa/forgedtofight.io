@@ -1,0 +1,81 @@
+<h1>{{ _('Mods') }} ({{ Mod.count }})</h1>
+
+{{ partial 'views/_send_bot_stats.mote' }}
+
+% if mods.count > 0
+<div class="card-deck">
+  % mods.each do |mod|
+  <div class="card">
+    <div class="card-block">
+      <div class="d-flex justify-content-end">
+        <img src="assets/mods/{{ mod.icon_link }}" alt="{{ mod.name }}" class="img-thumbnail">
+      </div>
+      <hr class="m-t-0">
+      <div class="h4 text-default">{{ mod.name }}</div>
+      <!-- <p class="card-text">{{ mod.description }}</p> -->
+      <table class="table table-sm table-responsive table-hover">
+        <thead>
+          <tr>
+            <th colspan="2" class="text-primary text-uppercase font-weight-bold text-right"><small>★</small></th>
+            <th class="text-primary text-uppercase text-right"><small>★★</small></th>
+            <th class="text-primary text-uppercase text-right"><small>★★★</small></th>
+            <th class="text-primary text-uppercase text-right">★★★★</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><abbr title="{{ _('Power Index') }}">{{ _('PI') }}</abbr></th>
+            <td class="text-right">{{ mod.power_index[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ mod.power_index[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ mod.power_index[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ mod.power_index[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ s_('Gaming|Health') }}</th>
+            <td class="text-right">{{ mod.health[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ mod.health[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ mod.health[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ mod.health[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Attack') }}</th>
+            <td class="text-right">{{ mod.attack[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ mod.attack[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ mod.attack[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ mod.attack[:stars_4] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <abbr title="{{ _('Signature ability') }}">{{ s_('SignatureAbility|Signature') }}</abbr>
+            </th>
+            <td class="text-right">{{ mod.signature_ability[:stars_1] || '-' }}</td>
+            <td class="text-right">{{ mod.signature_ability[:stars_2] || '-' }}</td>
+            <td class="text-right">{{ mod.signature_ability[:stars_3] || '-' }}</td>
+            <td class="text-right font-weight-bold">
+              {{ mod.signature_ability[:stars_4] || '-' }}
+            </td>
+          </tr>
+          % unless 'production'.eql?(ENV['RACK_ENV'])
+          <tr>
+            <th scope="row">
+              <span>{{ _('Forge') }}</span>
+              <div class="btn-group btn-group-sm float-right">
+                <button type="button" class="btn btn-default font-weight-bold" data-forge-ctrl data-forge-ctrl-less data-forge-target="{{ mod.id }}"><span class="fa fa-minus-square"></span></button>
+                <button type="button" class="btn btn-primary font-weight-bold" data-forge-ctrl data-forge-ctrl-more data-forge-target="{{ mod.id }}"><span class="fa fa-plus-square"></span></button>
+              </div>
+            </th>
+            <td class="text-right">-</td>
+            <td class="text-right font-weight-bold align-middle" colspan="3">
+              <div class="progress progress-lg">
+                <div class="progress-bar bg-info" role="progressbar" data-forge-id="{{ mod.id }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+              </div>
+            </td>
+          </tr>
+          % end
+        </tbody>
+      </table>
+    </div>
+  </div>
+  % end
+</div>
+% end
