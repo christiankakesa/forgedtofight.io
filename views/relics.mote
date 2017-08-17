@@ -11,8 +11,27 @@
         <img src="{{ relic.icon_url }}" alt="{{ relic.name }}" class="img-thumbnail">
       </div>
       <hr class="m-t-0">
-      <div class="h4 text-default">{{ relic.name }}</div>
-      <p class="card-text">{{ relic.description }}</p>
+      <div class="h4 text-uppercase text-default">{{ relic.name }}</div>
+      <div class="h6 text-default font-weight-bold">({{ relic.type }})</div>
+      <? if relic&.description; ?><p class="card-text">{{ relic.description }}</p><? end ?>
+      % if relic&.tier
+      <table class="table table-sm table-responsive table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">{{ _('Tier 1') }}</th>
+            <td class="text-right">{{ relic.tier[:one] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Tier 2') }}</th>
+            <td class="text-right">{{ relic.tier[:two] || '-' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ _('Tier 3') }}</th>
+            <td class="text-right">{{ relic.tier[:three] || '-' }}</td>
+          </tr>
+        </tbody>
+      </table>
+      % end
     </div>
   </div>
   % end

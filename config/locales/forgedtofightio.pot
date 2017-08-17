@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-17 04:14+0200\n"
-"PO-Revision-Date: 2017-08-17 04:14+0200\n"
+"POT-Creation-Date: 2017-08-17 06:07+0200\n"
+"PO-Revision-Date: 2017-08-17 06:07+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -265,6 +265,15 @@ msgid "The website"
 msgstr ""
 
 msgid "This website is provided by <a href=\"https://twitter.com/fenicks79\">@fenicks79</a> for the <a href=\"https://transformersforgedtofight.com/\">Transformers: Forged to Fight</a> gamer community"
+msgstr ""
+
+msgid "Tier 1"
+msgstr ""
+
+msgid "Tier 2"
+msgstr ""
+
+msgid "Tier 3"
 msgstr ""
 
 msgid "Upcoming bot"

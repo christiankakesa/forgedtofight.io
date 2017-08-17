@@ -7,6 +7,7 @@ class Mod
   field :name, type: String, unique: true
   field :description, type: String
   field :icon_url, type: String
+  field :image_url, type: String
   DEFAULT_INDEX = { stars_1: nil,
                     stars_2: nil,
                     stars_3: nil,
