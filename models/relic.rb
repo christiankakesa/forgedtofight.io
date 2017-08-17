@@ -6,5 +6,5 @@ class Relic
 
   field :name, type: String, unique: true
   field :description, type: String
-  field :icon_link, type: String
+  field :icon_url, type: String
 end

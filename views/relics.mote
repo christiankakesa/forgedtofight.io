@@ -8,7 +8,7 @@
   <div class="card">
     <div class="card-block">
       <div class="d-flex justify-content-end">
-        <img src="assets/relics/{{ relic.icon_link }}" alt="{{ relic.name }}" class="img-thumbnail">
+        <img src="{{ relic.icon_url }}" alt="{{ relic.name }}" class="img-thumbnail">
       </div>
       <hr class="m-t-0">
       <div class="h4 text-default">{{ relic.name }}</div>

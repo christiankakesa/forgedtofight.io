@@ -9,8 +9,8 @@ class User
   scope(:pending) { where(status: :pending) }
   scope(:deleted) { where(status: :deleted) }
 
-  field :username, type: String, uniq: true
-  field :email, type: String, required: true, uniq: true
+  field :username, type: String, unique: true
+  field :email, type: String, required: true, unique: true
   field :crypted_password, type: String
   field :company, type: String
   field :twitter, type: String

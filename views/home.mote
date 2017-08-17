@@ -11,7 +11,7 @@
       <div class="h1 text-muted text-center mb-2">
         <i class="icon-shield"></i>
       </div>
-      <div class="h3 mb-2 text-center">{{ _("Now in arena") }} (<span class="text-lowercase">{{ _('Round') }} {{ data[:arena].round }}</span>)</div>
+      <div class="h3 mb-2 text-center">{{ _("Now in arena") }} <? if data[:arena].round; ?>(<span class="text-lowercase">{{ _('Round') }} {{ data[:arena].round }}</span>)<? end ?></div>
       <p class="h6 text-center font-weight-bold">
         <span class="text-muted" data-localized-time="{{ data[:arena].start_at.utc.iso8601 }}">
           {{ (data[:arena].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
@@ -21,9 +21,9 @@
           {{ (data[:arena].end_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
         </span>
       </p>
-      <div class="h2 mb-0 text-primary text-center">{{ data[:arena].bot.name }}</div>
+      <div class="h2 mb-0 text-primary text-center">{{ data[:arena].bot&.name || data[:arena].name }}</div>
       <div class="mt-1 mb-0 text-center">
-        <img class="img-fluid img-thumbnail" src="{{ data[:arena].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:arena].bot.name } }}">
+        <img class="img-fluid img-thumbnail" src="{{ data[:arena]&.image_url || data[:arena].bot&.image_url }}" alt="{{ data[:arena].bot&.name || data[:arena].name }}">
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@
       <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:upcoming_bot].start_at.utc.iso8601 }}">{{ (data[:upcoming_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
-        <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:upcoming_bot].bot.name } }}">
+        <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_bot].image_url || data[:upcoming_bot].bot.image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:upcoming_bot].bot.name } }}">
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
       <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:calendar_bot].start_at.utc.iso8601 }}">{{ (data[:calendar_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %Y')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:calendar_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
-        <img class="img-fluid img-thumbnail" src="{{ data[:calendar_bot].image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:calendar_bot].bot.name } }}">
+        <img class="img-fluid img-thumbnail" src="{{ data[:calendar_bot].image_url || data[:calendar_bot].bot.image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:calendar_bot].bot.name } }}">
       </div>
     </div>
   </div>
