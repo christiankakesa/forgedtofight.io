@@ -95,9 +95,6 @@ msgstr ""
 msgid "HTML, CSS and JS web framework"
 msgstr ""
 
-msgid "Help us by sharing your bot stats"
-msgstr ""
-
 msgid "JSON document based database"
 msgstr ""
 
@@ -191,7 +188,10 @@ msgstr ""
 msgid "Scouts"
 msgstr ""
 
-msgid "Send your stats"
+msgid "Send your Bot stats"
+msgstr ""
+
+msgid "Send your Mod stats"
 msgstr ""
 
 msgid "Sidebar|About"

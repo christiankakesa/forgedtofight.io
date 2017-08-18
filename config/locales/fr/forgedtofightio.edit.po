@@ -95,9 +95,6 @@ msgstr "Point de vie"
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
 
-msgid "Help us by sharing your bot stats"
-msgstr "Participer aux statistiques des bots"
-
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
 
@@ -191,8 +188,11 @@ msgstr "Round"
 msgid "Scouts"
 msgstr "Éclaireurs"
 
-msgid "Send your stats"
-msgstr "Envoyer vos stats"
+msgid "Send your Bot stats"
+msgstr "Partager les stats des Bots"
+
+msgid "Send your Mod stats"
+msgstr "artager les stats des Mods"
 
 msgid "Sidebar|About"
 msgstr "À propos"

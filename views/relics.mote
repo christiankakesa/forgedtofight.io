@@ -1,6 +1,6 @@
 <h1>{{ _('Relics') }} ({{ Relic.count }})</h1>
 
-{{ partial 'views/_send_bot_stats.mote' }}
+{{ partial 'views/_send_stats.mote' }}
 
 % if relics.count > 0
 <div class="card-deck">

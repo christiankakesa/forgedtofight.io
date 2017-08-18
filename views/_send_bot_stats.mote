@@ -1,6 +1,0 @@
-<div class="d-flex justify-content-end">
-  <div class="callout callout-danger">
-    <h6>{{ _('Help us by sharing your bot stats') }}</h6>
-    <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSdK4mKZ-P0aQOEr-6jPaEloQKNOH1SuZVVY55uBrOWrJGYK9g/viewform?usp=pp_url&entry.1639498567&entry.1858679105&entry.1159746912&entry.1690687135&entry.680007750=0" target="_blank">{{ _('Send your stats') }}</a></strong>
-  </div>
-</div>
