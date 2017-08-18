@@ -192,7 +192,7 @@ msgid "Send your Bot stats"
 msgstr "Partager les stats des Bots"
 
 msgid "Send your Mod stats"
-msgstr "artager les stats des Mods"
+msgstr "Partager les stats des Mods"
 
 msgid "Sidebar|About"
 msgstr "À propos"
