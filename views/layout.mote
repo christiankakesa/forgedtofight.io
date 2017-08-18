@@ -5,9 +5,19 @@
   <title>{{ title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link href="/assets/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="/assets/app.css">
+  <link rel="alternate" hreflang="x-default" href="{{ req.fullpath }}">
+  <? FastGettext.available_locales.each do |locale|
+      localized_url = if req.query_string.empty?
+                        "#{req.path}?lang=#{locale}"
+                      elsif !req.query_string.match('lang=')
+                        "#{req.fullpath}&lang=#{locale}"
+                      else
+                        req.fullpath.gsub(/lang=[^&]*/, "lang=#{locale}")
+                      end
+  ?><link rel="alternate" hreflang="{{ locale }}" href="{{ localized_url }}">
+  <? end ?>
 </head>
 <body class="app header-fixed">
   {{ partial 'views/_header.mote' }}
