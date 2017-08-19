@@ -108,4 +108,22 @@ class BasicDeck < Syro::Deck
     session[:flash][type] << message
   end
   private :flash_add
+
+  def current_fullpath
+    lambda do
+      req.fullpath
+    end.call
+  end
+
+  def localized_path(lang = 'en')
+    lambda do
+      if req.query_string.empty?
+        "#{req.path}?lang=#{lang}"
+      elsif !req.query_string.match('lang=')
+        "#{req.fullpath}&lang=#{lang}"
+      else
+        req.fullpath.gsub(/lang=[^&]*/, "lang=#{lang}")
+      end
+    end.call
+  end
 end
