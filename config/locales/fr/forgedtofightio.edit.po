@@ -95,6 +95,15 @@ msgstr "Point de vie"
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
 
+msgid "HtmlMetaDescription|Transformers: Forged to Fight fan's website"
+msgstr "Site internet des fans de Transformers : Forgés d'Acier"
+
+msgid "HtmlMetaKeywords|@fenicks79"
+msgstr "@fenicks79"
+
+msgid "HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS"
+msgstr "Transformers,Forgés d\\'Acier,jeu,mobile,Android,iOS"
+
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
 
