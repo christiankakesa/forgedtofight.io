@@ -121,7 +121,7 @@ class BasicDeck < Syro::Deck
       if !result.index('?')
         result += "?#{key}=#{value}"
       elsif !result.match("#{key}=")
-      result += "&#{key}=#{value}"
+        result += "&#{key}=#{value}"
       else
         result.gsub(/#{key}=[^&$]*/, "#{key}=#{value}")
       end

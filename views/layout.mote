@@ -11,7 +11,6 @@
   % localized_fullpaths.each_key do |locale|
   {{ '<link rel="alternate" hreflang="' + locale.to_s + '" href="' + localized_fullpaths[locale] + '">' }}
   % end
-  <!-- {{ req.url }} -->
 </head>
 <body class="app header-fixed">
   {{ partial 'views/_header.mote' }}
