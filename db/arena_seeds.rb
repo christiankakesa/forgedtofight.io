@@ -19,7 +19,7 @@ Arena.delete_all
     start_at: Time.parse('2017-08-19 10:00:00 PDT').utc,
     end_at: Time.parse('2017-08-21 9:59:59 PDT').utc,
     round: nil,
-    image_url: '/assets/arena_crystal_bunty.jpeg'
+    image_url: '/assets/arena_crystal_bounty.jpeg'
   },
   {
     name: 'Featured Bot Arena',
