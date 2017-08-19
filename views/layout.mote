@@ -15,9 +15,10 @@
                         "#{req.fullpath}&lang=#{locale}"
                       else
                         req.fullpath.gsub(/lang=[^&]*/, "lang=#{locale}")
-                      end
-  ?><link rel="alternate" hreflang="{{ locale }}" href="{{ localized_url }}">
-  <? end ?>
+                      end ?>
+  {{ '<link rel="alternate" hreflang="' + locale + '" href="' + localized_url + '">' }}
+  % end
+  <!-- {{ req.url }} -->
 </head>
 <body class="app header-fixed">
   {{ partial 'views/_header.mote' }}
