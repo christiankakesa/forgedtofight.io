@@ -61,7 +61,7 @@ class BasicDeck < Syro::Deck
     page[:request_fullpath] = req.fullpath
     page[:localized_fullpaths] = {}
     FastGettext.available_locales.each do |locale|
-      path_with_locale = add_params(page[:request_fullpath], lang: locale)
+      path_with_locale = upsert_params(page[:request_fullpath], lang: locale)
       page[:localized_fullpaths][locale.to_sym] = path_with_locale
     end
     page[:content][:src] = path
@@ -115,7 +115,7 @@ class BasicDeck < Syro::Deck
   end
   private :flash_add
 
-  def add_params(request_string, params = {})
+  def upsert_params(request_string, params = {})
     result = request_string
     params.each do |key, value|
       if !result.index('?')
@@ -128,5 +128,5 @@ class BasicDeck < Syro::Deck
     end
     result
   end
-  private :add_params
+  private :upsert_params
 end
