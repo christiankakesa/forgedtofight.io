@@ -3,6 +3,44 @@
 Arena.delete_all
 [
   {
+    name: 'Mod Arena',
+    name_three_stars: 'Progess',
+    name_four_stars: 'Bot requirements',
+    start_at: Time.parse('2017-08-30 10:00:00 PDT').utc,
+    end_at: Time.parse('2017-08-31 9:59:59 PDT').utc,
+    round: nil,
+    image_url: '/assets/arena_1-day-mod.jpeg'
+  },
+  {
+    name: 'Featured Release Bot Arena',
+    name_three_stars: '...',
+    name_four_stars: '...',
+    start_at: Time.parse('2017-08-27 10:00:00 PDT').utc,
+    end_at: Time.parse('2017-08-30 9:59:59 PDT').utc,
+    round: 2,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Starscream').first.id
+  },
+  {
+    name: 'Featured Release Bot Arena',
+    name_three_stars: '...',
+    name_four_stars: '...',
+    start_at: Time.parse('2017-08-24 10:00:00 PDT').utc,
+    end_at: Time.parse('2017-08-27 9:59:59 PDT').utc,
+    round: 1,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Starscream').first.id
+  },
+  {
+    name: 'Mod Arena',
+    name_three_stars: 'Progess',
+    name_four_stars: 'Bot requirements',
+    start_at: Time.parse('2017-08-23 10:00:00 PDT').utc,
+    end_at: Time.parse('2017-08-24 9:59:59 PDT').utc,
+    round: nil,
+    image_url: '/assets/arena_1-day-mod.jpeg'
+  },
+  {
     name: 'Featured Bot Arena',
     name_three_stars: 'Twinkle toes',
     name_four_stars: 'Get cocky',
