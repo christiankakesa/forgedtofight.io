@@ -58,6 +58,12 @@ class BasicDeck < Syro::Deck
     page[:title] = params.delete(:title) do
       _('ForgedToFight.IO - Unofficial Transformers Forged to Fight resources')
     end
+    page[:request_fullpath] = req.fullpath
+    page[:localized_fullpaths] = {}
+    FastGettext.available_locales.each do |locale|
+      path_with_locale = add_params(page[:request_fullpath], lang: locale)
+      page[:localized_fullpaths][locale.to_sym] = path_with_locale
+    end
     page[:content][:src] = path
     page[:content].update(params)
     res.html(page)
@@ -109,21 +115,18 @@ class BasicDeck < Syro::Deck
   end
   private :flash_add
 
-  def current_fullpath
-    lambda do
-      req.fullpath
-    end.call
-  end
-
-  def localized_path(lang = 'en')
-    lambda do
-      if req.query_string.empty?
-        "#{req.path}?lang=#{lang}"
-      elsif !req.query_string.match('lang=')
-        "#{req.fullpath}&lang=#{lang}"
+  def add_params(request_string, params = {})
+    result = request_string
+    params.each do |key, value|
+      if !result.index('?')
+        result += "?#{key}=#{value}"
+      elsif !result.match("#{key}=")
+      result += "&#{key}=#{value}"
       else
-        req.fullpath.gsub(/lang=[^&]*/, "lang=#{lang}")
+        result.gsub(/#{key}=[^&$]*/, "#{key}=#{value}")
       end
-    end.call
+    end
+    result
   end
+  private :add_params
 end

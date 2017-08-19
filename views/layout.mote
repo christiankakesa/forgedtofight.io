@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="/assets/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="/assets/app.css">
-  <link rel="alternate" hreflang="x-default" href="{{ current_fullpath }}">
-  % FastGettext.available_locales.each do |locale|
-  {{ '<link rel="alternate" hreflang="' + locale + '" href="' + localized_path(locale) + '">' }}
+  <link rel="alternate" hreflang="x-default" href="{{ request_fullpath }}">
+  % localized_fullpaths.each_key do |locale|
+  {{ '<link rel="alternate" hreflang="' + locale.to_s + '" href="' + localized_fullpaths[locale] + '">' }}
   % end
   <!-- {{ req.url }} -->
 </head>
