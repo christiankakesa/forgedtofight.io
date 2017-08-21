@@ -1,13 +1,23 @@
 <h1>{{ _('Mods') }} ({{ Mod.count }})</h1>
 
+% if mods.count > 0
+<nav class="justify-content-center nav nav-pills nav-justified mb-3">
+  <a class="nav-link mod-menu nav-mod-active active" href="#">{{ _('All') }}</a>
+  <a class="nav-link mod-menu" data-mod_type="offense" href="#">{{ _('Offenses') }}</a>
+  <a class="nav-link mod-menu" data-mod_type="defense" href="#">{{ _('Defenses') }}</a>
+  <a class="nav-link mod-menu" data-mod_type="utility" href="#">{{ _('Utilities') }}</a>
+</nav>
+% end
+
 {{ partial 'views/_send_stats.mote' }}
 
 % if mods.count > 0
 <div class="card-deck">
   % mods.each do |mod|
-  <div class="card">
+  <div class="card card-mod-{{ mod.type }}">
     <div class="card-block">
       <div class="d-flex justify-content-end">
+         <span class="text-lowercase align-self-end badge badge-mod-{{ mod.type }}">{{ _(mod.type) }}</span>
         <img src="{{ mod.icon_url }}" alt="{{ mod.name }}" class="img-thumbnail">
       </div>
       <hr class="m-t-0">

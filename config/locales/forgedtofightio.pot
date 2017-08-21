@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-21 16:42+0200\n"
-"PO-Revision-Date: 2017-08-21 16:42+0200\n"
+"POT-Creation-Date: 2017-08-22 01:46+0200\n"
+"PO-Revision-Date: 2017-08-22 01:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -67,6 +67,9 @@ msgid "DateFormat|%B %Y"
 msgstr ""
 
 msgid "DateFormat|%B %dth, %Y at %H:%M %p"
+msgstr ""
+
+msgid "Defenses"
 msgstr ""
 
 msgid "Demolitions"
@@ -177,6 +180,9 @@ msgstr ""
 msgid "Now in arena"
 msgstr ""
 
+msgid "Offenses"
+msgstr ""
+
 msgid "PI"
 msgstr ""
 
@@ -199,6 +205,12 @@ msgid "Powerful and simple router for web applications"
 msgstr ""
 
 msgid "Privacy"
+msgstr ""
+
+msgid "Relic Boost"
+msgstr ""
+
+msgid "Relic Xp boost"
 msgstr ""
 
 msgid "Relics"
@@ -313,6 +325,9 @@ msgid "Username"
 msgstr ""
 
 msgid "Username or email"
+msgstr ""
+
+msgid "Utilities"
 msgstr ""
 
 msgid "Warriors"

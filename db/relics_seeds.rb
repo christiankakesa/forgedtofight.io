@@ -4,7 +4,7 @@ Relic.delete_all
 [
   {
     name: 'The covenant of primus',
-    type: 'Relic XP boost',
+    type: :relic_xp_boost,
     description: 'Increase Commander XP gains by +5 XP.',
     tier: nil,
     icon_url: '/assets/relics/the-covenant-of-primus.jpeg',
@@ -12,7 +12,7 @@ Relic.delete_all
   },
   {
     name: 'Matrix of leadership',
-    type: 'Relic XP boost',
+    type: :relic_xp_boost,
     description: nil,
     tier: { one: '+5% XP in Story and Special Missions.' },
     icon_url: '/assets/relics/matrix-of-leadership.jpeg',
@@ -20,7 +20,7 @@ Relic.delete_all
   },
   {
     name: 'Hot Rod relic',
-    type: 'Relic boost',
+    type: :relic_boost,
     description: nil,
     tier: { two: '+2% attack and health in Special Missions.' },
     icon_url: '/assets/relics/hot-rod-relic.jpeg',
@@ -28,7 +28,7 @@ Relic.delete_all
   },
   {
     name: 'Dark Energon ORB',
-    type: 'Relic XP boost',
+    type: :relic_xp_boost,
     description: 'Increase Commander XP gains by +5 XP.',
     tier: nil,
     icon_url: '/assets/relics/dark-energon-orb.jpeg',
@@ -36,7 +36,7 @@ Relic.delete_all
   },
   {
     name: 'Megatron relic',
-    type: 'Relic boost',
+    type: :relic_boost,
     description: nil,
     tier: { three: '+4% attack and health in Alliance Missions.' },
     icon_url: '/assets/relics/megatron-relic.jpeg',
@@ -44,7 +44,7 @@ Relic.delete_all
   },
   {
     name: 'Paralyzer',
-    type: 'Relic XP boost',
+    type: :relic_xp_boost,
     description: 'Increase Commander XP gains by +5 XP.',
     tier: nil,
     icon_url: '/assets/relics/paralyzer.jpeg',

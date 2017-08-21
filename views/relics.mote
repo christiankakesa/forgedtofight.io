@@ -1,18 +1,26 @@
 <h1>{{ _('Relics') }} ({{ Relic.count }})</h1>
 
+% if relics.count > 0
+<nav class="justify-content-center nav nav-pills nav-justified mb-3">
+  <a class="nav-link relic-menu nav-relic-active active" href="#">{{ _('All') }}</a>
+  <a class="nav-link relic-menu" data-relic_type="relic_boost" href="#">{{ _('Relic Boost') }}</a>
+  <a class="nav-link relic-menu" data-relic_type="relic_xp_boost" href="#">{{ _('Relic Xp boost') }}</a>
+</nav>
+% end
+
 {{ partial 'views/_send_stats.mote' }}
 
 % if relics.count > 0
 <div class="card-deck">
   % relics.each do |relic|
-  <div class="card">
+  <div class="card card-relic-{{ relic.type }}">
     <div class="card-block">
       <div class="d-flex justify-content-end">
         <img src="{{ relic.icon_url }}" alt="{{ relic.name }}" class="img-thumbnail">
       </div>
       <hr class="m-t-0">
       <div class="h4 text-uppercase text-default">{{ relic.name }}</div>
-      <div class="h6 text-default font-weight-bold">({{ relic.type }})</div>
+      <div class="h6 text-default text-capitalize font-weight-bold">({{ relic.type_name }})</div>
       <? if relic&.description; ?><p class="card-text">{{ relic.description }}</p><? end ?>
       % if relic&.tier
       <table class="table table-sm table-responsive table-hover">

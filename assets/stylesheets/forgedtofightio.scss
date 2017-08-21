@@ -8,21 +8,22 @@ $bot-color-tactician: #0026ca;
 $bot-color-tech: #0088a3;
 $bot-color-warrior: #9b0000;
 
-.badge-brawler { background-color: $bot-color-brawler; }
-.badge-demolitions { background-color: $bot-color-demolitions; }
-.badge-scout { background-color: $bot-color-scout; }
-.badge-tactician { background-color: $bot-color-tactician; }
-.badge-tech { background-color: $bot-color-tech; }
-.badge-warrior { background-color: $bot-color-warrior; }
+.badge-bot-brawler { background-color: $bot-color-brawler; }
+.badge-bot-demolitions { background-color: $bot-color-demolitions; }
+.badge-bot-scout { background-color: $bot-color-scout; }
+.badge-bot-tactician { background-color: $bot-color-tactician; }
+.badge-bot-tech { background-color: $bot-color-tech; }
+.badge-bot-warrior { background-color: $bot-color-warrior; }
 
-.text-brawler { color: $bot-color-brawler; }
-.text-demolitions { color: $bot-color-demolitions; }
-.text-scout { color: $bot-color-scout; }
-.text-tactician { color: $bot-color-tactician; }
-.text-tech { color: $bot-color-tech; }
-.text-warrior { color: $bot-color-warrior; }
+$mod-color-offense: #d50000;
+$mod-color-defense: #304ffe;
+$mod-color-utility: #ffd600;
 
-.nav-bot-active { border-bottom: 0.2em solid #fff; }
+.badge-mod-offense { background-color: $mod-color-offense; }
+.badge-mod-defense { background-color: $mod-color-defense; }
+.badge-mod-utility { background-color: $mod-color-utility; }
+
+.nav-bot-active, .nav-mod-active { border-bottom: 0.2em solid #fff; }
 
 .img-xs { max-width: 7% }
 .img-sm { max-width: 16% }

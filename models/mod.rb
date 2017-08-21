@@ -5,6 +5,7 @@ class Mod
   include NoBrainer::Document::Timestamps
 
   field :name, type: String, unique: true
+  field :type, type: Enum, default: :utility, in: %i[offense defense utility]
   field :description, type: String
   field :icon_url, type: String
   field :image_url, type: String

@@ -68,6 +68,9 @@ msgstr "%B %Y"
 msgid "DateFormat|%B %dth, %Y at %H:%M %p"
 msgstr "%d %B %Y à %Hh%M %p"
 
+msgid "Defenses"
+msgstr "Défensifs"
+
 msgid "Demolitions"
 msgstr "Démolisseurs"
 
@@ -176,6 +179,9 @@ msgstr "Aucun évènement pour le moment"
 msgid "Now in arena"
 msgstr "Arène en cours"
 
+msgid "Offenses"
+msgstr "Offensifs"
+
 msgid "PI"
 msgstr "IP"
 
@@ -199,6 +205,12 @@ msgstr "Moteur d'espace de nom pour les applications internets"
 
 msgid "Privacy"
 msgstr "Confidentialités"
+
+msgid "Relic Boost"
+msgstr "Boost d'artéfact"
+
+msgid "Relic Xp boost"
+msgstr "Boost d'exp d'artéfact"
 
 msgid "Relics"
 msgstr "Artéfacts"
@@ -313,6 +325,9 @@ msgstr "Utilisateur"
 
 msgid "Username or email"
 msgstr "Utilisateur ou e-mail"
+
+msgid "Utilities"
+msgstr "Utilitaires"
 
 msgid "Warriors"
 msgstr "Guerriers"

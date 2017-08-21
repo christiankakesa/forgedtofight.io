@@ -5,6 +5,14 @@ class Bot
   include NoBrainer::Document::Timestamps
 
   field :name, type: String, unique: true
+  field :type, type: Enum,
+               default: :brawler,
+               in: %i[brawler demolitions scout tactician tech warrior],
+               required: true
+  field :faction, type: Enum,
+                  default: :autobots,
+                  in: %i[autobots decepticons maximals predacons],
+                  required: true
   field :description, type: String
   field :icon_url, type: String
   field :image_url, type: String
@@ -17,10 +25,15 @@ class Bot
   field :attack, type: Hash, default: DEFAULT_INDEX
   field :signature_ability, type: Hash, default: DEFAULT_INDEX
 
-  belongs_to :bot_class, required: true, index: true
-  belongs_to :bot_faction, required: true, index: true
-
   has_many :arena
   has_many :calendar_bot
   has_many :upcoming_bot
+
+  def type_name
+    type.to_s.tr('_', ' ')
+  end
+
+  def faction_name
+    type.to_s.tr('_', ' ')
+  end
 end
