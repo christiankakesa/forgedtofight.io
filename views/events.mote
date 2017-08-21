@@ -12,12 +12,12 @@
 </nav>
 
 % if events.count > 0
-<table class="table table-striped table-inverse">
-  <thead>
+<table class="table table-sm table-hover">
+  <thead class="thead-inverse">
     <tr>
       <th>#</th>
-      <th>{{ _('Event') }}</th>
       <th>{{ _('Bot') }}</th>
+      <th>{{ _('Event') }}</th>
       <th>{{ _('Type') }}</th>
       <th>{{ _('Date') }}</th>
     </tr>
@@ -25,9 +25,9 @@
   <tbody>
     % events.each do |event|
     <tr>
-      <th scope="row"></th>
-      <td>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
+      <th scope="row" class="col-md-1"><? if event&.bot; ?><img class="img-sm rounded" src="{{ event.bot.icon_url }}"><? end ?></th>
       <td>{{ event&.bot&.name || '-' }}</td>
+      <td>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
       <td>{{ event.type_name }}</td>
       <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
     </tr>

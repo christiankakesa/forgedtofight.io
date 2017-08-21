@@ -23,3 +23,9 @@ $bot-color-warrior: #9b0000;
 .text-warrior { color: $bot-color-warrior; }
 
 .nav-bot-active { border-bottom: 0.2em solid #fff; }
+
+.img-xs { max-width: 7% }
+.img-sm { max-width: 16% }
+.img-md { max-width: 45% }
+.img-lg { max-width: 85% }
+.img-xl { max-width: 100% }
