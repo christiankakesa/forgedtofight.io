@@ -2,17 +2,17 @@
 <nav class="breadcrumb">
   <h1><a class="breadcrumb-item" href="#">{{ _('Events') }}</a></h1>
   <!-- Breadcrumb Menu-->
-  <div class="breadcrumb-menu">
+  <!-- <div class="breadcrumb-menu">
     <div class="btn-group" role="group" aria-label="{{ _('Buttons filters') }}">
       <a class="btn" href="#"><i class="icon-speech"></i> {{ _('Arena') }}</a>
       <a class="btn" href="#"><i class="icon-graph"></i> {{ _('Upcoming bot') }}</a>
       <a class="btn" href="#"><i class="icon-settings"></i> {{ _("Calendar's bot") }}</a>
     </div>
-  </div>
+  </div> -->
 </nav>
 
 % if events.count > 0
-<table class="table table-striped">
+<table class="table table-striped table-inverse">
   <thead>
     <tr>
       <th>#</th>
