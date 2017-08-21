@@ -41,6 +41,14 @@ Relic.delete_all
     tier: { three: '+4% attack and health in Alliance Missions.' },
     icon_url: '/assets/relics/megatron-relic.jpeg',
     image_url: '/assets/relics/megatron-relic_768x768.jpeg'
+  },
+  {
+    name: 'Paralyzer',
+    type: 'Relic XP boost',
+    description: 'Increase Commander XP gains by +5 XP.',
+    tier: nil,
+    icon_url: '/assets/relics/paralyzer.jpeg',
+    image_url: '/assets/relics/paralyzer_768x768.jpeg'
   }
 ].each do |relic|
   Relic.upsert! relic
