@@ -8,6 +8,6 @@ require_relative 'mods_seeds'
 
 require_relative 'relics_seeds'
 
-require_relative 'arena_seeds'
-require_relative 'calendar_bot_seeds'
-require_relative 'upcoming_bot_seeds'
+require_relative 'event_upcoming_bot_seeds'
+require_relative 'event_calendar_bot_seeds'
+require_relative 'event_arena_seeds'

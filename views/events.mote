@@ -1,9 +1,39 @@
-<h1>{{ _('Events') }}</h1>
 
-<div class="card card-inverse card-info mb-3 text-center">
-  <div class="card-block">
-    <blockquote class="card-blockquote">
-      <h3>{{ _('Coming soon') }}</h3>
-    </blockquote>
+<nav class="breadcrumb">
+  <h1><a class="breadcrumb-item" href="#">{{ _('Events') }}</a></h1>
+  <!-- Breadcrumb Menu-->
+  <div class="breadcrumb-menu">
+    <div class="btn-group" role="group" aria-label="{{ _('Buttons filters') }}">
+      <a class="btn" href="#"><i class="icon-speech"></i> {{ _('Arena') }}</a>
+      <a class="btn" href="#"><i class="icon-graph"></i> {{ _('Upcoming bot') }}</a>
+      <a class="btn" href="#"><i class="icon-settings"></i> {{ _("Calendar's bot") }}</a>
+    </div>
   </div>
-</div>
+</nav>
+
+% if events.count > 0
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>{{ _('Event') }}</th>
+      <th>{{ _('Bot') }}</th>
+      <th>{{ _('Type') }}</th>
+      <th>{{ _('Date') }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    % events.each do |event|
+    <tr>
+      <th scope="row"></th>
+      <td>{{ event&.name || event.type_name }}</td>
+      <td>{{ event&.bot&.name || '-' }}</td>
+      <td>{{ event.type_name }}</td>
+      <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
+    </tr>
+    % end
+  </tbody>
+</table>
+% else
+<p class="h3 text-muted">{{ _('No event for now') }}</p>
+% end

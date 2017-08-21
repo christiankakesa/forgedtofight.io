@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-20 01:37+0200\n"
-"PO-Revision-Date: 2017-08-20 01:37+0200\n"
+"POT-Creation-Date: 2017-08-21 14:15+0200\n"
+"PO-Revision-Date: 2017-08-21 14:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -33,7 +33,13 @@ msgstr ""
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
 msgstr ""
 
+msgid "Arena"
+msgstr ""
+
 msgid "Attack"
+msgstr ""
+
+msgid "Bot"
 msgstr ""
 
 msgid "Bot: %{bot}"
@@ -45,16 +51,19 @@ msgstr ""
 msgid "Brawlers"
 msgstr ""
 
+msgid "Buttons filters"
+msgstr ""
+
 msgid "Calendar's bot"
 msgstr ""
 
 msgid "Close"
 msgstr ""
 
-msgid "Coming soon"
+msgid "Community resources"
 msgstr ""
 
-msgid "Community resources"
+msgid "Date"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -70,6 +79,9 @@ msgid "Dynamic and efficient programming language"
 msgstr ""
 
 msgid "Email"
+msgstr ""
+
+msgid "Event"
 msgstr ""
 
 msgid "Events"
@@ -117,9 +129,6 @@ msgstr ""
 msgid "Log in"
 msgstr ""
 
-msgid "MenuBadge|Soon"
-msgstr ""
-
 msgid "Menu|About"
 msgstr ""
 
@@ -157,6 +166,12 @@ msgid "Mods"
 msgstr ""
 
 msgid "Name"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "No event for now"
 msgstr ""
 
 msgid "Now in arena"
@@ -283,6 +298,9 @@ msgid "Tier 2"
 msgstr ""
 
 msgid "Tier 3"
+msgstr ""
+
+msgid "Type"
 msgstr ""
 
 msgid "Upcoming bot"

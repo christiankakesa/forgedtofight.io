@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
-Arena.delete_all
+Event.unscoped.where(type: :arena).delete_all
+# Upcoming bots
 [
   {
+    type: :arena,
     name: 'Mod Arena',
     name_three_stars: 'Progess',
     name_four_stars: 'Bot requirements',
@@ -12,6 +14,7 @@ Arena.delete_all
     image_url: '/assets/arena_1-day-mod.jpeg'
   },
   {
+    type: :arena,
     name: 'Featured Release Bot Arena',
     name_three_stars: '...',
     name_four_stars: '...',
@@ -22,6 +25,7 @@ Arena.delete_all
     bot_id: Bot.where(name: 'Starscream').first.id
   },
   {
+    type: :arena,
     name: 'Featured Release Bot Arena',
     name_three_stars: '...',
     name_four_stars: '...',
@@ -32,6 +36,7 @@ Arena.delete_all
     bot_id: Bot.where(name: 'Starscream').first.id
   },
   {
+    type: :arena,
     name: 'Mod Arena',
     name_three_stars: 'Progess',
     name_four_stars: 'Bot requirements',
@@ -41,6 +46,7 @@ Arena.delete_all
     image_url: '/assets/arena_1-day-mod.jpeg'
   },
   {
+    type: :arena,
     name: 'Featured Bot Arena',
     name_three_stars: 'Twinkle toes',
     name_four_stars: 'Get cocky',
@@ -51,6 +57,7 @@ Arena.delete_all
     bot_id: Bot.where(name: 'Sideswipe').first.id
   },
   {
+    type: :arena,
     name: 'Crystal Bounty Arena',
     name_three_stars: 'Progess',
     name_four_stars: 'Progess',
@@ -60,6 +67,7 @@ Arena.delete_all
     image_url: '/assets/arena_crystal_bounty.jpeg'
   },
   {
+    type: :arena,
     name: 'Featured Bot Arena',
     name_three_stars: 'Twinkle toes',
     name_four_stars: 'Get cocky',
@@ -70,6 +78,7 @@ Arena.delete_all
     bot_id: Bot.where(name: 'Sideswipe').first.id
   },
   {
+    type: :arena,
     name: 'Mod Arena',
     name_three_stars: 'Progess',
     name_four_stars: 'Bot requirements',
@@ -79,6 +88,7 @@ Arena.delete_all
     image_url: '/assets/arena_1-day-mod.jpeg'
   },
   {
+    type: :arena,
     name: 'Featured Release Bot Arena',
     name_three_stars: 'Mesured ambition',
     name_four_stars: 'Charged up',
@@ -89,6 +99,7 @@ Arena.delete_all
     bot_id: Bot.where(name: 'Shockwave').first.id
   },
   {
+    type: :arena,
     name: 'Featured Release Bot Arena',
     name_three_stars: 'Mesured ambition',
     name_four_stars: 'Charged up',
@@ -98,6 +109,6 @@ Arena.delete_all
     image_url: nil,
     bot_id: Bot.where(name: 'Shockwave').first.id
   }
-].each do |arena|
-  Arena.upsert! arena
+].each do |event_arena|
+  Event.upsert! event_arena
 end

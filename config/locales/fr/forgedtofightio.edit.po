@@ -32,8 +32,14 @@ msgstr "Tous"
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
 msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a>"
 
+msgid "Arena"
+msgstr "Arène"
+
 msgid "Attack"
 msgstr "Attaque"
+
+msgid "Bot"
+msgstr "Bot"
 
 msgid "Bot: %{bot}"
 msgstr "Bot : %{bot}"
@@ -44,17 +50,20 @@ msgstr "Botodex"
 msgid "Brawlers"
 msgstr "Bagarreurs"
 
+msgid "Buttons filters"
+msgstr "Filtres"
+
 msgid "Calendar's bot"
 msgstr "Bot du calendrier"
 
 msgid "Close"
 msgstr "Fermer"
 
-msgid "Coming soon"
-msgstr "Prochainement"
-
 msgid "Community resources"
 msgstr "Portails de la communauté"
+
+msgid "Date"
+msgstr "Date"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -70,6 +79,9 @@ msgstr "Langage de programmation dynamique et efficace"
 
 msgid "Email"
 msgstr "E-mail"
+
+msgid "Event"
+msgstr "Évènements"
 
 msgid "Events"
 msgstr "Évènements"
@@ -102,7 +114,7 @@ msgid "HtmlMetaKeywords|@fenicks79"
 msgstr "@fenicks79"
 
 msgid "HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS"
-msgstr "Transformers,Forgés d\\'Acier,jeu,mobile,Android,iOS"
+msgstr "Transformers,Forgés d'Acier,jeu,mobile,Android,iOS"
 
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
@@ -115,9 +127,6 @@ msgstr "Nom"
 
 msgid "Log in"
 msgstr "Se connecter"
-
-msgid "MenuBadge|Soon"
-msgstr "Bientôt"
 
 msgid "Menu|About"
 msgstr "À propos"
@@ -157,6 +166,12 @@ msgstr "Mods"
 
 msgid "Name"
 msgstr "Nom"
+
+msgid "New"
+msgstr "Nouveau"
+
+msgid "No event for now"
+msgstr "Aucun évènement pour le moment"
 
 msgid "Now in arena"
 msgstr "Arène en cours"
@@ -284,8 +299,11 @@ msgstr "Grade 2"
 msgid "Tier 3"
 msgstr "Grade 3"
 
+msgid "Type"
+msgstr "Type"
+
 msgid "Upcoming bot"
-msgstr "Bot en vedette"
+msgstr "Bot à l'honneur"
 
 msgid "Use of cookies"
 msgstr "Utilisation des cookies"

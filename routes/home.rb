@@ -9,7 +9,8 @@ Home = Syro.new(BasicDeck) do
 
   on 'events' do
     get do
-      render 'views/events.mote'
+      @events = Event.where(:start_at.ge => RethinkDB::RQL.new.now).order_by(start_at: :asc)
+      render 'views/events.mote', events: @events 
     end
   end
 
@@ -166,11 +167,12 @@ Home = Syro.new(BasicDeck) do
 
   get do
     @data = {
-      upcoming_bot: UpcomingBot.order_by(start_at: :desc).first,
-      calendar_bot: CalendarBot
+      upcoming_bot: Event.where(type: :upcoming_bot).order_by(start_at: :desc).first,
+      calendar_bot: Event
+            .where(type: :calendar_bot)
             .where(:start_at.gt => DateTime.new(Time.now.utc.year, Time.now.utc.month, 1, 0, 0, 0, 'UTC').to_time)
             .where(:start_at.lt => DateTime.new(Time.now.utc.year, Time.now.utc.month, -1, 23, 59, 59, 'UTC').to_time).first,
-      arena: Arena.where(:end_at.gte => RethinkDB::RQL.new.now).where(:start_at.lte => RethinkDB::RQL.new.now).first
+      arena: Event.where(type: :arena).where(:end_at.gte => RethinkDB::RQL.new.now).where(:start_at.lte => RethinkDB::RQL.new.now).first
     }
     render 'views/home.mote', data: @data
   end
