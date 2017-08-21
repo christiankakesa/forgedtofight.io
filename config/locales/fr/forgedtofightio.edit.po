@@ -50,9 +50,6 @@ msgstr "Botodex"
 msgid "Brawlers"
 msgstr "Bagarreurs"
 
-msgid "Buttons filters"
-msgstr "Filtres"
-
 msgid "Calendar's bot"
 msgstr "Bot du calendrier"
 
@@ -85,6 +82,9 @@ msgstr "Évènements"
 
 msgid "Events"
 msgstr "Évènements"
+
+msgid "Filters"
+msgstr "Filtres"
 
 msgid "Firstname"
 msgstr "Prénom"

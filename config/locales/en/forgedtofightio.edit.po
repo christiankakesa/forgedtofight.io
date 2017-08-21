@@ -50,9 +50,6 @@ msgstr ""
 msgid "Brawlers"
 msgstr ""
 
-msgid "Buttons filters"
-msgstr ""
-
 msgid "Calendar's bot"
 msgstr ""
 
@@ -84,6 +81,9 @@ msgid "Event"
 msgstr ""
 
 msgid "Events"
+msgstr ""
+
+msgid "Filters"
 msgstr ""
 
 msgid "Firstname"

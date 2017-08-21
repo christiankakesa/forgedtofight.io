@@ -3,7 +3,7 @@
   <h1><a class="breadcrumb-item" href="#">{{ _('Events') }}</a></h1>
   <!-- Breadcrumb Menu-->
   <!-- <div class="breadcrumb-menu">
-    <div class="btn-group" role="group" aria-label="{{ _('Buttons filters') }}">
+    <div class="btn-group" role="group" aria-label="{{ _('Filters') }}">
       <a class="btn" href="#"><i class="icon-speech"></i> {{ _('Arena') }}</a>
       <a class="btn" href="#"><i class="icon-graph"></i> {{ _('Upcoming bot') }}</a>
       <a class="btn" href="#"><i class="icon-settings"></i> {{ _("Calendar's bot") }}</a>
@@ -26,7 +26,7 @@
     % events.each do |event|
     <tr>
       <th scope="row"></th>
-      <td>{{ event&.name || event.type_name }}</td>
+      <td>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
       <td>{{ event&.bot&.name || '-' }}</td>
       <td>{{ event.type_name }}</td>
       <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
