@@ -33,6 +33,14 @@ Relic.delete_all
     tier: nil,
     icon_url: '/assets/relics/dark-energon-orb.jpeg',
     image_url: '/assets/relics/dark-energon-orb_768x768.jpeg'
+  },
+  {
+    name: 'Megatron relic',
+    type: 'Relic boost',
+    description: nil,
+    tier: { three: '+4% attack and health in Alliance Missions.' },
+    icon_url: '/assets/relics/megatron-relic.jpeg',
+    image_url: '/assets/relics/megatron-relic_768x768.jpeg'
   }
 ].each do |relic|
   Relic.upsert! relic
