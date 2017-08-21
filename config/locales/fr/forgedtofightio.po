@@ -78,7 +78,7 @@ msgid "Email"
 msgstr "E-mail"
 
 msgid "Event"
-msgstr "Évènements"
+msgstr "Évènement"
 
 msgid "Events"
 msgstr "Évènements"
