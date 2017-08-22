@@ -23,7 +23,9 @@ $mod-color-utility: #ffd600;
 .badge-mod-defense { background-color: $mod-color-defense; }
 .badge-mod-utility { background-color: $mod-color-utility; }
 
-.nav-bot-active, .nav-mod-active { border-bottom: 0.2em solid #fff; }
+.nav-bot-active, .nav-mod-active, .nav-relic-active {
+  border-bottom: 0.2em solid #fff;
+}
 
 .img-xs { max-width: 7% }
 .img-sm { max-width: 16% }
