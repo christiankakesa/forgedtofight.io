@@ -26,15 +26,15 @@
       <table class="table table-sm table-responsive table-hover">
         <tbody>
           <tr>
-            <th scope="row">{{ _('Tier 1') }}</th>
+            <th scope="row"><abbr title="{{ _('Tier 1') }}">{{ s_('Tier|T1') }}</abbr></th>
             <td class="text-right">{{ relic.tier[:one] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Tier 2') }}</th>
+            <th scope="row"><abbr title="{{ _('Tier 2') }}">{{ s_('Tier|T2') }}</abbr></th>
             <td class="text-right">{{ relic.tier[:two] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Tier 3') }}</th>
+            <th scope="row"><abbr title="{{ _('Tier 3') }}">{{ s_('Tier|T3') }}</abbr></th>
             <td class="text-right">{{ relic.tier[:three] || '-' }}</td>
           </tr>
         </tbody>

@@ -311,6 +311,15 @@ msgstr ""
 msgid "Tier 3"
 msgstr ""
 
+msgid "Tier|T1"
+msgstr ""
+
+msgid "Tier|T2"
+msgstr ""
+
+msgid "Tier|T3"
+msgstr ""
+
 msgid "Type"
 msgstr ""
 

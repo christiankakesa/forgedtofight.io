@@ -311,6 +311,15 @@ msgstr "Grade 2"
 msgid "Tier 3"
 msgstr "Grade 3"
 
+msgid "Tier|T1"
+msgstr "G1"
+
+msgid "Tier|T2"
+msgstr "G2"
+
+msgid "Tier|T3"
+msgstr "G3"
+
 msgid "Type"
 msgstr "Type"
 
