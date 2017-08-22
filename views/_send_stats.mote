@@ -1,5 +1,5 @@
 <div class="container row d-flex justify-content-end">
-  <div class="col-sm-2 col-md-3">
+  <div class="col-xs-4 col-md-3">
     <div class="callout callout-info">
       <h6>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdK4mKZ-P0aQOEr-6jPaEloQKNOH1SuZVVY55uBrOWrJGYK9g/viewform?usp=pp_url&entry.1639498567&entry.1858679105&entry.1159746912&entry.1690687135&entry.680007750=0" target="_blank">
@@ -8,7 +8,7 @@
       </h6>
     </div>
   </div><!--/.col-->
-  <div class="col-sm-2 col-md-3">
+  <div class="col-xs-4 col-md-3">
     <div class="callout callout-info">
       <h6>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKFw5Wg7MV2I_4z6H3DdoWHrioRXgC9mrMMcByPBVLU08G8A/viewform?usp=pp_url&entry.81564846&entry.1045991376&entry.1680017704&entry.576924518&entry.1266597174" target="_blank">

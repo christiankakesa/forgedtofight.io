@@ -25,7 +25,7 @@
   <tbody>
     % events.each do |event|
     <tr>
-      <th scope="row" class="col-md-1"><? if event&.bot; ?><img class="img-sm rounded" src="{{ event.bot.icon_url }}"><? end ?></th>
+      <th scope="row" class="col-1"><? if event&.bot; ?><img class="img-list-item rounded" src="{{ event.bot.icon_url }}"><? end ?></th>
       <td>{{ event&.bot&.name || '-' }}</td>
       <td>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
       <td>{{ event.type_name }}</td>
