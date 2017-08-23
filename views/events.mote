@@ -27,8 +27,8 @@
     <tr>
       <th scope="row" class="col-1"><? if event&.bot; ?><img class="img-list-item rounded" src="{{ event.bot.icon_url }}"><? end ?></th>
       <td>{{ event&.bot&.name || '-' }}</td>
-      <td>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
-      <td>{{ event.type_name }}</td>
+      <td><span class="text-capitalize">{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
+      <td>{{ event.type }}</td>
       <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
     </tr>
     % end
