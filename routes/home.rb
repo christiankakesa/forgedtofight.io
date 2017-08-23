@@ -167,7 +167,11 @@ Home = Syro.new(BasicDeck) do
 
   get do
     @data = {
-      upcoming_bot: Event.where(type: :upcoming_bot).order_by(start_at: :desc).first,
+      upcoming_bot: Event
+            .where(type: :upcoming_bot)
+            .where { |d| d[:start_at].to_epoch_time <= (RethinkDB::RQL.new.now.to_epoch_time + (24 * 60 * 60)) }
+            .order_by(start_at: :desc)
+            .first,
       calendar_bot: Event
             .where(type: :calendar_bot)
             .where(:start_at.gt => DateTime.new(Time.now.utc.year, Time.now.utc.month, 1, 0, 0, 0, 'UTC').to_time)
