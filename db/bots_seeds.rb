@@ -273,9 +273,9 @@ Bot.delete_all
     image_url: '/assets/bots/starscream_600x860.jpeg',
     type: :tactician,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    power_index: { stars_1: nil, stars_2: 550, stars_3: 1312, stars_4: 3524 },
+    health: { stars_1: nil, stars_2: 1575, stars_3: 3866, stars_4: 10_048 },
+    attack: { stars_1: nil, stars_2: 132, stars_3: 280, stars_4: 727 },
     signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
