@@ -48,14 +48,14 @@
             <td class="text-right font-weight-bold">{{ mod.attack[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Max Rating') }}</th>
+            <th scope="row">{{ _('Max rating') }}<br><abbr title="{{ _('(Signature ability 0)') }}">{{ _('(Sig 0)') }}</abbr></th>
             <td class="text-right">{{ mod.max_rating_sig0[:stars_1] || '-' }}</td>
             <td class="text-right">{{ mod.max_rating_sig0[:stars_2] || '-' }}</td>
             <td class="text-right">{{ mod.max_rating_sig0[:stars_3] || '-' }}</td>
             <td class="text-right font-weight-bold">{{ mod.max_rating_sig0[:stars_4] || '-' }}</td>
           </tr>
           <tr>
-            <th scope="row">{{ _('Max Rating') }}<br>{{ _('(Sig 100)') }}</th>
+            <th scope="row">{{ _('Max rating') }}<br><abbr title="{{ _('(Signature ability 100)') }}">{{ _('(Sig 100)') }}</abbr></th>
             <td class="text-right">{{ mod.max_rating_sig100[:stars_1] || '-' }}</td>
             <td class="text-right">{{ mod.max_rating_sig100[:stars_2] || '-' }}</td>
             <td class="text-right">{{ mod.max_rating_sig100[:stars_3] || '-' }}</td>

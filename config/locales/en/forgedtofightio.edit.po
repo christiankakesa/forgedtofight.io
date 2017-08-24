@@ -17,6 +17,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 
+msgid "(Sig 0)"
+msgstr ""
+
+msgid "(Sig 100)"
+msgstr ""
+
+msgid "(Signature ability 0)"
+msgstr ""
+
+msgid "(Signature ability 100)"
+msgstr ""
+
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr ""
 
@@ -92,9 +104,6 @@ msgstr ""
 msgid "Firstname"
 msgstr ""
 
-msgid "Forge"
-msgstr ""
-
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
@@ -129,6 +138,9 @@ msgid "Lastname"
 msgstr ""
 
 msgid "Log in"
+msgstr ""
+
+msgid "Max rating"
 msgstr ""
 
 msgid "Menu|About"
@@ -182,9 +194,6 @@ msgstr ""
 msgid "Offenses"
 msgstr ""
 
-msgid "PI"
-msgstr ""
-
 msgid "Password"
 msgstr ""
 
@@ -192,9 +201,6 @@ msgid "Password confirmation"
 msgstr ""
 
 msgid "Password|Reset"
-msgstr ""
-
-msgid "Power Index"
 msgstr ""
 
 msgid "Powered by"
@@ -270,12 +276,6 @@ msgid "Sign in"
 msgstr ""
 
 msgid "Sign up"
-msgstr ""
-
-msgid "Signature ability"
-msgstr ""
-
-msgid "SignatureAbility|Signature"
 msgstr ""
 
 msgid "Support"

@@ -17,6 +17,18 @@ msgstr ""
 "Last-Translator: \n"
 "X-Generator: Poedit 1.8.11\n"
 
+msgid "(Sig 0)"
+msgstr "(Comp 0)"
+
+msgid "(Sig 100)"
+msgstr "(Comp 100)"
+
+msgid "(Signature ability 0)"
+msgstr "(Compétence personnelle 0)"
+
+msgid "(Signature ability 100)"
+msgstr "(Compétence personnelle 100)"
+
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 
@@ -92,9 +104,6 @@ msgstr "Filtres"
 msgid "Firstname"
 msgstr "Prénom"
 
-msgid "Forge"
-msgstr "Forge"
-
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr "ForgedToFight.IO &mdash; Gestion du compte"
 
@@ -130,6 +139,9 @@ msgstr "Nom"
 
 msgid "Log in"
 msgstr "Se connecter"
+
+msgid "Max rating"
+msgstr "Force max"
 
 msgid "Menu|About"
 msgstr "À propos"
@@ -182,9 +194,6 @@ msgstr "Arène en cours"
 msgid "Offenses"
 msgstr "Offensifs"
 
-msgid "PI"
-msgstr "IP"
-
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -193,9 +202,6 @@ msgstr "Mot de passe confirmé"
 
 msgid "Password|Reset"
 msgstr "Réinitialiser"
-
-msgid "Power Index"
-msgstr "Indice de puissance"
 
 msgid "Powered by"
 msgstr "Créer par"
@@ -271,12 +277,6 @@ msgstr "Se connecter"
 
 msgid "Sign up"
 msgstr "S'inscrire"
-
-msgid "Signature ability"
-msgstr "Compétence personnelle"
-
-msgid "SignatureAbility|Signature"
-msgstr "Compétence"
 
 msgid "Support"
 msgstr "Support"
