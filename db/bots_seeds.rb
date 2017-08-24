@@ -71,8 +71,8 @@ Bot.delete_all
     faction: :autobots,
     health: { stars_1: nil, stars_2: 1732, stars_3: 4253, stars_4: 11_053 },
     attack: { stars_1: nil, stars_2: 152, stars_3: 325, stars_4: 843 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2845 },
+    max_rating_sig100: { stars_1: nil, stars_2: 546, stars_3: 1307, stars_4: 3476 }
   },
   {
     name: 'Grimlock',
@@ -83,8 +83,8 @@ Bot.delete_all
     faction: :autobots,
     health: { stars_1: nil, stars_2: 2204, stars_3: 5412, stars_4: 14_067 },
     attack: { stars_1: nil, stars_2: 162, stars_3: 344, stars_4: 893 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2979 },
+    max_rating_sig100: { stars_1: nil, stars_2: 536, stars_3: 1308, stars_4: 3612 }
   },
   {
     name: 'Grindor',
@@ -107,8 +107,8 @@ Bot.delete_all
     faction: :autobots,
     health: { stars_1: nil, stars_2: 1697, stars_3: 4167, stars_4: 10_829 },
     attack: { stars_1: nil, stars_2: 158, stars_3: 337, stars_4: 876 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2857 },
+    max_rating_sig100: { stars_1: nil, stars_2: 552, stars_3: 1313, stars_4: 3476 }
   },
   {
     name: 'Ironhide',
@@ -131,8 +131,8 @@ Bot.delete_all
     faction: :decepticons,
     health: { stars_1: nil, stars_2: 1924, stars_3: 4725, stars_4: 12_281 },
     attack: { stars_1: nil, stars_2: 146, stars_3: 306, stars_4: 794 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2935 },
+    max_rating_sig100: { stars_1: nil, stars_2: 555, stars_3: 1312, stars_4: 3543 }
   },
   {
     name: 'Mirage',
@@ -156,7 +156,7 @@ Bot.delete_all
     health: { stars_1: nil, stars_2: 1837, stars_3: 4510, stars_4: 8966 },
     attack: { stars_1: nil, stars_2: 114, stars_3: 245, stars_4: 487 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig100: { stars_1: nil, stars_2: 522, stars_3: 1273, stars_4: 2606 }
   },
   {
     name: 'Motormaster',
@@ -204,7 +204,7 @@ Bot.delete_all
     health: { stars_1: nil, stars_2: 1714, stars_3: 4210, stars_4: 10_941 },
     attack: { stars_1: nil, stars_2: 152, stars_3: 322, stars_4: 835 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig100: { stars_1: nil, stars_2: 557, stars_3: 1308, stars_4: 3488 }
   },
   {
     name: 'Ratchet',
@@ -239,8 +239,8 @@ Bot.delete_all
     faction: :decepticons,
     health: { stars_1: nil, stars_2: 1767, stars_3: 4339, stars_4: 11_276 },
     attack: { stars_1: nil, stars_2: 129, stars_3: 271, stars_4: 703 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2930 },
+    max_rating_sig100: { stars_1: nil, stars_2: 557, stars_3: 1317, stars_4: 3547 }
   },
   {
     name: 'Sideswipe',
@@ -263,8 +263,8 @@ Bot.delete_all
     faction: :decepticons,
     health: { stars_1: nil, stars_2: 1802, stars_3: 4425, stars_4: 11_499 },
     attack: { stars_1: nil, stars_2: 141, stars_3: 296, stars_4: 769 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2928 },
+    max_rating_sig100: { stars_1: nil, stars_2: 548, stars_3: 1299, stars_4: 3502 }
   },
   {
     name: 'Starscream',
@@ -276,7 +276,7 @@ Bot.delete_all
     health: { stars_1: nil, stars_2: 1575, stars_3: 3866, stars_4: 10_048 },
     attack: { stars_1: nil, stars_2: 132, stars_3: 280, stars_4: 727 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig100: { stars_1: nil, stars_2: 550, stars_3: 1312, stars_4: 3524 }
   },
   {
     name: 'Ultra Magnus',
@@ -299,8 +299,8 @@ Bot.delete_all
     faction: :predacons,
     health: { stars_1: nil, stars_2: 1662, stars_3: 4081, stars_4: 10_606 },
     attack: { stars_1: nil, stars_2: 144, stars_3: 302, stars_4: 785 },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2846 },
+    max_rating_sig100: { stars_1: nil, stars_2: 571, stars_3: 1326, stars_4: 3524 }
   },
   {
     name: 'Windblade',
