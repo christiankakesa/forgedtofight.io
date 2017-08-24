@@ -20,10 +20,10 @@ class Bot
                     stars_2: nil,
                     stars_3: nil,
                     stars_4: nil }.freeze
-  field :power_index, type: Hash, default: DEFAULT_INDEX
   field :health, type: Hash, default: DEFAULT_INDEX
   field :attack, type: Hash, default: DEFAULT_INDEX
-  field :signature_ability, type: Hash, default: DEFAULT_INDEX
+  field :max_rating_sig0, type: Hash, default: DEFAULT_INDEX
+  field :max_rating_sig100, type: Hash, default: DEFAULT_INDEX
 
   has_many :arena
   has_many :calendar_bot

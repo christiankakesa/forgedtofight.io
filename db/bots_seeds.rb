@@ -9,10 +9,10 @@ Bot.delete_all
     image_url: '/assets/bots/arcee_600x860.jpeg',
     type: :warrior,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 546, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1557, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 173, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Barricade',
@@ -21,10 +21,10 @@ Bot.delete_all
     image_url: '/assets/bots/barricade_600x860.jpeg',
     type: :scout,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: 552, stars_3: 1165, stars_4: nil },
     health: { stars_1: nil, stars_2: 1505, stars_3: 3804, stars_4: nil },
     attack: { stars_1: nil, stars_2: 176, stars_3: 384, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 15, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Bludgeon',
@@ -33,10 +33,10 @@ Bot.delete_all
     image_url: '/assets/bots/bludgeon_600x860.jpeg',
     type: :warrior,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: 1122, stars_4: nil },
     health: { stars_1: nil, stars_2: nil, stars_3: 4339, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: 341, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: 10, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Bonecrusher',
@@ -45,10 +45,10 @@ Bot.delete_all
     image_url: '/assets/bots/bonecrusher_600x860.jpeg',
     type: :warrior,
     faction: :decepticons,
-    power_index: { stars_1: 247, stars_2: 441, stars_3: 1204, stars_4: nil },
     health: { stars_1: 970, stars_2: 1767, stars_3: 4496, stars_4: nil },
     attack: { stars_1: 93, stars_2: 155, stars_3: 343, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 20, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Bumblebee',
@@ -57,10 +57,10 @@ Bot.delete_all
     image_url: '/assets/bots/bumblebee_600x860.jpeg',
     type: :tactician,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 538, stars_3: 1230, stars_4: nil },
     health: { stars_1: nil, stars_2: 1819, stars_3: 4601, stars_4: nil },
     attack: { stars_1: nil, stars_2: 150, stars_3: 328, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 30, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Drift',
@@ -69,10 +69,10 @@ Bot.delete_all
     image_url: '/assets/bots/drift_600x860.jpeg',
     type: :warrior,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1732, stars_3: 4253, stars_4: 11_053 },
     attack: { stars_1: nil, stars_2: 152, stars_3: 325, stars_4: 843 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Grimlock',
@@ -81,10 +81,10 @@ Bot.delete_all
     image_url: '/assets/bots/grimlock_600x860.jpeg',
     type: :brawler,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 441, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 2204, stars_3: 5412, stars_4: 14_067 },
     attack: { stars_1: nil, stars_2: 162, stars_3: 344, stars_4: 893 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Grindor',
@@ -93,10 +93,10 @@ Bot.delete_all
     image_url: '/assets/bots/grindor_600x860.jpeg',
     type: :brawler,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: 530, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1959, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 171, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Hot Rod',
@@ -105,10 +105,10 @@ Bot.delete_all
     image_url: '/assets/bots/hot-rod_600x860.jpeg',
     type: :warrior,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1697, stars_3: 4167, stars_4: 10_829 },
     attack: { stars_1: nil, stars_2: 158, stars_3: 337, stars_4: 876 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Ironhide',
@@ -117,10 +117,10 @@ Bot.delete_all
     image_url: '/assets/bots/ironhide_600x860.jpeg',
     type: :demolitions,
     faction: :autobots,
-    power_index: { stars_1: 260, stars_2: 557, stars_3: 1152, stars_4: nil },
     health: { stars_1: 1009, stars_2: 1837, stars_3: 4581, stars_4: nil },
     attack: { stars_1: 89, stars_2: 147, stars_3: 314, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 5, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Megatron',
@@ -129,10 +129,10 @@ Bot.delete_all
     image_url: '/assets/bots/megatron_600x860.jpeg',
     type: :demolitions,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: 513, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1924, stars_3: 4725, stars_4: 12_281 },
     attack: { stars_1: nil, stars_2: 146, stars_3: 306, stars_4: 794 },
-    signature_ability: { stars_1: nil, stars_2: 35, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Mirage',
@@ -141,10 +141,10 @@ Bot.delete_all
     image_url: '/assets/bots/mirage_600x860.jpeg',
     type: :tech,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 535, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1592, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 141, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Mixmaster',
@@ -153,10 +153,10 @@ Bot.delete_all
     image_url: '/assets/bots/mixmaster_600x860.jpeg',
     type: :demolitions,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: 1076, stars_4: nil },
     health: { stars_1: nil, stars_2: 1837, stars_3: 4510, stars_4: 8966 },
     attack: { stars_1: nil, stars_2: 114, stars_3: 245, stars_4: 487 },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Motormaster',
@@ -165,10 +165,10 @@ Bot.delete_all
     image_url: '/assets/bots/motormaster_600x860.jpeg',
     type: :brawler,
     faction: :decepticons,
-    power_index: { stars_1: 249, stars_2: 532, stars_3: 1133, stars_4: nil },
     health: { stars_1: 1076, stars_2: 1959, stars_3: 4811, stars_4: nil },
     attack: { stars_1: 103, stars_2: 171, stars_3: 363, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 0, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Optiminus Prime',
@@ -177,10 +177,10 @@ Bot.delete_all
     image_url: '/assets/bots/optimus-prime_600x860.jpeg',
     type: :tactician,
     faction: :autobots,
-    power_index: { stars_1: 267, stars_2: 537, stars_3: 1205, stars_4: nil },
     health: { stars_1: 1066, stars_2: 1819, stars_3: 4742, stars_4: nil },
     attack: { stars_1: 97, stars_2: 150, stars_3: 338, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 10, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Optiminus Prime MV1',
@@ -189,10 +189,10 @@ Bot.delete_all
     image_url: '/assets/bots/optimus-prime-mv1_600x860.jpeg',
     type: :brawler,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 540, stars_3: 1206, stars_4: nil },
-    health: { stars_1: nil, stars_2: 1959, stars_3: 5002, stars_4: nil },
-    attack: { stars_1: nil, stars_2: 171, stars_3: 378, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 10, stars_4: nil }
+    health: { stars_1: nil, stars_2: 1714, stars_3: 5002, stars_4: nil },
+    attack: { stars_1: nil, stars_2: 152, stars_3: 378, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Prowl',
@@ -201,10 +201,10 @@ Bot.delete_all
     image_url: '/assets/bots/prowl_600x860.jpeg',
     type: :scout,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1714, stars_3: 4210, stars_4: 10_941 },
     attack: { stars_1: nil, stars_2: 152, stars_3: 322, stars_4: 835 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Ratchet',
@@ -213,10 +213,10 @@ Bot.delete_all
     image_url: '/assets/bots/ratchet_600x860.jpeg',
     type: :tech,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 551, stars_3: 1140, stars_4: nil },
     health: { stars_1: nil, stars_2: 1592, stars_3: 3971, stars_4: nil },
     attack: { stars_1: nil, stars_2: 137, stars_3: 269, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 5, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Rhinox',
@@ -225,10 +225,10 @@ Bot.delete_all
     image_url: '/assets/bots/rhinox_600x860.jpeg',
     type: :tech,
     faction: :maximals,
-    power_index: { stars_1: 256, stars_2: 549, stars_3: nil, stars_4: nil },
     health: { stars_1: 951, stars_2: 1732, stars_3: nil, stars_4: nil },
     attack: { stars_1: 81, stars_2: 135, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Shockwave',
@@ -237,10 +237,10 @@ Bot.delete_all
     image_url: '/assets/bots/shockwave_600x860.jpeg',
     type: :tech,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: 460, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1767, stars_3: 4339, stars_4: 11_276 },
     attack: { stars_1: nil, stars_2: 129, stars_3: 271, stars_4: 703 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Sideswipe',
@@ -249,10 +249,10 @@ Bot.delete_all
     image_url: '/assets/bots/sideswipe_600x860.jpeg',
     type: :scout,
     faction: :autobots,
-    power_index: { stars_1: 271, stars_2: 568, stars_3: 1229, stars_4: nil },
     health: { stars_1: 826, stars_2: 1505, stars_3: 3870, stars_4: nil },
     attack: { stars_1: 106, stars_2: 176, stars_3: 390, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 20, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Soundwave',
@@ -261,10 +261,10 @@ Bot.delete_all
     image_url: '/assets/bots/soundwave_600x860.jpeg',
     type: :tech,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: nil, stars_3: 1153, stars_4: nil },
     health: { stars_1: nil, stars_2: 1802, stars_3: 4425, stars_4: 11_499 },
     attack: { stars_1: nil, stars_2: 141, stars_3: 296, stars_4: 769 },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Starscream',
@@ -273,10 +273,10 @@ Bot.delete_all
     image_url: '/assets/bots/starscream_600x860.jpeg',
     type: :tactician,
     faction: :decepticons,
-    power_index: { stars_1: nil, stars_2: 550, stars_3: 1312, stars_4: 3524 },
     health: { stars_1: nil, stars_2: 1575, stars_3: 3866, stars_4: 10_048 },
     attack: { stars_1: nil, stars_2: 132, stars_3: 280, stars_4: 727 },
-    signature_ability: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Ultra Magnus',
@@ -285,10 +285,10 @@ Bot.delete_all
     image_url: '/assets/bots/ultra-magnus_600x860.jpeg',
     type: :tactician,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 442, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1819, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: 150, stars_3: nil, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 0, stars_3: nil, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Waspinator',
@@ -297,10 +297,10 @@ Bot.delete_all
     image_url: '/assets/bots/waspinator_600x860.jpeg',
     type: :demolitions,
     faction: :predacons,
-    power_index: { stars_1: nil, stars_2: 540, stars_3: nil, stars_4: nil },
     health: { stars_1: nil, stars_2: 1662, stars_3: 4081, stars_4: 10_606 },
     attack: { stars_1: nil, stars_2: 144, stars_3: 302, stars_4: 785 },
-    signature_ability: { stars_1: nil, stars_2: 50, stars_3: 0, stars_4: 0 }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
     name: 'Windblade',
@@ -309,10 +309,10 @@ Bot.delete_all
     image_url: '/assets/bots/windblade_600x860.jpeg',
     type: :scout,
     faction: :autobots,
-    power_index: { stars_1: nil, stars_2: 556, stars_3: 1147, stars_4: nil },
     health: { stars_1: nil, stars_2: 1505, stars_3: 3694, stars_4: nil },
     attack: { stars_1: nil, stars_2: 169, stars_3: 356, stars_4: nil },
-    signature_ability: { stars_1: nil, stars_2: 100, stars_3: 25, stars_4: nil }
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   }
 ].each do |bot|
   Bot.upsert! bot
