@@ -182,9 +182,6 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-msgid "New"
-msgstr ""
-
 msgid "No event for now"
 msgstr ""
 

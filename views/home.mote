@@ -5,25 +5,25 @@
 {{ partial 'views/_send_stats.mote' }}
 
 <div class="card-deck">
-% if data[:arena]
+% if data[:upcoming_arena]
   <div class="card order-md-last">
     <div class="card-block">
       <div class="h1 text-muted text-center mb-2">
         <i class="icon-shield"></i>
       </div>
-      <div class="h3 mb-2 text-center">{{ _("Now in arena") }} <? if data[:arena].round; ?>(<span class="text-lowercase">{{ _('Round') }} {{ data[:arena].round }}</span>)<? end ?></div>
+      <div class="h3 mb-2 text-center">{{ _("Now in arena") }} <? if data[:upcoming_arena].round; ?>(<span class="text-lowercase">{{ _('Round') }} {{ data[:upcoming_arena].round }}</span>)<? end ?></div>
       <p class="h6 text-center font-weight-bold">
-        <span class="text-muted" data-localized-time="{{ data[:arena].start_at.utc.iso8601 }}">
-          {{ (data[:arena].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
+        <span class="text-muted" data-localized-time="{{ data[:upcoming_arena].start_at.utc.iso8601 }}">
+          {{ (data[:upcoming_arena].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
         </span>
         &nbsp;-&nbsp;
-        <span class="text-info" data-localized-time="{{ data[:arena].end_at.utc.iso8601 }}">
-          {{ (data[:arena].end_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
+        <span class="text-info" data-localized-time="{{ data[:upcoming_arena].end_at.utc.iso8601 }}">
+          {{ (data[:upcoming_arena].end_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
         </span>
       </p>
-      <div class="h2 mb-0 text-primary text-center">{{ data[:arena].bot&.name || data[:arena].name }}</div>
+      <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_arena].bot&.name || data[:upcoming_arena].name }}</div>
       <div class="mt-1 mb-0 text-center">
-        <img class="img-fluid img-thumbnail" src="{{ data[:arena]&.image_url || data[:arena].bot&.image_url }}" alt="{{ data[:arena].bot&.name || data[:arena].name }}">
+        <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_arena]&.image_url || data[:upcoming_arena].bot&.image_url }}" alt="{{ data[:upcoming_arena].bot&.name || data[:upcoming_arena].name }}">
       </div>
     </div>
   </div>

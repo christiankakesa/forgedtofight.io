@@ -182,9 +182,6 @@ msgstr "Mods"
 msgid "Name"
 msgstr "Nom"
 
-msgid "New"
-msgstr "Nouveau"
-
 msgid "No event for now"
 msgstr "Aucun évènement pour le moment"
 
@@ -343,3 +340,6 @@ msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
+
+#~ msgid "New"
+#~ msgstr "Nouveau"
