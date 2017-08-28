@@ -233,6 +233,9 @@ msgstr "Partager les stats des Bots"
 msgid "Send your Mod stats"
 msgstr "Partager les stats des Mods"
 
+msgid "Sharing your arena results are coming soon"
+msgstr "Bientôt, vous pourrez partager vos résultats d'arène"
+
 msgid "Sidebar|About"
 msgstr "À propos"
 
@@ -340,6 +343,3 @@ msgstr "Guerriers"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
-
-#~ msgid "New"
-#~ msgstr "Nouveau"

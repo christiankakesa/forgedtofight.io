@@ -233,6 +233,9 @@ msgstr ""
 msgid "Send your Mod stats"
 msgstr ""
 
+msgid "Sharing your arena results are coming soon"
+msgstr ""
+
 msgid "Sidebar|About"
 msgstr ""
 
