@@ -16,13 +16,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Unstoppable force',
+    name_four_stars: 'Road rage',
     start_at: Time.parse('2017-09-04 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-06 9:59:59 PDT').utc,
     round: 2,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Motormaster').first.id
   },
   {
     type: :arena,
@@ -37,13 +37,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Unstoppable force',
+    name_four_stars: 'Road rage',
     start_at: Time.parse('2017-08-31 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-02 9:59:59 PDT').utc,
     round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Motormaster').first.id
   },
   {
     type: :arena,
