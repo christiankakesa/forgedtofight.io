@@ -71,9 +71,6 @@ msgstr "Fermer"
 msgid "Community resources"
 msgstr "Portails de la communauté"
 
-msgid "Date"
-msgstr "Date"
-
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
 
@@ -91,6 +88,9 @@ msgstr "Langage de programmation dynamique et efficace"
 
 msgid "Email"
 msgstr "E-mail"
+
+msgid "End at"
+msgstr "Fin"
 
 msgid "Event"
 msgstr "Évènement"
@@ -277,6 +277,9 @@ msgstr "Se connecter"
 
 msgid "Sign up"
 msgstr "S'inscrire"
+
+msgid "Start at"
+msgstr "Début"
 
 msgid "Support"
 msgstr "Support"

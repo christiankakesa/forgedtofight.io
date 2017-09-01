@@ -71,9 +71,6 @@ msgstr ""
 msgid "Community resources"
 msgstr ""
 
-msgid "Date"
-msgstr ""
-
 msgid "DateFormat|%B %Y"
 msgstr ""
 
@@ -90,6 +87,9 @@ msgid "Dynamic and efficient programming language"
 msgstr ""
 
 msgid "Email"
+msgstr ""
+
+msgid "End at"
 msgstr ""
 
 msgid "Event"
@@ -276,6 +276,9 @@ msgid "Sign in"
 msgstr ""
 
 msgid "Sign up"
+msgstr ""
+
+msgid "Start at"
 msgstr ""
 
 msgid "Support"

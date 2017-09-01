@@ -19,17 +19,19 @@
       <th>{{ _('Bot') }}</th>
       <th>{{ _('Event') }}</th>
       <th>{{ _('Type') }}</th>
-      <th>{{ _('Date') }}</th>
+      <th>{{ _('Start at') }}</th>
+      <th>{{ _('End at') }}</th>
     </tr>
   </thead>
   <tbody>
     % events.each do |event|
-    <tr>
-      <th scope="row" class="col-1"><? if event&.bot; ?><img class="img-list-item rounded" src="{{ event.bot.icon_url }}"><? end ?></th>
+    <tr<? if event&.bot || event&.image_url; ?> data-toggle="popover" data-trigger="focus" data-content="OK" data-placement="auto"<? end ?>>
+      <th scope="row" class="col-1"><? if event&.bot || event&.image_url; ?><img class="img-list-item rounded" src="{{ event&.bot&.icon_url || event&.image_url }}"><? end ?></th>
       <td>{{ event&.bot&.name || '-' }}</td>
       <td><span class="text-capitalize">{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></td>
       <td>{{ event.type }}</td>
       <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
+      <td data-localized-time="{{ event.end_at.utc.iso8601 }}"></td>
     </tr>
     % end
   </tbody>
