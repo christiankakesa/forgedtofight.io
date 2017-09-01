@@ -5,7 +5,13 @@ Event.unscoped.where(type: :calendar_bot).delete_all
 [
   {
     type: :calendar_bot,
-    start_at: Time.parse('2017-08-01 17:00:00 PDT').utc,
+    start_at: Time.parse('2017-09-01 00:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Megatron').first.id
+  },
+  {
+    type: :calendar_bot,
+    start_at: Time.parse('2017-08-01 00:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Hot Rod').first.id
   }
