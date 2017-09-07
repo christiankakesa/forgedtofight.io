@@ -89,9 +89,6 @@ msgstr "Langage de programmation dynamique et efficace"
 msgid "Email"
 msgstr "E-mail"
 
-msgid "End at"
-msgstr "Fin"
-
 msgid "Event"
 msgstr "Évènement"
 
@@ -118,6 +115,9 @@ msgstr "Point de vie"
 
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
+
+msgid "Home"
+msgstr "Accueil"
 
 msgid "HtmlMetaDescription|Transformers: Forged to Fight fan's website"
 msgstr "Site internet des fans de Transformers : Forgés d'Acier"
@@ -185,6 +185,9 @@ msgstr "Nom"
 msgid "No event for now"
 msgstr "Aucun évènement pour le moment"
 
+msgid "No events found"
+msgstr "Aucun évènement pour le moment"
+
 msgid "Now in arena"
 msgstr "Arène en cours"
 
@@ -232,9 +235,6 @@ msgstr "Partager les stats des Bots"
 
 msgid "Send your Mod stats"
 msgstr "Partager les stats des Mods"
-
-msgid "Sharing your arena results are coming soon"
-msgstr "Bientôt, vous pourrez partager vos résultats d'arène"
 
 msgid "Sidebar|About"
 msgstr "À propos"

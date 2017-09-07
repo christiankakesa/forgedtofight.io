@@ -29,7 +29,8 @@ class Event
   end
 
   def self.next
-    where(:start_at.gte => RethinkDB::RQL.new.now)
+    where(or: [{ :end_at.gte => RethinkDB::RQL.new.now },
+               { :start_at.gte => RethinkDB::RQL.new.now }])
   end
 
   def self.upcoming_arena

@@ -23,7 +23,7 @@
       </p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_arena].bot&.name || data[:upcoming_arena].name }}</div>
       <div class="mt-1 mb-0 text-center">
-        <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_arena]&.image_url || data[:upcoming_arena].bot&.image_url }}" alt="{{ data[:upcoming_arena].bot&.name || data[:upcoming_arena].name }}">
+        <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_arena]&.image_url || data[:upcoming_arena]&.bot&.image_url }}" alt="{{ data[:upcoming_arena]&.bot&.name || data[:upcoming_arena].name }}">
       </div>
     </div>
   </div>

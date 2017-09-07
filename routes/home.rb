@@ -8,6 +8,17 @@ Home = Syro.new(BasicDeck) do
   end
 
   on 'events' do
+    on :id do
+      @event = Event.find?(inbox[:id])
+      get do
+        if req.xhr?
+          res.json(@event&.to_json || '{}')
+        else
+          render 'views/events_show.mote', event: @event
+        end
+      end
+    end
+
     get do
       @events = Event.next.order_by(start_at: :asc)
       render 'views/events.mote', events: @events

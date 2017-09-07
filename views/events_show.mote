@@ -1,0 +1,43 @@
+<nav class="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">{{ _('Home') }}</a></li>
+    <li class="breadcrumb-item active"><a href="/events">{{ _('Events') }}</a></li>
+    % if event
+    <li class="breadcrumb-item active"><a href="/events/{{ event.id }}">{{ event&.name || event.type_name }}</a></li>
+    % end
+  </ol>
+</nav>
+
+% if event
+<h2>{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></h2>
+<h6>
+  <span class="text-muted" data-localized-time="{{ event.start_at.utc.iso8601 }}">
+    {{ (event.start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
+  </span>
+  &nbsp;-&nbsp;
+  <span class="text-info" data-localized-time="{{ event.end_at.utc.iso8601 }}">
+    {{ (event.end_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
+  </span>
+</h6>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          {{ event&.name_three_stars }} <span class="badge badge-primary badge-pill">★★★</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          {{ event&.name_four_stars }} <span class="badge badge-primary badge-pill">★★★★</span>
+        </li>
+      </ul>
+    </div>
+    % if event&.image_url || event&.bot&.image_url
+    <div class="col">
+      <img class="img-fluid img-thumbnail" src="{{ event&.image_url || event&.bot&.image_url }}" alt="{{ event&.bot&.name || event.name }}">
+    </div>
+    % end
+  </div>
+</div>
+% else
+<p class="h3">{{ _('No events found') }}</p>
+% end

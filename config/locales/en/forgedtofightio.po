@@ -89,9 +89,6 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-msgid "End at"
-msgstr ""
-
 msgid "Event"
 msgstr ""
 
@@ -117,6 +114,9 @@ msgid "Gaming|Health"
 msgstr ""
 
 msgid "HTML, CSS and JS web framework"
+msgstr ""
+
+msgid "Home"
 msgstr ""
 
 msgid "HtmlMetaDescription|Transformers: Forged to Fight fan's website"
@@ -185,6 +185,9 @@ msgstr ""
 msgid "No event for now"
 msgstr ""
 
+msgid "No events found"
+msgstr ""
+
 msgid "Now in arena"
 msgstr ""
 
@@ -231,9 +234,6 @@ msgid "Send your Bot stats"
 msgstr ""
 
 msgid "Send your Mod stats"
-msgstr ""
-
-msgid "Sharing your arena results are coming soon"
 msgstr ""
 
 msgid "Sidebar|About"
