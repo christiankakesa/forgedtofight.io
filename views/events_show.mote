@@ -1,15 +1,17 @@
 <nav class="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">{{ _('Home') }}</a></li>
-    <li class="breadcrumb-item active"><a href="/events">{{ _('Events') }}</a></li>
+    <li class="breadcrumb-item"><a href="/events">{{ _('Events') }}</a></li>
     % if event
-    <li class="breadcrumb-item active"><a href="/events/{{ event.id }}">{{ event&.name || event.type_name }}</a></li>
+    <li class="breadcrumb-item active">
+      {{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?>
+    </li>
     % end
   </ol>
 </nav>
 
 % if event
-<h2>{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></h2>
+<h2>{{ event&.name || event.type_name }}<? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></h2>
 <h6>
   <span class="text-muted" data-localized-time="{{ event.start_at.utc.iso8601 }}">
     {{ (event.start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}
