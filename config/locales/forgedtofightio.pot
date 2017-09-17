@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-07 07:53+0200\n"
-"PO-Revision-Date: 2017-09-07 07:53+0200\n"
+"POT-Creation-Date: 2017-09-18 01:04+0200\n"
+"PO-Revision-Date: 2017-09-18 01:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -315,6 +315,9 @@ msgstr ""
 msgid "Tier 3"
 msgstr ""
 
+msgid "Tier 4"
+msgstr ""
+
 msgid "Tier|T1"
 msgstr ""
 
@@ -322,6 +325,9 @@ msgid "Tier|T2"
 msgstr ""
 
 msgid "Tier|T3"
+msgstr ""
+
+msgid "Tier|T4"
 msgstr ""
 
 msgid "Type"
