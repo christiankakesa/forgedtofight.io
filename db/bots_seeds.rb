@@ -223,7 +223,7 @@ Bot.delete_all
     description: 'The Autobots veteran Chief Medical Officer has patched up his fair share of Bots over the years...',
     icon_url: '/assets/bots/ratchet.jpeg',
     image_url: '/assets/bots/ratchet_600x860.jpeg',
-    type: :tech,
+    type: :demolitions,
     faction: :autobots,
     health: { stars_1: nil, stars_2: 1592, stars_3: 3971, stars_4: nil },
     attack: { stars_1: nil, stars_2: 137, stars_3: 269, stars_4: nil },
