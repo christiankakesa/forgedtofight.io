@@ -64,7 +64,7 @@ Event.unscoped.where(type: :arena).delete_all
     end_at: Time.parse('2017-09-27 9:59:59 PDT').utc,
     round: 2,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Ramjet').first.id
   },
   {
     type: :arena,
@@ -75,7 +75,7 @@ Event.unscoped.where(type: :arena).delete_all
     end_at: Time.parse('2017-09-24 9:59:59 PDT').utc,
     round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Ramjet').first.id
   },
   {
     type: :arena,
@@ -90,13 +90,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Focused hatred',
+    name_four_stars: 'Blood bank',
     start_at: Time.parse('2017-09-18 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-20 9:59:59 PDT').utc,
     round: 2,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bonecrusher').first.id
   },
   {
     type: :arena,
@@ -111,13 +111,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Focused hatred',
+    name_four_stars: 'Blood bank',
     start_at: Time.parse('2017-09-14 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-16 9:59:59 PDT').utc,
     round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bonecrusher').first.id
   },
   {
     type: :arena,
@@ -131,25 +131,35 @@ Event.unscoped.where(type: :arena).delete_all
   },
   {
     type: :arena,
-    name: 'Featured Release Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
-    start_at: Time.parse('2017-09-10 10:00:00 PDT').utc,
+    name: 'Featured Bot Arena',
+    name_three_stars: 'Metallikato mayhem',
+    name_four_stars: 'Way of the blade',
+    start_at: Time.parse('2017-09-11 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-13 9:59:59 PDT').utc,
-    round: 2,
+    round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bludgeon').first.id
   },
   {
     type: :arena,
-    name: 'Featured Release Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name: 'Crystal Bounty Arena',
+    name_three_stars: nil,
+    name_four_stars: nil,
+    start_at: Time.parse('2017-09-09 10:00:00 PDT').utc,
+    end_at: Time.parse('2017-09-11 9:59:59 PDT').utc,
+    round: nil,
+    image_url: '/assets/arena_crystal_bounty.jpeg'
+  },
+  {
+    type: :arena,
+    name: 'Featured Bot Arena',
+    name_three_stars: 'Metallikato mayhem',
+    name_four_stars: 'Way of the blade',
     start_at: Time.parse('2017-09-07 10:00:00 PDT').utc,
-    end_at: Time.parse('2017-09-10 9:59:59 PDT').utc,
+    end_at: Time.parse('2017-09-09 9:59:59 PDT').utc,
     round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bludgeon').first.id
   },
   {
     type: :arena,

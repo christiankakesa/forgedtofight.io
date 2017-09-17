@@ -207,6 +207,18 @@ Bot.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: 557, stars_3: 1308, stars_4: 3488 }
   },
   {
+    name: 'Ramjet',
+    description: '...',
+    icon_url: '/assets/bots/ramjet.jpeg',
+    image_url: '/assets/bots/ramjet_600x860.jpeg',
+    type: :tech,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+  },
+  {
     name: 'Ratchet',
     description: 'The Autobots veteran Chief Medical Officer has patched up his fair share of Bots over the years...',
     icon_url: '/assets/bots/ratchet.jpeg',
