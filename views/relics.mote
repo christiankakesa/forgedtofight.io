@@ -37,6 +37,10 @@
             <th scope="row"><abbr title="{{ _('Tier 3') }}">{{ s_('Tier|T3') }}</abbr></th>
             <td class="text-right">{{ relic.tier[:three] || '-' }}</td>
           </tr>
+          <tr>
+            <th scope="row"><abbr title="{{ _('Tier 4') }}">{{ s_('Tier|T4') }}</abbr></th>
+            <td class="text-right">{{ relic.tier[:four] || '-' }}</td>
+          </tr>
         </tbody>
       </table>
       % end

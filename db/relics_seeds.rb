@@ -49,6 +49,14 @@ Relic.delete_all
     tier: nil,
     icon_url: '/assets/relics/paralyzer.jpeg',
     image_url: '/assets/relics/paralyzer_768x768.jpeg'
+  },
+  {
+    name: 'Unstable Energon cube',
+    type: :relic_xp_boost,
+    description: nil,
+    tier: { three: '+10% XP in Story and Special Missions.', four: '+15% XP in Story and Special Missions.' },
+    icon_url: '/assets/relics/unstable-energon-cube.jpeg',
+    image_url: '/assets/relics/unstable-energon-cube_768x768.jpeg'
   }
 ].each do |relic|
   Relic.upsert! relic
