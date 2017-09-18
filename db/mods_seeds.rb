@@ -19,9 +19,9 @@ Mod.delete_all
     description: 'Exo-filter...',
     icon_url: '/assets/mods/exo-filter.jpeg',
     image_url: '/assets/mods/exo-filter_768x768.jpeg',
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    health: { stars_1: nil, stars_2: 496, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: 37, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: 78, stars_3: nil, stars_4: nil },
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
@@ -110,6 +110,17 @@ Mod.delete_all
     health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+  },
+  {
+    name: 'Transwarp cell',
+    type: :defense,
+    description: 'Transwarp cell...',
+    icon_url: '/assets/mods/transwarp-cell.jpeg',
+    image_url: '/assets/mods/transwarp-cell_768x768.jpeg',
+    health: { stars_1: nil, stars_2: 496, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: 37, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: 78, stars_3: nil, stars_4: nil },
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   }
 ].each do |mod|
