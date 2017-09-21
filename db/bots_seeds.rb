@@ -208,15 +208,15 @@ Bot.delete_all
   },
   {
     name: 'Ramjet',
-    description: '...',
+    description: 'One of Starscream’s most unpredictable Seekers, Ramjet takes hardheadedness to new extremes by smashing into any foes, and sometimes friends, that cross his flight path.',
     icon_url: '/assets/bots/ramjet.jpeg',
     image_url: '/assets/bots/ramjet_600x860.jpeg',
     type: :demolitions,
     faction: :autobots,
-    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    health: { stars_1: nil, stars_2: 1854, stars_3: 4553, stars_4: 11_834 },
+    attack: { stars_1: nil, stars_2: 147, stars_3: 309, stars_4: 802 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
-    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
+    max_rating_sig100: { stars_1: nil, stars_2: 554, stars_3: 1300, stars_4: 3436 }
   },
   {
     name: 'Ratchet',

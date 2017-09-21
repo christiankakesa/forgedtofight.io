@@ -5,6 +5,12 @@ Event.unscoped.where(type: :upcoming_bot).delete_all
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2017-09-21 09:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Ramjet').first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2017-08-24 09:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Starscream').first.id
