@@ -16,13 +16,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Cannon fodder',
+    name_four_stars: 'Feeling lucky?',
     start_at: Time.parse('2017-10-02 10:00:00 PDT').utc,
     end_at: Time.parse('2017-10-04 9:59:59 PDT').utc,
     round: 2,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bonecrusher').first.id
   },
   {
     type: :arena,
@@ -37,13 +37,13 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Cannon fodder',
+    name_four_stars: 'Feeling lucky?',
     start_at: Time.parse('2017-09-28 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-30 9:59:59 PDT').utc,
     round: 1,
     image_url: nil,
-    bot_id: nil
+    bot_id: Bot.where(name: 'Bonecrusher').first.id
   },
   {
     type: :arena,
@@ -58,8 +58,8 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Release Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Flight risk',
+    name_four_stars: 'Kinetic killer',
     start_at: Time.parse('2017-09-24 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-27 9:59:59 PDT').utc,
     round: 2,
@@ -69,8 +69,8 @@ Event.unscoped.where(type: :arena).delete_all
   {
     type: :arena,
     name: 'Featured Release Bot Arena',
-    name_three_stars: '...',
-    name_four_stars: '...',
+    name_three_stars: 'Flight risk',
+    name_four_stars: 'Kinetic killer',
     start_at: Time.parse('2017-09-21 10:00:00 PDT').utc,
     end_at: Time.parse('2017-09-24 9:59:59 PDT').utc,
     round: 1,
