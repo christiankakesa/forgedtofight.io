@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Mod.delete_all
+Mod.unscoped.delete_all
 [
   {
     name: 'E.M.I. module',

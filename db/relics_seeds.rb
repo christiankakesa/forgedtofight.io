@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Relic.delete_all
+Relic.unscoped.delete_all
 [
   {
     name: 'The covenant of primus',
