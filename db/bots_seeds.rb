@@ -75,6 +75,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: 546, stars_3: 1307, stars_4: 3476 }
   },
   {
+    name: 'Galvatron',
+    description: 'Mortally wounded in the attack on Autobot City, Megatron was discovered by Unicron adrift in the vacuum of space. The Decepticon leader accepted the Chaos Bringer’s bargain and was reborn as Galvatron.',
+    icon_url: '/assets/bots/galvatron.jpeg',
+    image_url: '/assets/bots/galvatron_600x860.jpeg',
+    type: :demolitions,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 1748, stars_3: 4291, stars_4: 11_153 },
+    attack: { stars_1: nil, stars_2: 165, stars_3: 347, stars_4: 901 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 590, stars_3: 1352, stars_4: 3549 }
+  },
+  {
     name: 'Grimlock',
     description: 'Widely regarded as one of the most skilled military tacticians, perhaps with an ego the size of Cybertron, Grimlock is the self-proclaimed "King" of the Dinobots.',
     icon_url: '/assets/bots/grimlock.jpeg',
