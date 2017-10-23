@@ -2,8 +2,6 @@
 
 <h5>&mdash; {{ _('ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game') }}</h5>
 
-{{ partial 'views/_send_stats.mote' }}
-
 <div class="card-deck">
 % if data[:upcoming_arena]
   <div class="card order-md-last">

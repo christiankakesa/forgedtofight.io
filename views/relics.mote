@@ -8,8 +8,6 @@
 </nav>
 % end
 
-{{ partial 'views/_send_stats.mote' }}
-
 % if relics.count > 0
 <div class="card-deck">
   % relics.each do |relic|

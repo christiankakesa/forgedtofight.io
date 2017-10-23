@@ -9,8 +9,6 @@
 </nav>
 % end
 
-{{ partial 'views/_send_stats.mote' }}
-
 % if mods.count > 0
 <div class="card-deck">
   % mods.each do |mod|
