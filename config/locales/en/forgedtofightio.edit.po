@@ -104,7 +104,7 @@ msgstr ""
 msgid "ForgedToFight.IO &mdash; Account Settings"
 msgstr ""
 
-msgid "ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game"
+msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
 msgstr ""
 
 msgid "Forgot your password?"

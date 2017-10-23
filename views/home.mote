@@ -1,6 +1,6 @@
 <h1>{{ _('Welcome Transformers: Forged to Fight gamers!') }}</h1>
 
-<h5>&mdash; {{ _('ForgedToFight.IO is an unofficial resources website for the Transformers: Forged to Fight mobile game') }}</h5>
+<h5>&mdash; {{ _('ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game.') }}</h5>
 
 <div class="card-deck">
 % if data[:upcoming_arena]

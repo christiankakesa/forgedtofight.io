@@ -4,7 +4,7 @@
 <img src="assets/images/logo_forgedtofight.io_bg-white_332x128.png" alt="Logo ForgedToFight.IO" title="ForgedToFight.IO" />
 </p>
 
-This is an unofficial website about TRANSFORMERS Forged to Fight mobile game.
+This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ## The stack
 
