@@ -2,63 +2,34 @@
 
 This is an unofficial website about TRANSFORMERS Forged to Fight mobile game.
 
-## User
+## The stack
 
-### My Bots
+* Ruby 2.4.1 : programming language
+* Syro : powerful router for *Ruby* web applications
+* Bootstrap 4 : CSS/JS framework
+* RethinkDB : JSON document based database
 
-Authenticated user could list and configure his bot list with bot's capabilities. Update is manual.
-
-## Features
-
-### Event
-
-Scheduling of all known events in the game:
-
- * Arena scheduling
- * Arena results
- * 7 days events
- * 3 days events
- * Alliance mission
- * Raid Blitz
- * DAilly mision with classe sparks rewards
- * ...
-
-### Botodex
-
-Database and search engine of bots and mods.
-
-## About
-
-This website is built by @fenick79 a #Transformers #ForgedToFight gamer.
-
-### Our stack
-
- * Ruby 2.4.1 : programming language
- * Syro : powerful router for web applications
- * Twitter Bootstrap : CSS framework
- * RethinkDB : JSON document based database
-
-## Resources
+## Developers resources
 
 ### Start the application
 
- * Install bundler: `gem install bundler --no-document`
- * Install required gems: `bundle install`
- * Install Docker: https://docs.docker.com/engine/installation/
- * Create the RethinkDB from docker image:
+* Install bundler: `gem install bundler --no-document`
+* Install required gems: `bundle install`
+* Install Docker: https://docs.docker.com/engine/installation/
+* Create the RethinkDB from docker image:
 
         mkdipr -p ${HOME}/opt/data/rethinkdb
         docker run --name rethinkdb -v "${HOME}/opt/data/rethinkdb:/data" -d rethinkdb
 
-   To start RethinkDB image
+#### To start RethinkDB image
 
         docker start rethinkdb
 
-   To stop RethinkDB image
+#### To stop RethinkDB image
 
         docker stop rethinkdb
 
- * Create this **.env** file in root directory and run the application with **foreman** Ruby gem : `foreman run rake nobrainer:sync_schema` and `foreman start`
+* Create this **.env** file in root directory and run the application with **foreman** Ruby gem : `foreman run rake nobrainer:sync_schema` and `foreman start`
 
         APP_COOKIE_SECRET=599fcf7e92142e1925fe3a17f43eb477c25cf6b9f677c3ff8916c2d92ff1e00977fe97cf4643632b4b70e899a752dc5ec7bb0282ea8ea319a4b019a25c54dbd4
         APP_MAX_THREADS=8
