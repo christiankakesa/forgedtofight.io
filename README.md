@@ -47,7 +47,7 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
     __The RethinkdB IP address is autotically deducted.__
 
-### RethinkDB account
+### RethinkDB
 
 #### Create application user in RethinkDB data explorer
 
@@ -56,3 +56,10 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
     r.db('rethinkdb').table('users').insert({id: 'forgedtofightio', password: 'xxxxxxxxxxxxxxxxxxxxxxx'});
     r.dbCreate('forgedtofightio_production');
     r.db('forgedtofightio_production').grant('forgedtofightio', {read: true, write: true, config: true});
+
+### Translation
+
+*Rake* tasks are provided fir translation:
+
+* `rake gettext:find`: find the new text, update *fuzzy* translations if needed
+* `rake gettext:pack`: build the binary translation beforme the commit.
