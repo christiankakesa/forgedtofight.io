@@ -68,7 +68,7 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-msgid "Community resources"
+msgid "Contribute to the developement"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -108,6 +108,9 @@ msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight 
 msgstr ""
 
 msgid "Forgot your password?"
+msgstr ""
+
+msgid "Forum"
 msgstr ""
 
 msgid "Gaming|Health"
@@ -192,6 +195,9 @@ msgid "Now in arena"
 msgstr ""
 
 msgid "Offenses"
+msgstr ""
+
+msgid "Official websites"
 msgstr ""
 
 msgid "Password"
@@ -293,9 +299,6 @@ msgstr ""
 msgid "Terms of service"
 msgstr ""
 
-msgid "The developer"
-msgstr ""
-
 msgid "The stack"
 msgstr ""
 
@@ -348,6 +351,9 @@ msgid "Utilities"
 msgstr ""
 
 msgid "Warriors"
+msgstr ""
+
+msgid "Website"
 msgstr ""
 
 msgid "Welcome Transformers: Forged to Fight gamers!"

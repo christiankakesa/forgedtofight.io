@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-23 21:06+0200\n"
-"PO-Revision-Date: 2017-10-23 21:06+0200\n"
+"POT-Creation-Date: 2017-10-24 20:28+0200\n"
+"PO-Revision-Date: 2017-10-24 20:28+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -69,7 +69,7 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-msgid "Community resources"
+msgid "Contribute to the developement"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -109,6 +109,9 @@ msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight 
 msgstr ""
 
 msgid "Forgot your password?"
+msgstr ""
+
+msgid "Forum"
 msgstr ""
 
 msgid "Gaming|Health"
@@ -193,6 +196,9 @@ msgid "Now in arena"
 msgstr ""
 
 msgid "Offenses"
+msgstr ""
+
+msgid "Official websites"
 msgstr ""
 
 msgid "Password"
@@ -294,9 +300,6 @@ msgstr ""
 msgid "Terms of service"
 msgstr ""
 
-msgid "The developer"
-msgstr ""
-
 msgid "The stack"
 msgstr ""
 
@@ -349,6 +352,9 @@ msgid "Utilities"
 msgstr ""
 
 msgid "Warriors"
+msgstr ""
+
+msgid "Website"
 msgstr ""
 
 msgid "Welcome Transformers: Forged to Fight gamers!"

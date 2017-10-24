@@ -68,8 +68,8 @@ msgstr "Bot du calendrier"
 msgid "Close"
 msgstr "Fermer"
 
-msgid "Community resources"
-msgstr "Portails de la communauté"
+msgid "Contribute to the developement"
+msgstr "Contribuer au développement"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -109,6 +109,9 @@ msgstr "ForgedToFight.IO est le site internet communautaire du jeu sur mobile : 
 
 msgid "Forgot your password?"
 msgstr "Mot de passe oublié ?"
+
+msgid "Forum"
+msgstr "Forum"
 
 msgid "Gaming|Health"
 msgstr "Point de vie"
@@ -193,6 +196,9 @@ msgstr "Arène en cours"
 
 msgid "Offenses"
 msgstr "Offensifs"
+
+msgid "Official websites"
+msgstr "Sites internet officiels"
 
 msgid "Password"
 msgstr "Mot de passe"
@@ -293,9 +299,6 @@ msgstr "Techniciens"
 msgid "Terms of service"
 msgstr "Conditions d'utilisation"
 
-msgid "The developer"
-msgstr "Le développeur"
-
 msgid "The stack"
 msgstr "Les briques techniques"
 
@@ -349,6 +352,9 @@ msgstr "Utilitaires"
 
 msgid "Warriors"
 msgstr "Guerriers"
+
+msgid "Website"
+msgstr "Site internet"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"

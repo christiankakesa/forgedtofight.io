@@ -7,52 +7,31 @@
   </p>
 </div>
 
-<h2>{{ _('Community resources') }}</h2>
-<div class="container row">
-  <div class="col-sm-2">
-    <div class="callout callout-danger">
-      <span class="icon-social-facebook"></span>
-      <small class="font-weight-bold font-italic">Facebook</small><br>
-      <strong class="h5"><a href="https://www.facebook.com/FTFio-1343697979050153/">FTF.io</a></strong>
+<h2>{{ _('Official websites') }}</h2>
+<div class="row">
+  <div class="col-6 col-lg-3">
+    <div class="card">
+      <div class="card-block p-x-1 py-h">
+        <div class="list-group">
+          <a href="https://transformersforgedtofight.com/" class="list-group-item">{{ _('Website') }} <i class="fa fa-angle-right float-right font-lg"></i></a>
+          <a href="https://forums.transformersforgedtofight.com/" class="list-group-item">{{ _('Forum') }} <i class="fa fa-angle-right float-right font-lg"></i></a>
+        </div>
+      </div>
     </div>
   </div><!--/.col-->
-  <div class="col-sm-2">
-    <div class="callout callout-danger">
-      <span class="icon-social-google"></span>
-      <small class="font-weight-bold font-italic">Google+</small><br>
-      <strong class="h5"><a href="https://plus.google.com/communities/104781395768657330248">ForgedToFight.IO</a></strong>
-    </div>
-  </div><!--/.col-->
-</div>
+</div><!--/.row-->
 
-<h2>{{ _('The developer') }}</h2>
-<div class="container row">
-  <div class="col">
-    <div class="callout callout-danger">
-      <span class="icon-social-twitter"></span>
-      <small class="font-weight-bold font-italic">Twitter</small><br>
-      <strong class="h5"><a href="https://twitter.com/fenicks79">@fenicks79</a></strong>
-    </div>
-  </div><!--/.col-->
-  <div class="col">
-    <div class="callout callout-danger">
-      <span class="icon-social-youtube"></span>
-      <small class="font-weight-bold font-italic">Youtube</small><br>
-      <strong class="h5"><a href="https://www.youtube.com/channel/UCrTpWgqSzdJ5t_DJPCQRufQ">fenicks79</a></strong>
-    </div>
-  </div><!--/.col-->
-  <div class="col">
-    <div class="callout callout-danger">
-      <span class="icon-user-following"></span>
-      <small class="font-weight-bold font-italic">Twitch</small><br>
-      <strong class="h5"><a href="https://www.twitch.tv/fenicks79">fenicks79</a></strong>
-    </div>
-  </div><!--/.col-->
-  <div class="col">
-    <div class="callout callout-danger">
-      <span class="icon-user-following"></span>
-      <small class="font-weight-bold font-italic">Dailymotion</small><br>
-      <strong class="h5"><a href="http://www.dailymotion.com/user/fenicks79">fenicks79</a></strong>
+<h2>{{ _('Contribute to the developement') }}</h2>
+<div class="row">
+  <div class="col-6 col-lg-3">
+    <div class="card">
+      <div class="card-block p-x-1 py-h">
+        <div class="list-group">
+          <a href="https://github.com/fenicks/forgedtofight.io" class="list-group-item">ForgedToFight.IO <span class="badge badge-primary badge-pill float-right"><i class="fa fa-github font-lg"></i></span></a>
+          <a href="https://www.facebook.com/FTFio-1343697979050153/" class="list-group-item">FTF.io <span class="badge badge-primary badge-pill float-right"><i class="fa fa-facebook font-lg"></i></span></a>
+          <a href="https://plus.google.com/communities/104781395768657330248" class="list-group-item">ForgedToFight.IO <span class="badge badge-primary badge-pill float-right"><i class="fa fa-google-plus font-lg"></i></span></a>
+        </div>
+      </div>
     </div>
   </div><!--/.col-->
 </div><!--/.row-->
