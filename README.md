@@ -8,10 +8,10 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ## The stack
 
-* Ruby 2.4.1 : programming language
-* Syro : powerful router for *Ruby* web applications
-* Bootstrap 4 : CSS/JS framework
-* RethinkDB : JSON document based database
+* [Ruby](https://www.ruby-lang.org/) 2.4.1 : programming language
+* [Syro](http://soveran.github.io/syro/) : powerful router for *Ruby* web applications
+* [Core UI (Bootstrap 4)](http://coreui.io) : CSS/JS framework
+* [RethinkDB](https://www.rethinkdb.com/) : JSON document based database
 
 ## Developers resources
 
