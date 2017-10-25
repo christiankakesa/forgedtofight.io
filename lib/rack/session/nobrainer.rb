@@ -15,7 +15,7 @@ module Rack
 
       index :sid
 
-      scope(:expired) { where(:expires_at.lt(RethinkDB::RQL.new.now)) }
+      scope(:expired, proc { where(:expires_at.lt(RethinkDB::RQL.new.now)) })
     end
 
     class NoBrainer < Abstract::ID
@@ -38,7 +38,7 @@ module Rack
 
       def get_session(env, sid)
         with_lock(env) do
-          sid = generate_sid unless sid
+          sid ||= generate_sid
           session = _get(sid)
           unless session
             session = {}
