@@ -1,3 +1,5 @@
+assets/* linguist-vendored
+
 .env export-ignore
 Gemfile.lock export-ignore
 .gitattributes export-ignore
