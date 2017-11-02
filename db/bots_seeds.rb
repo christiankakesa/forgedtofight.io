@@ -63,6 +63,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Dinobot',
+    description: 'Honor and Glory are the only two things worth dying for, a belief truly befitting this fierce Predacon turned Maximal warrior....',
+    icon_url: '/assets/bots/dinobot.jpeg',
+    image_url: '/assets/bots/dinobot_600x860.jpeg',
+    type: :tactician,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1732, stars_3: 4253, stars_4: 11_053 },
+    attack: { stars_1: nil, stars_2: 158, stars_3: 334, stars_4: 868 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 579, stars_3: 1344, stars_4: 3528 }
+  },
+  {
     name: 'Drift',
     description: 'Though some may question Drift\'s loyalty to the Autobots, there\'s no denying his dedication to his "sensei" Optimus Prime...',
     icon_url: '/assets/bots/drift.jpeg',
