@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Event.unscoped.where(type: :arena).delete_all
+# Event.unscoped.where(type: :arena).delete_all
 # Upcoming bots
 [
   {

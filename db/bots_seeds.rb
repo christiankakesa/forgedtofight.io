@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Bot.unscoped.delete_all
+# Bot.unscoped.delete_all
 [
   {
     name: 'Arcee',

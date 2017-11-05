@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Relic.unscoped.delete_all
+# Relic.unscoped.delete_all
 [
   {
     name: 'The covenant of primus',
@@ -49,6 +49,14 @@ Relic.unscoped.delete_all
     tier: nil,
     icon_url: '/assets/relics/paralyzer.jpeg',
     image_url: '/assets/relics/paralyzer_768x768.jpeg'
+  },
+  {
+    name: 'Silver Galvatron relic',
+    type: :relic_boost,
+    description: '+3% attack and health in Alliance Missions.',
+    tier: nil,
+    icon_url: '/assets/relics/silver-galvatron-relic.jpeg',
+    image_url: '/assets/relics/silver-galvatron-relic_768x768.jpeg'
   },
   {
     name: 'Unstable Energon cube',
