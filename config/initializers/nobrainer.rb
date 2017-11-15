@@ -6,13 +6,13 @@ NoBrainer.configure do |config|
   unless ENV['APP_RETHINKDB_URL'].present?
     url = begin
             # This configuration is for resolving the loacal docker IPAddress
-            docker_ip = String.new('docker inspect')
+            docker_ip = +'docker inspect'
             docker_ip << " --format '{{ .NetworkSettings.IPAddress }}'"
             docker_ip << ' rethinkdb'
             IO.popen(docker_ip)
               .readlines[0]
               .chomp
-          rescue
+          rescue StandardError => _
             'localhost'
           end
     db_env = ENV['RACK_ENV'] || 'development'
