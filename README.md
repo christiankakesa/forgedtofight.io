@@ -1,14 +1,12 @@
 # ForgedToFight.IO
 
-<p align="center">
-<img src="assets/images/logo_forgedtofight.io_bg-white_332x128.png" alt="Logo ForgedToFight.IO" title="ForgedToFight.IO" />
-</p>
+![Logo ForgedToFight.IO](assets/images/logo_forgedtofight.io_bg-white_332x128.png "ForgedToFight.IO")
 
 This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ## The stack
 
-* [Ruby](https://www.ruby-lang.org/) 2.4.1 : programming language
+* [Ruby](https://www.ruby-lang.org/) 2.4.2 : programming language
 * [Syro](http://soveran.github.io/syro/) : powerful router for *Ruby* web applications
 * [Core UI (Bootstrap 4)](http://coreui.io) : CSS/JS framework
 * [RethinkDB](https://www.rethinkdb.com/) : JSON document based database
@@ -39,13 +37,13 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
         APP_MAX_THREADS=8
         APP_MOCK_USER=true
         APP_PORT=5000
-        # APP_RETHINKDB_URL=rethinkdb://forgedtofightio_dev:forgedtofightio_dev@rethinkdb.forgedtofight.io:28015/forgedtofightio_development
+        # APP_RETHINKDB_URL=rethinkdb://localhost:28015/forgedtofightio_development
         APP_SESSION_EXPIRE_AFTER=86400
         APP_WORKERS=4
         RACK_ENV=development
         RACK_MULTITHREAD=true
 
-    __The RethinkdB IP address is autotically deducted.__
+    **The RethinkdB IP address is autotically deducted**: [config/initializers/nobrainer.rb#L8](config/initializers/nobrainer.rb#L8).
 
 ### RethinkDB
 
@@ -59,7 +57,7 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ### Translation
 
-*Rake* tasks are provided fir translation:
+*Rake* tasks are provided for translation:
 
 * `rake gettext:find`: find the new text, update *fuzzy* translations if needed
-* `rake gettext:pack`: build the binary translation beforme the commit.
+* `rake gettext:pack`: build the binary translation before the commit
