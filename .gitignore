@@ -1,4 +1,5 @@
 /.bundle/
+/.mvn/
 /.vscode/
 /coverage/
 .env
