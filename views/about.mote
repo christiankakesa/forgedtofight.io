@@ -7,6 +7,20 @@
   </p>
 </div>
 
+<h2>{{ _('The mobile game is available on') }}</h2>
+<div class="row">
+  <div class="col-6 col-lg-3">
+    <div class="card">
+      <div class="card-block p-x-1 py-h">
+        <div class="list-group">
+          <a href="https://play.google.com/store/apps/details?id=com.kabam.bigrobot" class="list-group-item">Google Play <span class="badge badge-primary badge-pill float-right"><i class="fa fa-android font-lg"></i></span></a>
+          <a href="https://itunes.apple.com/app/transformers-forged-to-fight/id1002635492" class="list-group-item">AppStore <span class="badge badge-primary badge-pill float-right"><i class="fa fa-apple font-lg"></i></span></a>
+        </div>
+      </div>
+    </div>
+  </div><!--/.col-->
+</div><!--/.row-->
+
 <h2>{{ _('Official websites') }}</h2>
 <div class="row">
   <div class="col-6 col-lg-3">
