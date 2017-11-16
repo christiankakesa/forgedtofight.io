@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 20:28+0200\n"
-"PO-Revision-Date: 2017-10-24 20:28+0200\n"
+"POT-Creation-Date: 2017-11-16 02:18+0100\n"
+"PO-Revision-Date: 2017-11-16 02:18+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -300,6 +300,9 @@ msgstr ""
 msgid "Terms of service"
 msgstr ""
 
+msgid "The mobile game is available on"
+msgstr ""
+
 msgid "The stack"
 msgstr ""
 
@@ -358,4 +361,7 @@ msgid "Website"
 msgstr ""
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
+msgstr ""
+
+msgid "localhost"
 msgstr ""

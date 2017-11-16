@@ -299,6 +299,9 @@ msgstr "Techniciens"
 msgid "Terms of service"
 msgstr "Conditions d'utilisation"
 
+msgid "The mobile game is available on"
+msgstr "Le jeu est disponible sur"
+
 msgid "The stack"
 msgstr "Les briques techniques"
 
@@ -358,3 +361,6 @@ msgstr "Site internet"
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
+
+msgid "localhost"
+msgstr ""

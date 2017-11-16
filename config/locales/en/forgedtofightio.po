@@ -299,6 +299,9 @@ msgstr ""
 msgid "Terms of service"
 msgstr ""
 
+msgid "The mobile game is available on"
+msgstr ""
+
 msgid "The stack"
 msgstr ""
 
@@ -357,4 +360,7 @@ msgid "Website"
 msgstr ""
 
 msgid "Welcome Transformers: Forged to Fight gamers!"
+msgstr ""
+
+msgid "localhost"
 msgstr ""
