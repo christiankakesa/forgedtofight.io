@@ -89,6 +89,9 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
+msgid "End at"
+msgstr ""
+
 msgid "Event"
 msgstr ""
 

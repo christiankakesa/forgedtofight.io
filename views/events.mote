@@ -21,16 +21,18 @@
       <th>{{ _('Event') }}</th>
       <th>{{ _('Type') }}</th>
       <th>{{ _('Start at') }}</th>
+       <th>{{ _('End at') }}</th>
     </tr>
   </thead>
   <tbody>
     % events.each do |event|
     <tr>
-      <th scope="row" class="col-1"><? if event&.bot || event&.image_url; ?><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><img class="img-list-item rounded" src="{{ event&.bot&.icon_url || event&.image_url }}" alt="{{ event&.name || event.type_name }}"></a><? end ?></th>
+      <th scope="row" class="col-1"><? if event&.bot || event&.image_url; ?><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><img class="rounded" src="{{ event&.bot&.icon_url || event&.image_url }}" alt="{{ event&.name || event.type_name }}"></a><? end ?></th>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}">{{ event&.bot&.name || '-' }}</a></td>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><span class="text-capitalize">{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></a></td>
       <td>{{ event.type }}</td>
       <td data-localized-time="{{ event.start_at.utc.iso8601 }}"></td>
+      <td data-localized-time="{{ event.end_at.utc.iso8601 }}"></td>
     </tr>
     % end
   </tbody>
