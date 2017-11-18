@@ -17,7 +17,7 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 * Install bundler: `gem install bundler --no-document`
 * Install required gems: `bundle install`
-* Install Docker: https://docs.docker.com/engine/installation/
+* Install Docker: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
 * Create the RethinkDB from docker image:
 
         mkdipr -p ${HOME}/opt/data/rethinkdb
