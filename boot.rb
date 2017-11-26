@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Loading resources
-# 1. Initializers
-# 2. Helpers
-# 3. Decks
-# 4. Models
-# 5. Routes
+# 1. config/initializers
+# 2. helpers
+# 3. decks
+# 4. models
+# 5. routes
 [
   %w[config initializers],
   'helpers',
