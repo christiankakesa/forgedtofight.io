@@ -13,7 +13,7 @@
 % end
 
 % if bots.count > 0
-<div class="card-deck">
+<div class="card-columns">
   % bots.each do |bot|
   <div class="card card-bot-{{ bot.type }}">
     <div class="card-block">

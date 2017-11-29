@@ -7,10 +7,8 @@
   <a class="nav-link mod-menu" data-mod_type="defense" href="#">{{ _('Defenses') }}</a>
   <a class="nav-link mod-menu" data-mod_type="utility" href="#">{{ _('Utilities') }}</a>
 </nav>
-% end
 
-% if mods.count > 0
-<div class="card-deck">
+<div class="card-columns">
   % mods.each do |mod|
   <div class="card card-mod-{{ mod.type }}">
     <div class="card-block">

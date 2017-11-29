@@ -7,7 +7,7 @@ $ ->
     me = $(this)
     me.parent('nav').children('a').removeClass 'nav-bot-active active'
     me.addClass 'nav-bot-active active'
-    bots = me.parent('nav').nextAll('.card-deck').children()
+    bots = me.parent('nav').nextAll('.card-columns').children()
     bots.show()
     # We have done if user push "all" button
     return unless me.data('bot_type')
@@ -21,7 +21,7 @@ $ ->
     me = $(this)
     me.parent('nav').children('a').removeClass 'nav-mod-active active'
     me.addClass 'nav-mod-active active'
-    mods = me.parent('nav').nextAll('.card-deck').children()
+    mods = me.parent('nav').nextAll('.card-columns').children()
     mods.show()
     # We have done if user push "all" button
     return unless me.data('mod_type')
@@ -35,7 +35,7 @@ $ ->
     me = $(this)
     me.parent('nav').children('a').removeClass 'nav-relic-active active'
     me.addClass 'nav-relic-active active'
-    relics = me.parent('nav').nextAll('.card-deck').children()
+    relics = me.parent('nav').nextAll('.card-group').children()
     relics.show()
     # We have done if user push "all" button
     return unless me.data('relic_type')

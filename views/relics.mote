@@ -6,10 +6,8 @@
   <a class="nav-link relic-menu" data-relic_type="relic_boost" href="#">{{ _('Relic Boost') }}</a>
   <a class="nav-link relic-menu" data-relic_type="relic_xp_boost" href="#">{{ _('Relic Xp boost') }}</a>
 </nav>
-% end
 
-% if relics.count > 0
-<div class="card-deck">
+<div class="card-group">
   % relics.each do |relic|
   <div class="card card-relic-{{ relic.type }}">
     <div class="card-block">
