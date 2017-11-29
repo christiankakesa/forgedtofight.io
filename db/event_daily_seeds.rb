@@ -4,7 +4,7 @@ require 'montrose'
 
 TAKE = 4
 
-Event.unscoped.where(type: :daily).delete_all
+# Event.unscoped.where(type: :daily).delete_all
 
 events = []
 

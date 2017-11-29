@@ -2,7 +2,7 @@
 
 require 'montrose'
 
-Event.unscoped.where(type: :arena).delete_all
+# Event.unscoped.where(type: :arena).delete_all
 
 # Upcoming bots
 # [
