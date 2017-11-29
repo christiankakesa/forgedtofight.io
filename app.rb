@@ -45,7 +45,7 @@ MainApp = Rack::Builder.new do
   unless %w[production staging].include?(ENV['RACK_ENV'])
     use Rack::ShowExceptions
   end
-  use Rack::Static, urls: ['/robots.txt'], root: 'public'
+  use Rack::Static, urls: %w[/robots.txt /favicon.ico], root: 'public'
   use(Rack::Timeout,
       service_timeout: 20,
       wait_timeout: 30,

@@ -8,7 +8,7 @@
   <meta name="description" content="{{ s_('HtmlMetaDescription|Transformers: Forged to Fight fan\'s website') }}">
   <meta name="author" content="{{ s_('HtmlMetaKeywords|@fenicks79') }}">
   <meta name="keyword" content="{{ s_('HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS') }}">
-  <link href="/assets/favicon.ico" rel="shortcut icon">
+  <link href="/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="/assets/app.css">
   <link rel="alternate" hreflang="x-default" href="{{ request_fullpath }}">
   % localized_fullpaths.each_key do |locale|
