@@ -1,22 +1,14 @@
 # frozen_string_literal: true
 
-# Relic.unscoped.delete_all
+Relic.unscoped.delete_all
 [
   {
-    name: 'The covenant of primus',
+    name: 'Dark Energon ORB',
     type: :relic_xp_boost,
     description: 'Increase Commander XP gains by +5 XP.',
     tier: nil,
-    icon_url: '/assets/relics/the-covenant-of-primus.jpeg',
-    image_url: '/assets/relics/the-covenant-of-primus_768x768.jpeg'
-  },
-  {
-    name: 'Matrix of leadership',
-    type: :relic_xp_boost,
-    description: nil,
-    tier: { one: '+5% XP in Story and Special Missions.' },
-    icon_url: '/assets/relics/matrix-of-leadership.jpeg',
-    image_url: '/assets/relics/matrix-of-leadership_768x768.jpeg'
+    icon_url: '/assets/relics/dark-energon-orb.jpeg',
+    image_url: '/assets/relics/dark-energon-orb_768x768.jpeg'
   },
   {
     name: 'Hot Rod relic',
@@ -27,12 +19,12 @@
     image_url: '/assets/relics/hot-rod-relic_768x768.jpeg'
   },
   {
-    name: 'Dark Energon ORB',
+    name: 'Matrix of leadership',
     type: :relic_xp_boost,
-    description: 'Increase Commander XP gains by +5 XP.',
-    tier: nil,
-    icon_url: '/assets/relics/dark-energon-orb.jpeg',
-    image_url: '/assets/relics/dark-energon-orb_768x768.jpeg'
+    description: nil,
+    tier: { one: '+5% XP in Story and Special Missions.' },
+    icon_url: '/assets/relics/matrix-of-leadership.jpeg',
+    image_url: '/assets/relics/matrix-of-leadership_768x768.jpeg'
   },
   {
     name: 'Megatron relic',
@@ -57,6 +49,22 @@
     tier: nil,
     icon_url: '/assets/relics/silver-galvatron-relic.jpeg',
     image_url: '/assets/relics/silver-galvatron-relic_768x768.jpeg'
+  },
+  {
+    name: 'Silver shattered disk',
+    type: :relic_boost,
+    description: '+3% attack and health in Special Missions.',
+    tier: nil,
+    icon_url: '/assets/relics/silver-shattered-disk.jpeg',
+    image_url: '/assets/relics/silver-shattered-disk_768x768.jpeg'
+  },
+  {
+    name: 'The covenant of primus',
+    type: :relic_xp_boost,
+    description: 'Increase Commander XP gains by +5 XP.',
+    tier: nil,
+    icon_url: '/assets/relics/the-covenant-of-primus.jpeg',
+    image_url: '/assets/relics/the-covenant-of-primus_768x768.jpeg'
   },
   {
     name: 'Unstable Energon cube',
