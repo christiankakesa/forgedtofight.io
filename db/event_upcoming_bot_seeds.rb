@@ -5,6 +5,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2017-11-30 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Megatron', type: :tactician).first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2017-11-02 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Dinobot').first.id

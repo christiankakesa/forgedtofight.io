@@ -10,7 +10,7 @@ class Event
         in: %i[arena calendar_bot daily upcoming_bot]
   field :name, type: String, required: false
   field :image_url, type: String
-  field :start_at, type: Time, validates: { uniqueness: { scope: :type } }
+  field :start_at, type: Time, unique: { scope: :type }
   field :end_at, type: Time
   field :name_three_stars, type: String
   field :name_four_stars, type: String

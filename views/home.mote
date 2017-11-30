@@ -36,6 +36,7 @@
       <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:upcoming_bot].start_at.utc.iso8601 }}">{{ (data[:upcoming_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %dth, %Y at %H:%M %p')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:upcoming_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
+        <span class="align-top badge badge-bot-{{ data[:upcoming_bot].bot.type }}">{{ _(data[:upcoming_bot].bot.type_name) }}</span>
         <img class="img-fluid img-thumbnail" src="{{ data[:upcoming_bot].image_url || data[:upcoming_bot].bot.image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:upcoming_bot].bot.name } }}">
       </div>
     </div>
@@ -51,6 +52,7 @@
       <p class="h6 text-center text-info font-weight-bold" data-localized-time="{{ data[:calendar_bot].start_at.utc.iso8601 }}">{{ (data[:calendar_bot].start_at.utc + Time.zone_offset('PDT')).strftime(s_('DateFormat|%B %Y')) }}</p>
       <div class="h2 mb-0 text-primary text-center">{{ data[:calendar_bot].bot.name }}</div>
       <div class="mt-1 mb-0 text-center">
+        <span class="align-top badge badge-bot-{{ data[:calendar_bot].bot.type }}">{{ _(data[:calendar_bot].bot.type_name) }}</span>
         <img class="img-fluid img-thumbnail" src="{{ data[:calendar_bot].image_url || data[:calendar_bot].bot.image_url }}" alt="{{ _('Bot: %{bot}') % { bot: data[:calendar_bot].bot.name } }}">
       </div>
     </div>

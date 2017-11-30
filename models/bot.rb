@@ -4,7 +4,7 @@ class Bot
   include NoBrainer::Document
   include NoBrainer::Document::Timestamps
 
-  field :name, type: String, unique: true
+  field :name, type: String, required: true, unique: { scope: :type }
   field :type, type: Enum,
                default: :brawler,
                in: %i[brawler demolitions scout tactician tech warrior],

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Bot.unscoped.delete_all
+Bot.unscoped.delete_all
 [
   {
     name: 'Arcee',
@@ -149,14 +149,26 @@
   {
     name: 'Megatron',
     description: 'All Hail Megatron! That pretty much sums up the Decepticon leader\'s ambition, and his minions\'fear-induced feelings...',
-    icon_url: '/assets/bots/megatron.jpeg',
-    image_url: '/assets/bots/megatron_600x860.jpeg',
+    icon_url: '/assets/bots/megatron-demolitions.jpeg',
+    image_url: '/assets/bots/megatron-demolitions_600x860.jpeg',
     type: :demolitions,
     faction: :decepticons,
     health: { stars_1: nil, stars_2: 1924, stars_3: 4725, stars_4: 12_281 },
     attack: { stars_1: nil, stars_2: 146, stars_3: 306, stars_4: 794 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2935 },
     max_rating_sig100: { stars_1: nil, stars_2: 555, stars_3: 1312, stars_4: 3543 }
+  },
+  {
+    name: 'Megatron',
+    description: 'Once a renowned gladiator in pre-Civil-War Cybertron, Megatron used his charisma and brutality to fuel the Decepticon uprising...',
+    icon_url: '/assets/bots/megatron-tactician.jpeg',
+    image_url: '/assets/bots/megatron-tactician_600x860.jpeg',
+    type: :tactician,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 1732, stars_3: 4253, stars_4: 11_053 },
+    attack: { stars_1: nil, stars_2: 158, stars_3: 334, stars_4: 868 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 537, stars_3: 1270, stars_4: 3485 }
   },
   {
     name: 'Mirage',
