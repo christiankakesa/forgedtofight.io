@@ -239,12 +239,6 @@ msgstr "Round"
 msgid "Scouts"
 msgstr "Éclaireurs"
 
-msgid "Send your Bot stats"
-msgstr "Partager les stats des Bots"
-
-msgid "Send your Mod stats"
-msgstr "Partager les stats des Mods"
-
 msgid "Sidebar|About"
 msgstr "À propos"
 
@@ -367,3 +361,8 @@ msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
 
 msgid "localhost"
 msgstr ""
+
+#~ msgid "Send your Bot stats"
+#~ msgstr "Partager les stats des Bots"
+#~ msgid "Send your Mod stats"
+#~ msgstr "Partager les stats des Mods"

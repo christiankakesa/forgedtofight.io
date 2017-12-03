@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-17 21:03+0100\n"
-"PO-Revision-Date: 2017-11-17 21:03+0100\n"
+"POT-Creation-Date: 2017-12-03 02:40+0100\n"
+"PO-Revision-Date: 2017-12-03 02:40+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -238,12 +238,6 @@ msgid "Round"
 msgstr ""
 
 msgid "Scouts"
-msgstr ""
-
-msgid "Send your Bot stats"
-msgstr ""
-
-msgid "Send your Mod stats"
 msgstr ""
 
 msgid "Sidebar|About"

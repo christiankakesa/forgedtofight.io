@@ -239,12 +239,6 @@ msgstr ""
 msgid "Scouts"
 msgstr ""
 
-msgid "Send your Bot stats"
-msgstr ""
-
-msgid "Send your Mod stats"
-msgstr ""
-
 msgid "Sidebar|About"
 msgstr ""
 
