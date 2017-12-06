@@ -4,7 +4,7 @@ Accounts = Syro.new(BasicDeck) do
   on 'accounts' do
     on !authenticated(User) do
       res.status = 401
-      res.write _('You are not authorized to be here !!!')
+      res.write _('You are not authorized to be here !')
       halt(res.finish)
     end
 
