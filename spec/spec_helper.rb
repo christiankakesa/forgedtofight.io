@@ -5,7 +5,7 @@ ENV['RACK_ENV'] = 'test'
 begin
   require 'simplecov'
   SimpleCov.start
-rescue
+rescue StandarError
   puts '[ERROR]: SimpleCov is not loaded!'
 end
 
@@ -36,7 +36,6 @@ NoBrainer.sync_schema
 module RSpecMixin
   include Rack::Test::Methods
   include Capybara::DSL
-  # include FastGettext::Translation
 
   def app
     Rack::Lint.new MainApp
