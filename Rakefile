@@ -77,23 +77,22 @@ namespace :gettext do
     GetText::Tools::Task.define do |task|
       task.package_name = (begin
                              FastGettext.text_domain
-                           rescue
+                           rescue StandardError
                              nil
                            end) || ENV['TEXTDOMAIN'] || 'forgedtofightio'
       task.package_version = '1.0.0'
       task.domain = (begin
-                         FastGettext.text_domain
-                       rescue
-                         nil
-                       end) || ENV['TEXTDOMAIN'] || 'forgedtofightio'
+                       FastGettext.text_domain
+                     rescue StandardError
+                       nil
+                     end) || ENV['TEXTDOMAIN'] || 'forgedtofightio'
       task.po_base_directory = File.join(File.dirname(__FILE__),
                                          'config',
                                          'locales')
       task.mo_base_directory = File.join(File.dirname(__FILE__),
                                          'config',
                                          'locales')
-      task.files = Dir.glob('*.{rb,erb,mote}')
-      task.files += Dir.glob('{config,lib,views}/**/*.{rb,erb,mote}')
+      task.files = Dir.glob('**/*.{rb,erb,mote}')
       task.enable_description = false
       task.msgmerge_options = %w[--sort-by-msgid --no-location --no-wrap]
       task.msgcat_options = %w[--sort-by-msgid --no-location --no-wrap]
