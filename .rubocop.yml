@@ -3,10 +3,19 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'Rakefile'
     - 'rakefile'
-    - 'routes/**/*.rb'
-    - 'spec/**/*.rb'
-Security/Eval:
+    - '**/*.rb'
+Metrics/ClassLength:
   Exclude:
     - 'decks/**/*.rb'
+Metrics/LineLength:
+  Max: 160
+  Exclude:
+    - 'db/**/*.rb'
+Metrics/MethodLength:
+  Exclude:
+    - 'decks/**/*.rb'
+# Security/Eval:
+#   Exclude:
+#     - 'decks/**/*.rb'
 Style/Documentation:
   Enabled: false
