@@ -51,6 +51,7 @@ GEM
     montrose (0.7.0)
       activesupport (>= 4.1, < 5.2)
     mote (1.3.0)
+    nobi (0.0.1)
     nobrainer (0.33.0)
       activemodel (>= 4.1.0)
       activesupport (>= 4.1.0)
@@ -130,7 +131,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-    uglifier (4.0.0)
+    uglifier (4.0.1)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.3.0)
     xpath (2.1.0)
@@ -149,6 +150,7 @@ DEPENDENCIES
   mail
   montrose
   mote (~> 1.3.0)
+  nobi
   nobrainer
   puma
   rack-timeout
