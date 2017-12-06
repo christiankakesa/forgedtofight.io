@@ -12,7 +12,7 @@ NoBrainer.configure do |config|
             IO.popen(docker_ip)
               .readlines[0]
               .chomp
-          rescue StandardError => _
+          rescue StandardError
             'localhost'
           end
     db_env = ENV['RACK_ENV'] || 'development'
