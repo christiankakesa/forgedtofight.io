@@ -4,8 +4,6 @@ require 'fast_gettext'
 require 'rack-timeout'
 require 'syro'
 require 'securerandom'
-
-# Application bootstrap
 require_relative 'boot'
 require_relative 'lib/rack/session/nobrainer'
 
@@ -18,13 +16,11 @@ WebApp = Syro.new(BasicDeck) do
     @text_domain = 'forgedtofightio'
     FastGettext.text_domain = @text_domain
   end
-
   @accepted_language ||= lambda do
     next 'en' unless req.env.include?('HTTP_ACCEPT_LANGUAGE')
     current_language = req.env['HTTP_ACCEPT_LANGUAGE'][0, 2]
     @available_locales.include?(current_language) ? current_language : 'en'
   end
-
   lang = req['lang']
   lang = nil if lang.to_s.empty?
   FastGettext.set_locale(lang || session['lang'] || @accepted_language.call)
@@ -51,6 +47,5 @@ MainApp = Rack::Builder.new do
       wait_timeout: 30,
       wait_overtime: 60,
       service_past_wait: false)
-
   run(WebApp)
 end
