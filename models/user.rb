@@ -9,23 +9,31 @@ class User
   scope(:pending) { where(status: :pending) }
   scope(:deleted) { where(status: :deleted) }
 
-  field :username, type: String, unique: true
+  field :nickname, type: String, required: true, unique: true
   field :email, type: String, required: true, unique: true
-  field :crypted_password, type: String
-  field :company, type: String
-  field :twitter, type: String
-  field :linkedin, type: String
-  field :github, type: String
+  field :crypted_password, type: String, required: true
   field :status,
         type: Enum,
         default: :pending,
         in: %i[active pending deleted]
+
+  def state_active
+    update!(status: :active)
+  end
+
+  def state_pending
+    update!(status: :pending)
+  end
+
+  def state_deleted
+    update!(status: :deleted)
+  end
 
   def self.[](id)
     where(id: id).first
   end
 
   def self.fetch(identifier)
-    where(username: identifier).first || where(email: identifier).first
+    where(nickname: identifier).first || where(email: identifier).first
   end
 end

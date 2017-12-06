@@ -5,13 +5,15 @@
 # 2. helpers
 # 3. decks
 # 4. models
-# 5. routes
+# 5. validations
+# 6. routes
 [
   %w[config initializers],
   'helpers',
   'decks',
   'models',
-  'routes'
+  'routes',
+  'validations'
 ].each do |path|
   Dir[File.join(*path, '*.rb')].each do |file|
     require_relative file

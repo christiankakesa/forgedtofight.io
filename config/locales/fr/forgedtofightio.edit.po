@@ -38,6 +38,9 @@ msgstr "À propos"
 msgid "Account"
 msgstr "Mon compte"
 
+msgid "Activate your account by visiting the following link"
+msgstr "Pour activer le compte, allez sur ce lien"
+
 msgid "All"
 msgstr "Tous"
 
@@ -65,11 +68,23 @@ msgstr "Bagarreurs"
 msgid "Calendar's bot"
 msgstr "Bot du calendrier"
 
+msgid "Check your email box to activate your account"
+msgstr "Vérifiez vos e-mails pour activer de votre compte"
+
+msgid "Check your email to reset your password"
+msgstr "Vérifiez vos e-mails pour réinitialiser votre mot de passe"
+
 msgid "Close"
 msgstr "Fermer"
 
 msgid "Contribute to the developement"
 msgstr "Contribuer au développement"
+
+msgid "Could not send recover information for this identifier"
+msgstr "Impossible d'envoyer les informations de réinitialisation"
+
+msgid "Could't create your user, retry or report the issue"
+msgstr "Impossible de créer votre compte, contactez l'administrateur"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -89,8 +104,20 @@ msgstr "Langage de programmation dynamique et efficace"
 msgid "Email"
 msgstr "E-mail"
 
+msgid "Email address is not well formated"
+msgstr "L'adresse e-mail n'est pas correcte"
+
+msgid "Email is already taken"
+msgstr "L'adresse e-mail est déjà utilisée"
+
+msgid "Email is needed"
+msgstr "L'adresse e-mail est obligatoire"
+
 msgid "End at"
 msgstr "Fin"
+
+msgid "Error when trying to activate your account"
+msgstr "Une erreur est survenue lors de l'activation de votre compte"
 
 msgid "Event"
 msgstr "Évènement"
@@ -101,11 +128,14 @@ msgstr "Évènements"
 msgid "Filters"
 msgstr "Filtres"
 
-msgid "Firstname"
-msgstr "Prénom"
+msgid "Follow the link below to set a new password"
+msgstr "Allez sur le lien suivant, pour mettre à jour votre mot de passe"
 
-msgid "ForgedToFight.IO &mdash; Account Settings"
-msgstr "ForgedToFight.IO &mdash; Gestion du compte"
+msgid "ForgedToFight.IO - Account Settings"
+msgstr "ForgedToFight.IO- Gestion du compte"
+
+msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
+msgstr "ForgedToFight.IO - Site de fan non-officiel pour Transformers Forgés d'Acier"
 
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
 msgstr "ForgedToFight.IO est le site internet communautaire du jeu sur mobile : TRANSFORMERS Forgés d'Acier"
@@ -122,6 +152,9 @@ msgstr "Point de vie"
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
 
+msgid "Hi"
+msgstr "Bonjour"
+
 msgid "Home"
 msgstr "Accueil"
 
@@ -134,14 +167,14 @@ msgstr "@fenicks79"
 msgid "HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS"
 msgstr "Transformers,Forgés d'Acier,jeu,mobile,Android,iOS"
 
+msgid "If you don't wish to reset your password, disregard this email and no action will be taken"
+msgstr "Si vous n'avez pas souhaité la réinitialisation de votre mot de passe, ignorez ce message aucune action ne sera réalisée"
+
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
 
 msgid "Keep me signed in"
 msgstr "Rester connecté"
-
-msgid "Lastname"
-msgstr "Nom"
 
 msgid "Log in"
 msgstr "Se connecter"
@@ -185,8 +218,17 @@ msgstr "S'inscrire"
 msgid "Mods"
 msgstr "Mods"
 
-msgid "Name"
-msgstr "Nom"
+msgid "Nickname (in game)"
+msgstr "Pseudo (dans le jeu)"
+
+msgid "Nickname is already taken"
+msgstr "Ce pseudo est déjà utilisé"
+
+msgid "Nickname is needed"
+msgstr "Le pseudo est obligatoire"
+
+msgid "Nickname or email"
+msgstr "Pseudo ou e-mail"
 
 msgid "No event for now"
 msgstr "Aucun évènement pour le moment"
@@ -209,8 +251,20 @@ msgstr "Mot de passe"
 msgid "Password confirmation"
 msgstr "Mot de passe confirmé"
 
+msgid "Password doesn't match"
+msgstr "Les mot de passe ne correspondent pas"
+
+msgid "Password is needed"
+msgstr "Le mot de passe est obligatoire"
+
+msgid "Password is not in correct range, please contact-us"
+msgstr "Le mot de passe n'est pas assez robuste"
+
 msgid "Password|Reset"
 msgstr "Réinitialiser"
+
+msgid "Please retry or contact our technical team"
+msgstr "Veuillez réessayer ou contacter notre équipe technique"
 
 msgid "Powered by"
 msgstr "Créer par"
@@ -281,6 +335,9 @@ msgstr "Se connecter"
 msgid "Sign up"
 msgstr "S'inscrire"
 
+msgid "Something is going wrong with your credentials"
+msgstr "Vos identifiants sont incorrects"
+
 msgid "Start at"
 msgstr "Début"
 
@@ -295,6 +352,15 @@ msgstr "Techniciens"
 
 msgid "Terms of service"
 msgstr "Conditions d'utilisation"
+
+msgid "Thanks"
+msgstr "Merci"
+
+msgid "Thanks for signing up at ForgedToFightIO"
+msgstr "Merci d'avoir souscris à ForgedToFightIO"
+
+msgid "The ForgedToFightIO team"
+msgstr "L'équipe ForgedToFightIO"
 
 msgid "The mobile game is available on"
 msgstr "Le jeu est disponible sur"
@@ -341,17 +407,14 @@ msgstr "Bot à l'honneur"
 msgid "Use of cookies"
 msgstr "Utilisation des cookies"
 
-msgid "Username"
-msgstr "Utilisateur"
-
-msgid "Username or email"
-msgstr "Utilisateur ou e-mail"
-
 msgid "Utilities"
 msgstr "Utilitaires"
 
 msgid "Warriors"
 msgstr "Guerriers"
+
+msgid "We could not activate your account"
+msgstr "Impossible d'activer votre compte"
 
 msgid "Website"
 msgstr "Site internet"
@@ -359,10 +422,17 @@ msgstr "Site internet"
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
 
-msgid "localhost"
-msgstr ""
+msgid "Welcome to ForgedToFight.IO website"
+msgstr "Bienvenue sur le site internet de ForgedToFight.IO"
 
-#~ msgid "Send your Bot stats"
-#~ msgstr "Partager les stats des Bots"
-#~ msgid "Send your Mod stats"
-#~ msgstr "Partager les stats des Mods"
+msgid "You are not authorized to be here !"
+msgstr "Vous n'avez pas le droit d'y aller !"
+
+msgid "You have requested a password reset"
+msgstr "Vous avez demander une réinitialisation de votre mot de passe"
+
+msgid "You successfully logged in"
+msgstr "Connexion réussie"
+
+msgid "You successfully logged out"
+msgstr "Vous êtes déconnecté"

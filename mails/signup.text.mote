@@ -1,0 +1,6 @@
+{{ _('Thanks for signing up at ForgedToFightIO') }}!
+
+{{ _('Activate your account by visiting the following link') }}: {{ signup_url }}
+
+{{ _('Thanks') }},
+{{ _('The ForgedToFightIO team') }}

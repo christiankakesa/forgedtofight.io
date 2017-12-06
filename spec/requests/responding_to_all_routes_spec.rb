@@ -69,7 +69,10 @@ describe '/login', type: :request do
   end
 
   it 'POST /login' do
-    User.unscoped.upsert(username: 'id', password: 'toto', status: :active).save
+    User.unscoped.upsert!(email: 'fenicks79@example.com',
+                          nickname: 'id',
+                          password: 'toto',
+                          status: :active)
     post '/login', identifier: 'id', password: 'toto'
     expect(300..399).to cover(last_response.status)
     follow_redirect!

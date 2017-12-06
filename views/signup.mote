@@ -5,31 +5,22 @@
   <div class="form-group row">
     <label for="email" class="col-sm-2 col-form-label">{{ _('Email') }}*</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="email" name="email" required>
+      <input type="email" class="form-control" id="email" name="email" value="{{ params[:email] || '' }}" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="nickname" class="col-sm-2 col-form-label">{{ _('Nickname (in game)') }}*</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nickname" name="nickname" value="{{ params[:nickname] || '' }}" required>
     </div>
   </div>
   <div class="form-group row">
     <label for="password" class="col-sm-2 col-form-label">{{ _('Password') }}*</label>
     <div class="col-sm-5">
-      <input type="password" class="form-control" id="password" name="password" placeholder="{{ _('Password') }}"  required>
+      <input type="password" class="form-control" id="password" name="password" placeholder="{{ _('Password') }}" required>
     </div>
     <div class="col-sm-5">
-      <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="{{ _('Password confirmation') }}"  required>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="username" class="col-sm-2 col-form-label">{{ _('Username') }}</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="username" name="username">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="firstname" class="col-sm-2 col-form-label">{{ _('Name') }}</label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="{{ _('Firstname') }}">
-    </div>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="{{ _('Lastname') }}">
+      <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="{{ _('Password confirmation') }}" required>
     </div>
   </div>
   <div class="form-group row">

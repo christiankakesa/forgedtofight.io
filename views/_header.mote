@@ -14,7 +14,7 @@
     % if authenticated(User)
     <li class="nav-item dropdown px-2">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="hidden-md-down">{{ authenticated(User)&.username || authenticated(User)&.email || s_('Menu|Account Management') }}</span>
+        <span class="hidden-md-down">{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Menu|Account Management') }}</span>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
         <div class="dropdown-header text-center">

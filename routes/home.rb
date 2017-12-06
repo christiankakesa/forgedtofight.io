@@ -45,7 +45,7 @@ Home = Syro.new(BasicDeck) do
 
     post do
       on user_mock.mockable? do
-        if login(User, user_mock.get.username, user_mock.password)
+        if login(User, user_mock.get.nickname, user_mock.password)
           flash_success _('You successfully logged in')
         end
         res.redirect(req[:return] || '/')
@@ -58,7 +58,7 @@ Home = Syro.new(BasicDeck) do
       end
 
       default do
-        flash_danger _('Something is going wrong with your credentials.')
+        flash_danger _('Something is going wrong with your credentials')
         res.redirect '/login'
       end
     end
@@ -104,7 +104,7 @@ Home = Syro.new(BasicDeck) do
     post do
       identifier = req[:identifier].to_s
       user = (User.where(email: identifier) ||
-                User.where(username: identifier)).first
+                User.where(nickname: identifier)).first
 
       on !user.nil? do
         # TODO(fenicks): send an email with background job processor
@@ -123,20 +123,21 @@ Home = Syro.new(BasicDeck) do
 
   on 'signup' do
     on :activate do
-      user = User.find(signup_token: inbox[:activate])
+      user = User.unscoped.find(signup_token: inbox[:activate])
       on !user.nil? do
-        user.queue_atomic do
-          user.update status: :active
-          user.unset :signup_token
+        ok = user.queue_atomic do
+          user.update(status: :active) && user.unset(:signup_token)
         end
-        if user.save
+        if ok
           # TODO(fenicks): send a welcome email
           authenticate(user)
-          flash_success _('Welcome to TRANSFORMERS Forged to Fight dex')
+          flash_success _('Welcome to ForgedToFight.IO website')
           res.redirect '/'
         else
-          flash_danger _('We could not activate your account.')
-          flash_danger _('please retry or contact the administrator')
+          # Ensure status could be later retried for activation
+          user.queue_atomic { user.update(status: :pending) }
+          flash_danger _('We could not activate your account')
+          flash_danger _('Please retry or contact our technical team')
           res.redirect '/signup'
         end
       end
@@ -152,15 +153,33 @@ Home = Syro.new(BasicDeck) do
     end
 
     post do
-      # TODO(fenicks): validate the form => password, e-mail
-      if validates(SignupValidation.validates(req.params))
-        req.params.clear
-        # TODO(fenicks): send an activation e-mail
-        flash_success _('Check your email box to activate your account')
+      filter = SignupValidation.new(req.params)
+      if filter.valid?
+        if !User.create(filter.slice(:email, :nickname, :password))
+          flash_danger _("Could't create your user, retry or report the issue")
+        else
+          # TODO(fenicks): send an activation e-mail
+          # puts mote('mails/signup.text.mote', signup_url: "#{ENV['HOST']}/signup/#{signer.encode(User.unscoped.where(email: filter.email).first.id)}")
+          flash_success _('Check your email box to activate your account')
+        end
+        render 'views/signup.mote'
       else
-        flash_danger _('Please check the required parameters')
+        filter.errors.each do |error|
+          if error.first.eql?(:email)
+            flash_danger(_('Email is needed')) if error.last.include?(:not_present)
+            flash_danger(_('Email is already taken')) if error.last.include?(:not_unique)
+            flash_danger(_('Email address is not well formated')) if error.last.include?(:not_email)
+          elsif error.first.eql?(:nickname)
+            flash_danger(_('Nickname is needed')) if error.last.include?(:not_present)
+            flash_danger(_('Nickname is already taken')) if error.last.include?(:not_unique)
+          elsif error.first.eql?(:password)
+            flash_danger(_('Password is not in correct range, please contact-us')) if error.last.include?(:not_in_range)
+            flash_danger(_('Password is needed')) if error.last.include?(:not_present)
+            flash_danger(_("Password doesn't match")) if error.last.include?(:not_password_match)
+          end
+        end
+        render 'views/signup.mote', params: filter.slice(:email, :nickname) || {}
       end
-      render 'views/signup.mote'
     end
   end
 

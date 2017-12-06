@@ -87,6 +87,10 @@ class BasicDeck < Syro::Deck
     UserMock
   end
 
+  def signer
+    NobiSigner
+  end
+
   def flash_success(message)
     flash_add(:success, message)
   end

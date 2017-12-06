@@ -1,0 +1,9 @@
+{{ _('Hi') }},
+
+{{ _('You have requested a password reset') }}.
+
+{{ _('Follow the link below to set a new password') }}: {{ password_reset_url }}.
+
+{{ _("If you don't wish to reset your password, disregard this email and no action will be taken") }}
+
+{{ _('The ForgedToFightIO team') }}

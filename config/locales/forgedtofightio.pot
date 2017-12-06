@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-03 02:40+0100\n"
-"PO-Revision-Date: 2017-12-03 02:40+0100\n"
+"POT-Creation-Date: 2017-12-06 00:48+0100\n"
+"PO-Revision-Date: 2017-12-06 00:48+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -39,6 +39,9 @@ msgstr ""
 msgid "Account"
 msgstr ""
 
+msgid "Activate your account by visiting the following link"
+msgstr ""
+
 msgid "All"
 msgstr ""
 
@@ -66,10 +69,22 @@ msgstr ""
 msgid "Calendar's bot"
 msgstr ""
 
+msgid "Check your email box to activate your account"
+msgstr ""
+
+msgid "Check your email to reset your password"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 
 msgid "Contribute to the developement"
+msgstr ""
+
+msgid "Could not send recover information for this identifier"
+msgstr ""
+
+msgid "Could't create your user, retry or report the issue"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -90,7 +105,19 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
+msgid "Email address is not well formated"
+msgstr ""
+
+msgid "Email is already taken"
+msgstr ""
+
+msgid "Email is needed"
+msgstr ""
+
 msgid "End at"
+msgstr ""
+
+msgid "Error when trying to activate your account"
 msgstr ""
 
 msgid "Event"
@@ -102,10 +129,13 @@ msgstr ""
 msgid "Filters"
 msgstr ""
 
-msgid "Firstname"
+msgid "Follow the link below to set a new password"
 msgstr ""
 
-msgid "ForgedToFight.IO &mdash; Account Settings"
+msgid "ForgedToFight.IO - Account Settings"
+msgstr ""
+
+msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
 msgstr ""
 
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
@@ -123,6 +153,9 @@ msgstr ""
 msgid "HTML, CSS and JS web framework"
 msgstr ""
 
+msgid "Hi"
+msgstr ""
+
 msgid "Home"
 msgstr ""
 
@@ -135,13 +168,13 @@ msgstr ""
 msgid "HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS"
 msgstr ""
 
+msgid "If you don't wish to reset your password, disregard this email and no action will be taken"
+msgstr ""
+
 msgid "JSON document based database"
 msgstr ""
 
 msgid "Keep me signed in"
-msgstr ""
-
-msgid "Lastname"
 msgstr ""
 
 msgid "Log in"
@@ -186,7 +219,16 @@ msgstr ""
 msgid "Mods"
 msgstr ""
 
-msgid "Name"
+msgid "Nickname (in game)"
+msgstr ""
+
+msgid "Nickname is already taken"
+msgstr ""
+
+msgid "Nickname is needed"
+msgstr ""
+
+msgid "Nickname or email"
 msgstr ""
 
 msgid "No event for now"
@@ -210,7 +252,19 @@ msgstr ""
 msgid "Password confirmation"
 msgstr ""
 
+msgid "Password doesn't match"
+msgstr ""
+
+msgid "Password is needed"
+msgstr ""
+
+msgid "Password is not in correct range, please contact-us"
+msgstr ""
+
 msgid "Password|Reset"
+msgstr ""
+
+msgid "Please retry or contact our technical team"
 msgstr ""
 
 msgid "Powered by"
@@ -282,6 +336,9 @@ msgstr ""
 msgid "Sign up"
 msgstr ""
 
+msgid "Something is going wrong with your credentials"
+msgstr ""
+
 msgid "Start at"
 msgstr ""
 
@@ -295,6 +352,15 @@ msgid "Techs"
 msgstr ""
 
 msgid "Terms of service"
+msgstr ""
+
+msgid "Thanks"
+msgstr ""
+
+msgid "Thanks for signing up at ForgedToFightIO"
+msgstr ""
+
+msgid "The ForgedToFightIO team"
 msgstr ""
 
 msgid "The mobile game is available on"
@@ -342,16 +408,13 @@ msgstr ""
 msgid "Use of cookies"
 msgstr ""
 
-msgid "Username"
-msgstr ""
-
-msgid "Username or email"
-msgstr ""
-
 msgid "Utilities"
 msgstr ""
 
 msgid "Warriors"
+msgstr ""
+
+msgid "We could not activate your account"
 msgstr ""
 
 msgid "Website"
@@ -360,5 +423,17 @@ msgstr ""
 msgid "Welcome Transformers: Forged to Fight gamers!"
 msgstr ""
 
-msgid "localhost"
+msgid "Welcome to ForgedToFight.IO website"
+msgstr ""
+
+msgid "You are not authorized to be here !"
+msgstr ""
+
+msgid "You have requested a password reset"
+msgstr ""
+
+msgid "You successfully logged in"
+msgstr ""
+
+msgid "You successfully logged out"
 msgstr ""
