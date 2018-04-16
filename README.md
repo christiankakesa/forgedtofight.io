@@ -20,7 +20,7 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 * Install Docker: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
 * Create the RethinkDB from docker image:
 
-        mkdipr -p ${HOME}/opt/data/rethinkdb
+        mkdir -p ${HOME}/opt/data/rethinkdb
         docker run --name rethinkdb -v "${HOME}/opt/data/rethinkdb:/data" -d rethinkdb
 
 #### To start RethinkDB image
