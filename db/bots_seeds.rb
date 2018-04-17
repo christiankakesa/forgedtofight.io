@@ -63,6 +63,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Bumblebee Scout',
+    description: 'Small, eager, and brave, Bumblebee acts as messenger and spy. Due to his small size, he dares to go where others can’t...',
+    icon_url: '/assets/bots/bumblebee-scout.jpeg',
+    image_url: '/assets/bots/bumblebee-scout_600x860.jpeg',
+    type: :scout,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1417, stars_3: 3480, stars_4: 9043 },
+    attack: { stars_1: nil, stars_2: 151, stars_3: 318, stars_4: 827 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 566, stars_3: 1299, stars_4: 3499 }
+  },
+  {
     name: 'Dinobot',
     description: 'Honor and Glory are the only two things worth dying for, a belief truly befitting this fierce Predacon turned Maximal warrior....',
     icon_url: '/assets/bots/dinobot.jpeg',
