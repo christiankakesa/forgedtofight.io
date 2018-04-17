@@ -219,6 +219,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Optiminus Primal',
+    description: 'The Maximal starship Axalon, commanded by Optimus Primal was pulled into a Transwarp Portal while in pursuit of a Predacon warship...',
+    icon_url: '/assets/bots/optimus-primal.jpeg',
+    image_url: '/assets/bots/optimus-primal_600x860.jpeg',
+    type: :brawler,
+    faction: :maximals,
+    health: { stars_1: nil, stars_2: 1942, stars_3: 4768, stars_4: 12_292 },
+    attack: { stars_1: nil, stars_2: 177, stars_3: 376, stars_4: 975 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 532, stars_3: 1304, stars_4: 3538 }
+  },
+  {
     name: 'Optiminus Prime',
     description: 'From his humble beginnings as Orion Pax to his indusputable role as the greatest Autobot leader ever, Optimus Prime is the embodiment of heroic valor and rightousness...',
     icon_url: '/assets/bots/optimus-prime.jpeg',
