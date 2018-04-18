@@ -5,6 +5,18 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-04-12 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Blaster').first.id
+  },
+  {
+    type: :upcoming_bot,
+    start_at: Time.parse('2018-03-15 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Kickback').first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-02-08 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Hound').first.id
