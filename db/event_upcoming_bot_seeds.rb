@@ -5,6 +5,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-02-08 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Hound').first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-02-01 00:00:00 PDT').utc,
     end_at: Time.parse('2018-02-08 00:00:00 PDT').utc,
     image_url: nil,

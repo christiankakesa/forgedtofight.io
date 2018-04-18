@@ -136,7 +136,7 @@ Bot.unscoped.delete_all
   },
   {
     name: 'Hot Rod',
-    description: 'Long undercover on Earth with his brother in arms, Bumblebee, Hot Rod is a powerful and agile warrior with a unique Time Bubble Cannon that definitely packs a punch....',
+    description: 'Long undercover on Earth with his brother in arms, Bumblebee, Hot Rod is a powerful and agile warrior with a unique Time Bubble Cannon that definitely packs a punch...',
     icon_url: '/assets/bots/hot-rod.jpeg',
     image_url: '/assets/bots/hot-rod_600x860.jpeg',
     type: :warrior,
@@ -145,6 +145,18 @@ Bot.unscoped.delete_all
     attack: { stars_1: nil, stars_2: 158, stars_3: 337, stars_4: 876 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2857 },
     max_rating_sig100: { stars_1: nil, stars_2: 552, stars_3: 1313, stars_4: 3476 }
+  },
+  {
+    name: 'Hound',
+    description: 'Autobot Hound has a mean bark and a nastier bite. This brave warrior will back his teammates no matter how grim the struggle...',
+    icon_url: '/assets/bots/hound.jpeg',
+    image_url: '/assets/bots/hound_600x860.jpeg',
+    type: :warrior,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1854, stars_3: 4553, stars_4: 11_839 },
+    attack: { stars_1: nil, stars_2: 149, stars_3: 318, stars_4: 827 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 547, stars_3: 1308, stars_4: 3484 }
   },
   {
     name: 'Ironhide',
