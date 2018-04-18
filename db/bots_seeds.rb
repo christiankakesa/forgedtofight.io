@@ -171,6 +171,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Kickback',
+    description: 'Intelligent and deceptively persuasive, Kickback’s power to manipulate minds is only ever a ploy to gain access to the information or resources he seeks...',
+    icon_url: '/assets/bots/kickback.jpeg',
+    image_url: '/assets/bots/kickback_600x860.jpeg',
+    type: :scout,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 1470, stars_3: 3608, stars_4: 9378 },
+    attack: { stars_1: nil, stars_2: 179, stars_3: 379, stars_4: 984 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 559, stars_3: 1294, stars_4: 3515 }
+  },
+  {
     name: 'Megatron',
     description: 'All Hail Megatron! That pretty much sums up the Decepticon leader\'s ambition, and his minions\'fear-induced feelings...',
     icon_url: '/assets/bots/megatron-demolitions.jpeg',
