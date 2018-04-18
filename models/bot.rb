@@ -11,7 +11,7 @@ class Bot
                required: true
   field :faction, type: Enum,
                   default: :autobots,
-                  in: %i[autobots decepticons maximals predacons],
+                  in: %i[autobots decepticons maximals predacons sharkticons],
                   required: true
   field :description, type: String
   field :icon_url, type: String

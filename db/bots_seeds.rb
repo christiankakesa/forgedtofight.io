@@ -303,6 +303,78 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-brawler_600x860.jpeg',
+    type: :brawler,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2547 }
+  },
+  {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-warrior_600x860.jpeg',
+    type: :warrior,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2541 }
+  },
+  {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-scout_600x860.jpeg',
+    type: :scout,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2540 }
+  },
+  {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-tech_600x860.jpeg',
+    type: :tech,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2539 }
+  },
+  {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-demolitions_600x860.jpeg',
+    type: :demolitions,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2543 }
+  },
+  {
+    name: 'Sharkticon',
+    description: 'Sharkticons gain their abilities only once their Signature Ability has been unlocked but their abilities combine some of the most powerful effects and Special Attacks found on New Quintessa! ...',
+    icon_url: '/assets/bots/sharkticons.jpeg',
+    image_url: '/assets/bots/sharkticon-tactician_600x860.jpeg',
+    type: :tactician,
+    faction: :sharkticons,
+    health: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    attack: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: 2541 }
+  },
+  {
     name: 'Shockwave',
     description: 'Truly one of the most feared and powerful of all Decepticons, Shockwave\'s existence is driven solely by one thing: logic...',
     icon_url: '/assets/bots/shockwave.jpeg',
