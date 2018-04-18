@@ -63,7 +63,7 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
-    name: 'Bumblebee Scout',
+    name: 'Bumblebee',
     description: 'Small, eager, and brave, Bumblebee acts as messenger and spy. Due to his small size, he dares to go where others can’t...',
     icon_url: '/assets/bots/bumblebee-scout.jpeg',
     image_url: '/assets/bots/bumblebee-scout_600x860.jpeg',
