@@ -1,13 +1,13 @@
 <ul class="nav">
   <li class="nav-item px-3 py-1"><a href="/"><i class="icon-home"></i> {{ s_('Sidebar|Home') }}</a></li>
   <li class="divider"></li>
-  <li class="nav-title"><i class="icon-options" aria-hidden="true"></i> {{ s_('Sidebar|Features') }}</li>
+  <!-- <li class="nav-title"><i class="icon-options" aria-hidden="true"></i> {{ s_('Sidebar|Features') }}</li> -->
   <li class="nav-item px-3"><a href="/events"><i class="icon-clock" aria-hidden="true"></i>  {{ s_('Sidebar|Events') }}</a> <span class="badge badge-pill badge-default text-lowercase">{{ Event.next.count }}</span></li>
   <li class="nav-item px-3"><a href="/botodex"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}</a> <span class="badge badge-pill badge-default">{{ Bot.count }}</span></li>
   <li class="nav-item px-3"><a href="/mods"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Mods') }}</a> <span class="badge badge-pill badge-default">{{ Mod.count }}</span></li>
   <li class="nav-item px-3"><a href="/relics"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Relics') }}</a> <span class="badge badge-pill badge-default">{{ Relic.count }}</span></li>
   <li class="divider"></li>
-  <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Info') }}</li>
+  <!-- <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Info') }}</li> -->
   <li class="nav-item px-3"><a href="/about"><i class="icon-info" aria-hidden="true"></i> {{ s_('Sidebar|About') }}</a></li>
   % if false
   <li class="nav-item px-3"><a href="/support"><i class="icon-support" aria-hidden="true"></i> {{ s_('Sidebar|Support') }}</a></li>
