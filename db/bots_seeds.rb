@@ -27,6 +27,18 @@ Bot.unscoped.delete_all
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Blaster',
+    description: 'Only one Autobot brings the noise and drops crazy beats – Blaster! Some of his tunes may hurt your audio receptors, but you can count on him to save the day with his superior sound system...',
+    icon_url: '/assets/bots/blaster.jpeg',
+    image_url: '/assets/bots/blaster_600x860.jpeg',
+    type: :tech,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1679, stars_3: 4124, stars_4: 10_718 },
+    attack: { stars_1: nil, stars_2: 156, stars_3: 328, stars_4: 851 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 551, stars_3: 1314, stars_4: 3539 }
+  },
+  {
     name: 'Bludgeon',
     description: 'A master of the Cybertronian martial art Metallikato...',
     icon_url: '/assets/bots/bludgeon.jpeg',
