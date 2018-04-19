@@ -98,6 +98,9 @@ msgstr "Défensifs"
 msgid "Demolitions"
 msgstr "Démolisseurs"
 
+msgid "Donate to Support Development"
+msgstr "Aidez au développement du site"
+
 msgid "Dynamic and efficient programming language"
 msgstr "Langage de programmation dynamique et efficace"
 

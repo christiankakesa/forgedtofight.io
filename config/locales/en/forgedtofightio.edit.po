@@ -98,6 +98,9 @@ msgstr ""
 msgid "Demolitions"
 msgstr ""
 
+msgid "Donate to Support Development"
+msgstr ""
+
 msgid "Dynamic and efficient programming language"
 msgstr ""
 
