@@ -1,0 +1,13 @@
+<!-- https://bitcoinqrcodegenerator.win/ethereum.html -->
+<div class="row">
+  <h5>{{ _('Donate to Support Development') }}</h5>
+</div>
+<div class="row">
+  <div class="col-sm-3 ">
+    <div class="callout callout-info">
+      <strong class="text-muted">Ethereum</strong>
+      <strong class="h6">0x9Bc300E7A784005DA139491531FF72B5956a1903</strong>
+      <img class="img-thumbnail" alt="ethereum:0x9Bc300E7A784005DA139491531FF72B5956a1903" src="/assets/crypto/crypto-address_eth-web_0x9Bc300E7A784005DA139491531FF72B5956a1903.png" />
+    </div>
+  </div><!--/.col-->
+</div><!--/.row-->

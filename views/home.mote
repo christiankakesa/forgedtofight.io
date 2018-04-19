@@ -2,6 +2,8 @@
 
 <h5>&mdash; {{ _('ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game.') }}</h5>
 
+{{ partial 'views/_donate.mote' }}
+
 <div class="card-deck">
 % if data[:upcoming_arena]
   <div class="card order-md-last">
