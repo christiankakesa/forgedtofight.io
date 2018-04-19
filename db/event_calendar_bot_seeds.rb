@@ -5,6 +5,12 @@
 [
   {
     type: :calendar_bot,
+    start_at: Time.parse('2018-03-31 17:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Megatron', type: :tactician).first.id
+  },
+  {
+    type: :calendar_bot,
     start_at: Time.parse('2017-11-30 17:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Ramjet').first.id
