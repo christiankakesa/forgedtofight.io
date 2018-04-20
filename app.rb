@@ -40,6 +40,9 @@ MainApp = Rack::Builder.new do
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
   unless %w[production staging].include?(ENV['RACK_ENV'])
     use Rack::ShowExceptions
+    require 'rack-mini-profiler'
+    require 'memory_profiler'
+    use Rack::MiniProfiler
   end
   use Rack::Static, urls: %w[/robots.txt /favicon.ico], root: 'public'
   use(Rack::Timeout,

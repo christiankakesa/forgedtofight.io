@@ -38,3 +38,10 @@ group :development, :test do
   gem 'shotgun'
   gem 'simplecov'
 end
+
+group :development do
+  gem 'debase'
+  gem 'memory_profiler'
+  gem 'ruby-debug-ide'
+  gem 'rack-mini-profiler'
+end
