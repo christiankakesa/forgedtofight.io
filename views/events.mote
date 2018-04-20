@@ -13,7 +13,7 @@
 </nav>
 
 % if events.count > 0
-<table class="table table-sm table-hover">
+<table class="table table-sm table-hover table-responsive">
   <thead class="thead-inverse">
     <tr>
       <th>#</th>
@@ -26,7 +26,7 @@
   </thead>
   <tbody>
     % events.each do |event|
-    <tr>
+    <tr data-table-activable="{{ event.start_at.utc.iso8601 }}">
       <th scope="row" class="col-1"><? if event&.bot || event&.image_url; ?><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><img class="rounded" src="{{ event&.bot&.icon_url || event&.image_url }}" alt="{{ event&.name || event.type_name }}"></a><? end ?></th>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}">{{ event&.bot&.name || '-' }}</a></td>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><span class="text-capitalize">{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></a></td>

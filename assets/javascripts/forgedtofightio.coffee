@@ -51,3 +51,10 @@ $ ->
       localized_date = new Date(localized_timestamp)
       $(@).text(localized_date.toLocaleString())
   )()
+
+  # Set active rows for table
+  ( ->
+    $('[data-table-activable]').each ->
+      start_date = Date.parse($(@).data('table-activable'))
+      $(@).addClass('table-danger') if start_date < $.now()
+  )()
