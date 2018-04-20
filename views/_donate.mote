@@ -1,6 +1,6 @@
 <!-- https://bitcoinqrcodegenerator.win/ethereum.html -->
 <div class="row">
-  <h5>{{ _('Donate to Support Development') }}</h5>
+  <h2>{{ _('Donate to Support Development') }}</h2>
 </div>
 <div class="row justify-content-md-center">
   <div class="col-sm-4 ">
