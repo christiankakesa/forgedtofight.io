@@ -14,7 +14,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-10-04 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-10-05 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -35,7 +35,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-30 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-10-02 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_crystal_bounty.jpeg'
+#     image_url: '/images/arena_crystal_bounty.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -56,7 +56,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-27 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-28 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -88,7 +88,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-20 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-21 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -109,7 +109,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-16 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-18 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_crystal_bounty.jpeg'
+#     image_url: '/images/arena_crystal_bounty.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -130,7 +130,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-13 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-14 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -151,7 +151,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-09 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-11 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_crystal_bounty.jpeg'
+#     image_url: '/images/arena_crystal_bounty.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -172,7 +172,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-06 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-07 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -193,7 +193,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-09-02 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-09-04 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_crystal_bounty.jpeg'
+#     image_url: '/images/arena_crystal_bounty.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -214,7 +214,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-08-30 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-08-31 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -246,7 +246,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-08-23 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-08-24 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -267,7 +267,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-08-19 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-08-21 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_crystal_bounty.jpeg'
+#     image_url: '/images/arena_crystal_bounty.jpeg'
 #   },
 #   {
 #     type: :arena,
@@ -288,7 +288,7 @@ require 'montrose'
 #     start_at: Time.parse('2017-08-16 10:00:00 PDT').utc,
 #     end_at: Time.parse('2017-08-17 9:59:59 PDT').utc,
 #     round: nil,
-#     image_url: '/assets/arena_1-day-mod.jpeg'
+#     image_url: '/images/arena_1-day-mod.jpeg'
 #   },
 #   {
 #     type: :arena,

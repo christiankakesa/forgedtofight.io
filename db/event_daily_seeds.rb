@@ -18,7 +18,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/brawler.png'
+      image_url: '/images/bot_classes/brawler.png'
     }
   end
   Montrose.every(:week, on: :tuesday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -30,7 +30,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/warrior.png'
+      image_url: '/images/bot_classes/warrior.png'
     }
   end
   Montrose.every(:week, on: :wednesday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -42,7 +42,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/scout.png'
+      image_url: '/images/bot_classes/scout.png'
     }
   end
   Montrose.every(:week, on: :thursday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -54,7 +54,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/tech.png'
+      image_url: '/images/bot_classes/tech.png'
     }
   end
   Montrose.every(:week, on: :friday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -66,7 +66,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/demolitions.png'
+      image_url: '/images/bot_classes/demolitions.png'
     }
   end
   Montrose.every(:week, on: :saturday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -78,7 +78,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/tactician.png'
+      image_url: '/images/bot_classes/tactician.png'
     }
   end
   Montrose.every(:week, on: :sunday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
@@ -90,7 +90,7 @@ Time.use_zone('UTC') do
       start_at: date,
       end_at: date + (24 * 60 * 60 - 1),
       round: nil,
-      image_url: '/assets/bot_classes/all_classes.png'
+      image_url: '/images/bot_classes/all_classes.png'
     }
   end
 end
