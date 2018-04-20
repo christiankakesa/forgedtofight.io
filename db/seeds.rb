@@ -6,6 +6,7 @@ require_relative 'mods_seeds'
 
 require_relative 'relics_seeds'
 
+require_relative 'event_alliance_mission_seeds'
 require_relative 'event_arena_seeds'
 require_relative 'event_calendar_bot_seeds'
 require_relative 'event_daily_seeds'

@@ -7,7 +7,7 @@ class Event
   field :type,
         type: Enum,
         default: :arena,
-        in: %i[arena calendar_bot daily upcoming_bot]
+        in: %i[alliance_mission arena calendar_bot daily upcoming_bot]
   field :name, type: String, required: false
   field :image_url, type: String
   field :start_at, type: Time, unique: { scope: :type }

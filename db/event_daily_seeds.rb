@@ -2,14 +2,14 @@
 
 require 'montrose'
 
-TAKE = 4
+FTF_EVENT_TAKE ||= 4
 
 # Event.unscoped.where(type: :daily).delete_all
 
 events = []
 
 Time.use_zone('UTC') do
-  Montrose.every(:week, on: :monday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :monday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Brawler',
@@ -21,7 +21,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/brawler.png'
     }
   end
-  Montrose.every(:week, on: :tuesday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :tuesday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Warrior',
@@ -33,7 +33,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/warrior.png'
     }
   end
-  Montrose.every(:week, on: :wednesday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :wednesday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Scout Skirmish',
@@ -45,7 +45,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/scout.png'
     }
   end
-  Montrose.every(:week, on: :thursday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :thursday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Tech',
@@ -57,7 +57,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/tech.png'
     }
   end
-  Montrose.every(:week, on: :friday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :friday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Demolition Derby',
@@ -69,7 +69,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/demolitions.png'
     }
   end
-  Montrose.every(:week, on: :saturday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :saturday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions Tactician',
@@ -81,7 +81,7 @@ Time.use_zone('UTC') do
       image_url: '/assets/bot_classes/tactician.png'
     }
   end
-  Montrose.every(:week, on: :sunday, at: '8:00 AM', starts: -1.days.from_now).take(TAKE).each do |date|
+  Montrose.every(:week, on: :sunday, at: '8:00 AM', starts: -1.days.from_now).take(FTF_EVENT_TAKE).each do |date|
     events << {
       type: :daily,
       name: 'Daily missions for all',
