@@ -2,15 +2,16 @@
 
 require 'montrose'
 
-FTF_EVENT_TAKE ||= 4
-
 Event.unscoped.where(type: :alliance_mission).delete_all
 
 events = []
 misson_duration_days = 4
 
 Time.use_zone('UTC') do
-  Montrose.every(:week, on: :thursday, at: '19:00').take(FTF_EVENT_TAKE).each do |date|
+  starts = Time.current.beginning_of_month
+  ends = Time.current.end_of_month
+
+  Montrose.weekly(on: :thursday, at: '19:00', starts: starts, until: ends).each do |date|
     events << {
       type: :alliance_mission,
       name: 'Alliance Mission',
