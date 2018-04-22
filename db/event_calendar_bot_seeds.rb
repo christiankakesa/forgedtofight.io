@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Event.unscoped.where(type: :calendar_bot).delete_all
+# Event.unscoped.where(type: :calendar_bot).delete_all
 
 # Calendar's bot
 [

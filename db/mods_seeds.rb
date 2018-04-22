@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Mod.unscoped.delete_all
+# Mod.unscoped.delete_all
 
 [
   {

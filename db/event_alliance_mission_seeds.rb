@@ -2,7 +2,7 @@
 
 require 'montrose'
 
-Event.unscoped.where(type: :alliance_mission).delete_all
+# Event.unscoped.where(type: :alliance_mission).delete_all
 
 events = []
 misson_duration_days = 4
