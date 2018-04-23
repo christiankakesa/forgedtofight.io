@@ -29,6 +29,7 @@ class Event
   end
 
   def self.next
+    # checking start_at is for events without end_at field.
     where(or: [{ :end_at.gte => RethinkDB::RQL.new.now },
                { :start_at.gte => RethinkDB::RQL.new.now }])
   end
