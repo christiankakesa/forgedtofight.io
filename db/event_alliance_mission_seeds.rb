@@ -5,11 +5,11 @@ require 'montrose'
 # Event.unscoped.where(type: :alliance_mission).delete_all
 
 events = []
-misson_duration_days = 4
 
 Time.use_zone('UTC') do
   starts = Time.current.beginning_of_month
-  ends = Time.current.end_of_month
+  ends = starts + 5.weeks
+  four_days = 4.days - 1.second
 
   Montrose.weekly(on: :thursday, at: '19:00', starts: starts, until: ends).each do |date|
     events << {
@@ -18,7 +18,7 @@ Time.use_zone('UTC') do
       name_three_stars: nil,
       name_four_stars: nil,
       start_at: date,
-      end_at: date + (misson_duration_days * 24 * 60 * 60 - 1),
+      end_at: date + four_days,
       round: nil,
       image_url: '/images/icon_alliance_mission.jpeg'
     }

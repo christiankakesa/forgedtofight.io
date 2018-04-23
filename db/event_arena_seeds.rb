@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'montrose'
-
 # # Event.unscoped.where(type: :arena).delete_all
 
 # Upcoming bots
