@@ -55,6 +55,13 @@ describe '/cookies or /use-of-cookies', type: :request do
   end
 end
 
+describe '/donate', type: :request do
+  it 'GET /donate' do
+    get '/donate'
+    expect(last_response).to be_ok
+  end
+end
+
 describe '/events', type: :request do
   it 'GET /events' do
     get '/events'

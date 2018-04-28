@@ -8,6 +8,7 @@
   <li class="nav-item px-3"><a href="/relics"><i class="icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Relics') }}</a> <span class="badge badge-pill badge-default">{{ Relic.count }}</span></li>
   <li class="divider"></li>
   <!-- <li class="nav-title"><i class="icon-options"></i> {{ s_('Sidebar|Info') }}</li> -->
+  <li class="nav-item px-3"><a href="/donate"><i class="icon-wallet" aria-hidden="true"></i> {{ s_('Sidebar|Donate') }}</a></li>
   <li class="nav-item px-3"><a href="/about"><i class="icon-info" aria-hidden="true"></i> {{ s_('Sidebar|About') }}</a></li>
   % if false
   <li class="nav-item px-3"><a href="/support"><i class="icon-support" aria-hidden="true"></i> {{ s_('Sidebar|Support') }}</a></li>

@@ -38,6 +38,12 @@ Home = Syro.new(BasicDeck) do
     end
   end
 
+  on 'donate' do
+    get do
+      render 'views/donate.mote'
+    end
+  end
+
   on 'login' do
     get do
       render 'views/login.mote'

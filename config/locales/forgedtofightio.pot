@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 17:38+0200\n"
-"PO-Revision-Date: 2018-04-19 17:38+0200\n"
+"POT-Creation-Date: 2018-04-28 18:33+0200\n"
+"PO-Revision-Date: 2018-04-28 18:33+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -99,7 +99,13 @@ msgstr ""
 msgid "Demolitions"
 msgstr ""
 
+msgid "Donate"
+msgstr ""
+
 msgid "Donate to Support Development"
+msgstr ""
+
+msgid "Donating is a helpful way to support the ForgedToFightIO project"
 msgstr ""
 
 msgid "Dynamic and efficient programming language"
@@ -198,6 +204,9 @@ msgstr ""
 msgid "Menu|Botodex"
 msgstr ""
 
+msgid "Menu|Donate"
+msgstr ""
+
 msgid "Menu|Events"
 msgstr ""
 
@@ -220,6 +229,9 @@ msgid "Menu|Sign Up"
 msgstr ""
 
 msgid "Mods"
+msgstr ""
+
+msgid "More features will be released"
 msgstr ""
 
 msgid "Nickname (in game)"
@@ -303,6 +315,9 @@ msgstr ""
 msgid "Sidebar|Botodex"
 msgstr ""
 
+msgid "Sidebar|Donate"
+msgstr ""
+
 msgid "Sidebar|Events"
 msgstr ""
 
@@ -361,6 +376,9 @@ msgid "Thanks"
 msgstr ""
 
 msgid "Thanks for signing up at ForgedToFightIO"
+msgstr ""
+
+msgid "Thanks for wanting to help"
 msgstr ""
 
 msgid "The ForgedToFightIO team"

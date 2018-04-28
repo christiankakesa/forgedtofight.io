@@ -46,6 +46,9 @@
       <a class="nav-link" href="/relics"><i class="icon-layers"></i> {{ s_('Menu|Relics') }} ({{ Relic.count }})</a>
     </li>
     <li class="nav-item px-2">
+      <a class="nav-link" href="/donate"><i class="icon-wallet"></i> {{ s_('Menu|Donate') }}</a>
+    </li>
+    <li class="nav-item px-2">
       <a class="nav-link" href="/about"><i class="icon-info"></i> {{ s_('Menu|About') }}</a>
     </li>
   </ul>

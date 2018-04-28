@@ -98,7 +98,13 @@ msgstr ""
 msgid "Demolitions"
 msgstr ""
 
+msgid "Donate"
+msgstr ""
+
 msgid "Donate to Support Development"
+msgstr ""
+
+msgid "Donating is a helpful way to support the ForgedToFightIO project"
 msgstr ""
 
 msgid "Dynamic and efficient programming language"
@@ -197,6 +203,9 @@ msgstr ""
 msgid "Menu|Botodex"
 msgstr ""
 
+msgid "Menu|Donate"
+msgstr ""
+
 msgid "Menu|Events"
 msgstr ""
 
@@ -219,6 +228,9 @@ msgid "Menu|Sign Up"
 msgstr ""
 
 msgid "Mods"
+msgstr ""
+
+msgid "More features will be released"
 msgstr ""
 
 msgid "Nickname (in game)"
@@ -302,6 +314,9 @@ msgstr ""
 msgid "Sidebar|Botodex"
 msgstr ""
 
+msgid "Sidebar|Donate"
+msgstr ""
+
 msgid "Sidebar|Events"
 msgstr ""
 
@@ -360,6 +375,9 @@ msgid "Thanks"
 msgstr ""
 
 msgid "Thanks for signing up at ForgedToFightIO"
+msgstr ""
+
+msgid "Thanks for wanting to help"
 msgstr ""
 
 msgid "The ForgedToFightIO team"

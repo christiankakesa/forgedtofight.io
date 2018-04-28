@@ -1,7 +1,19 @@
+<nav class="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">{{ _('Home') }}</a></li>
+    <li class="breadcrumb-item active">{{ _('Donate') }}</li>
+  </ol>
+</nav>
+
 <!-- https://bitcoinqrcodegenerator.win/ethereum.html -->
-<div class="row">
-  <h2>{{ _('Donate to Support Development') }}</h2>
-</div>
+<h1>{{ _('Donate to Support Development') }}</h1>
+
+<p>
+    <strong>{{ _('Donating is a helpful way to support the ForgedToFightIO project') }}</strong>.<br>
+    {{ _('More features will be released') }}.<br>
+    {{ _('Thanks for wanting to help') }}.
+</p>
+
 <div class="row justify-content-md-center">
   <div class="col-sm-4 ">
     <div class="callout callout-primary">
