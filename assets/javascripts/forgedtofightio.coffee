@@ -54,7 +54,14 @@ $ ->
 
   # Set active rows for table
   ( ->
-    $('[data-table-activable]').each ->
-      start_date = Date.parse($(@).data('table-activable'))
-      $(@).addClass('table-danger') if start_date < $.now()
+    $('[data-table-event-status]').each ->
+      start_date = Date.parse($(@).data('table-event-status'))
+      current_time = $.now()
+      if start_date < current_time
+        $(@).addClass('table-info')
+        $(@).find('th > i').attr('class', 'icon-control-play')
+      else if start_date < current_time + (4 * 60 * 60 * 1000)
+        $(@).addClass('table-warning')
+        $(@).find('th > i').attr('class', 'icon-clock')
+      
   )()

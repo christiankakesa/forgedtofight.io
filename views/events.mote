@@ -26,8 +26,11 @@
   </thead>
   <tbody>
     % events.each do |event|
-    <tr data-table-activable="{{ event.start_at.utc.iso8601 }}">
-      <th scope="row" class="col-1"><? if event&.bot || event&.image_url; ?><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><img class="rounded" src="{{ event&.bot&.icon_url || event&.image_url }}" alt="{{ event&.name || event.type_name }}"></a><? end ?></th>
+    <tr data-table-event-status="{{ event.start_at.utc.iso8601 }}">
+      <th scope="row" class="col-1">
+        <i class=""></i>
+        <? if event&.bot || event&.image_url; ?><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><img class="rounded" src="{{ event&.bot&.icon_url || event&.image_url }}" alt="{{ event&.name || event.type_name }}"></a><? end ?>
+      </th>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}">{{ event&.bot&.name || '-' }}</a></td>
       <td><a href="/events/{{ event.id }}" title="{{ event&.name || event.type_name }}"><span class="text-capitalize">{{ event&.name || event.type_name }}</span><? if event&.round; ?> ({{ _('Round') }} {{ event.round }})<? end ?></a></td>
       <td>{{ event.type }}</td>
