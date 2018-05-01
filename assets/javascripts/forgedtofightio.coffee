@@ -60,7 +60,7 @@ $ ->
       if start_date < current_time
         $(@).addClass('table-info')
         $(@).find('th > i').attr('class', 'icon-control-play')
-      else if start_date < current_time + (4 * 60 * 60 * 1000)
+      else if start_date < current_time + (24 * 60 * 60 * 1000)
         $(@).addClass('table-warning')
         $(@).find('th > i').attr('class', 'icon-clock')
       
