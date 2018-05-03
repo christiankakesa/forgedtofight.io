@@ -23,6 +23,7 @@
 </h6>
 <div class="container-fluid">
   <div class="row">
+    % if event&.name_three_stars || event&.name_four_stars
     <div class="col">
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -33,6 +34,7 @@
         </li>
       </ul>
     </div>
+    % end
     % if event&.image_url || event&.bot&.image_url
     <div class="col">
       <img class="img-fluid img-thumbnail" src="{{ event&.image_url || event&.bot&.image_url }}" alt="{{ event&.bot&.name || event.name }}">
