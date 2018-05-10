@@ -6,6 +6,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-05-10 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Cheetor', type: :scout).first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-04-12 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Blaster').first.id
