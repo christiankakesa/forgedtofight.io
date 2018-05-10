@@ -88,6 +88,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 566, stars_3: 1299, stars_4: 3499 }
   },
   {
+    name: 'Cheetor',
+    description: 'As the youngest and quickest of the Maximals, Cheetor is one part soldier and one part daredevil...',
+    icon_url: '/images/bots/cheetor-scout.jpeg',
+    image_url: '/images/bots/cheetor-scout_600x860.jpeg',
+    type: :scout,
+    faction: :maximals,
+    health: { stars_1: nil, stars_2: 1540, stars_3: 3780, stars_4: 9825 },
+    attack: { stars_1: nil, stars_2: 185, stars_3: 391, stars_4: 1017 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 563, stars_3: 1305, stars_4: 3531 }
+  },
+  {
     name: 'Dinobot',
     description: 'Honor and Glory are the only two things worth dying for, a belief truly befitting this fierce Predacon turned Maximal warrior....',
     icon_url: '/images/bots/dinobot.jpeg',
