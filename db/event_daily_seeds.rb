@@ -8,7 +8,9 @@ events = []
 
 Time.use_zone('UTC') do
   starts = Time.current.beginning_of_month
-  ends = starts + 5.weeks
+  ends = starts + 5.weeks + (1.day - 1.second)
+  puts "[EVENT_DAILY][PERIODE][start]: #{starts}"
+  puts "[EVENT_DAILY][PERIODE][end  ]: #{ends}"
 
   Montrose.weekly(on: :monday, at: '8:00 AM', starts: starts, until: ends).each do |date|
     events << {
