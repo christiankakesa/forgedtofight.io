@@ -19,11 +19,7 @@
   {{ partial 'views/_header.mote' }}
 
   <div class="app-body">
-    <div class="sidebar">
-      <nav class="sidebar-nav">
-        {{ partial 'views/_sidebar.mote' }}
-      </nav>
-    </div>
+    {{ partial 'views/_sidebar.mote' }}
 
     <!-- Main content -->
     <main class="main">
