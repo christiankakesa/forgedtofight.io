@@ -196,6 +196,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil }
   },
   {
+    name: 'Jazz',
+    description: 'One of Optimus’ closest advisers, Autobot Jazz is the bot to go to if a creative solution is needed...',
+    icon_url: '/images/bots/jazz.jpeg',
+    image_url: '/images/bots/jazz_600x860.jpeg',
+    type: :scout,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1575, stars_3: 3866, stars_4: 10_048 },
+    attack: { stars_1: nil, stars_2: 175, stars_3: 369, stars_4: 959 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 561, stars_3: 1304, stars_4: 3519 }
+  },
+  {
     name: 'Kickback',
     description: 'Intelligent and deceptively persuasive, Kickback’s power to manipulate minds is only ever a ploy to gain access to the information or resources he seeks...',
     icon_url: '/images/bots/kickback.jpeg',
