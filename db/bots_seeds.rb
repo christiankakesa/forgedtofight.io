@@ -484,6 +484,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 550, stars_3: 1312, stars_4: 3524 }
   },
   {
+    name: 'Tantrum',
+    description: 'Anger is all Tantrum knows and violence is all he understands, so don’t expect to find reason or measure in his actions...',
+    icon_url: '/images/bots/tantrum.jpeg',
+    image_url: '/images/bots/tantrum_600x860.jpeg',
+    type: :brawler,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 1942, stars_3: 4768, stars_4: 12_392 },
+    attack: { stars_1: nil, stars_2: 181, stars_3: 385, stars_4: 1000 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 533, stars_3: 1292, stars_4: 3484 }
+  },
+  {
     name: 'Ultra Magnus',
     description: 'Galvatron\'s avowed enemy, Ultra Magnus epitomizes what it means to be a loyal soldier...',
     icon_url: '/images/bots/ultra-magnus.jpeg',
