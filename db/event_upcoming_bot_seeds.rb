@@ -6,6 +6,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-08-09 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Wheeljack', type: :tech).first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-07-12 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Tantrum', type: :brawler).first.id

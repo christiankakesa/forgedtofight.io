@@ -520,6 +520,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 571, stars_3: 1326, stars_4: 3524 }
   },
   {
+    name: 'Wheeljack',
+    description: 'Brilliant and eccentric, Wheeljack is both mechanical engineer and daredevil inventor for the Autobot forces...',
+    icon_url: '/images/bots/wheeljack.jpg',
+    image_url: '/images/bots/wheeljack_600x860.jpg',
+    type: :tech,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: 1557, stars_3: 3823, stars_4: 9936 },
+    attack: { stars_1: nil, stars_2: 137, stars_3: 287, stars_4: 744 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 562, stars_3: 1309, stars_4: 3525 }
+  },
+  {
     name: 'Windblade',
     description: 'Hailing from the planet Caminus, this agile Scout is as adept with her swords as she is at "Cityspeaking" with gigantic Titans...',
     icon_url: '/images/bots/windblade.jpeg',
