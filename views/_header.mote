@@ -10,7 +10,7 @@
     <li class="nav-item px-2">
       <a class="nav-link" href="/"><i class="icon-home"></i> {{ s_('Menu|Home') }}</a>
     </li>
-    % if false
+    % if "development".eql?(ENV['RACK_ENV'])
     % if authenticated(User)
     <li class="nav-item dropdown px-2">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
