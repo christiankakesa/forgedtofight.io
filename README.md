@@ -49,6 +49,24 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 #### Create application user in RethinkDB data explorer
 
+##### Launch RethinkDB administration tool
+
+1. With *docker*
+
+__replace *rethinkdb* by your docker instance name__
+
+    xdg-open "http://$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' rethinkdb):8080"
+
+2. With a local RethinkDB instance
+
+    xdg-open "http:://localhost:8080"
+
+3. With a remote instance of RethinkDB
+
+Set `APP_RETHINKDB_URL` environment variable like this example : 
+
+    export APP_RETHINKDB_URL=rethinkdb://my.domain.com:28015/forgedtofightio_development
+
 ##### Production database
 
     r.db('rethinkdb').table('users').insert({id: 'forgedtofightio', password: 'xxxxxxxxxxxxxxxxxxxxxxx'});
