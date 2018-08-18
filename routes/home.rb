@@ -129,19 +129,25 @@ Home = Syro.new(BasicDeck) do
 
   on 'signup' do
     on :activate do
-      user = User.unscoped.find(signup_token: inbox[:activate])
+      user = User.unscoped.where(signup_token: inbox[:activate]).first
+
+      on signer.decode(user.signup_token).nil? do
+        user.destroy
+        flash_danger _('Signup link is expired, try to subscribe now')
+        res.redirect '/signup'
+      end
+
       on !user.nil? do
-        ok = user.queue_atomic do
-          user.update(status: :active) && user.unset(:signup_token)
+        user.queue_atomic do
+          user.unset(:signup_token)
         end
-        if ok
-          # TODO(fenicks): send a welcome email
+        if user.save && user.update(status: :active)
           authenticate(user)
           flash_success _('Welcome to ForgedToFight.IO website')
           res.redirect '/'
         else
-          # Ensure status could be later retried for activation
-          user.queue_atomic { user.update(status: :pending) }
+          # /!\ Ensure status could be later retried for activation
+          user.update(status: :pending)
           flash_danger _('We could not activate your account')
           flash_danger _('Please retry or contact our technical team')
           res.redirect '/signup'
@@ -162,11 +168,36 @@ Home = Syro.new(BasicDeck) do
       filter = SignupValidation.new(req.params)
       if filter.valid?
         if !User.create(filter.slice(:email, :nickname, :password))
-          flash_danger _("Could't create your user, retry or report the issue")
+          flash_danger _("Couldn't create your user, retry or report the issue")
         else
-          # TODO(fenicks): send an activation e-mail
-          # puts mote('mails/signup.text.mote', signup_url: "#{ENV['HOST']}/signup/#{signer.encode(User.unscoped.where(email: filter.email).first.id)}")
-          flash_success _('Check your email box to activate your account')
+          signup_user = User.unscoped.where(email: filter.email).first
+          signup_token = signer.encode(signup_user.id)
+          if signup_user.update(signup_token: signup_token)
+            email_body_text = mote('mails/signup.text.mote', signup_url: "#{base_url}/signup/#{signup_token}",
+                                                            username: signup_user.nickname)
+            email_body_html = mote('mails/signup.html.mote', signup_url: "#{base_url}/signup/#{signup_token}",
+                                                            username: signup_user.nickname)
+            Mail.deliver do
+              content_type 'text/plain; charset=UTF-8'
+              from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'
+              to signup_user.email
+              subject _('ForgedToFight.IO signup')
+
+              text_part do
+                content_type 'text/plain; charset=UTF-8'
+                body email_body_text
+              end
+            
+              html_part do
+                content_type 'text/html; charset=UTF-8'
+                body email_body_html
+              end
+            end
+            flash_success _('Check your email box to activate your account')
+          else
+            signup_user.destroy
+            flash_danger _("Couldn't validate your user, please signup or report the issue")
+          end
         end
         render 'views/signup.mote'
       else

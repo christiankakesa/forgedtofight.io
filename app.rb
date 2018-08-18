@@ -13,7 +13,7 @@ WebApp = Syro.new(BasicDeck) do
     FastGettext.available_locales = @available_locales
   end
   unless @text_domain
-    @text_domain = 'forgedtofightio'
+    @text_domain = ENV['TEXTDOMAIN'] || 'forgedtofightio'
     FastGettext.text_domain = @text_domain
   end
   @accepted_language ||= lambda do

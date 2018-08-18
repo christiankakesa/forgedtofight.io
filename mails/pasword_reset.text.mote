@@ -1,9 +1,14 @@
-{{ _('Hi') }},
+{{ _('Hi') }} {{ username }},
 
 {{ _('You have requested a password reset') }}.
 
-{{ _('Follow the link below to set a new password') }}: {{ password_reset_url }}.
+{{ _('Follow the link below to set a new password') }}{{ _(':') }} {{ password_reset_url }}.
 
-{{ _("If you don't wish to reset your password, disregard this email and no action will be taken") }}
+{{ _("If you don't wish to reset your password, disregard this email and no action will be taken") }}.
 
-{{ _('The ForgedToFightIO team') }}
+{{ _('ForgedToFight.IO Team') }}.
+
+---
+
+ForgedToFight.IO
+{{ _("Don't like these emails?") }} {{ _('Go to your user settings and remove your account') }}{{ _(':') }} {{ base_url }}/accounts/settings

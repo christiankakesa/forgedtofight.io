@@ -13,6 +13,10 @@ class BasicDeck < Syro::Deck
     req.session
   end
 
+  def base_url
+    req.base_url
+  end
+
   begin
     require 'cgi/escape'
     unless CGI.respond_to?(:escapeHTML) # work around for JRuby 9.1

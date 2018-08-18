@@ -17,6 +17,9 @@ msgstr ""
 "Last-Translator: \n"
 "X-Generator: Poedit 1.8.11\n"
 
+msgid "!"
+msgstr " !"
+
 msgid "(Sig 0)"
 msgstr "(Comp 0)"
 
@@ -29,6 +32,9 @@ msgstr "(Compétence personnelle 0)"
 msgid "(Signature ability 100)"
 msgstr "(Compétence personnelle 100)"
 
+msgid ":"
+msgstr " :"
+
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 
@@ -37,6 +43,9 @@ msgstr "À propos"
 
 msgid "Account"
 msgstr "Mon compte"
+
+msgid "Activate your account"
+msgstr "Active ton compte"
 
 msgid "Activate your account by visiting the following link"
 msgstr "Pour activer le compte, allez sur ce lien"
@@ -83,8 +92,11 @@ msgstr "Contribuer au développement"
 msgid "Could not send recover information for this identifier"
 msgstr "Impossible d'envoyer les informations de réinitialisation"
 
-msgid "Could't create your user, retry or report the issue"
-msgstr "Impossible de créer votre compte, contactez l'administrateur"
+msgid "Couldn't create your user, retry or report the issue"
+msgstr "Impossible de créer votre compte, réessayez ou contactez l'administrateur"
+
+msgid "Couldn't validate your user, please signup or report the issue"
+msgstr "Impossible de valider votre compte, souscrivez ou contactez l'administrateur"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -97,6 +109,9 @@ msgstr "Défensifs"
 
 msgid "Demolitions"
 msgstr "Démolisseurs"
+
+msgid "Don't like these emails?"
+msgstr "Vous ne voulez plus recevoir cet e-mail ?"
 
 msgid "Donate"
 msgstr "Dons"
@@ -146,8 +161,14 @@ msgstr "ForgedToFight.IO- Gestion du compte"
 msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
 msgstr "ForgedToFight.IO - Site de fan non-officiel pour Transformers Forgés d'Acier"
 
+msgid "ForgedToFight.IO Team"
+msgstr "L'équipe ForgedToFight.IO"
+
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
 msgstr "ForgedToFight.IO est le site internet communautaire du jeu sur mobile : TRANSFORMERS Forgés d'Acier"
+
+msgid "ForgedToFight.IO signup"
+msgstr "Souscription à ForgedToFight.IO"
 
 msgid "Forgot your password?"
 msgstr "Mot de passe oublié ?"
@@ -157,6 +178,9 @@ msgstr "Forum"
 
 msgid "Gaming|Health"
 msgstr "Point de vie"
+
+msgid "Go to your user settings and remove your account"
+msgstr "Aller dans les paramètres utilisateur et supprimez votre compte"
 
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
@@ -353,6 +377,9 @@ msgstr "Se connecter"
 msgid "Sign up"
 msgstr "S'inscrire"
 
+msgid "Signup link is expired, try to subscribe now"
+msgstr "Le lien de souscription est expiré, essayez de souscrire à nouveau"
+
 msgid "Something is going wrong with your credentials"
 msgstr "Vos identifiants sont incorrects"
 
@@ -374,8 +401,8 @@ msgstr "Conditions d'utilisation"
 msgid "Thanks"
 msgstr "Merci"
 
-msgid "Thanks for signing up at ForgedToFightIO"
-msgstr "Merci d'avoir souscris à ForgedToFightIO"
+msgid "Thanks for signing up at ForgedToFight.IO"
+msgstr "Merci d'avoir souscris à ForgedToFight.IO"
 
 msgid "Thanks for wanting to help"
 msgstr "Merci de votre soutient"

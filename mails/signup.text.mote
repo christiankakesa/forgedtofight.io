@@ -1,6 +1,12 @@
-{{ _('Thanks for signing up at ForgedToFightIO') }}!
+{{ _('Hi') }} {{ username }},
 
-{{ _('Activate your account by visiting the following link') }}: {{ signup_url }}
+{{ _('Thanks for signing up at ForgedToFight.IO') }}{{ _('!') }}
 
-{{ _('Thanks') }},
-{{ _('The ForgedToFightIO team') }}
+{{ _('Activate your account by visiting the following link') }}{{ _(':') }} {{ signup_url }}.
+
+{{ _('ForgedToFight.IO Team') }}.
+
+---
+
+ForgedToFight.IO
+{{ _("Don't like these emails?") }} {{ _('Go to your user settings and remove your account') }}{{ _(':') }} {{ base_url }}/accounts/settings

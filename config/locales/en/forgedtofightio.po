@@ -17,6 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 
+msgid "!"
+msgstr ""
+
 msgid "(Sig 0)"
 msgstr ""
 
@@ -29,6 +32,9 @@ msgstr ""
 msgid "(Signature ability 100)"
 msgstr ""
 
+msgid ":"
+msgstr ""
+
 msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr ""
 
@@ -36,6 +42,9 @@ msgid "About"
 msgstr ""
 
 msgid "Account"
+msgstr ""
+
+msgid "Activate your account"
 msgstr ""
 
 msgid "Activate your account by visiting the following link"
@@ -83,7 +92,10 @@ msgstr ""
 msgid "Could not send recover information for this identifier"
 msgstr ""
 
-msgid "Could't create your user, retry or report the issue"
+msgid "Couldn't create your user, retry or report the issue"
+msgstr ""
+
+msgid "Couldn't validate your user, please signup or report the issue"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -96,6 +108,9 @@ msgid "Defenses"
 msgstr ""
 
 msgid "Demolitions"
+msgstr ""
+
+msgid "Don't like these emails?"
 msgstr ""
 
 msgid "Donate"
@@ -146,7 +161,13 @@ msgstr ""
 msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
 msgstr ""
 
+msgid "ForgedToFight.IO Team"
+msgstr ""
+
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
+msgstr ""
+
+msgid "ForgedToFight.IO signup"
 msgstr ""
 
 msgid "Forgot your password?"
@@ -156,6 +177,9 @@ msgid "Forum"
 msgstr ""
 
 msgid "Gaming|Health"
+msgstr ""
+
+msgid "Go to your user settings and remove your account"
 msgstr ""
 
 msgid "HTML, CSS and JS web framework"
@@ -353,6 +377,9 @@ msgstr ""
 msgid "Sign up"
 msgstr ""
 
+msgid "Signup link is expired, try to subscribe now"
+msgstr ""
+
 msgid "Something is going wrong with your credentials"
 msgstr ""
 
@@ -374,7 +401,7 @@ msgstr ""
 msgid "Thanks"
 msgstr ""
 
-msgid "Thanks for signing up at ForgedToFightIO"
+msgid "Thanks for signing up at ForgedToFight.IO"
 msgstr ""
 
 msgid "Thanks for wanting to help"

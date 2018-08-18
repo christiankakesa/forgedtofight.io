@@ -16,6 +16,7 @@ class User
         type: Enum,
         default: :pending,
         in: %i[active pending deleted]
+  field :signup_token, type: String
 
   def state_active
     update!(status: :active)
