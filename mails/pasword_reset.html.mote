@@ -282,7 +282,7 @@
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">{{ _('ForgedToFight.IO password reset') }}.</span>
+            <!-- <span class="preheader">{{ _('ForgedToFight.IO password reset') }}.</span> -->
             <table class="main">
 
               <!-- START MAIN CONTENT AREA -->
