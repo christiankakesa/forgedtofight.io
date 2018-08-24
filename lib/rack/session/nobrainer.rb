@@ -17,13 +17,10 @@ module Rack
     end
 
     class NoBrainer < Abstract::Persisted
-      attr_reader :mutex
-
       DEFAULT_OPTIONS = Abstract::Persisted::DEFAULT_OPTIONS.merge drop: true
 
       def initialize(app, options = {})
         super
-        @mutex = Mutex.new
         @expire_after = options.fetch(:expire_after, 24 * 60 * 60)
       end
 
@@ -35,36 +32,23 @@ module Rack
       end
 
       def find_session(env, sid)
-        with_lock(env) do
-          sid ||= generate_sid
-          session = _get(sid)
-          unless session
-            session = {}
-            _set sid, session
-          end
-          [sid, session]
+        sid ||= generate_sid
+        session = _get(sid)
+        unless session
+          session = {}
+          _set sid, session
         end
+        [sid, session]
       end
 
       def write_session(env, sid, session, options)
-        with_lock(env) do
-          ok = _set(sid, session)
-          ok ? sid : false
-        end
+        ok = _set(sid, session)
+        ok ? sid : false
       end
 
       def delete_session(env, sid, options)
-        with_lock(env) do
-          _delete(sid)
-          generate_sid unless options[:drop]
-        end
-      end
-
-      def with_lock(env)
-        @mutex.lock if env['rack.multithread']
-        yield
-      ensure
-        @mutex.unlock if @mutex.locked?
+        _delete(sid)
+        generate_sid unless options[:drop]
       end
 
       private
