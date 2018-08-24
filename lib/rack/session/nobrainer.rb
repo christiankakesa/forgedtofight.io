@@ -17,7 +17,7 @@ module Rack
     end
 
     class NoBrainer < Abstract::Persisted
-      DEFAULT_OPTIONS = Abstract::Persisted::DEFAULT_OPTIONS.merge drop: true
+      #DEFAULT_OPTIONS = Abstract::Persisted::DEFAULT_OPTIONS.merge drop: true
 
       def initialize(app, options = {})
         super
@@ -33,16 +33,17 @@ module Rack
 
       def find_session(env, sid)
         sid ||= generate_sid
-        session = _get(sid)
-        unless session
-          session = {}
-          _set sid, session
+        session_data = _get(sid)
+        unless session_data
+          session_data = {}
+          _set sid, session_data
         end
-        [sid, session]
+        [sid, session_data]
       end
 
-      def write_session(env, sid, session, options)
-        ok = _set(sid, session)
+      def write_session(env, sid, session_data, options)
+        puts session_data.inspect
+        ok = _set(sid, session_data)
         ok ? sid : false
       end
 
@@ -53,14 +54,12 @@ module Rack
 
       private
 
-      def _set(sid, session)
+      def _set(sid, session_data)
         model = _exists?(sid) || NoBrainerSessionStore.new(
           sid: sid,
           expires_at: RethinkDB::RQL.new.now + @expire_after
         )
-        puts session.inspect
-        model.data = session
-        model.save
+        model.update(data: session_data)
       end
 
       def _get(sid)
