@@ -3,6 +3,7 @@
 require 'nobrainer'
 
 NoBrainer.configure do |config|
+  config.per_thread_connection = true
   unless ENV['APP_RETHINKDB_URL'].present?
     url = begin
             # This configuration is for resolving the loacal docker IPAddress
