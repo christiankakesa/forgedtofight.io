@@ -14,14 +14,12 @@ module Rack
       field :expires_at, type: Time
 
       index :sid
-
-      scope(:expired, proc { where(:expires_at.lt(RethinkDB::RQL.new.now)) })
     end
 
-    class NoBrainer < Abstract::ID
+    class NoBrainer < Abstract::Persisted
       attr_reader :mutex
 
-      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge drop: false
+      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge drop: true
 
       def initialize(app, options = {})
         super
