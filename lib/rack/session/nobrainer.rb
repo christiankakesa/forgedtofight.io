@@ -58,6 +58,7 @@ module Rack
           sid: sid,
           expires_at: RethinkDB::RQL.new.now + @expire_after
         )
+        puts session.inspect
         model.data = session
         model.save
       end
