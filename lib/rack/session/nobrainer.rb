@@ -19,7 +19,7 @@ module Rack
     class NoBrainer < Abstract::Persisted
       attr_reader :mutex
 
-      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge drop: true
+      DEFAULT_OPTIONS = Abstract::Persisted::DEFAULT_OPTIONS.merge drop: true
 
       def initialize(app, options = {})
         super
@@ -34,7 +34,7 @@ module Rack
         end
       end
 
-      def get_session(env, sid)
+      def find_session(env, sid)
         with_lock(env) do
           sid ||= generate_sid
           session = _get(sid)
@@ -46,14 +46,14 @@ module Rack
         end
       end
 
-      def set_session(env, sid, session, _options)
+      def write_session(env, sid, session, options)
         with_lock(env) do
           ok = _set(sid, session)
           ok ? sid : false
         end
       end
 
-      def destroy_session(env, sid, options)
+      def delete_session(env, sid, options)
         with_lock(env) do
           _delete(sid)
           generate_sid unless options[:drop]
