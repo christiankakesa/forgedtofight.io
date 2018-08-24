@@ -38,7 +38,7 @@ MainApp = Rack::Builder.new do
   use(Rack::Session::NoBrainer,
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
-  unless %w[staging].include?(ENV['RACK_ENV'])
+  unless %w[production staging].include?(ENV['RACK_ENV'])
     use Rack::ShowExceptions
     require 'rack-mini-profiler'
     require 'memory_profiler'
