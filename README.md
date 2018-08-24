@@ -40,16 +40,17 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
         APP_AWS_SES_ID=xxx
         APP_AWS_SES_PORT=587
         APP_AWS_SES_SECRET=xxxxxx
-        APP_COOKIE_SECRET=599fcf7e92142e1925fe3a17f43eb477c25cf6b9f677c3ff8916c2d92ff1e00977fe97cf4643632b4b70e899a752dc5ec7bb0282ea8ea319a4b019a25c54dbd4
+        APP_COOKIE_SECRET=xxxxxxxxxxxxxxxxxxxxxxx
         APP_MAX_THREADS=2
         APP_MOCK_USER=true
-        APP_NOBI_SECRET=6df97a993ecdc949b12c11b2291d6782347fa7a98979b1239ab3f9b65c98fee3a029e207a6b9aa578db14663717c3eb83f8e42c8e8b816e2da0b7b568fd46d16
-        APP_NOBI_EXPIRE=86400
+        APP_NOBI_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxx
         APP_PORT=5000
         # APP_RETHINKDB_URL=rethinkdb://localhost:28015/forgedtofightio_development
         APP_SESSION_EXPIRE_AFTER=86400
         APP_WORKERS=2
         RACK_ENV=development
+        MALLOC_ARENA_MAX=4
+        RACK_MULTIPROCESS=true
         RACK_MULTITHREAD=true
 
     **The RethinkdB IP address is autotically deducted**: [config/initializers/nobrainer.rb#L8](config/initializers/nobrainer.rb#L8).
