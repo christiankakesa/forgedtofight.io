@@ -1,16 +1,4 @@
-<nav class="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">{{ _('Home') }}</a></li>
-    <li class="breadcrumb-item active">{{ _('Events') }}</li>
-    <!-- <li class="breadcrumb-menu">
-      <div class="btn-group" role="group" aria-label="{{ _('Filters') }}">
-        <a class="btn" href="#"><i class="icon-speech"></i> {{ _('Arena') }}</a>
-        <a class="btn" href="#"><i class="icon-graph"></i> {{ _('Upcoming bot') }}</a>
-        <a class="btn" href="#"><i class="icon-settings"></i> {{ _("Calendar's bot") }}</a>
-      </div>
-    </li> -->
-  </ol>
-</nav>
+<h1>{{ _('Events') }} ({{ events.count }})</h1>
 
 % if events.count > 0
 <table class="table table-sm table-hover table-responsive">

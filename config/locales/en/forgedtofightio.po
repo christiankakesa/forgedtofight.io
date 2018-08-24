@@ -41,22 +41,19 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-msgid "Account"
-msgstr ""
-
 msgid "Activate your account"
 msgstr ""
 
 msgid "Activate your account by visiting the following link"
 msgstr ""
 
+msgid "Advanced settings"
+msgstr ""
+
 msgid "All"
 msgstr ""
 
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
-msgstr ""
-
-msgid "Arena"
 msgstr ""
 
 msgid "Attack"
@@ -86,16 +83,22 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+msgid "Coming soon..."
+msgstr ""
+
 msgid "Contribute to the developement"
 msgstr ""
 
 msgid "Could not send recover information for this identifier"
 msgstr ""
 
+msgid "Couldn't attribute a valid token, retry or contact our technical team"
+msgstr ""
+
 msgid "Couldn't create your user, retry or report the issue"
 msgstr ""
 
-msgid "Couldn't validate your user, please signup or report the issue"
+msgid "Couldn't find your user account, please signup or report the issue"
 msgstr ""
 
 msgid "DateFormat|%B %Y"
@@ -107,13 +110,13 @@ msgstr ""
 msgid "Defenses"
 msgstr ""
 
+msgid "Delete your account"
+msgstr ""
+
 msgid "Demolitions"
 msgstr ""
 
 msgid "Don't like these emails?"
-msgstr ""
-
-msgid "Donate"
 msgstr ""
 
 msgid "Donate to Support Development"
@@ -140,6 +143,9 @@ msgstr ""
 msgid "End at"
 msgstr ""
 
+msgid "Error when reseting your password or invalide token"
+msgstr ""
+
 msgid "Error when trying to activate your account"
 msgstr ""
 
@@ -149,13 +155,7 @@ msgstr ""
 msgid "Events"
 msgstr ""
 
-msgid "Filters"
-msgstr ""
-
 msgid "Follow the link below to set a new password"
-msgstr ""
-
-msgid "ForgedToFight.IO - Account Settings"
 msgstr ""
 
 msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
@@ -165,6 +165,9 @@ msgid "ForgedToFight.IO Team"
 msgstr ""
 
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
+msgstr ""
+
+msgid "ForgedToFight.IO password reset"
 msgstr ""
 
 msgid "ForgedToFight.IO signup"
@@ -218,10 +221,7 @@ msgstr ""
 msgid "Menu|About"
 msgstr ""
 
-msgid "Menu|Account Management"
-msgstr ""
-
-msgid "Menu|Account Settings"
+msgid "Menu|Account settings"
 msgstr ""
 
 msgid "Menu|Botodex"
@@ -255,6 +255,9 @@ msgid "Mods"
 msgstr ""
 
 msgid "More features will be released"
+msgstr ""
+
+msgid "My account"
 msgstr ""
 
 msgid "Nickname (in game)"
@@ -299,7 +302,19 @@ msgstr ""
 msgid "Password is not in correct range, please contact-us"
 msgstr ""
 
+msgid "Password reset"
+msgstr ""
+
+msgid "Password update"
+msgstr ""
+
+msgid "Password|Delete"
+msgstr ""
+
 msgid "Password|Reset"
+msgstr ""
+
+msgid "Password|Update"
 msgstr ""
 
 msgid "Please retry or contact our technical team"
@@ -323,13 +338,19 @@ msgstr ""
 msgid "Relics"
 msgstr ""
 
-msgid "Reset password"
+msgid "Remove your account"
+msgstr ""
+
+msgid "Reset your password"
 msgstr ""
 
 msgid "Round"
 msgstr ""
 
 msgid "Scouts"
+msgstr ""
+
+msgid "Settings"
 msgstr ""
 
 msgid "Sidebar|About"
@@ -398,16 +419,10 @@ msgstr ""
 msgid "Terms of service"
 msgstr ""
 
-msgid "Thanks"
-msgstr ""
-
 msgid "Thanks for signing up at ForgedToFight.IO"
 msgstr ""
 
 msgid "Thanks for wanting to help"
-msgstr ""
-
-msgid "The ForgedToFightIO team"
 msgstr ""
 
 msgid "The mobile game is available on"
@@ -473,6 +488,9 @@ msgstr ""
 msgid "Welcome to ForgedToFight.IO website"
 msgstr ""
 
+msgid "Wrong nickname or email"
+msgstr ""
+
 msgid "You are not authorized to be here !"
 msgstr ""
 
@@ -483,4 +501,10 @@ msgid "You successfully logged in"
 msgstr ""
 
 msgid "You successfully logged out"
+msgstr ""
+
+msgid "Your account is removed"
+msgstr ""
+
+msgid "Your password is updated, please login"
 msgstr ""

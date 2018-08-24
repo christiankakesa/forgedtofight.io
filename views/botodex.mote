@@ -1,4 +1,4 @@
-<h1>{{ _('Botodex') }} ({{ Bot.count }})</h1>
+<h1>{{ _('Botodex') }} ({{ bots.count }})</h1>
 
 % if bots.count > 0
 <nav class="justify-content-center nav nav-pills nav-justified mb-3">
@@ -10,9 +10,7 @@
   <a class="nav-link botodex-menu" data-bot_type="tech" href="#">{{ _('Techs') }}</a>
   <a class="nav-link botodex-menu" data-bot_type="warrior" href="#">{{ _('Warriors') }}</a>
 </nav>
-% end
 
-% if bots.count > 0
 <div class="card-columns">
   % bots.each do |bot|
   <div class="card card-bot-{{ bot.type }}">

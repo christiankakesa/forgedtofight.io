@@ -10,17 +10,16 @@
     <li class="nav-item px-2">
       <a class="nav-link" href="/"><i class="icon-home"></i> {{ s_('Menu|Home') }}</a>
     </li>
-    % if "development".eql?(ENV['RACK_ENV'])
     % if authenticated(User)
     <li class="nav-item dropdown px-2">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="hidden-md-down">{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Menu|Account Management') }}</span>
+        <span class="hidden-md-down">{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Menu|Account settings') }}</span>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
         <div class="dropdown-header text-center">
-          <strong>{{ _('Account') }}</strong>
+          <strong>{{ _('My account') }}</strong>
         </div>
-        <a class="dropdown-item" href="/accounts/settings"><i class="fa fa-wrench"></i> {{ s_('Menu|Account Settings') }}</a>
+        <a class="dropdown-item" href="/accounts/settings"><i class="fa fa-wrench"></i> {{ s_('Menu|Account settings') }}</a>
         <a class="dropdown-item" href="/logout" data-method="delete"><i class="icon-logout"></i> {{ s_('Menu|Logout') }}</a>
       </div>
     </li>
@@ -31,7 +30,6 @@
     <li class="nav-item px-2">
       <a class="nav-link" href="/login"><i class="icon-login"></i> {{ s_('Menu|Log In') }}</a>
     </li>
-    % end
     % end
     <li class="nav-item px-2">
       <a class="nav-link" href="/events"><i class="icon-clock"></i> {{ s_('Menu|Events') }} ({{ Event.next.count }})</a>

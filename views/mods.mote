@@ -1,4 +1,4 @@
-<h1>{{ _('Mods') }} ({{ Mod.count }})</h1>
+<h1>{{ _('Mods') }} ({{ mods.count }})</h1>
 
 % if mods.count > 0
 <nav class="justify-content-center nav nav-pills nav-justified mb-3">

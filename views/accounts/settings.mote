@@ -1,1 +1,13 @@
-<h1>{{ _('ForgedToFight.IO - Account Settings') }}</h1>
+<h1>{{ _('My account') }}</h1>
+
+<h2>{{ _('Settings') }}</h2>
+
+<h4>{{ _('Coming soon...') }}</h4>
+
+<hr>
+
+<h2>{{ _('Advanced settings') }}</h2>
+
+<div class="btn-group" role="group">
+    <a href="/accounts/delete" class="btn btn-pill btn-danger active" role="button" aria-pressed="true"><i class="fa fa-trash"></i> {{ _('Remove your account') }}</a>
+</div>

@@ -16,9 +16,9 @@ class SignupValidation < Scrivener
     assert_unique :nickname
     assert_present :password
     assert_password_match(:password, :password_confirmation)
-    # limit length of fields from 3 to 128 max length
+    # limit length of fields from 5 to 128 max length
     %i[email nickname password password_confirmation].each do |field|
-      assert_length field, 3..128
+      assert_length field, 5..128
     end
   end
 

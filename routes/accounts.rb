@@ -9,8 +9,24 @@ Accounts = Syro.new(BasicDeck) do
     end
 
     on 'settings' do
-      # (get || post || put || patch || delete)
+      # (get || post || put || patch)
       get { render 'views/accounts/settings.mote' }
+    end
+
+    on 'delete' do
+      get { render 'views/accounts/delete.mote' }
+
+      on req.post? || req.delete? do
+        filter = UserDeleteValidation.new(req.params)
+        user = User.fetch(req[:identifier].to_s)
+        if filter.valid? && user&.destroy
+          flash_success _('Your account is removed')
+          res.redirect '/logout'
+        else
+          flash_danger _('Wrong nickname or email')
+          render 'views/accounts/delete.mote', params: filter.slice(:identifier) || {}
+        end
+      end
     end
 
     default do

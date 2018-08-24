@@ -1,4 +1,4 @@
-{{ _('Hi') }} {{ username }},
+{{ _('Hi') }} {{ nickname }},
 
 {{ _('Thanks for signing up at ForgedToFight.IO') }}{{ _('!') }}
 

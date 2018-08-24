@@ -7,7 +7,6 @@ class User
 
   default_scope(:active) { where(status: :active) }
   scope(:pending) { where(status: :pending) }
-  scope(:deleted) { where(status: :deleted) }
 
   field :nickname, type: String, required: true, unique: true
   field :email, type: String, required: true, unique: true
@@ -15,19 +14,14 @@ class User
   field :status,
         type: Enum,
         default: :pending,
-        in: %i[active pending deleted]
-  field :signup_token, type: String
+        in: %i[active pending]
 
-  def state_active
+  def status_active!
     update!(status: :active)
   end
 
-  def state_pending
+  def status_pending!
     update!(status: :pending)
-  end
-
-  def state_deleted
-    update!(status: :deleted)
   end
 
   def self.[](id)

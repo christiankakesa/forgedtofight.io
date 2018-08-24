@@ -1,4 +1,4 @@
-<h1>{{ _('Relics') }} ({{ Relic.count }})</h1>
+<h1>{{ _('Relics') }} ({{ relics.count }})</h1>
 
 % if relics.count > 0
 <nav class="justify-content-center nav nav-pills nav-justified mb-3">

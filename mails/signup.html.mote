@@ -291,7 +291,7 @@
                   <table border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <p>{{ _('Hi') }} {{ username }},</p>
+                        <p>{{ _('Hi') }} {{ nickname }},</p>
                         <p>{{ _('Thanks for signing up at ForgedToFight.IO') }}{{ _('!') }}</p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>

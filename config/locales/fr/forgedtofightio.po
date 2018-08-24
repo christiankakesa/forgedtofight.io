@@ -41,23 +41,20 @@ msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgid "About"
 msgstr "À propos"
 
-msgid "Account"
-msgstr "Mon compte"
-
 msgid "Activate your account"
 msgstr "Active ton compte"
 
 msgid "Activate your account by visiting the following link"
 msgstr "Pour activer le compte, allez sur ce lien"
 
+msgid "Advanced settings"
+msgstr "Paramètres avancés"
+
 msgid "All"
 msgstr "Tous"
 
 msgid "All services are running on top of <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a> ecosystem"
 msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos.apache.org/\" target=\"_blank\">Apache MESOS</a>"
-
-msgid "Arena"
-msgstr "Arène"
 
 msgid "Attack"
 msgstr "Attaque"
@@ -86,17 +83,23 @@ msgstr "Vérifiez vos e-mails pour réinitialiser votre mot de passe"
 msgid "Close"
 msgstr "Fermer"
 
+msgid "Coming soon..."
+msgstr "Bientôt disponible..."
+
 msgid "Contribute to the developement"
 msgstr "Contribuer au développement"
 
 msgid "Could not send recover information for this identifier"
 msgstr "Impossible d'envoyer les informations de réinitialisation"
 
+msgid "Couldn't attribute a valid token, retry or contact our technical team"
+msgstr "Impossible de vous attribuer un jeton valide, réessayez ou contactez l'administrateur"
+
 msgid "Couldn't create your user, retry or report the issue"
 msgstr "Impossible de créer votre compte, réessayez ou contactez l'administrateur"
 
-msgid "Couldn't validate your user, please signup or report the issue"
-msgstr "Impossible de valider votre compte, souscrivez ou contactez l'administrateur"
+msgid "Couldn't find your user account, please signup or report the issue"
+msgstr "Impossible de trouver votre compte utilisateur, souscrivez ou contactez l'administrateur"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -107,14 +110,14 @@ msgstr "%d %B %Y à %Hh%M %p"
 msgid "Defenses"
 msgstr "Défensifs"
 
+msgid "Delete your account"
+msgstr "Suppression du compte"
+
 msgid "Demolitions"
 msgstr "Démolisseurs"
 
 msgid "Don't like these emails?"
 msgstr "Vous ne voulez plus recevoir cet e-mail ?"
-
-msgid "Donate"
-msgstr "Dons"
 
 msgid "Donate to Support Development"
 msgstr "Aidez au développement du site"
@@ -140,6 +143,9 @@ msgstr "L'adresse e-mail est obligatoire"
 msgid "End at"
 msgstr "Fin"
 
+msgid "Error when reseting your password or invalide token"
+msgstr "Une erreur est survenue lors de la réinitialisation de votre mot de passe ou votre jeton de réinitialisation est invalide"
+
 msgid "Error when trying to activate your account"
 msgstr "Une erreur est survenue lors de l'activation de votre compte"
 
@@ -149,14 +155,8 @@ msgstr "Évènement"
 msgid "Events"
 msgstr "Évènements"
 
-msgid "Filters"
-msgstr "Filtres"
-
 msgid "Follow the link below to set a new password"
 msgstr "Allez sur le lien suivant, pour mettre à jour votre mot de passe"
-
-msgid "ForgedToFight.IO - Account Settings"
-msgstr "ForgedToFight.IO- Gestion du compte"
 
 msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
 msgstr "ForgedToFight.IO - Site de fan non-officiel pour Transformers Forgés d'Acier"
@@ -166,6 +166,9 @@ msgstr "L'équipe ForgedToFight.IO"
 
 msgid "ForgedToFight.IO is a community fansite for TRANSFORMERS Forged to Fight mobile game."
 msgstr "ForgedToFight.IO est le site internet communautaire du jeu sur mobile : TRANSFORMERS Forgés d'Acier"
+
+msgid "ForgedToFight.IO password reset"
+msgstr "ForgedToFight.IO réinitialisation du mot de passe"
 
 msgid "ForgedToFight.IO signup"
 msgstr "Souscription à ForgedToFight.IO"
@@ -218,10 +221,7 @@ msgstr "Force max"
 msgid "Menu|About"
 msgstr "À propos"
 
-msgid "Menu|Account Management"
-msgstr "Gestion du compte"
-
-msgid "Menu|Account Settings"
+msgid "Menu|Account settings"
 msgstr "Paramètres du compte"
 
 msgid "Menu|Botodex"
@@ -256,6 +256,9 @@ msgstr "Mods"
 
 msgid "More features will be released"
 msgstr "Plus de fonctionalités pouront être réalisées"
+
+msgid "My account"
+msgstr "Mon compte"
 
 msgid "Nickname (in game)"
 msgstr "Pseudo (dans le jeu)"
@@ -299,8 +302,20 @@ msgstr "Le mot de passe est obligatoire"
 msgid "Password is not in correct range, please contact-us"
 msgstr "Le mot de passe n'est pas assez robuste"
 
+msgid "Password reset"
+msgstr "Réinitialisation du mot de passe"
+
+msgid "Password update"
+msgstr "Mise à jour du mot de passe"
+
+msgid "Password|Delete"
+msgstr "Supprimer"
+
 msgid "Password|Reset"
 msgstr "Réinitialiser"
+
+msgid "Password|Update"
+msgstr "Mettre à jour"
 
 msgid "Please retry or contact our technical team"
 msgstr "Veuillez réessayer ou contacter notre équipe technique"
@@ -323,14 +338,20 @@ msgstr "Boost d'exp d'artéfact"
 msgid "Relics"
 msgstr "Artéfacts"
 
-msgid "Reset password"
-msgstr "Mot de passe réinitialisé"
+msgid "Remove your account"
+msgstr "Supprime ton compte"
+
+msgid "Reset your password"
+msgstr "Réinitialise ton mot de passe"
 
 msgid "Round"
 msgstr "Round"
 
 msgid "Scouts"
 msgstr "Éclaireurs"
+
+msgid "Settings"
+msgstr "Paramètres"
 
 msgid "Sidebar|About"
 msgstr "À propos"
@@ -398,17 +419,11 @@ msgstr "Techniciens"
 msgid "Terms of service"
 msgstr "Conditions d'utilisation"
 
-msgid "Thanks"
-msgstr "Merci"
-
 msgid "Thanks for signing up at ForgedToFight.IO"
 msgstr "Merci d'avoir souscris à ForgedToFight.IO"
 
 msgid "Thanks for wanting to help"
 msgstr "Merci de votre soutient"
-
-msgid "The ForgedToFightIO team"
-msgstr "L'équipe ForgedToFightIO"
 
 msgid "The mobile game is available on"
 msgstr "Le jeu est disponible sur"
@@ -473,14 +488,23 @@ msgstr "Bienvenue joueur de Transformers : Forgés d'Acier !"
 msgid "Welcome to ForgedToFight.IO website"
 msgstr "Bienvenue sur le site internet de ForgedToFight.IO"
 
+msgid "Wrong nickname or email"
+msgstr "Pseudo ou e-mail incorrect"
+
 msgid "You are not authorized to be here !"
 msgstr "Vous n'avez pas le droit d'y aller !"
 
 msgid "You have requested a password reset"
-msgstr "Vous avez demander une réinitialisation de votre mot de passe"
+msgstr "Vous avez demandé une réinitialisation de votre mot de passe"
 
 msgid "You successfully logged in"
 msgstr "Connexion réussie"
 
 msgid "You successfully logged out"
 msgstr "Vous êtes déconnecté"
+
+msgid "Your account is removed"
+msgstr "Ton compte est supprimé"
+
+msgid "Your password is updated, please login"
+msgstr "Votre mot de passe est à jour, connectez-vous"

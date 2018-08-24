@@ -103,18 +103,77 @@ Home = Syro.new(BasicDeck) do
   end
 
   on 'reset-password' do
+    on :reset_token do
+      user_id = signer.decode(inbox[:reset_token])
+      user = User[user_id]
+
+      on !user.nil? do
+        get do
+          render 'views/reset_password_update.mote'
+        end
+        
+        post do
+          # TODO(fenicks): implement the password validation and update
+          filter = PasswordValidation.new(req.params)
+          if filter.valid? && user.update(filter.slice(:password))
+            flash_success _('Your password is updated, please login')
+            res.redirect '/logout'
+          else
+            filter.errors.each do |error|
+              if error.first.eql?(:password)
+                flash_danger(_('Password is not in correct range, please contact-us')) if error.last.include?(:not_in_range)
+                flash_danger(_('Password is needed')) if error.last.include?(:not_present)
+                flash_danger(_("Password doesn't match")) if error.last.include?(:not_password_match)
+              end
+            end
+            render 'views/reset_password_update.mote', params: filter.slice(:password, :password_confirmation) || {}
+          end
+        end
+      end
+      
+      default do
+        flash_danger _('Error when reseting your password or invalide token')
+        res.redirect '/reset-password'
+      end
+    end
+
     get do
       render 'views/reset_password.mote'
     end
 
     post do
       identifier = req[:identifier].to_s
-      user = (User.where(email: identifier) ||
-                User.where(nickname: identifier)).first
+      password_reset_user = User.where(email: identifier).first || User.where(nickname: identifier).first
+      password_reset_token = signer.encode(password_reset_user&.id)
 
-      on !user.nil? do
-        # TODO(fenicks): send an email with background job processor
-        flash_success _('Check your email to reset your password')
+      on !password_reset_user.nil? do
+        if password_reset_token
+          # TODO(fenicks): send an email with background job processor
+          email_body_text = mote('mails/password_reset.text.mote', password_reset_url: "#{base_url}/reset-password/#{password_reset_token}",
+                                                                   nickname: password_reset_user.nickname)
+          email_body_html = mote('mails/password_reset.html.mote', password_reset_url: "#{base_url}/reset-password/#{password_reset_token}",
+                                                                   nickname: password_reset_user.nickname)
+          Mail.deliver do
+            content_type 'text/plain; charset=UTF-8'
+            from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'
+            to password_reset_user.email
+            subject _('ForgedToFight.IO password reset')
+
+            text_part do
+              content_type 'text/plain; charset=UTF-8'
+              body email_body_text
+            end
+          
+            html_part do
+              content_type 'text/html; charset=UTF-8'
+              body email_body_html
+            end
+          end
+          flash_success _('Check your email to reset your password')
+        else
+          flash_danger _("Couldn't attribute a valid token, retry or contact our technical team")
+          res.redirect '/reset-password'
+        end
         req.params.clear
         res.redirect '/'
       end
@@ -129,19 +188,16 @@ Home = Syro.new(BasicDeck) do
 
   on 'signup' do
     on :activate do
-      user = User.unscoped.where(signup_token: inbox[:activate]).first
+      user_id = signer.decode(inbox[:activate])
+      user = User.unscoped.where(id: user_id).first
 
-      on signer.decode(user.signup_token).nil? do
-        user.destroy
+      on user.nil? do
         flash_danger _('Signup link is expired, try to subscribe now')
         res.redirect '/signup'
       end
 
       on !user.nil? do
-        user.queue_atomic do
-          user.unset(:signup_token)
-        end
-        if user.save && user.update(status: :active)
+        if user.update(status: :active)
           authenticate(user)
           flash_success _('Welcome to ForgedToFight.IO website')
           res.redirect '/'
@@ -167,16 +223,15 @@ Home = Syro.new(BasicDeck) do
     post do
       filter = SignupValidation.new(req.params)
       if filter.valid?
-        if !User.create(filter.slice(:email, :nickname, :password))
-          flash_danger _("Couldn't create your user, retry or report the issue")
-        else
+        if User.create(filter.slice(:email, :nickname, :password))
           signup_user = User.unscoped.where(email: filter.email).first
-          signup_token = signer.encode(signup_user.id)
-          if signup_user.update(signup_token: signup_token)
+          if !signup_user.nil?
+            signup_token = signer.encode(signup_user.id)
+            # TODO(fenicks): send an email with background job processor
             email_body_text = mote('mails/signup.text.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                            username: signup_user.nickname)
+                                                             nickname: signup_user.nickname)
             email_body_html = mote('mails/signup.html.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                            username: signup_user.nickname)
+                                                             nickname: signup_user.nickname)
             Mail.deliver do
               content_type 'text/plain; charset=UTF-8'
               from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'
@@ -195,9 +250,10 @@ Home = Syro.new(BasicDeck) do
             end
             flash_success _('Check your email box to activate your account')
           else
-            signup_user.destroy
-            flash_danger _("Couldn't validate your user, please signup or report the issue")
+            flash_danger _("Couldn't find your user account, please signup or report the issue")
           end
+        else
+          flash_danger _("Couldn't create your user, retry or report the issue")
         end
         render 'views/signup.mote'
       else
