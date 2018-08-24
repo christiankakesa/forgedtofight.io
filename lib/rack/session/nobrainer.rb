@@ -33,22 +33,20 @@ module Rack
 
       def find_session(env, sid)
         sid ||= generate_sid
-        session_data = _get(sid)
+        session_data = _exists?(sid)&.data
         unless session_data
           session_data = {}
-          _set sid, session_data
+          _set(sid, session_data)
         end
         [sid, session_data]
       end
 
       def write_session(env, sid, session_data, options)
-        puts session_data.inspect
-        ok = _set(sid, session_data)
-        ok ? sid : false
+        _set(sid, session_data) ? sid : false
       end
 
       def delete_session(env, sid, options)
-        _delete(sid)
+        _exists?(sid)&.destroy
         generate_sid unless options[:drop]
       end
 
@@ -60,15 +58,6 @@ module Rack
           expires_at: RethinkDB::RQL.new.now + @expire_after
         )
         model.update(data: session_data)
-      end
-
-      def _get(sid)
-        model = _exists?(sid)
-        model&.data
-      end
-
-      def _delete(sid)
-        NoBrainerSessionStore.where(sid: sid).delete_all
       end
 
       def _exists?(sid)
