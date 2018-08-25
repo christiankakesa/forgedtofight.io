@@ -45,10 +45,6 @@ MainApp = Rack::Builder.new do
     use Rack::MiniProfiler
   end
   use Rack::Static, urls: %w[/robots.txt /favicon.ico], root: 'public'
-  use(Rack::Timeout,
-      service_timeout: 20,
-      wait_timeout: 30,
-      wait_overtime: 60,
-      service_past_wait: false)
+  use Rack::Timeout
   run(WebApp)
 end
