@@ -34,10 +34,12 @@ module Rack
         ::NoBrainer::Lock.new('Rack::Session::NoBrainer').synchronize do
           sid ||= generate_sid
           session_data = _get(sid)&.data
+          puts "[1] #{session_data.inspect}"
           unless session_data
             session_data = {}
             _set(sid, session_data)
           end
+          puts "[2] #{session_data.inspect}"
           [sid, session_data]
         end
       end
