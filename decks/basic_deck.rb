@@ -112,7 +112,10 @@ class BasicDeck < Syro::Deck
   end
 
   def flash_consume
-    yield(session.delete(:flash) || {}) if block_given?
+    messages = session[:flash]
+    block_given? ? yield(messages || {}) : messages
+  ensure
+    session.delete(:flash)
   end
   alias flash flash_consume
 
