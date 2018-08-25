@@ -116,12 +116,13 @@ class BasicDeck < Syro::Deck
   end
   alias flash flash_consume
 
+  private
+
   def flash_add(type, message)
     session[:flash] = {} unless session.include?(:flash)
     session[:flash][type] = [] unless session[:flash].include?(type)
     session[:flash][type] << message
   end
-  private :flash_add
 
   def upsert_params(request_string, params = {})
     result = request_string
@@ -136,5 +137,4 @@ class BasicDeck < Syro::Deck
     end
     result
   end
-  private :upsert_params
 end

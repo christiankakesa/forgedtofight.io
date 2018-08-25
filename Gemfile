@@ -42,6 +42,6 @@ end
 group :development do
   gem 'debase'
   gem 'memory_profiler'
-  gem 'ruby-debug-ide'
   gem 'rack-mini-profiler'
+  gem 'ruby-debug-ide'
 end

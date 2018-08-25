@@ -6,7 +6,7 @@ describe 'UserMock helper' do
   after { Ftf::Helpers::UserMock.delete }
 
   it 'always get an instance of User' do
-    expect(Ftf::Helpers::UserMock.build).to be_an_instance_of(User)
+    expect(Ftf::Helpers::UserMock.user).to be_an_instance_of(User)
     expect(Ftf::Helpers::UserMock.get).to be_an_instance_of(User)
   end
 
@@ -19,7 +19,7 @@ describe 'UserMock helper' do
     expect(Ftf::Helpers::UserMock.delete).to be_nil
   end
 
-  it 'test if the environement is mackable' do
+  it 'test if the environement is mockable' do
     allow(ENV).to receive(:[]).with('APP_MOCK_USER').and_return('true')
     allow(ENV).to receive(:[]).with('RACK_ENV').and_return('test')
     expect(Ftf::Helpers::UserMock.mockable?).to be_truthy

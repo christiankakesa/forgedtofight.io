@@ -50,10 +50,8 @@ Home = Syro.new(BasicDeck) do
     end
 
     post do
-      on user_mock.mockable? do
-        if login(User, user_mock.get.nickname, user_mock.password)
-          flash_success _('You successfully logged in')
-        end
+      on user_mock.mockable? && !login(User, user_mock.get.nickname, user_mock.password).nil? do
+        flash_success(_('You successfully logged in'))
         res.redirect(req[:return] || '/')
       end
 
@@ -111,7 +109,7 @@ Home = Syro.new(BasicDeck) do
         get do
           render 'views/reset_password_update.mote'
         end
-        
+
         post do
           # TODO(fenicks): implement the password validation and update
           filter = PasswordValidation.new(req.params)
@@ -120,17 +118,17 @@ Home = Syro.new(BasicDeck) do
             res.redirect '/logout'
           else
             filter.errors.each do |error|
-              if error.first.eql?(:password)
-                flash_danger(_('Password is not in correct range, please contact-us')) if error.last.include?(:not_in_range)
-                flash_danger(_('Password is needed')) if error.last.include?(:not_present)
-                flash_danger(_("Password doesn't match")) if error.last.include?(:not_password_match)
-              end
+              next unless error.first.eql?(:password)
+
+              flash_danger(_('Password is not in correct range, please contact-us')) if error.last.include?(:not_in_range)
+              flash_danger(_('Password is needed')) if error.last.include?(:not_present)
+              flash_danger(_("Password doesn't match")) if error.last.include?(:not_password_match)
             end
             render 'views/reset_password_update.mote', params: filter.slice(:password, :password_confirmation) || {}
           end
         end
       end
-      
+
       default do
         flash_danger _('Error when reseting your password or invalide token')
         res.redirect '/reset-password'
@@ -163,7 +161,7 @@ Home = Syro.new(BasicDeck) do
               content_type 'text/plain; charset=UTF-8'
               body email_body_text
             end
-          
+
             html_part do
               content_type 'text/html; charset=UTF-8'
               body email_body_html
@@ -242,7 +240,7 @@ Home = Syro.new(BasicDeck) do
                 content_type 'text/plain; charset=UTF-8'
                 body email_body_text
               end
-            
+
               html_part do
                 content_type 'text/html; charset=UTF-8'
                 body email_body_html

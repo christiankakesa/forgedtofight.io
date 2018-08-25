@@ -3,7 +3,7 @@
 module Ftf
   module Helpers
     class UserMock
-      def self.build
+      def self.user
         @user ||= User.unscoped.upsert!(
           nickname: 'User Mock',
           email: 'user.mock@email-example.com',
@@ -13,7 +13,7 @@ module Ftf
       end
 
       def self.get
-        build
+        user
       end
 
       def self.password
