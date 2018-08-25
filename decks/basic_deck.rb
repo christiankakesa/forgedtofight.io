@@ -112,11 +112,8 @@ class BasicDeck < Syro::Deck
   end
 
   def flash_consume
-    messages = session.delete(:flash)&.dup
-    puts "[1] #{messages.inspect}"
+    messages = session.delete(:flash)
     block_given? ? yield(messages || {}) : messages
-    puts "[2] #{session[:flash].inspect}"
-    puts "[3] #{messages.inspect}"
   end
   alias flash flash_consume
 
