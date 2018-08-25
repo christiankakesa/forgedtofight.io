@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# require 'no_brainer/lock'
 require 'rack/session/abstract/id'
 
 module Rack
@@ -30,21 +31,27 @@ module Rack
       end
 
       def find_session(_env, sid)
-        sid ||= generate_sid
-        session_data = _get(sid)&.data
-        unless session_data
-          session_data = {}
-          _set(sid, session_data)
+        ::NoBrainer::Lock.new("Rack::Session::NoBrainer").synchronize do
+          sid ||= generate_sid
+          session_data = _get(sid)&.data
+          unless session_data
+            session_data = {}
+            _set(sid, session_data)
+          end
+          [sid, session_data]
         end
-        [sid, session_data]
       end
 
       def write_session(_env, sid, session_data, _options)
-        _set(sid, session_data) ? sid : false
+        ::NoBrainer::Lock.new("Rack::Session::NoBrainer").synchronize do
+          _set(sid, session_data) ? sid : false
+        end
       end
 
       def delete_session(_env, sid, options)
-        _get(sid)&.destroy
+        ::NoBrainer::Lock.new("Rack::Session::NoBrainer").synchronize do
+          _get(sid)&.destroy
+        end
         generate_sid unless options[:drop]
       end
 
