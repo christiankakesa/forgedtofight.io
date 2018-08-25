@@ -45,7 +45,7 @@ msgid "Activate your account"
 msgstr "Active ton compte"
 
 msgid "Activate your account by visiting the following link"
-msgstr "Pour activer le compte, allez sur ce lien"
+msgstr "Pour activer le compte, visite ce lien"
 
 msgid "Advanced settings"
 msgstr "Paramètres avancés"
@@ -75,10 +75,10 @@ msgid "Calendar's bot"
 msgstr "Bot du calendrier"
 
 msgid "Check your email box to activate your account"
-msgstr "Vérifiez vos e-mails pour activer de votre compte"
+msgstr "Vérifie tes e-mails pour activer ton compte"
 
 msgid "Check your email to reset your password"
-msgstr "Vérifiez vos e-mails pour réinitialiser votre mot de passe"
+msgstr "Vérifie tes e-mails pour réinitialiser ton mot de passe"
 
 msgid "Close"
 msgstr "Fermer"
@@ -93,13 +93,13 @@ msgid "Could not send recover information for this identifier"
 msgstr "Impossible d'envoyer les informations de réinitialisation"
 
 msgid "Couldn't attribute a valid token, retry or contact our technical team"
-msgstr "Impossible de vous attribuer un jeton valide, réessayez ou contactez l'administrateur"
+msgstr "Impossible d'attribuer un jeton valide, réessaye ou contacte l'administrateur"
 
 msgid "Couldn't create your user, retry or report the issue"
-msgstr "Impossible de créer votre compte, réessayez ou contactez l'administrateur"
+msgstr "Impossible de créer ton compte, réessaye ou contacte l'administrateur"
 
 msgid "Couldn't find your user account, please signup or report the issue"
-msgstr "Impossible de trouver votre compte utilisateur, souscrivez ou contactez l'administrateur"
+msgstr "Impossible de trouver ton compte utilisateur, souscris ou contacte l'administrateur"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"
@@ -117,10 +117,10 @@ msgid "Demolitions"
 msgstr "Démolisseurs"
 
 msgid "Don't like these emails?"
-msgstr "Vous ne voulez plus recevoir cet e-mail ?"
+msgstr "Cet e-mail ne t'intéresse plus ?"
 
 msgid "Donate to Support Development"
-msgstr "Aidez au développement du site"
+msgstr "Participe au développement du site"
 
 msgid "Donating is a helpful way to support the ForgedToFightIO project"
 msgstr "Les donations permettent d'aider à l'évolution du projet ForgedToFightIO"
@@ -144,10 +144,10 @@ msgid "End at"
 msgstr "Fin"
 
 msgid "Error when reseting your password or invalide token"
-msgstr "Une erreur est survenue lors de la réinitialisation de votre mot de passe ou votre jeton de réinitialisation est invalide"
+msgstr "Une erreur est survenue lors de la réinitialisation de ton mot de passe ou encore ton jeton de réinitialisation est invalide"
 
 msgid "Error when trying to activate your account"
-msgstr "Une erreur est survenue lors de l'activation de votre compte"
+msgstr "Une erreur est survenue lors de l'activation de ton compte"
 
 msgid "Event"
 msgstr "Évènement"
@@ -156,7 +156,7 @@ msgid "Events"
 msgstr "Évènements"
 
 msgid "Follow the link below to set a new password"
-msgstr "Allez sur le lien suivant, pour mettre à jour votre mot de passe"
+msgstr "Suis le lien suivant, pour mettre à jour ton mot de passe"
 
 msgid "ForgedToFight.IO - Unofficial Transformers Forged to Fight resources"
 msgstr "ForgedToFight.IO - Site de fan non-officiel pour Transformers Forgés d'Acier"
@@ -183,7 +183,7 @@ msgid "Gaming|Health"
 msgstr "Point de vie"
 
 msgid "Go to your user settings and remove your account"
-msgstr "Aller dans les paramètres utilisateur et supprimez votre compte"
+msgstr "Accède aux paramètres utilisateur et supprime ton compte"
 
 msgid "HTML, CSS and JS web framework"
 msgstr "Bibliothèque HTML, CSS et JS"
@@ -204,7 +204,7 @@ msgid "HtmlMetaKeywords|Transformers,Forged to fight,mobile,game,Android,iOS"
 msgstr "Transformers,Forgés d'Acier,jeu,mobile,Android,iOS"
 
 msgid "If you don't wish to reset your password, disregard this email and no action will be taken"
-msgstr "Si vous n'avez pas souhaité la réinitialisation de votre mot de passe, ignorez ce message aucune action ne sera réalisée"
+msgstr "Si tu n'a pas souhaité la réinitialisation de ton mot de passe, ignore ce message aucune action ne sera réalisée"
 
 msgid "JSON document based database"
 msgstr "Base de données JSON orienté document"
@@ -318,7 +318,7 @@ msgid "Password|Update"
 msgstr "Mettre à jour"
 
 msgid "Please retry or contact our technical team"
-msgstr "Veuillez réessayer ou contacter notre équipe technique"
+msgstr "Tente une nouvelle fois ou contacte notre équipe technique"
 
 msgid "Powered by"
 msgstr "Créer par"
@@ -399,7 +399,7 @@ msgid "Sign up"
 msgstr "S'inscrire"
 
 msgid "Signup link is expired, try to subscribe now"
-msgstr "Le lien de souscription est expiré, essayez de souscrire à nouveau"
+msgstr "Le lien de souscription est expiré, tente de souscrire à nouveau"
 
 msgid "Something is going wrong with your credentials"
 msgstr "Vos identifiants sont incorrects"
@@ -423,7 +423,7 @@ msgid "Thanks for signing up at ForgedToFight.IO"
 msgstr "Merci d'avoir souscris à ForgedToFight.IO"
 
 msgid "Thanks for wanting to help"
-msgstr "Merci de votre soutient"
+msgstr "Merci de ton soutien"
 
 msgid "The mobile game is available on"
 msgstr "Le jeu est disponible sur"
@@ -477,7 +477,7 @@ msgid "Warriors"
 msgstr "Guerriers"
 
 msgid "We could not activate your account"
-msgstr "Impossible d'activer votre compte"
+msgstr "Impossible d'activer ton compte"
 
 msgid "Website"
 msgstr "Site internet"
@@ -492,19 +492,19 @@ msgid "Wrong nickname or email"
 msgstr "Pseudo ou e-mail incorrect"
 
 msgid "You are not authorized to be here !"
-msgstr "Vous n'avez pas le droit d'y aller !"
+msgstr "Tu n'as pas le droit d'y aller !"
 
 msgid "You have requested a password reset"
-msgstr "Vous avez demandé une réinitialisation de votre mot de passe"
+msgstr "Tu as demandé une réinitialisation de ton mot de passe"
 
 msgid "You successfully logged in"
 msgstr "Connexion réussie"
 
 msgid "You successfully logged out"
-msgstr "Vous êtes déconnecté"
+msgstr "Déconnection effectué"
 
 msgid "Your account is removed"
 msgstr "Ton compte est supprimé"
 
 msgid "Your password is updated, please login"
-msgstr "Votre mot de passe est à jour, connectez-vous"
+msgstr "Ton mot de passe est à jour, tu peux te connecter"
