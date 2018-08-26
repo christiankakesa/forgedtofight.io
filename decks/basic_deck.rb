@@ -112,11 +112,8 @@ class BasicDeck < Syro::Deck
   end
 
   def flash_consume
-    puts "[BEFORE_CONSUME_FLASH]: #{session[:flash].inspect}"
     messages = session.delete(:flash)
     block_given? ? yield(messages || {}) : messages
-    puts "[AFTER_CONSUME_FLASH]: #{session[:flash].inspect}"
-    puts "[RACK_ERRORS]: #{ENV['RACK_ERRORS'].inspect}"
   end
   alias flash flash_consume
 
