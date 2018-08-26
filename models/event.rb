@@ -24,8 +24,8 @@ class Event
     year = Time.now.utc.year
     month = Time.now.utc.month
     where(type: :calendar_bot)
-      .where(:start_at.gte => DateTime.new(year, month, 1, 0, 0, 0, 'UTC').to_time)
-      .where(:start_at.lte => DateTime.new(year, month, -1, 23, 59, 59, 'UTC').to_time)
+      .where(:start_at.gte => Time.utc(year, month, 1, 0, 0, 0))
+      .where(:start_at.lte => Time.utc(year, month, Date.new(year, month, -1).day, 23, 59, 59))
   end
 
   def self.next
