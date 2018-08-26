@@ -63,7 +63,9 @@ Home = Syro.new(BasicDeck) do
 
       default do
         flash_danger _('Something is going wrong with your credentials')
-        res.redirect '/login'
+        render 'views/login.mote', params: { identifier: req[:identifier],
+                                             password: req[:password],
+                                             remember: req[:remember] }
       end
     end
   end
