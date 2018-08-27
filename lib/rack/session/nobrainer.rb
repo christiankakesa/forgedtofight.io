@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# require 'no_brainer/lock'
 require 'rack/session/abstract/id'
 
 module Rack
@@ -63,7 +62,7 @@ module Rack
       private
 
       def _set(sid, session_data)
-        model = _get(sid) || NoBrainerSessionStore.new(
+        model = _get(sid) || Rack::Session::NoBrainerSessionStore.new(
           sid: sid,
           expires_at: RethinkDB::RQL.new.now + @expire_after
         )
@@ -71,7 +70,7 @@ module Rack
       end
 
       def _get(sid)
-        NoBrainerSessionStore.where(sid: sid).first
+        Rack::Session::NoBrainerSessionStore.where(sid: sid).first
       end
     end
   end
