@@ -16,6 +16,10 @@ module Rack
       field :expires_at, type: Time
 
       index :sid
+      index :expires_at
+
+      # scope for deleting expired sessions
+      scope(:expired, proc { where(:expires_at.lt(RethinkDB::RQL.new.now)) })
     end
 
     class NoBrainer < Abstract::Persisted
