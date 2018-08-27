@@ -179,9 +179,8 @@ Home = Syro.new(BasicDeck) do
       end
 
       default do
-        text = _('Could not send recover information for this identifier')
-        flash_danger text
-        res.redirect '/reset-password'
+        flash_danger _('Could not send recover information for this identifier')
+        render 'views/reset_password.mote', params: { identifier: req[:identifier] }
       end
     end
   end
