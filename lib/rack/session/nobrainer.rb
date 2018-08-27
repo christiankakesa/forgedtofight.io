@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'no_brainer/lock'
 require 'rack/session/abstract/id'
 
 module Rack
