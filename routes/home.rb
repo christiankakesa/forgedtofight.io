@@ -76,6 +76,7 @@ Home = Syro.new(BasicDeck) do
         res.status = 200
         user_mock.mockable? && user_mock.delete
         logout(User)
+        session[User.class.to_s] = nil
         flash_success _('You successfully logged out')
         res.redirect '/'
       end
