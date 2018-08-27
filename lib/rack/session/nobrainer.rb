@@ -9,6 +9,8 @@ module Rack
     class NoBrainerSessionStore
       include NoBrainer::Document
 
+      table_config name: 'sessions'
+
       field :sid, type: Text, unique: true
       field :data, type: Hash, default: {}
       field :expires_at, type: Time
@@ -30,22 +32,28 @@ module Rack
       end
 
       def find_session(_env, sid)
-        sid ||= generate_sid
-        session_data = _get(sid)&.data
-        unless session_data
-          session_data = {}
-          _set(sid, session_data)
+        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
+          sid ||= generate_sid
+          session_data = _get(sid)&.data
+          unless session_data
+            session_data = {}
+            _set(sid, session_data)
+          end
+          [sid, session_data]
         end
-        [sid, session_data]
       end
 
       def write_session(_env, sid, session_data, _options)
-        _set(sid, session_data) ? sid : false
+        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
+          _set(sid, session_data) ? sid : false
+        end
       end
 
       def delete_session(_env, sid, options)
-        _get(sid)&.destroy
-        generate_sid unless options[:drop]
+        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
+          _get(sid)&.destroy
+          generate_sid unless options[:drop]
+        end
       end
 
       private
