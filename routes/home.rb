@@ -188,13 +188,12 @@ Home = Syro.new(BasicDeck) do
   on 'signup' do
     on :activate do
       user_id = signer.decode(inbox[:activate])
-      user = User.unscoped.where(id: user_id).first
-
-      on user.nil? do
+      on user_id.nil? do
         flash_danger _('Signup link is expired, try to subscribe now')
         res.redirect '/signup'
       end
 
+      user = User.unscoped.where(id: user_id).first
       on !user.nil? do
         if user.update(status: :active)
           authenticate(user)
