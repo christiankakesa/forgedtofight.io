@@ -57,7 +57,7 @@ Home = Syro.new(BasicDeck) do
 
       on !login(User, req[:identifier], req[:password]).nil? do
         flash_success _('You successfully logged in')
-        remember(authenticated(User)) if req[:remember]
+        remember(Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 3600)) if req[:remember]
         res.redirect(req[:return] || '/')
       end
 
@@ -76,7 +76,6 @@ Home = Syro.new(BasicDeck) do
         res.status = 200
         user_mock.mockable? && user_mock.delete
         logout(User)
-        session[User.class.to_s] = nil
         flash_success _('You successfully logged out')
         res.redirect '/'
       end

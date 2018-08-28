@@ -37,7 +37,7 @@ MainApp = Rack::Builder.new do
   use Shield::Middleware, '/login'
   use(Rack::Session::NoBrainer,
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
-      expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 86_400))
+      expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 3600))
   unless %w[production staging].include?(ENV['RACK_ENV'])
     use Rack::ShowExceptions
     require 'rack-mini-profiler'
