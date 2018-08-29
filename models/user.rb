@@ -16,16 +16,8 @@ class User
         default: :pending,
         in: %i[active pending]
 
-  def status_active!
-    update!(status: :active)
-  end
-
-  def status_pending!
-    update!(status: :pending)
-  end
-
   def self.[](id)
-    where(id: id).first
+    find?(id)
   end
 
   def self.fetch(identifier)
