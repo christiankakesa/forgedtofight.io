@@ -105,7 +105,7 @@ Home = Syro.new(BasicDeck) do
   on 'reset-password' do
     on :reset_token do
       user_id = signer.decode(inbox[:reset_token])
-      user = User[user_id]
+      user = user_id ? User[user_id] : nil
 
       on !user.nil? do
         get do
