@@ -95,10 +95,7 @@ msgstr ""
 msgid "Couldn't attribute a valid token, retry or contact our technical team"
 msgstr ""
 
-msgid "Couldn't create your user, retry or report the issue"
-msgstr ""
-
-msgid "Couldn't find your user account, please signup or report the issue"
+msgid "Couldn't find or create your user account, please signup or report the issue"
 msgstr ""
 
 msgid "DateFormat|%B %Y"

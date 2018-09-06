@@ -95,11 +95,8 @@ msgstr "Impossible d'envoyer les informations de réinitialisation"
 msgid "Couldn't attribute a valid token, retry or contact our technical team"
 msgstr "Impossible d'attribuer un jeton valide, réessaye ou contacte l'administrateur"
 
-msgid "Couldn't create your user, retry or report the issue"
-msgstr "Impossible de créer ton compte, réessaye ou contacte l'administrateur"
-
-msgid "Couldn't find your user account, please signup or report the issue"
-msgstr "Impossible de trouver ton compte utilisateur, souscris ou contacte l'administrateur"
+msgid "Couldn't find or create your user account, please signup or report the issue"
+msgstr "Impossible de trouver ou créer ton compte utilisateur, souscris ou contacte l'administrateur"
 
 msgid "DateFormat|%B %Y"
 msgstr "%B %Y"

@@ -221,37 +221,34 @@ Home = Syro.new(BasicDeck) do
     post do
       filter = SignupValidation.new(req.params)
       if filter.valid?
-        if User.create(filter.slice(:email, :nickname, :password))
-          signup_user = User.unscoped.where(email: filter.email).first
-          if !signup_user.nil?
-            signup_token = signer.encode(signup_user.id)
-            # TODO(fenicks): send an email with background job processor
-            email_body_text = mote('mails/signup.text.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                             nickname: signup_user.nickname)
-            email_body_html = mote('mails/signup.html.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                             nickname: signup_user.nickname)
-            Mail.deliver do
+        # unscoped is used for pending user
+        signup_user = User.unscoped.where(email: filter.email).first_or_create(filter.slice(:email, :nickname, :password))          
+        if !signup_user.nil?
+          signup_token = signer.encode(signup_user.id)
+          # TODO(fenicks): send an email with background job processor
+          email_body_text = mote('mails/signup.text.mote', signup_url: "#{base_url}/signup/#{signup_token}",
+                                                            nickname: signup_user.nickname)
+          email_body_html = mote('mails/signup.html.mote', signup_url: "#{base_url}/signup/#{signup_token}",
+                                                            nickname: signup_user.nickname)
+          Mail.deliver do
+            content_type 'text/plain; charset=UTF-8'
+            from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'
+            to signup_user.email
+            subject _('ForgedToFight.IO signup')
+
+            text_part do
               content_type 'text/plain; charset=UTF-8'
-              from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'
-              to signup_user.email
-              subject _('ForgedToFight.IO signup')
-
-              text_part do
-                content_type 'text/plain; charset=UTF-8'
-                body email_body_text
-              end
-
-              html_part do
-                content_type 'text/html; charset=UTF-8'
-                body email_body_html
-              end
+              body email_body_text
             end
-            flash_success _('Check your email box to activate your account')
-          else
-            flash_danger _("Couldn't find your user account, please signup or report the issue")
+
+            html_part do
+              content_type 'text/html; charset=UTF-8'
+              body email_body_html
+            end
           end
+          flash_success _('Check your email box to activate your account')
         else
-          flash_danger _("Couldn't create your user, retry or report the issue")
+          flash_danger _("Couldn't find or create your user account, please signup or report the issue")
         end
         render 'views/signup.mote'
       else

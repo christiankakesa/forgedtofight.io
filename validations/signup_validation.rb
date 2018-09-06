@@ -25,7 +25,7 @@ class SignupValidation < Scrivener
   protected
 
   def assert_unique(att, error = [att, :not_unique])
-    assert User.unscoped.where(att => send(att)).count.zero?, error
+    assert User.where(att => send(att)).count.zero?, error
   end
 
   def assert_password_match(att, att_confirm, error = [att, :not_password_match])
