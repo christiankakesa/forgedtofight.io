@@ -9,8 +9,8 @@
       <li class="nav-item"><a href="/mods" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Mods') }} <span class="badge badge-pill badge-info">{{ Mod.count }}</span></a></li>
       <li class="nav-item"><a href="/relics" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Relics') }} <span class="badge badge-pill badge-info">{{ Relic.count }}</span></a></li>
       <li class="divider"></li>
-      % if authenticated(User)
       <li class="nav-title">{{ s_('Sidebar|Account') }}</li>
+      % if authenticated(User)
       <li class="nav-item nav-dropdown">
         <a class="nav-link nav-dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           <i class="icon-user-follow"></i> <span class="hidden-md-down">{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Sidebar|Account settings') }}</span>
