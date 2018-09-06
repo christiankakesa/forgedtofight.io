@@ -143,7 +143,7 @@ Home = Syro.new(BasicDeck) do
 
     post do
       identifier = req[:identifier].to_s
-      password_reset_user = User.where(email: identifier).first || User.where(nickname: identifier).first
+      password_reset_user = User.where(or: [{ nickname: identifier }, { email: identifier }]).first
       password_reset_token = signer.encode(password_reset_user&.id)
 
       on !password_reset_user.nil? do
@@ -289,8 +289,8 @@ Home = Syro.new(BasicDeck) do
   get do
     @data = {
       upcoming_bot: Event.upcoming_bot.order_by(start_at: :desc).first,
-      calendar_bot: Event.calendar_bot.first,
-      upcoming_arena: Event.upcoming_arena.order_by(:start_at).first
+      calendar_bot: Event.calendar_bot.first
+      # ,upcoming_arena: Event.upcoming_arena.order_by(:start_at).first
     }
     render 'views/home.mote', data: @data
   end

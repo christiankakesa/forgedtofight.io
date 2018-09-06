@@ -9,6 +9,22 @@
       <li class="nav-item"><a href="/mods" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Mods') }} <span class="badge badge-pill badge-info">{{ Mod.count }}</span></a></li>
       <li class="nav-item"><a href="/relics" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Relics') }} <span class="badge badge-pill badge-info">{{ Relic.count }}</span></a></li>
       <li class="divider"></li>
+      % if authenticated(User)
+      <li class="nav-title">{{ s_('Sidebar|Account') }}</li>
+      <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="icon-user-follow"></i> <span class="hidden-md-down">{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Sidebar|Account settings') }}</span>
+        </a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item"><a class="nav-link" href="/accounts/settings"><i class="fa fa-wrench"></i> {{ s_('Sidebar|Account settings') }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout" data-method="delete"><i class="icon-logout"></i> {{ s_('Sidebar|Logout') }}</a></li>
+        </ul>
+      </li>
+      % else
+      <li class="nav-item"><a class="nav-link" href="/signup"><i class="icon-note"></i> {{ s_('Sidebar|Sign Up') }}</a></li>
+      <li class="nav-item"><a class="nav-link" href="/login"><i class="icon-login"></i> {{ s_('Sidebar|Log In') }}</a></li>
+      % end
+      <li class="divider"></li>
       <li class="nav-title">{{ s_('Sidebar|Info') }}</li>
       <li class="nav-item"><a href="/donate" class="nav-link"><i class="nav-icon icon-wallet" aria-hidden="true"></i> {{ s_('Sidebar|Donate') }}</a></li>
       <li class="nav-item"><a href="/about" class="nav-link"><i class="nav-icon icon-info" aria-hidden="true"></i> {{ s_('Sidebar|About') }}</a></li>

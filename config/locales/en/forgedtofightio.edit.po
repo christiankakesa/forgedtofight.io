@@ -356,6 +356,12 @@ msgstr ""
 msgid "Sidebar|About"
 msgstr ""
 
+msgid "Sidebar|Account"
+msgstr ""
+
+msgid "Sidebar|Account settings"
+msgstr ""
+
 msgid "Sidebar|Botodex"
 msgstr ""
 
@@ -374,6 +380,12 @@ msgstr ""
 msgid "Sidebar|Info"
 msgstr ""
 
+msgid "Sidebar|Log In"
+msgstr ""
+
+msgid "Sidebar|Logout"
+msgstr ""
+
 msgid "Sidebar|Mods"
 msgstr ""
 
@@ -381,6 +393,9 @@ msgid "Sidebar|Privacy"
 msgstr ""
 
 msgid "Sidebar|Relics"
+msgstr ""
+
+msgid "Sidebar|Sign Up"
 msgstr ""
 
 msgid "Sidebar|Support"

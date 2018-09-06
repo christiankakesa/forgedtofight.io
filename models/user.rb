@@ -21,6 +21,6 @@ class User
   end
 
   def self.fetch(identifier)
-    where(nickname: identifier).first || where(email: identifier).first
+    where(or: [{ nickname: identifier }, { email: identifier }]).first
   end
 end

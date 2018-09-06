@@ -2,10 +2,6 @@
 
 source 'https://rubygems.org'
 
-gem 'puma'
-gem 'rack-timeout'
-gem 'syro'
-
 gem 'fast_gettext', '~> 1.6.0'
 gem 'gettext', '~> 3.2.4'
 gem 'gettext-mote_parser'
@@ -14,10 +10,13 @@ gem 'montrose'
 gem 'mote', '~> 1.3.0'
 gem 'nobi'
 gem 'nokogiri', '~> 1.8.2'
+gem 'rack-timeout'
 gem 'rake'
 gem 'scrivener'
 gem 'shield'
+gem 'syro'
 gem 'tas'
+gem 'unicorn'
 
 # Database: RethinkDB
 gem 'nobrainer'

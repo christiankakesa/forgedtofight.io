@@ -2,8 +2,8 @@
 
 require 'fast_gettext'
 require 'rack-timeout'
-require 'syro'
 require 'securerandom'
+require 'syro'
 require_relative 'boot'
 require_relative 'lib/rack/session/nobrainer'
 
@@ -34,18 +34,20 @@ MainApp = Rack::Builder.new do
   use Rack::ContentLength
   use Rack::ContentType, 'text/html'
   use Rack::Deflater
-  use Shield::Middleware, '/login'
   use(Rack::Session::NoBrainer,
       secret: ENV['APP_COOKIE_SECRET'] || SecureRandom.hex(64),
       expire_after: Integer(ENV['APP_SESSION_EXPIRE_AFTER'] || 3600),
       secure: 'production'.eql?(ENV['RACK_ENV']))
+  use Rack::Static, urls: %w[/robots.txt /favicon.ico], root: 'public'
+  use Rack::Timeout
+  use Shield::Middleware, '/login'
+
   unless %w[production staging].include?(ENV['RACK_ENV'])
-    use Rack::ShowExceptions
     require 'rack-mini-profiler'
     require 'memory_profiler'
     use Rack::MiniProfiler
+    use Rack::ShowExceptions
   end
-  use Rack::Static, urls: %w[/robots.txt /favicon.ico], root: 'public'
-  use Rack::Timeout
+
   run(WebApp)
 end

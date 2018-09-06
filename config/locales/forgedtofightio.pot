@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-25 02:33+0200\n"
-"PO-Revision-Date: 2018-08-25 02:33+0200\n"
+"POT-Creation-Date: 2018-09-06 07:21+0200\n"
+"PO-Revision-Date: 2018-09-06 07:21+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -357,6 +357,12 @@ msgstr ""
 msgid "Sidebar|About"
 msgstr ""
 
+msgid "Sidebar|Account"
+msgstr ""
+
+msgid "Sidebar|Account settings"
+msgstr ""
+
 msgid "Sidebar|Botodex"
 msgstr ""
 
@@ -375,6 +381,12 @@ msgstr ""
 msgid "Sidebar|Info"
 msgstr ""
 
+msgid "Sidebar|Log In"
+msgstr ""
+
+msgid "Sidebar|Logout"
+msgstr ""
+
 msgid "Sidebar|Mods"
 msgstr ""
 
@@ -382,6 +394,9 @@ msgid "Sidebar|Privacy"
 msgstr ""
 
 msgid "Sidebar|Relics"
+msgstr ""
+
+msgid "Sidebar|Sign Up"
 msgstr ""
 
 msgid "Sidebar|Support"

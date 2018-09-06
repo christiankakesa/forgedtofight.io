@@ -18,6 +18,7 @@ module Rack
       index :sid
       index :expires_at
 
+      default_scope { where(:expires_at.gt(RethinkDB::RQL.new.now)) }
       # scope for deleting expired sessions
       scope(:expired, proc { where(:expires_at.lt(RethinkDB::RQL.new.now)) })
     end
@@ -36,28 +37,22 @@ module Rack
       end
 
       def find_session(_env, sid)
-        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
-          sid ||= generate_sid
-          session_data = _get(sid)&.data
-          unless session_data
-            session_data = {}
-            _set(sid, session_data)
-          end
-          [sid, session_data]
+        sid ||= generate_sid
+        session_data = _get(sid)&.data
+        unless session_data
+          session_data = {}
+          _set(sid, session_data)
         end
+        [sid, session_data]
       end
 
       def write_session(_env, sid, session_data, _options)
-        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
-          _set(sid, session_data) ? sid : false
-        end
+        _set(sid, session_data) ? sid : false
       end
 
       def delete_session(_env, sid, options)
-        ::NoBrainer::Lock.new("rack::session::nobrainer").synchronize do
-          _get(sid)&.destroy
-          generate_sid unless options[:drop]
-        end
+        _get(sid)&.destroy if sid
+        generate_sid unless options[:drop]
       end
 
       private
@@ -71,6 +66,7 @@ module Rack
       end
 
       def _get(sid)
+        return nil unless sid
         Rack::Session::NoBrainerSessionStore.where(sid: sid).first
       end
     end

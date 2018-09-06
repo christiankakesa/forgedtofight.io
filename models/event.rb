@@ -30,14 +30,16 @@ class Event
 
   def self.next
     # checking start_at is for events without end_at field.
-    where(or: [{ :end_at.gte => RethinkDB::RQL.new.now },
-               { :start_at.gte => RethinkDB::RQL.new.now }])
+    current_time = RethinkDB::RQL.new.now
+    where(or: [{ :end_at.gte => current_time },
+               { :start_at.gte => current_time }])
   end
 
   def self.upcoming_arena
+    current_time = RethinkDB::RQL.new.now
     where(type: :arena)
-      .where(:end_at.gte => RethinkDB::RQL.new.now)
-      .where(:start_at.lte => RethinkDB::RQL.new.now)
+      .where(:end_at.gte => current_time)
+      .where(:start_at.lte => current_time)
   end
 
   def self.upcoming_bot
