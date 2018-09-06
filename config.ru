@@ -8,10 +8,10 @@ Thread.current[:_ftf_sprockets_env] ||= {}
     # Ensure that resources are computed once! It takes time!
     Thread.current[:_ftf_sprockets_env][resource] ||= Sprockets::Environment.new.tap do |env|
       env.append_path "assets/#{resource}"
-      if 'production'.eql?(ENV['RACK_ENV'])
-        env.js_compressor  = :uglify
-        env.css_compressor = :scss
-      end
+      # if 'production'.eql?(ENV['RACK_ENV'])
+      #   env.js_compressor  = :uglify
+      #   env.css_compressor = :scss
+      # end
     end
     run Thread.current[:_ftf_sprockets_env][resource]
   end
