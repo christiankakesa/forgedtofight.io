@@ -4,6 +4,21 @@ require 'mote'
 require 'shield'
 require 'tas'
 
+# Fix: User always logged in.
+#      Shield memoization doesn't clear @_shield.
+module Shield
+  module Helpers
+    def authenticated(model)
+      session[model.to_s] && model[session[model.to_s]]
+    end
+
+    def logout(model)
+      session.delete(model.to_s)
+      session.delete(:remember_for)
+    end
+  end
+end
+
 class BasicDeck < Syro::Deck
   include Ftf::Helpers
   include Mote::Helpers

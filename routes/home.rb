@@ -76,7 +76,6 @@ Home = Syro.new(BasicDeck) do
         res.status = 200
         user_mock.mockable? && user_mock.delete
         logout(User)
-        session[User.to_s] = nil
         flash_success _('You successfully logged out')
         res.redirect '/'
       end
@@ -223,14 +222,14 @@ Home = Syro.new(BasicDeck) do
       filter = SignupValidation.new(req.params)
       if filter.valid?
         # unscoped is used for pending user
-        signup_user = User.unscoped.where(email: filter.email).first_or_create(filter.slice(:email, :nickname, :password))          
+        signup_user = User.unscoped.where(email: filter.email).first_or_create(filter.slice(:email, :nickname, :password))
         if !signup_user.nil?
           signup_token = signer.encode(signup_user.id)
           # TODO(fenicks): send an email with background job processor
           email_body_text = mote('mails/signup.text.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                            nickname: signup_user.nickname)
+                                                           nickname: signup_user.nickname)
           email_body_html = mote('mails/signup.html.mote', signup_url: "#{base_url}/signup/#{signup_token}",
-                                                            nickname: signup_user.nickname)
+                                                           nickname: signup_user.nickname)
           Mail.deliver do
             content_type 'text/plain; charset=UTF-8'
             from ENV['APP_AWS_SES_FROM_NOREPLY'] || 'noreply@forgedtofight.io'

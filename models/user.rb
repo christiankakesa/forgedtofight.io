@@ -17,10 +17,12 @@ class User
         in: %i[active pending]
 
   def self.[](id)
+    return nil unless id
     find?(id)
   end
 
   def self.fetch(identifier)
+    return nil unless identifier
     where(or: [{ nickname: identifier }, { email: identifier }]).first
   end
 end
