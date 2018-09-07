@@ -100,6 +100,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 563, stars_3: 1305, stars_4: 3531 }
   },
   {
+    name: 'Cyclonus',
+    description: 'Resurrected by the same dark energies as his master Galvatron, Cyclonus leads a mighty armada provided by Unicron himself. Loyal, patient, and skilled, Cyclonus is ultimately the counterbalance to Galvatron’s chaotic rule.',
+    icon_url: '/images/bots/cyclonus.jpeg',
+    image_url: '/images/bots/cyclonus_600x860.jpeg',
+    type: :tactician,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 1907, stars_3: 4682, stars_4: 12_169 },
+    attack: { stars_1: nil, stars_2: 149, stars_3: 315, stars_4: 818 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 544, stars_3: 1294, stars_4: 3520 }
+  },
+  {
     name: 'Dinobot',
     description: 'Honor and Glory are the only two things worth dying for, a belief truly befitting this fierce Predacon turned Maximal warrior....',
     icon_url: '/images/bots/dinobot.jpeg',
