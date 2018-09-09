@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-if 'test'.eql?(ENV['RACK_ENV'])
+if %w[test production].include?(ENV['RACK_ENV'])
   require 'rack-timeout'
   Rack::Timeout::Logger.disable
 end
