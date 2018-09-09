@@ -18,6 +18,7 @@ WebApp = Syro.new(BasicDeck) do
   end
   @accepted_language ||= lambda do
     next 'en' unless req.env.include?('HTTP_ACCEPT_LANGUAGE')
+
     current_language = req.env['HTTP_ACCEPT_LANGUAGE'][0, 2]
     @available_locales.include?(current_language) ? current_language : 'en'
   end

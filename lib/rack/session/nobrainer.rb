@@ -67,6 +67,7 @@ module Rack
 
       def _get(sid)
         return nil unless sid
+
         Rack::Session::NoBrainerSessionStore.where(sid: sid).first
       end
     end
