@@ -6,7 +6,7 @@
       <strong>{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Sidebar|Account settings') }}</strong>
     </div>
     <div class="text-muted">
-      <small>{{ s_('Cite|Autobots, roll out') }}</small>
+      <small>{{ s_('Cite|Autobot, roll out') }}</small>
     </div>
     <div class="btn-group" role="group">
       <a class="nav-link" href="/accounts/settings" title="{{ s_('Sidebar|Account settings') }}"><i class="icon-settings"></i></a>

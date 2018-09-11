@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 08:13+0200\n"
-"PO-Revision-Date: 2018-09-06 08:13+0200\n"
+"POT-Creation-Date: 2018-09-12 01:52+0200\n"
+"PO-Revision-Date: 2018-09-12 01:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -60,6 +60,9 @@ msgstr ""
 msgid "Attack"
 msgstr ""
 
+msgid "Avatar"
+msgstr ""
+
 msgid "Bot"
 msgstr ""
 
@@ -79,6 +82,9 @@ msgid "Check your email box to activate your account"
 msgstr ""
 
 msgid "Check your email to reset your password"
+msgstr ""
+
+msgid "Cite|Autobot, roll out"
 msgstr ""
 
 msgid "Close"

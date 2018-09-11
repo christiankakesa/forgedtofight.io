@@ -59,6 +59,9 @@ msgstr ""
 msgid "Attack"
 msgstr ""
 
+msgid "Avatar"
+msgstr ""
+
 msgid "Bot"
 msgstr ""
 
@@ -78,6 +81,9 @@ msgid "Check your email box to activate your account"
 msgstr ""
 
 msgid "Check your email to reset your password"
+msgstr ""
+
+msgid "Cite|Autobot, roll out"
 msgstr ""
 
 msgid "Close"

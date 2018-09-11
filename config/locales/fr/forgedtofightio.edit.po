@@ -59,6 +59,9 @@ msgstr "Tous nos services fonctionnent sur la plate-forme <a href=\"http://mesos
 msgid "Attack"
 msgstr "Attaque"
 
+msgid "Avatar"
+msgstr "Avatar"
+
 msgid "Bot"
 msgstr "Bot"
 
@@ -79,6 +82,9 @@ msgstr "Vérifie tes e-mails pour activer ton compte"
 
 msgid "Check your email to reset your password"
 msgstr "Vérifie tes e-mails pour réinitialiser ton mot de passe"
+
+msgid "Cite|Autobot, roll out"
+msgstr "Autobot, transformation"
 
 msgid "Close"
 msgstr "Fermer"
