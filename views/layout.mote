@@ -14,6 +14,7 @@
   % localized_fullpaths.each_key do |locale|
   {{ '<link rel="alternate" hreflang="' + locale.to_s + '" href="' + localized_fullpaths[locale] + '">' }}
   % end
+  <link rel="dns-prefetch" href="//gravatar.com">
   <style>.async-hide { opacity: 0 !important} </style>
   <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
     h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
