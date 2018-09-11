@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'no_brainer/lock'
 require 'rack/session/abstract/id'
 
 module Rack
@@ -24,12 +23,6 @@ module Rack
     end
 
     class NoBrainer < Abstract::Persisted
-      def initialize(app, options = {})
-        super(app, options)
-        # `expires` default to 24 hours if not set
-        @default_options[:expire_after] ||= 24 * 60 * 60
-      end
-
       def generate_sid
         loop do
           sid = super
@@ -61,7 +54,7 @@ module Rack
       def _set(sid, session_data)
         model = _get(sid) || Rack::Session::NoBrainerSessionStore.new(
           sid: sid,
-          expires_at: RethinkDB::RQL.new.now + @default_options[:expire_after]
+          expires_at: RethinkDB::RQL.new.now + @default_options.fetch(:expire_after, 24 * 60 * 60)
         )
         model.update(data: session_data)
       end
