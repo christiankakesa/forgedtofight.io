@@ -9,8 +9,8 @@
       <small>{{ s_('Cite|Autobot, roll out') }}</small>
     </div>
     <div class="btn-group" role="group">
-      <a class="nav-link" href="/accounts/settings" title="{{ s_('Sidebar|Account settings') }}"><i class="icon-settings"></i></a>
       <a class="nav-link" href="/logout" data-method="delete" title="{{ s_('Sidebar|Logout') }}"><i class="icon-logout"></i></a>
+      <a class="nav-link" href="/accounts/settings" title="{{ s_('Sidebar|Account settings') }}"><i class="icon-settings"></i></a>
     </div>
     % else
     <div class="btn-group" role="group">
@@ -27,8 +27,6 @@
       <li class="nav-item"><a href="/botodex" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Botodex') }}<span class="badge badge-pill badge-info">{{ Bot.count }}</span></a></li>
       <li class="nav-item"><a href="/mods" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Mods') }} <span class="badge badge-pill badge-info">{{ Mod.count }}</span></a></li>
       <li class="nav-item"><a href="/relics" class="nav-link"><i class="nav-icon icon-layers" aria-hidden="true"></i>  {{ s_('Sidebar|Relics') }} <span class="badge badge-pill badge-info">{{ Relic.count }}</span></a></li>
-      <li class="divider"></li>
-      <li class="nav-title">{{ s_('Sidebar|Account') }}</li>
       <li class="divider"></li>
       <li class="nav-title">{{ s_('Sidebar|Info') }}</li>
       <li class="nav-item"><a href="/donate" class="nav-link"><i class="nav-icon icon-wallet" aria-hidden="true"></i> {{ s_('Sidebar|Donate') }}</a></li>
