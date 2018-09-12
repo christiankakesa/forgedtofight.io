@@ -52,17 +52,25 @@ module Rack
       private
 
       def _set(sid, session_data)
+        puts "[_set(sid, session_data)][sid]: #{sid}"
+        puts "[_set(sid, session_data)][session_data]: #{session_data.inspect}"
         model = _get(sid) || Rack::Session::NoBrainerSessionStore.new(
           sid: sid,
           expires_at: RethinkDB::RQL.new.now + @default_options.fetch(:expire_after, 24 * 60 * 60)
         )
-        model.update(data: session_data)
+        puts "[_set(sid, session_data)][model]: #{model.inspect}"
+        res = model.update(data: session_data)
+        puts "[_set(sid, session_data)][model.update(data: session_data)]: #{model.inspect} - [res]: #{res}"
+        res
       end
 
       def _get(sid)
+        puts "[_get(sid)]: #{sid}"
         return nil unless sid
 
-        Rack::Session::NoBrainerSessionStore.where(sid: sid).first
+        s = Rack::Session::NoBrainerSessionStore.where(sid: sid).first
+        puts "[_get(sid)][Rack::Session::NoBrainerSessionStore.where(sid: sid).first]: #{s.inspect}"
+        s
       end
     end
   end
