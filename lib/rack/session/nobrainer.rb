@@ -17,7 +17,6 @@ module Rack
       index :sid
       index :expires_at
 
-      default_scope { where(:expires_at.gt(RethinkDB::RQL.new.now)) }
       # scope for deleting expired sessions
       scope(:expired, proc { where(:expires_at.lt(RethinkDB::RQL.new.now)) })
     end
