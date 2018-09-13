@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 01:52+0200\n"
-"PO-Revision-Date: 2018-09-12 01:52+0200\n"
+"POT-Creation-Date: 2018-09-14 01:04+0200\n"
+"PO-Revision-Date: 2018-09-14 01:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -40,6 +40,9 @@ msgid "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgstr ""
 
 msgid "About"
+msgstr ""
+
+msgid "Account|Delete"
 msgstr ""
 
 msgid "Activate your account"
@@ -78,6 +81,9 @@ msgstr ""
 msgid "Calendar's bot"
 msgstr ""
 
+msgid "Change your password"
+msgstr ""
+
 msgid "Check your email box to activate your account"
 msgstr ""
 
@@ -88,9 +94,6 @@ msgid "Cite|Autobot, roll out"
 msgstr ""
 
 msgid "Close"
-msgstr ""
-
-msgid "Coming soon..."
 msgstr ""
 
 msgid "Contribute to the developement"
@@ -249,6 +252,9 @@ msgstr ""
 msgid "Menu|Mods"
 msgstr ""
 
+msgid "Menu|My tools"
+msgstr ""
+
 msgid "Menu|Relics"
 msgstr ""
 
@@ -312,9 +318,6 @@ msgstr ""
 msgid "Password update"
 msgstr ""
 
-msgid "Password|Delete"
-msgstr ""
-
 msgid "Password|Reset"
 msgstr ""
 
@@ -360,9 +363,6 @@ msgstr ""
 msgid "Sidebar|About"
 msgstr ""
 
-msgid "Sidebar|Account"
-msgstr ""
-
 msgid "Sidebar|Account settings"
 msgstr ""
 
@@ -391,6 +391,9 @@ msgid "Sidebar|Logout"
 msgstr ""
 
 msgid "Sidebar|Mods"
+msgstr ""
+
+msgid "Sidebar|My tools"
 msgstr ""
 
 msgid "Sidebar|Privacy"

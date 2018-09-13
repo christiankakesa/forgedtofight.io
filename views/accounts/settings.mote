@@ -1,13 +1,31 @@
 <h1>{{ _('My account') }}</h1>
 
-<h2>{{ _('Settings') }}</h2>
+<div class="row">
+    <div class="col">
+        <div class="card card-accent-success">
+            <div class="card-header">
+                {{ _('Settings') }}
+            </div>
+            <div class="card-body">
+                <div class="btn-group m-2" role="group">
+                    <a href="/reset-password" class="btn btn-pill btn-primary active" role="button" aria-pressed="true"><i class="fa fa-user-secret"></i> {{ _('Change your password') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<h4>{{ _('Coming soon...') }}</h4>
-
-<hr>
-
-<h2>{{ _('Advanced settings') }}</h2>
-
-<div class="btn-group" role="group">
-    <a href="/accounts/delete" class="btn btn-pill btn-danger active" role="button" aria-pressed="true"><i class="fa fa-trash"></i> {{ _('Remove your account') }}</a>
+<div class="row">
+    <div class="col">
+        <div class="card card-accent-danger">
+            <div class="card-header">
+                {{ _('Advanced settings') }}
+            </div>
+            <div class="card-body">
+                <div class="btn-group m-2" role="group">
+                    <a href="/accounts/delete" class="btn btn-pill btn-danger active" role="button" aria-pressed="true"><i class="fa fa-trash"></i> {{ _('Remove your account') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

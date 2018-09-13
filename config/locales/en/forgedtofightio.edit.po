@@ -41,6 +41,9 @@ msgstr ""
 msgid "About"
 msgstr ""
 
+msgid "Account|Delete"
+msgstr ""
+
 msgid "Activate your account"
 msgstr ""
 
@@ -77,6 +80,9 @@ msgstr ""
 msgid "Calendar's bot"
 msgstr ""
 
+msgid "Change your password"
+msgstr ""
+
 msgid "Check your email box to activate your account"
 msgstr ""
 
@@ -87,9 +93,6 @@ msgid "Cite|Autobot, roll out"
 msgstr ""
 
 msgid "Close"
-msgstr ""
-
-msgid "Coming soon..."
 msgstr ""
 
 msgid "Contribute to the developement"
@@ -248,6 +251,9 @@ msgstr ""
 msgid "Menu|Mods"
 msgstr ""
 
+msgid "Menu|My tools"
+msgstr ""
+
 msgid "Menu|Relics"
 msgstr ""
 
@@ -311,9 +317,6 @@ msgstr ""
 msgid "Password update"
 msgstr ""
 
-msgid "Password|Delete"
-msgstr ""
-
 msgid "Password|Reset"
 msgstr ""
 
@@ -359,9 +362,6 @@ msgstr ""
 msgid "Sidebar|About"
 msgstr ""
 
-msgid "Sidebar|Account"
-msgstr ""
-
 msgid "Sidebar|Account settings"
 msgstr ""
 
@@ -390,6 +390,9 @@ msgid "Sidebar|Logout"
 msgstr ""
 
 msgid "Sidebar|Mods"
+msgstr ""
+
+msgid "Sidebar|My tools"
 msgstr ""
 
 msgid "Sidebar|Privacy"

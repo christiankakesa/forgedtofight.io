@@ -41,6 +41,9 @@ msgstr "<a href=\"http://forgedtofight.io\">ForgedToFight.IO</a> © %{year}"
 msgid "About"
 msgstr "À propos"
 
+msgid "Account|Delete"
+msgstr "Supprimer"
+
 msgid "Activate your account"
 msgstr "Active ton compte"
 
@@ -77,6 +80,9 @@ msgstr "Bagarreurs"
 msgid "Calendar's bot"
 msgstr "Bot du calendrier"
 
+msgid "Change your password"
+msgstr "Change ton mot de passe"
+
 msgid "Check your email box to activate your account"
 msgstr "Vérifie tes e-mails pour activer ton compte"
 
@@ -88,9 +94,6 @@ msgstr "Autobot, transformation"
 
 msgid "Close"
 msgstr "Fermer"
-
-msgid "Coming soon..."
-msgstr "Bientôt disponible..."
 
 msgid "Contribute to the developement"
 msgstr "Contribuer au développement"
@@ -248,6 +251,9 @@ msgstr "Se déconnecter"
 msgid "Menu|Mods"
 msgstr "Mods"
 
+msgid "Menu|My tools"
+msgstr "Mes outils"
+
 msgid "Menu|Relics"
 msgstr "Artéfacts"
 
@@ -311,9 +317,6 @@ msgstr "Réinitialisation du mot de passe"
 msgid "Password update"
 msgstr "Mise à jour du mot de passe"
 
-msgid "Password|Delete"
-msgstr "Supprimer"
-
 msgid "Password|Reset"
 msgstr "Réinitialiser"
 
@@ -359,9 +362,6 @@ msgstr "Paramètres"
 msgid "Sidebar|About"
 msgstr "À propos"
 
-msgid "Sidebar|Account"
-msgstr "Mon compte"
-
 msgid "Sidebar|Account settings"
 msgstr "Paramètres"
 
@@ -391,6 +391,9 @@ msgstr "Se déconnecter"
 
 msgid "Sidebar|Mods"
 msgstr "Mods"
+
+msgid "Sidebar|My tools"
+msgstr "Outils"
 
 msgid "Sidebar|Privacy"
 msgstr "Confidentialités"
