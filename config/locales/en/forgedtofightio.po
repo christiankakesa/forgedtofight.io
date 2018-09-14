@@ -95,6 +95,9 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+msgid "Coming soon..."
+msgstr ""
+
 msgid "Contribute to the developement"
 msgstr ""
 
@@ -267,6 +270,9 @@ msgid "More features will be released"
 msgstr ""
 
 msgid "My account"
+msgstr ""
+
+msgid "My tools"
 msgstr ""
 
 msgid "Nickname (in game)"

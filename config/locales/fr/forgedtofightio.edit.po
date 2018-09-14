@@ -95,6 +95,9 @@ msgstr "Autobot, transformation"
 msgid "Close"
 msgstr "Fermer"
 
+msgid "Coming soon..."
+msgstr "Bientôt disponible..."
+
 msgid "Contribute to the developement"
 msgstr "Contribuer au développement"
 
@@ -268,6 +271,9 @@ msgstr "Plus de fonctionalités pouront être réalisées"
 
 msgid "My account"
 msgstr "Mon compte"
+
+msgid "My tools"
+msgstr "Mes outils"
 
 msgid "Nickname (in game)"
 msgstr "Pseudo (dans le jeu)"
