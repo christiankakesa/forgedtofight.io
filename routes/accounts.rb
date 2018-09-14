@@ -8,11 +8,6 @@ Accounts = Syro.new(BasicDeck) do
       halt(res.finish)
     end
 
-    on 'settings' do
-      # (get || post || put || patch)
-      get { render 'views/accounts/settings.mote' }
-    end
-
     on 'delete' do
       get { render 'views/accounts/delete.mote' }
 
@@ -27,6 +22,16 @@ Accounts = Syro.new(BasicDeck) do
           render 'views/accounts/delete.mote', params: filter.slice(:identifier) || {}
         end
       end
+    end
+
+    on 'settings' do
+      # (get || post || put || patch)
+      get { render 'views/accounts/settings.mote' }
+    end
+
+    on 'tools' do
+      # (get || post || put || patch)
+      get { render 'views/accounts/tools.mote' }
     end
 
     default do

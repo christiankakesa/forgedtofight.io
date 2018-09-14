@@ -19,7 +19,8 @@
         <div class="dropdown-header text-center">
           <strong>{{ _('My account') }}</strong>
         </div>
-        <a class="dropdown-item" href="/accounts/settings"><i class="fa fa-wrench"></i> {{ s_('Menu|Account settings') }}</a>
+        <a class="dropdown-item" href="/accounts/tools"><i class="icon-list"></i> {{ s_('Menu|My tools') }}</a>
+        <a class="dropdown-item" href="/accounts/settings"><i class="icon-settings"></i> {{ s_('Menu|Account settings') }}</a>
         <a class="dropdown-item" href="/logout" data-method="delete"><i class="icon-logout"></i> {{ s_('Menu|Logout') }}</a>
       </div>
     </li>

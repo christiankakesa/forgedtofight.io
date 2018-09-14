@@ -1,6 +1,6 @@
 <div class="sidebar">
   <div class="sidebar-header text-center pt-1">
-    <img src="{{ Ftf::Helpers::Gravatar.get(authenticated(User)&.email) }}" class="img-avatar" alt="{{ _('Avatar') }}">
+    <img src="{{ Ftf::Helpers::Gravatar.get(authenticated(User)&.email, authenticated(User) ? 128 : 32) }}" class="img-avatar" alt="{{ _('Avatar') }}">
     % if authenticated(User)
     <div>
       <strong>{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Sidebar|Account settings') }}</strong>
@@ -11,6 +11,7 @@
     <div class="btn-group" role="group">
       <a class="nav-link" href="/logout" data-method="delete" title="{{ s_('Sidebar|Logout') }}"><i class="icon-logout"></i></a>
       <a class="nav-link" href="/accounts/settings" title="{{ s_('Sidebar|Account settings') }}"><i class="icon-settings"></i></a>
+      <a class="nav-link" href="/accounts/tools" title="{{ s_('Sidebar|My tools') }}"><i class="icon-list"></i></a>
     </div>
     % else
     <div class="btn-group" role="group">
