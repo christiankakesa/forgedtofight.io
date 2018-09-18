@@ -1,3 +1,28 @@
 <h1>{{ _('My tools') }}</h1>
 
-<h4>{{ _('Coming soon...') }}</h4>
+<div class="card">
+    <div class="card-body">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#roster" role="tab" aria-controls="roster">
+                <i class="icon-layers"></i> {{ _('Roster') }}
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#synergy" role="tab" aria-controls="synergy">
+                <i class="icon-layers"></i> {{ _('Synergy') }}
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#modules" role="tab" aria-controls="modules">
+                <i class="icon-layers"></i> {{ _('Recommanded modules') }}
+            </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="roster" role="tabpanel">Roster...</div>
+            <div class="tab-pane" id="synergy" role="tabpanel">Synergy...</div>
+            <div class="tab-pane" id="modules" role="tabpanel">Modules...</div>
+        </div>
+    </div>
+</div>
