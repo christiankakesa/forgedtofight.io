@@ -1,6 +1,9 @@
 <div class="sidebar">
   <div class="sidebar-header text-center pt-1">
-    <img src="{{ Ftf::Helpers::Gravatar.get(authenticated(User)&.email, authenticated(User) ? 128 : 32) }}" class="img-avatar" alt="{{ _('Avatar') }}">
+    <div class="avatar{{ authenticated(User) ? ' avatar-lg' : '' }}">
+      <img src="{{ Ftf::Helpers::Gravatar.get(authenticated(User)&.email, authenticated(User) ? 72 : 36) }}" class="img-avatar" alt="{{ _('Avatar') }}">
+      <span class="avatar-status {{ authenticated(User) ? 'badge-success' : 'badge-secondary' }}"></span>
+    </div>
     % if authenticated(User)
     <div>
       <strong>{{ authenticated(User)&.nickname || authenticated(User)&.email || s_('Sidebar|Account settings') }}</strong>
