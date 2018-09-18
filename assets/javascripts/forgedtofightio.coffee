@@ -58,7 +58,7 @@ $ ->
       start_date = Date.parse($(@).data('table-event-status'))
       current_time = $.now()
       if start_date < current_time
-        $(@).addClass('table-info')
+        $(@).addClass('table-success')
         $(@).find('th > i').attr('class', 'icon-control-play')
       else if start_date < current_time + (24 * 60 * 60 * 1000)
         $(@).addClass('table-warning')
