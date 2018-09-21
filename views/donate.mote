@@ -9,7 +9,7 @@
 
 <div class="row justify-content-md-center">
   <div class="col-sm-4 ">
-    <div class="callout callout-primary">
+    <div class="callout callout-success">
       <strong class="text-muted">Bitcoin</strong><br>
       <a href="bitcoin:1672oBew269jKA6oxKxLXirvC2yBroU678" target="_blank"><strong class="h6">1672oBew269jKA6oxKxLXirvC2yBroU678</strong></a><br>
       <a href="bitcoin:1672oBew269jKA6oxKxLXirvC2yBroU678" target="_blank"><img class="img-thumbnail" alt="bitcoin:1672oBew269jKA6oxKxLXirvC2yBroU678" src="/images/crypto/crypto-address_btc-web_1672oBew269jKA6oxKxLXirvC2yBroU678.png"></a>
@@ -20,6 +20,13 @@
       <strong class="text-muted">Ethereum</strong><br>
       <a href="ethereum:0x9Bc300E7A784005DA139491531FF72B5956a1903" target="_blank"><strong class="h6">0x9Bc300E7A784005DA139491531FF72B5956a1903</strong></a><br>
       <a href="ethereum:0x9Bc300E7A784005DA139491531FF72B5956a1903" target="_blank"><img class="img-thumbnail" alt="ethereum:0x9Bc300E7A784005DA139491531FF72B5956a1903" src="/images/crypto/crypto-address_eth-web_0x9Bc300E7A784005DA139491531FF72B5956a1903.png"></a>
+    </div>
+  </div><!--/.col-->
+  <div class="col-sm-4 ">
+    <div class="callout callout-success">
+      <strong class="text-muted">Skycoin</strong><br>
+      <a href="skycoin:2G7k4KXoagg8DTFLdRDuFcCPR3RBQj8ykzt" target="_blank"><strong class="h6">2G7k4KXoagg8DTFLdRDuFcCPR3RBQj8ykzt</strong></a><br>
+      <a href="skycoin:2G7k4KXoagg8DTFLdRDuFcCPR3RBQj8ykzt" target="_blank"><img class="img-thumbnail" alt="skycoin:2G7k4KXoagg8DTFLdRDuFcCPR3RBQj8ykzt" src="/images/crypto/crypto-address_sky-web_2G7k4KXoagg8DTFLdRDuFcCPR3RBQj8ykzt.png"></a>
     </div>
   </div><!--/.col-->
 </div><!--/.row-->
