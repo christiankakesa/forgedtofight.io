@@ -6,6 +6,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-10-04 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Megatronus', type: :demolitions).first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-09-06 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Cyclonus', type: :tactician).first.id

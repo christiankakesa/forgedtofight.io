@@ -256,6 +256,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 537, stars_3: 1270, stars_4: 3485 }
   },
   {
+    name: 'Megatronus',
+    description: 'One of the Thirteen Primes created by Primus himself to defeat Unicron, Megatronus is a being of unparalleled strength...',
+    icon_url: '/images/bots/megatronus.jpeg',
+    image_url: '/images/bots/megatronus_600x860.jpeg',
+    type: :demolitions,
+    faction: :decepticons,
+    health: { stars_1: nil, stars_2: 2012, stars_3: 4940, stars_4: 12_839 },
+    attack: { stars_1: nil, stars_2: 162, stars_3: 341, stars_4: 884 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: 609, stars_3: 1443, stars_4: 3948 }
+  },
+  {
     name: 'Mirage',
     description: 'Now you see him, now you don\'t. Mirage is one high-class Autobot with some slick espionage skills...',
     icon_url: '/images/bots/mirage.jpeg',
