@@ -61,19 +61,23 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ##### Launch RethinkDB administration tool
 
-1. With *docker*
+ 1. With *docker*
 
 __replace *rethinkdb* by your docker instance name__
 
     xdg-open "http://$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' rethinkdb):8080"
 
-2. With a local RethinkDB instance
+ 2. With a local RethinkDB instance
 
-    xdg-open "http:://localhost:8080"
+    xdg-open "http://localhost:8080"
 
-3. With a remote instance of RethinkDB
+ 3. With a remote instance of RethinkDB
 
-Set `APP_RETHINKDB_URL` environment variable like this example : 
+    xdg-open "https://my.domain.com:8080"
+
+##### Set `APP_RETHINKDB_URL` environment variable
+
+Example:
 
     export APP_RETHINKDB_URL=rethinkdb://my.domain.com:28015/forgedtofightio_development
 
