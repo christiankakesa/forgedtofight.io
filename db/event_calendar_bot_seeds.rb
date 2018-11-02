@@ -6,6 +6,12 @@
 [
   {
     type: :calendar_bot,
+    start_at: Time.parse('2018-10-31 17:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Tantrum', type: :brawler).first.id
+  },
+  {
+    type: :calendar_bot,
     start_at: Time.parse('2018-09-30 17:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Jazz', type: :scout).first.id
