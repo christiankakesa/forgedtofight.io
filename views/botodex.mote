@@ -25,42 +25,35 @@
       <table class="table table-sm table-responsive table-hover">
         <thead>
           <tr>
-            <th colspan="2" class="text-primary text-uppercase font-weight-bold text-right"><small>★</small></th>
-            <th class="text-primary text-uppercase text-right"><small>★★</small></th>
-            <th class="text-primary text-uppercase text-right"><small>★★★</small></th>
-            <th class="text-primary text-uppercase text-right">★★★★</th>
+            <th colspan="2" class="text-primary text-uppercase text-right"><small>★★★</small></th>
+            <th class="text-primary text-uppercase text-right"><small>★★★★</small></th>
+            <th class="text-primary text-uppercase text-right">★★★★★</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">{{ s_('Gaming|Health') }}</th>
-            <td class="text-right">{{ bot.health[:stars_1] || '-' }}</td>
-            <td class="text-right">{{ bot.health[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.health[:stars_3] || '-' }}</td>
+            <td class="text-right">{{ bot.health[:stars_4] || '-' }}</td>
             <td class="text-right font-weight-bold">{{ bot.health[:stars_4] || '-' }}</td>
           </tr>
           <tr>
             <th scope="row">{{ _('Attack') }}</th>
-            <td class="text-right">{{ bot.attack[:stars_1] || '-' }}</td>
-            <td class="text-right">{{ bot.attack[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.attack[:stars_3] || '-' }}</td>
-            <td class="text-right font-weight-bold">{{ bot.attack[:stars_4] || '-' }}</td>
+            <td class="text-right">{{ bot.attack[:stars_4] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.attack[:stars_5] || '-' }}</td>
           </tr>
           <tr>
             <th scope="row">{{ _('Max rating') }}<br><abbr title="{{ _('(Signature ability 0)') }}">{{ _('(Sig 0)') }}</abbr></th>
-            <td class="text-right">{{ bot.max_rating_sig0[:stars_1] || '-' }}</td>
-            <td class="text-right">{{ bot.max_rating_sig0[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.max_rating_sig0[:stars_3] || '-' }}</td>
-            <td class="text-right font-weight-bold">{{ bot.max_rating_sig0[:stars_4] || '-' }}</td>
+            <td class="text-right">{{ bot.max_rating_sig0[:stars_4] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.max_rating_sig0[:stars_5] || '-' }}</td>
           </tr>
           <tr>
             <th scope="row">{{ _('Max rating') }}<br><abbr title="{{ _('(Signature ability 100)') }}">{{ _('(Sig 100)') }}</abbr></th>
-            <td class="text-right">{{ bot.max_rating_sig100[:stars_1] || '-' }}</td>
-            <td class="text-right">{{ bot.max_rating_sig100[:stars_2] || '-' }}</td>
             <td class="text-right">{{ bot.max_rating_sig100[:stars_3] || '-' }}</td>
-            <td class="text-right font-weight-bold">
-              {{ bot.max_rating_sig100[:stars_4] || '-' }}
-            </td>
+            <td class="text-right">{{ bot.max_rating_sig100[:stars_4] || '-' }}</td>
+            <td class="text-right font-weight-bold">{{ bot.max_rating_sig100[:stars_5] || '-' }}</td>
           </tr>
         </tbody>
       </table>
