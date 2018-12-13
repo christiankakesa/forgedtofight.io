@@ -220,6 +220,18 @@
     max_rating_sig100: { stars_1: nil, stars_2: 561, stars_3: 1304, stars_4: 3519 }
   },
   {
+    name: 'Jetfire',
+    description: '‎A scientist first and foremost, Jetfire was famous for his many exploits in outer space alongside his partner Starscream.',
+    icon_url: '/images/bots/jetfire.jpeg',
+    image_url: '/images/bots/jetfire_600x860.jpeg',
+    type: :tech,
+    faction: :autobots,
+    health: { stars_1: nil, stars_2: nil, stars_3: 3995, stars_4: 10_383, stars_5: 25207 },
+    attack: { stars_1: nil, stars_2: nil, stars_3: 302, stars_4: 785, stars_5: 1906 },
+    max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil, stars_5: nil },
+    max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: 1299, stars_4: 3547, stars_5: 8600 }
+  },
+  {
     name: 'Kickback',
     description: 'Intelligent and deceptively persuasive, Kickback’s power to manipulate minds is only ever a ploy to gain access to the information or resources he seeks...',
     icon_url: '/images/bots/kickback.jpeg',

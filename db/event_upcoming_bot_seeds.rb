@@ -6,6 +6,12 @@
 [
   {
     type: :upcoming_bot,
+    start_at: Time.parse('2018-12-06 10:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Jetfire', type: :tech).first.id
+  },
+  {
+    type: :upcoming_bot,
     start_at: Time.parse('2018-11-01 10:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Scorponok', type: :warrior).first.id
