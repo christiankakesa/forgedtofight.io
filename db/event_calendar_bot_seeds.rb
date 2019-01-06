@@ -6,6 +6,12 @@
 [
   {
     type: :calendar_bot,
+    start_at: Time.parse('2018-12-31 17:00:00 PDT').utc,
+    image_url: nil,
+    bot_id: Bot.where(name: 'Cyclonus', type: :tactician).first.id
+  },
+  {
+    type: :calendar_bot,
     start_at: Time.parse('2018-11-30 17:00:00 PDT').utc,
     image_url: nil,
     bot_id: Bot.where(name: 'Wheeljack', type: :tech).first.id
