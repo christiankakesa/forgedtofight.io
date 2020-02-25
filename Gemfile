@@ -23,8 +23,8 @@ gem 'nobrainer'
 
 group :assets do
   gem 'coffee-script'
-  gem 'sass'
-  gem 'sprockets'
+  gem 'sassc'
+  gem 'sprockets', '~> 4.0'
   gem 'therubyracer'
   gem 'uglifier'
 end
