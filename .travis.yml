@@ -1,9 +1,9 @@
 language: ruby
 sudo: false
 rvm:
-  - 2.2.6
-  - 2.3.3
-  - 2.4.1
+  - 2.5.7
+  - 2.6.5
+  - 2.7.0
   - ruby-head
   - jruby-9.1.6.0
 matrix:
