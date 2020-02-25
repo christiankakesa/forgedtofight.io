@@ -6,7 +6,7 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
 ## The stack
 
-* [Ruby](https://www.ruby-lang.org/) 2.4.2 : programming language
+* [Ruby](https://www.ruby-lang.org/) 2.7.0 : programming language
 * [Syro](http://soveran.github.io/syro/) : powerful router for *Ruby* web applications
 * [Core UI (Bootstrap 4)](http://coreui.io) : CSS/JS framework
 * [RethinkDB](https://www.rethinkdb.com/) : JSON document based database
@@ -22,6 +22,10 @@ This is a community fansite for TRANSFORMERS Forged to Fight mobile game.
 
         mkdir -p ${HOME}/opt/data/rethinkdb
         docker run --name rethinkdb -v "${HOME}/opt/data/rethinkdb:/data" -d rethinkdb
+* Run tha app:
+  * `bundle exec rake nobrainer:sync_schema`
+  * `bundle exec rake nobrainer:seed`
+  * `bundle exec unicorn -c config/unicorn.rb -p ${PORT:-5000} -E ${RACK_ENV:-development} config.ru`
 
 #### To start RethinkDB image
 
