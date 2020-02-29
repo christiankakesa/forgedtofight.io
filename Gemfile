@@ -2,9 +2,9 @@
 
 source 'https://rubygems.org'
 
-gem 'fast_gettext', '~> 1.6.0'
-gem 'gettext', '~> 3.2.4'
-gem 'gettext-mote_parser'
+gem 'fast_gettext', '~> 2.0', '>= 2.0.2'
+gem 'gettext', '~> 3.3', '>= 3.3.5'
+gem 'gettext-mote_parser', '~> 1.0', '>= 1.0.1'
 gem 'mail'
 gem 'montrose'
 gem 'mote', '~> 1.3.0'
