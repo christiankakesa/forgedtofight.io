@@ -226,7 +226,7 @@
     image_url: '/images/bots/jetfire_600x860.jpeg',
     type: :tech,
     faction: :autobots,
-    health: { stars_1: nil, stars_2: nil, stars_3: 3995, stars_4: 10_383, stars_5: 25207 },
+    health: { stars_1: nil, stars_2: nil, stars_3: 3995, stars_4: 10_383, stars_5: 25_207 },
     attack: { stars_1: nil, stars_2: nil, stars_3: 302, stars_4: 785, stars_5: 1906 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil, stars_5: nil },
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: 1299, stars_4: 3547, stars_5: 8600 }
@@ -406,7 +406,7 @@
     image_url: '/images/bots/scorponok_600x860.jpeg',
     type: :warrior,
     faction: :predacons,
-    health: { stars_1: nil, stars_2: nil, stars_3: 4682, stars_4: 12169, stars_5: 29543 },
+    health: { stars_1: nil, stars_2: nil, stars_3: 4682, stars_4: 12_169, stars_5: 29_543 },
     attack: { stars_1: nil, stars_2: nil, stars_3: 312, stars_4: 810, stars_5: 1966 },
     max_rating_sig0: { stars_1: nil, stars_2: nil, stars_3: nil, stars_4: nil, stars_5: nil },
     max_rating_sig100: { stars_1: nil, stars_2: nil, stars_3: 1309, stars_4: 3523, stars_5: 8551 }
