@@ -95,9 +95,6 @@ msgstr "Autobot, transformation"
 msgid "Close"
 msgstr "Fermer"
 
-msgid "Coming soon..."
-msgstr "Bientôt disponible..."
-
 msgid "Contribute to the developement"
 msgstr "Contribuer au développement"
 
@@ -341,6 +338,9 @@ msgstr "Moteur d'espace de nom pour les applications internets"
 msgid "Privacy"
 msgstr "Confidentialités"
 
+msgid "Recommanded modules"
+msgstr "Modules recommandés"
+
 msgid "Relic Boost"
 msgstr "Boost d'artéfact"
 
@@ -355,6 +355,9 @@ msgstr "Supprime ton compte"
 
 msgid "Reset your password"
 msgstr "Réinitialise ton mot de passe"
+
+msgid "Roster"
+msgstr "Roster"
 
 msgid "Round"
 msgstr "Round"
@@ -436,6 +439,9 @@ msgstr "Début"
 
 msgid "Support"
 msgstr "Support"
+
+msgid "Synergy"
+msgstr "Synergie"
 
 msgid "Tacticians"
 msgstr "Stratèges"

@@ -95,9 +95,6 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-msgid "Coming soon..."
-msgstr ""
-
 msgid "Contribute to the developement"
 msgstr ""
 
@@ -341,6 +338,9 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+msgid "Recommanded modules"
+msgstr ""
+
 msgid "Relic Boost"
 msgstr ""
 
@@ -354,6 +354,9 @@ msgid "Remove your account"
 msgstr ""
 
 msgid "Reset your password"
+msgstr ""
+
+msgid "Roster"
 msgstr ""
 
 msgid "Round"
@@ -435,6 +438,9 @@ msgid "Start at"
 msgstr ""
 
 msgid "Support"
+msgstr ""
+
+msgid "Synergy"
 msgstr ""
 
 msgid "Tacticians"

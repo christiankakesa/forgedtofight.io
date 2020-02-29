@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgedtofightio 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-14 09:42+0200\n"
-"PO-Revision-Date: 2018-09-14 09:42+0200\n"
+"POT-Creation-Date: 2020-02-29 11:36+0100\n"
+"PO-Revision-Date: 2020-02-29 11:36+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -94,9 +94,6 @@ msgid "Cite|Autobot, roll out"
 msgstr ""
 
 msgid "Close"
-msgstr ""
-
-msgid "Coming soon..."
 msgstr ""
 
 msgid "Contribute to the developement"
@@ -342,6 +339,9 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+msgid "Recommanded modules"
+msgstr ""
+
 msgid "Relic Boost"
 msgstr ""
 
@@ -355,6 +355,9 @@ msgid "Remove your account"
 msgstr ""
 
 msgid "Reset your password"
+msgstr ""
+
+msgid "Roster"
 msgstr ""
 
 msgid "Round"
@@ -436,6 +439,9 @@ msgid "Start at"
 msgstr ""
 
 msgid "Support"
+msgstr ""
+
+msgid "Synergy"
 msgstr ""
 
 msgid "Tacticians"
