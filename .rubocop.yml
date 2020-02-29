@@ -1,21 +1,27 @@
 Metrics/BlockLength:
   Exclude:
-    - '**/*.rake'
-    - 'Rakefile'
-    - 'rakefile'
-    - '**/*.rb'
+    - "**/*.rake"
+    - "Rakefile"
+    - "rakefile"
+    - "**/*.rb"
 Metrics/ClassLength:
   Exclude:
-    - 'decks/**/*.rb'
+    - "decks/**/*.rb"
 Metrics/LineLength:
   Max: 160
   Exclude:
-    - 'db/**/*.rb'
+    - "db/**/*.rb"
 Metrics/MethodLength:
   Exclude:
-    - 'decks/**/*.rb'
+    - "decks/**/*.rb"
 # Security/Eval:
 #   Exclude:
 #     - 'decks/**/*.rb'
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
 Style/Documentation:
   Enabled: false
