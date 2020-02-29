@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'bigdecimal'
 require 'sprockets'
 
 Thread.current[:_ftf_sprockets_env] ||= {}
