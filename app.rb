@@ -25,7 +25,7 @@ WebApp = Syro.new(BasicDeck) do
   lang = req['lang']
   lang = nil if lang.to_s.empty?
   FastGettext.set_locale(lang || session['lang'] || @accepted_language.call)
-  session['lang'] = FastGettext.locale
+  session['lang'] = I18n.locale = FastGettext.locale
   run Rack::Cascade.new([Home, Accounts])
 end
 
