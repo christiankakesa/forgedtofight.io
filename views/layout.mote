@@ -3,12 +3,13 @@
 <html lang="{{ FastGettext.locale || 'en' }}">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99041053-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1496206-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-99041053-1');
+  
+    gtag('config', 'UA-1496206-5');
   </script>
   <title>{{ title }}</title>
   <meta charset="utf-8">
