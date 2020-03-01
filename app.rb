@@ -10,7 +10,7 @@ require_relative 'lib/rack/session/nobrainer'
 WebApp = Syro.new(BasicDeck) do
   unless @available_locales
     @available_locales = %w[en fr]
-    I18n.available_locales = FastGettext.available_locales = @available_locales
+    FastGettext.available_locales = @available_locales
   end
   unless @text_domain
     @text_domain = ENV['TEXTDOMAIN'] || 'forgedtofightio'
@@ -25,7 +25,7 @@ WebApp = Syro.new(BasicDeck) do
   lang = req['lang']
   lang = nil if lang.to_s.empty?
   FastGettext.set_locale(lang || session['lang'] || @accepted_language.call)
-  session['lang'] = I18n.locale = FastGettext.locale
+  session['lang'] = FastGettext.locale
   run Rack::Cascade.new([Home, Accounts])
 end
 
