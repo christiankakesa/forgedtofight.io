@@ -65,7 +65,7 @@ GEM
       middleware (~> 0.1.0)
       rethinkdb (>= 2.3.0)
       symbol_decoration (~> 1.1)
-    nokogiri (1.13.2)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.19.1)
@@ -167,7 +167,7 @@ DEPENDENCIES
   mote (~> 1.3.0)
   nobi
   nobrainer
-  nokogiri (~> 1.13.2)
+  nokogiri (~> 1.13.4)
   rack-mini-profiler
   rack-timeout
   rake
